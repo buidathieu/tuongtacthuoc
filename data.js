@@ -513,6 +513,363 @@ window.tuongTacData = [
       "xu_ly": "Phối hợp hai loại thuốc này có thể hợp lý hay không hợp lý tuỳ theo mục đích điều trị. Đo pH nước tiểu bằng giấy chỉ thị."
     }
   ]
+},
+  {
+  "hoat_chat": "Actinomycin D",
+  "mo_ta": "Kháng sinh kìm tế bào, chống ung thư, ức chế tổng hợp RNA/DNA, dùng điều trị nhiều loại ung thư (u Wilms, sarcoma Ewing, u cơ vân, ung thư tinh hoàn...).",
+  "cac_thuoc_trong_nhom": [
+    "DACTINOMYCIN lọ bột pha tiêm 0,5mg",
+    "Cosmegen lọ bột pha tiêm 0,5mg"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac": {
+      "muc_do": 3,
+      "noi_dung": "Người bệnh ung thư: Phải cân nhắc kỹ tuỳ theo trạng thái sinh lý - bệnh lý của người bệnh, theo khả năng theo dõi tại chỗ, và mục tiêu điều trị do nhà chuyên môn ấn định."
+    },
+    "chong_chi_dinh": {
+      "noi_dung": "Chống chỉ định ở người mắc thủy đậu, zona, trẻ em dưới 6 tháng tuổi, người mẫn cảm với thuốc hoặc thành phần thuốc."
+    },
+    "than_trong": {
+      "noi_dung": "Chỉ dùng dưới sự giám sát của bác sĩ chuyên khoa. Phải kiểm tra huyết học thường xuyên, tránh thoát mạch khi tiêm, không dùng cho phụ nữ mang thai/trẻ bú nếu không thực sự cần thiết."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": "Các chất ức chế HMG-CoA reductase (statin)",
+      "muc_do": 3,
+      "phan_tich": "Dùng đồng thời với các chất ức chế miễn dịch làm tăng nguy cơ tiêu cơ vân và suy thận.",
+      "xu_ly": "Nên tránh phối hợp, đặc biệt với lovastatin, simvastatin, pravastatin và các statin khác."
+    },
+    {
+      "thuoc": "Doxorubicin hoặc dẫn chất",
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, có thể dẫn đến mất bạch cầu hạt. Có thể gây bệnh cơ tim.",
+      "xu_ly": "Nếu phối hợp, phải dùng liều thấp và theo dõi chặt chẽ huyết đồ. Tổng liều doxorubicin không vượt quá 450 mg/m2."
+    },
+    {
+      "thuoc": "Vaccin sống giảm độc lực",
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ phát triển nhiễm khuẩn tương ứng với vaccin đã dùng, do ức chế miễn dịch.",
+      "xu_ly": "Hai loại thuốc này phải dùng cách nhau 3 tháng đến 1 năm, tùy mức độ ức chế miễn dịch."
+    },
+    {
+      "thuoc": "Alopurinol hoặc dẫn chất; colchicin hoặc dẫn chất",
+      "muc_do": 2,
+      "phan_tich": "Có nguy cơ làm tăng nồng độ acid uric trong huyết tương.",
+      "xu_ly": "Cần hiệu chỉnh liều thuốc thống phong để kiểm soát acid uric."
+    },
+    {
+      "thuoc": "Carmustin hoặc dẫn chất; cisplatin hoặc dẫn chất; ganciclovir; methotrexat; vincristin và các chất tượng tự",
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, có thể dẫn tới mất bạch cầu hạt.",
+      "xu_ly": "Nếu phối hợp, nên dùng liều thấp với mỗi chất. Theo dõi chặt chẽ huyết đồ."
+    },
+    {
+      "thuoc": "Clozapin",
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ mất bạch cầu hạt nặng, thậm chí tử vong.",
+      "xu_ly": "Tránh phối hợp. Nếu cần phối hợp, dùng liều thấp và theo dõi huyết đồ rất chặt chẽ."
+    },
+    {
+      "thuoc": "Cyclophosphamid hoặc thuốc tương tự; fluoro-5-uracil; interferon alpha tái tổ hợp; levamisol; procarbazin; thiotepa; azathioprin",
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, có thể gây mất bạch cầu hạt.",
+      "xu_ly": "Nếu có thể, tránh phối hợp. Nếu cần phối hợp, giảm liều mỗi chất và theo dõi huyết đồ."
+    },
+    {
+      "thuoc": "Cyclosporin",
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc ức chế miễn dịch làm tăng nguy cơ xuất hiện u lympho giả.",
+      "xu_ly": "Chỉ phối hợp ở cơ sở chuyên khoa, theo dõi người bệnh cẩn thận."
+    },
+    {
+      "thuoc": "Dantrolen",
+      "muc_do": 2,
+      "phan_tich": "Phối hợp các thuốc có tiềm năng độc với gan, hiệp đồng tác dụng không mong muốn.",
+      "xu_ly": "Phải theo dõi chức năng gan chặt chẽ, hoặc hoãn một trong hai thuốc nếu có thể."
+    },
+    {
+      "thuoc": "Glycosid trợ tim",
+      "muc_do": 2,
+      "phan_tich": "Kém hấp thu digitalis khoảng 50%, do thương tổn niêm mạc ruột có thể hồi phục.",
+      "xu_ly": "Theo dõi cẩn thận nồng độ digitalis trong huyết thanh."
+    },
+    {
+      "thuoc": "Interleukin 2 tái tổ hợp",
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc ức chế tuỷ xương.",
+      "xu_ly": "Chỉ dùng ở cơ sở chuyên khoa, theo dõi huyết đồ thường xuyên."
+    },
+    {
+      "thuoc": "Mercaptopurin; pentostatin",
+      "muc_do": 2,
+      "phan_tich": "Sử dụng đồng thời hai chất ức chế tuỷ xương có thể gây các rối loạn về máu nghiêm trọng.",
+      "xu_ly": "Phối hợp này phải được theo dõi về mặt huyết học."
+    },
+    {
+      "thuoc": "Penicilamin hoặc thuốc tương tự",
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời hai chất ức chế tuỷ xương có thể dẫn đến những rối loạn về máu nghiêm trọng, tuỳ thuộc thời gian điều trị.",
+      "xu_ly": "Phối hợp này phải được theo dõi về mặt huyết học và chức năng thận."
+    },
+    {
+      "thuoc": "Phenicol",
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do tác dụng hiệp đồng, có thể dẫn đến mất bạch cầu hạt.",
+      "xu_ly": "Nếu cần phối hợp, dùng liều thấp với mỗi thuốc, theo dõi huyết đồ."
+    },
+    {
+      "thuoc": "Zidovudin",
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ thiếu máu hay các rối loạn khác về máu.",
+      "xu_ly": "Nếu cần phối hợp, phải theo dõi cẩn thận huyết đồ và giảm liều nếu cần."
+    }
+  ]
+},
+{
+  "hoat_chat": "Alopurinol hoặc dẫn chất",
+  "mo_ta": "Thuốc chống bệnh thống phong (gút), ức chế tổng hợp acid uric.",
+  "cac_thuoc_trong_nhom": [
+    "ALOPURINOL viên nén 100mg; 300mg",
+    "Apo-Allopurinol viên nén 100mg; 200mg; 300mg",
+    "Domedol viên nén 300mg",
+    "Milurit viên nén 100mg; 300mg",
+    "Zyloric viên nén 100mg"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac": {
+      "muc_do": 3,
+      "noi_dung": "Tránh dùng trong thời kỳ mang thai và cho con bú do nguy cơ bất thường chuyển hóa purin/pyrimidin."
+    },
+    "than_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy gan hoặc thận: 3% số trường hợp dùng thuốc có tai biến ngoài da như ngứa, ban đỏ, mày đay; thường gặp ở người bệnh suy gan."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": "Acid ascorbic",
+      "muc_do": 4,
+      "phan_tich": "Dùng đều đặn acid ascorbic liều cao, do làm acid hoá nước tiểu, có thể làm kết tủa urat ở thận.",
+      "xu_ly": "Với người bệnh gút, cần tránh acid hoá nước tiểu, nên tăng lượng nước tiểu bài tiết bằng đồ uống có tính kiềm, tạo điều kiện hoà tan tinh thể urat. Nguy cơ chỉ xuất hiện với liều vitamin C thường ngày vượt quá 2g."
+    },
+    {
+      "thuoc": "Penicilin",
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ cao có phản ứng ngoài da, đặc biệt với penicilin nhóm A (ampicilin).",
+      "xu_ly": "Nên tránh phối hợp thuốc này. Nên tìm một kháng sinh loại khác có hoạt phổ tương tự."
+    },
+    {
+      "thuoc": "Vidarabin",
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ rối loạn thần kinh, kiểu run, hay rối loạn trong hình thành ý nghĩ.",
+      "xu_ly": "Nếu phối hợp thuốc tuyệt đối cần thiết, phải theo dõi lâm sàng."
+    },
+    {
+      "thuoc": "Asparaginase",
+      "muc_do": 2,
+      "phan_tich": "Asparaginase làm tăng nồng độ acid uric trong máu.",
+      "xu_ly": "Chỉ phối hợp tại bệnh viện. Kiểm tra liều lượng thuốc chống gút."
+    },
+    {
+      "thuoc": "Azathioprin hoặc mercaptopurin",
+      "muc_do": 2,
+      "phan_tich": "Alopurinol ức chế chuyển hoá oxy hoá của azathioprin, mercaptopurin, gây nguy cơ tích luỹ các chất kháng chuyển hoá.",
+      "xu_ly": "Nếu cần phối hợp, giảm liều chất kháng chuyển hoá xuống 25-30%."
+    },
+    {
+      "thuoc": "Cyclophosphamid hoặc thuốc tương tự",
+      "muc_do": 2,
+      "phan_tich": "Sử dụng đồng thời alopurinol với cyclophosphamid có thể làm tăng tác dụng ức chế tuỷ xương.",
+      "xu_ly": "Nếu cần phối hợp, phải theo dõi huyết đồ chặt chẽ."
+    },
+    {
+      "thuoc": "Dactinomycin",
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ làm tăng nồng độ acid uric trong huyết tương.",
+      "xu_ly": "Có thể phải hiệu chỉnh liều thuốc chống gút."
+    },
+    {
+      "thuoc": "Doxorubicin hoặc dẫn chất - melphalan",
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời một thuốc kìm tế bào với một thuốc chống gút làm tăng nồng độ acid uric, tăng nguy cơ giảm bạch cầu và giảm tiểu cầu.",
+      "xu_ly": "Nên tránh phối hợp các thuốc này, nếu không có thể thất bại trong liệu pháp chữa thống phong."
+    },
+    {
+      "thuoc": "Pentostatin",
+      "muc_do": 2,
+      "phan_tich": "Pentostatin có thể làm tăng nồng độ acid uric.",
+      "xu_ly": "Nên dùng alopurinol thay cho các chất gây urat niệu để tránh nguy cơ bệnh thận vì urat."
+    },
+    {
+      "thuoc": "Sulfamid hạ glucose máu",
+      "muc_do": 2,
+      "phan_tich": "Alopurinol có thể ức chế bài tiết clorpropamid qua ống thận, tăng nguy cơ hạ glucose máu nặng.",
+      "xu_ly": "Cần đặc biệt cảnh giác với người suy thận dùng hai thuốc này. Theo dõi chặt chẽ glucose máu."
+    },
+    {
+      "thuoc": "Theophylin hoặc dẫn chất",
+      "muc_do": 2,
+      "phan_tich": "Dùng alopurinol liều cao với theophylin sẽ giảm độ thanh lọc theophylin ở thận và làm tăng nồng độ trong huyết thanh.",
+      "xu_ly": "Phải theo dõi chặt chẽ nồng độ theophylin, điều chỉnh liều lượng."
+    },
+    {
+      "thuoc": "Thuốc acid hoá nước tiểu",
+      "muc_do": 2,
+      "phan_tich": "Dùng thường xuyên các thuốc acid hoá nước tiểu với liều cao có thể gây kết tủa các tinh thể urat ở thận.",
+      "xu_ly": "Tránh acid hoá nước tiểu ở người bệnh gút. Nên dùng đồ uống tính kiềm để tăng lượng nước tiểu bài tiết."
+    },
+    {
+      "thuoc": "Thuốc lợi tiểu thải kali; furosemid hoặc thuốc tương tự",
+      "muc_do": 2,
+      "phan_tich": "Các chất này làm tăng nồng độ acid uric trong máu và làm giảm tác dụng của liệu pháp chống bệnh thống phong (gút).",
+      "xu_ly": "Tốt nhất nên tránh sự kết hợp các thuốc này."
+    },
+    {
+      "thuoc": "Thuốc uống chống đông máu kháng vitamin K",
+      "muc_do": 2,
+      "phan_tich": "Tăng nửa đời của thuốc chống đông máu, do ức chế chuyển hoá thuốc ở gan.",
+      "xu_ly": "Nếu cần phối hợp, phải theo dõi đều đặn thời gian Quick và INR."
+    },
+    {
+      "thuoc": "Thuốc uống kháng acid hoặc than hoạt tính",
+      "muc_do": 2,
+      "phan_tich": "Làm giảm hấp thu alopurinol theo đường tiêu hoá.",
+      "xu_ly": "Cần để một khoảng thời gian 1-2 giờ giữa lúc uống thuốc kháng acid và alopurinol."
+    }
+  ]
+},
+  {
+  "hoat_chat": "Alprostadil",
+  "mo_ta": "Prostaglandin E1 có tác dụng chủ yếu trên cơ trơn ống động mạch.",
+  "cac_thuoc_trong_nhom": [
+    "ALPROSTADIN ống tiêm 10 mg; 20 mg; 0,5 mg/1 mL",
+    "Caverject ống tiêm 10 mg; 20 mg",
+    "Edex A ống tiêm 0,5 mg/1 mL"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Không tiêm thuốc này trực tiếp vào tĩnh mạch."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Trẻ em: Dùng thận trọng cho trẻ sơ sinh có nguy cơ chảy máu. Tránh dùng cho trẻ sơ sinh suy hô hấp."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["amlodipin", "losartan", "hydrochlorothiazid", "enalapril"],
+      "muc_do": 1,
+      "phan_tich": "Tác dụng giảm huyết áp tăng.",
+      "xu_ly": "Cần theo dõi huyết áp."
+    }
+  ]
+},
+{
+  "hoat_chat": "Amantadin hoặc thuốc tương tự",
+  "mo_ta": "Chống Parkinson và kháng virus.",
+  "cac_thuoc_trong_nhom": [
+    "AMANTADIN nang 50 mg; 100 mg",
+    "Mantadix nang 100 mg",
+    "Contenton nang 50 mg; 100 mg"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Do thận trọng, khi chưa có đủ dữ liệu. Thời kỳ mang thai: Nguy cơ sinh quái thai đáng kể."
+    },
+    "than_trong": {
+      "muc_do": 2,
+      "noi_dung": "Trầm cảm: Amantadin có thể gây rối loạn thần kinh tâm thần: lú lẫn kèm theo ảo giác về thị giác và thính giác, chủ yếu vào chiều tối. Động kinh: Amantadin hạ thấp ngưỡng co giật, và có thể gây cơn động kinh."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy tim: Nguy cơ hạ huyết áp tư thế đứng. Suy thận: Nguy cơ tích luỹ, do amantadin ít bị chuyển hoá, nên có mặt gần như toàn bộ trong nước tiểu dưới dạng còn hoạt tính."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["phenelzin", "tranylcypromin", "procarbazin"],
+      "muc_do": 4,
+      "phan_tich": "Tương tác có thể gây tăng huyết áp không thường xuyên sau khi dùng thêm thuốc ức chế MAO, do một cơ chế chưa được biết.",
+      "xu_ly": "Nếu kê đơn phối hợp thuốc, cần thận trọng xác định liều lượng và cần thông báo cho Trung tâm cảnh giác thuốc."
+    },
+    {
+      "thuoc": ["ethanol"],
+      "muc_do": 3,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần gây buồn ngủ.",
+      "xu_ly": "Khuyên người bệnh không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["caffeine", "theophylline"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ loạn nhịp tim và mất ngủ.",
+      "xu_ly": "Theo dõi các triệu chứng hưng phấn thần kinh."
+    },
+    {
+      "thuoc": ["diphenhydramine", "amitriptyline"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng kháng cholinergic gây lú lẫn.",
+      "xu_ly": "Điều chỉnh liều các thuốc kháng cholinergic."
+    },
+    {
+      "thuoc": ["levodopa"],
+      "muc_do": 2,
+      "phan_tich": "Cần tránh dùng cho bệnh nhân có tiền sử tâm thần.",
+      "xu_ly": "Hỏi kỹ tiền sử bệnh trước khi phối hợp."
+    },
+    {
+      "thuoc": ["chlorpromazine", "haloperidol"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ ảo giác và lú lẫn.",
+      "xu_ly": "Theo dõi sát các biểu hiện tâm thần."
+    },
+    {
+      "thuoc": ["quinine", "quinidine"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ amantadin ở nam giới.",
+      "xu_ly": "Giám sát các dấu hiệu nhiễm độc thần kinh."
+    },
+    {
+      "thuoc": ["epinephrine", "salbutamol"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ loạn nhịp tim.",
+      "xu_ly": "Theo dõi điện tâm đồ khi phối hợp."
+    },
+    {
+      "thuoc": ["spironolactone", "furosemide"],
+      "muc_do": 2,
+      "phan_tich": "Giảm độ thanh lọc của amantadin.",
+      "xu_ly": "Hiệu chỉnh liều amantadin."
+    },
+    {
+      "thuoc": ["selegiline", "rasagiline"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng phụ thần kinh.",
+      "xu_ly": "Tránh dùng cho bệnh nhân tâm thần."
+    },
+    {
+      "thuoc": ["trimethoprim", "sulfamethoxazole"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ lú lẫn cấp.",
+      "xu_ly": "Theo dõi chặt chẽ chức năng thần kinh."
+    },
+    {
+      "thuoc": ["amphetamine"],
+      "muc_do": 1,
+      "phan_tich": "Nguy cơ kích thích thần kinh.",
+      "xu_ly": "Báo cáo ngay các triệu chứng bất thường."
+    },
+    {
+      "thuoc": ["atropine", "oxybutynin"],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng phụ kháng cholinergic.",
+      "xu_ly": "Tránh dùng cho bệnh nhân tăng nhãn áp."
+    }
+  ]
 }
+
+
 
 ];
