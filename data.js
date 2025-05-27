@@ -286,5 +286,233 @@ window.tuongTacData = [
         "xu_ly": "Tuy thông tin còn ít (một trường hợp được báo cáo), nhưng cần phải giám sát tương tác này với bất cứ một kháng sinh quinolon nào khi phối hợp."
       }
     ]
-  }
+  },
+  {
+    "hoat_chat": "Acid cromoglicic hoặc thuốc tương tự",
+    "mo_ta": "Tác dụng chống dị ứng bằng cách ức chế sự mất hạt ở các dưỡng bào và các bạch cầu ưa base.",
+    "cac_thuoc_trong_nhom": [
+      "ACID CROMOGLYCIC dung dịch nhỏ mắt 2%; dung dịch phun mũi 2,8mg/1,4ml",
+      "Cromal",
+      "Opticron dung dịch nhỏ mắt 2%",
+      "Stadaglicin (nhỏ mắt) 20mg/mL",
+      "Stadaglicin (xịt mũi)",
+      "NEDOCROMIL bột để bơm hít 2mg/lọ",
+      "Tilade bột để bơm hít 2mg/lọ"
+    ],
+    "chu_y_khi_chi_dinh": {
+      "muc_do": 1,
+      "noi_dung": "Cần theo dõi",
+      "thoi_ky_mang_thai": "Vì thận trọng, không dùng trong ba tháng đầu của thai kỳ."
+    },
+    "tuong_tac": []
+  },
+  {
+    "hoat_chat": "Acid folic hoặc dẫn chất",
+    "mo_ta": "Vitamin chống thiếu máu thuộc nhóm vitamin B.",
+    "cac_thuoc_trong_nhom": [
+      "ACID FOLIC",
+      "Tardyferon B9 viên nén bọc 35mg (phối hợp với sắt sulfat và vitamin C) Az-vital",
+      "Adofex (nang phối hợp)",
+      "Apo-Folic (viên nén 5mg)",
+      "Astymin fort (nang phối hợp)",
+      "Astymin liquid (siro phối hợp)",
+      "Biofer (viên nén nhai phối hợp)",
+      "Centrivit (viên phối hợp)",
+      "Femaxx (nang phối hợp)",
+      "Ferlin (thuốc giọt và siro phối hợp)",
+      "Ferovit (nang phối hợp)",
+      "Hepatoglobine",
+      "Homtamin (nang phối hợp)",
+      "Moriamin forte (nang phối hợp)",
+      "Natalvit",
+      "Obimin (viên nén phối hợp)",
+      "Oramin",
+      "Plenyl",
+      "Plussz junior",
+      "Plussz Multivitamin",
+      "Polyamine forte",
+      "Promin",
+      "Previt (viên sủi phối hợp)",
+      "Revigin Ginseng plus",
+      "Saferon",
+      "Siderfol",
+      "Siderplex",
+      "Tardiferon B9 (viên bao đường phối hợp)",
+      "Tropic (viên nén sủi bọt phối hợp)",
+      "Vitacap (nang phối hợp)",
+      "ACID FOLINIC nang 15mg; dung dịch tiêm 3mg/ 1mL; 30 mg / 3 mL; 5 mg/5 mL",
+      "Calcium folinat “Ebewe” nang 15mg",
+      "Calcium folinat “Ebewe” dung dịch tiêm 3mg/ 1mL",
+      "Calcium folinat “Ebewe” dung dịch tiêm 30mg/3mL",
+      "Leucovorin dung dịch tiêm 3mg/ 1mL",
+      "Leucovorin dung dịch tiêm 5mg/ 5mL"
+    ],
+    "chu_y_khi_chi_dinh": {},
+    "tuong_tac": [
+      {
+        "thuoc": "Methotrexat",
+        "muc_do": 3,
+        "phan_tich": "Methotrexat là chất đối kháng của acid folic, do ức chế dihydrofolat reductase. Tương tác càng có ý nghĩa nếu dùng liều cao và điều trị dài ngày.",
+        "xu_ly": "Áp dụng tương tác này trong trường hợp quá liều methotrexat, dùng acid folinic (calci folinat) thay cho acid folic."
+      },
+      {
+        "thuoc": "Barbituric; primidon hoặc dẫn chất",
+        "muc_do": 2,
+        "phan_tich": "Nguy cơ làm giảm nồng độ thuốc chống động kinh trong huyết thanh khi bổ sung acid folic. Dùng đồng thời các thuốc này với acid folic có thể làm giảm tác dụng chống co giật, do giảm tác dụng của thuốc chống động kinh trên hệ thần kinh trung ương.",
+        "xu_ly": "Tăng cường theo dõi lâm sàng và sinh học khi điều trị động kinh ở người bệnh dùng bổ sung acid folic. Điều chỉnh liều lượng thuốc chống động kinh nếu cần, trong và sau khi ngừng acid folic."
+      },
+      {
+        "thuoc": "Natri valproat hoặc dẫn chất",
+        "muc_do": 2,
+        "phan_tich": "Ngoài tính chất ức chế hệ thần kinh trung ương, ở đây có sự phối hợp acid folic với một thuốc có hoạt tính kháng folic (do ức chế dihydrofolat reductase).",
+        "xu_ly": "Kiểm tra huyết đồ đều đặn, và khi cần, điều trị bằng bổ sung acid folinic, đặc biệt với người bệnh dùng natri valproat hoặc dẫn chất với liều cao hoặc dài ngày."
+      },
+      {
+        "thuoc": "Phenytoin",
+        "muc_do": 2,
+        "phan_tich": "Phối hợp acid folic với phenytoin gây nguy cơ giảm nồng độ phenytoin trong huyết thanh, làm giảm tác dụng chống co giật, do làm giảm tác dụng của phenytoin ở hệ thần kinh trung ương.",
+        "xu_ly": "Tăng cường theo dõi lâm sàng và sinh học trong điều trị chống động kinh ở người bệnh có dùng bổ sung acid folic. Điều chỉnh liều lượng của phenytoin khi cần, trong và sau khi ngừng bổ sung acid folic."
+      },
+      {
+        "thuoc": "Pyrimethamin hoặc trimethoprim",
+        "muc_do": 2,
+        "phan_tich": "Tác dụng đối kháng với acid folic, do ức chế dihydrofolat reductase. Tương tác càng quan trọng nếu liều dùng càng cao và điều trị càng kéo dài.",
+        "xu_ly": "Kiểm tra huyết đồ thường xuyên. Khi cần, bổ sung acid folinic (calci folinat), đặc biệt đối với người bệnh dùng pyrimethamin- trimethoprim liều cao hoặc điều trị dài ngày."
+      },
+      {
+        "thuoc": "Thuốc lợi tiểu giữ kali (triamteren)",
+        "muc_do": 2,
+        "phan_tich": "Chỉ triamteren trong họ thuốc lợi tiểu giữ kali là có tính đối kháng với acid folic, do ức chế dihydrofolat reductase. Tương tác này càng quan trọng nếu liều dùng càng cao và điều trị càng dài ngày.",
+        "xu_ly": "Kiểm tra huyết đồ và khi cần, cho dùng bổ sung acid folinic (calci folinat), đặc biệt với người bệnh dùng triamteren liều cao hoặc điều trị dài ngày, nhất là trong thời kỳ mang thai."
+      },
+      {
+        "thuoc": "Sulfasalazin hoặc dẫn chất",
+        "muc_do": 2,
+        "phan_tich": "Salazosulfapyridin (sulfasalazin) làm giảm hấp thu acid folic (khoảng một phần ba). Thiếu hụt folat biểu hiện ở nồng độ folat trong huyết thanh hạ thấp, thiếu máu nguyên hồng cầu khổng lồ, chứng đại hồng cầu và chứng tăng hồng cầu lưới. Có khả năng do ức chế hấp thu folat ở ruột.",
+        "xu_ly": "Khi thấy thiếu hụt folat về lâm sàng hoặc sinh học, cần bổ sung acid folinic cho người bệnh."
+      },
+      {
+        "thuoc": "Fluoro - 5 - uracil",
+        "muc_do": 1,
+        "phan_tich": "Dùng đồng thời với acid folinic dưới dạng calci folinat có thể làm tăng tác dụng điều trị và độc tính của fluoro - 5 - uracil.",
+        "xu_ly": "Có thể dùng đồng thời hai thuốc này, nhưng nếu cần thì hiệu chỉnh lại liều lượng. Chỉ kê đơn kết hợp này ở cơ sở chuyên khoa cùng với theo dõi đều đặn huyết đồ."
+      }
+    ]
+  },
+  {
+  "hoat_chat": "Acid fusidic",
+  "mo_ta": "Kháng sinh diệt khuẩn và kìm khuẩn, tác dụng trên sự tổng hợp protein và thường được dùng chủ yếu chống tụ cầu.",
+  "cac_thuoc_trong_nhom": [
+    "ACID FUSIDIC kem bôi da 2%",
+    "ACID FUSIDIC thuốc mỡ 2%",
+    "ACID FUSIDIC gel tra mắt 1%",
+    "Foban kem bôi da 2%",
+    "Fucidin kem bôi da 2%",
+    "Fucidin thuốc mỡ 2%",
+    "Fucidin viên nén 250mg natri fusidat",
+    "Fucicort kem bôi da 2% (phối hợp với betamethason)",
+    "Fucithalmic gel tra mắt 1%",
+    "Fudikin thuốc mỡ 2%"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Tránh dùng acid fusidic theo đường uống trong nhiễm tụ cầu khuẩn đường tiết niệu, vì acid fusidic không thải qua nước tiểu."
+    },
+    "can_nhac": {
+      "muc_do": 3,
+      "noi_dung": "Suy gan: Vì có nguy cơ vàng da, nên cần theo dõi gan ở những người bệnh dùng thuốc này."
+    },
+    "than_trong": {
+      "muc_do": 2,
+      "noi_dung": "Thời kỳ cho con bú: Một lượng thấp thuốc bài tiết qua sữa mẹ. Thời kỳ mang thai: Chưa chứng minh được tính không độc ở người mang thai."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Trẻ em: Nguy cơ vàng da nhân não ở trẻ còn bú, do nguy cơ cạnh tranh giữa acid fusidic và bilirubin để gắn vào albumin."
+    }
+  },
+  "tuong_tac": []
+},
+{
+  "hoat_chat": "Acid hoá nước tiểu (các chất)",
+  "mo_ta": "Thuốc có tác dụng làm hạ thấp pH nước tiểu.",
+  "cac_thuoc_trong_nhom": [
+    "AMONI CLORID",
+    "Chlorammonic viên nén bọc 500 mg",
+    "Atussin (phối hợp) siro",
+    "Benadryl (phối hợp)",
+    "Komix (phối hợp)",
+    "Zedex (phối hợp)",
+    "ACID PHOSPHORIC dung dịch uống 2,7 mg/90 mL",
+    "Phosoforme dung dịch uống 2,7 mg/90 mL"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Loét dạ dày - tá tràng; viêm dạ dày: Do tính acid của các chất này. Chống chỉ định dùng một chất acid hoá nước tiểu ở tất cả những trường hợp nhiễm acid hoặc sỏi urat."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy gan: Khi suy gan nặng, ion amoni (+NH4) bổ sung sẽ không được chuyển hoá, và dẫn đến nguy cơ tăng amoniac máu. Suy thận: Do ion amoni một phần được thải qua thận, nên có nguy cơ quá tải ở gan và trạng thái nhiễm acid tăng clor máu do thận."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": "Sulfamid kháng khuẩn",
+      "muc_do": 4,
+      "phan_tich": "Phản ứng hoá - lý cho phép giải thích nguy cơ kết tinh sulfamid trong ống thận, kéo theo tổn thương thận thực thể. Kết tủa càng rõ khi pH khoảng 5. Tương tác này đã được thông báo trong y văn khi phối hợp với hexamin.",
+      "xu_ly": "Tránh phối hợp hai thuốc này. Nếu cần phối hợp, phải theo dõi pH nước tiểu bằng giấy chỉ thị."
+    },
+    {
+      "thuoc": "Alopurinol hoặc dẫn chất",
+      "muc_do": 2,
+      "phan_tich": "Dùng thường xuyên các thuốc acid hoá nước tiểu liều cao có thể dẫn đến kết tủa các tinh thể urat ở thận.",
+      "xu_ly": "Tránh acid hoá nước tiểu ở người bệnh thống phong (gút). Tăng bài niệu bằng cho uống nước kiềm tính để tạo điều kiện hoà tan tinh thể urat. Cần lưu ý đến vitamin C mà người bệnh hay tự ý dùng. Nguy cơ chỉ xuất hiện với liều vitamin C dùng hàng ngày vượt quá 2g."
+    },
+    {
+      "thuoc": "Amphetamin hoặc dẫn chất",
+      "muc_do": 2,
+      "phan_tich": "Giảm tái hấp thu amphetamin ở ống thận. Các chất acid hoá nước tiểu làm tăng thải amphetamin (pH khoảng 5) qua thận. Amphetamin là một base thải qua nước tiểu. Trong môi trường acid, ít gặp thuốc này ở dạng không phân cực.",
+      "xu_ly": "Tương tác có lợi: Acid hoá nước tiểu nhằm tạo điều kiện thải nhanh amphetamin khi dùng quá liều. Tương tác có hại cần tránh: Khi điều trị bằng amphetamin, có thể thất bại do thải thuốc quá nhanh (nếu acid hoá nước tiểu) hoặc có thể bị loạn tâm thần do ứ thuốc (nếu kiềm hoá nước tiểu)."
+    },
+    {
+      "thuoc": "Barbituric",
+      "muc_do": 2,
+      "phan_tich": "Tăng tái hấp thu ở ống thận, có thể kéo dài tác dụng của barbituric và làm xuất hiện độc tính do quá liều.",
+      "xu_ly": "Nếu cần phối hợp hai thuốc này, phải hiệu chỉnh liều dùng. Nếu người bệnh có biểu hiện ngủ gà khi dùng hai thuốc này, có khi phải giảm liều barbituric sau khi đã đo pH nước tiểu bằng giấy chỉ thị."
+    },
+    {
+      "thuoc": "Mexiletin",
+      "muc_do": 2,
+      "phan_tich": "Acid hoá nước tiểu có thể làm tăng thải mexiletin qua thận. Tương tác này, nêu trong các tài liệu, cho thấy có những biến đổi về ý nghĩa lâm sàng khi phối hợp thuốc.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải theo dõi các tác dụng trên lâm sàng, và luôn luôn ý thức là có thể có những biến đổi tác dụng dược lý của mexiletin."
+    },
+    {
+      "thuoc": "Primidon hoặc dẫn chất",
+      "muc_do": 2,
+      "phan_tich": "Làm tăng tái hấp thu ở ống thận.",
+      "xu_ly": "Tác dụng dược lý của hai thuốc tăng lên, nên khi cần phối hợp hai thuốc thì phải hiệu chỉnh liều lượng. Đo pH bằng giấy chỉ thị để biết có cần hiệu chỉnh liều lượng hay không."
+    },
+    {
+      "thuoc": "Salicylat",
+      "muc_do": 2,
+      "phan_tich": "Nồng độ salicylat trong huyết tương tăng do giảm bài tiết qua nước tiểu khi phối hợp với các chất acid hoá.",
+      "xu_ly": "Tác dụng dược lý của thuốc tăng lên, nên khi cần phối hợp thì phải hiệu chỉnh liều lượng. Đo pH nước tiểu bằng giấy chỉ thị để biết có cần hiệu chỉnh liều lượng hay không."
+    },
+    {
+      "thuoc": "Thuốc chống trầm cảm ba vòng hoặc thuốc tương tự",
+      "muc_do": 2,
+      "phan_tich": "Thuốc chống trầm cảm ba vòng là base, nên các thuốc acid hoá nước tiểu có thể làm tăng bài tiết các thuốc đó qua nước tiểu. Ngược lại các thuốc kiềm hoá nước tiểu lại có tác dụng làm giảm bài tiết (tạo điều kiện tái hấp thu ở ống thận).",
+      "xu_ly": "Mặc dầu tương tác này có thể xảy ra theo cơ chế lý - hoá, nhưng hình như không có những biểu hiện lâm sàng đáng kể."
+    },
+    {
+      "thuoc": "Thuốc kiềm hoá nước tiểu",
+      "muc_do": 2,
+      "phan_tich": "Trung hoà về mặt lý hoá.",
+      "xu_ly": "Phối hợp hai loại thuốc này có thể hợp lý hay không hợp lý tuỳ theo mục đích điều trị. Đo pH nước tiểu bằng giấy chỉ thị."
+    }
+  ]
+}
+
 ];
