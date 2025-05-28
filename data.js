@@ -4796,20 +4796,280 @@ window.tuongTacData = [
       "xu_ly": "Theo dõi chức năng thận, ciclosporin máu, điều chỉnh liều và cân nhắc lại chiến lược điều trị."
     }
   ]
+},
+  {
+  "hoat_chat": "Cimetidin",
+  "mo_ta": "Thuốc kháng histamin chẹn thụ thể H2 chống loét dạ dày tá tràng.",
+  "cac_thuoc_trong_nhom": [
+    "Cimetidin",
+    "Brumetidin",
+    "Cimet",
+    "Defense F.C",
+    "Himetin",
+    "Histodil",
+    "Suwelin"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Cimetidin qua được sữa mẹ và gây tăng tiết sữa. Thời kỳ mang thai: Do thận trọng, khi chưa có dữ liệu."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Trẻ em: Sử dụng cimetidin chưa đủ lâu để rút được kinh nghiệm ở trẻ em. Nếu nhất thiết phải dùng thuốc, liều phải từ 20 đến 40 mg/kg/ngày chia nhiều lần. Suy gan: Tăng tạm thời aminotransferase (transaminase) đã được mô tả. Suy thận: Điều chỉnh liều, vì cimetidin được đào thải chủ yếu qua thận dưới dạng không thay đổi. Người cao tuổi: Nguy cơ lú lẫn hoặc rối loạn nhịp tim (nhịp xoang chậm) cao hơn."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Pentagastrin"],
+      "muc_do": 3,
+      "phan_tich": "Khả năng đối kháng giữa các tác dụng dược lý của pentagastrin và của thuốc kháng H2.",
+      "xu_ly": "Khuyên người bệnh uống pentagastrin cách thuốc kháng H2 24 giờ."
+    },
+    {
+      "thuoc": ["Phenytoin"],
+      "muc_do": 3,
+      "phan_tich": "Cimetidin ức chế chuyển hoá phenytoin ở gan, tăng nguy cơ quá liều.",
+      "xu_ly": "Tăng cường giám sát nồng độ phenytoin trong huyết tương khi điều trị thất bại hoặc thay thuốc chống loét dạ dày khác."
+    },
+    {
+      "thuoc": [
+        "Diazepam", "Alprazolam", "Dikali clorazepat", "Flurazepam", "Nitrazepam", "Triazolam", "Clordiazepoxyd"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin ức chế chuyển hoá các benzodiazepin này, tăng nguy cơ buồn ngủ.",
+      "xu_ly": "Thay đổi thuốc chống loét dạ dày, hoặc điều chỉnh liều các benzodiazepin lúc bắt đầu, trong và sau khi điều trị. Báo cho người bệnh về nguy cơ buồn ngủ, cảnh giác khi lái xe hoặc vận hành máy."
+    },
+    {
+      "thuoc": ["Carbamazepin"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin ức chế chuyển hoá carbamazepin ở gan, tăng nguy cơ quá liều.",
+      "xu_ly": "Tăng cường giám sát nồng độ carbamazepin trong huyết tương khi có dấu hiệu quá liều, hoặc thay thuốc chống loét dạ dày."
+    },
+    {
+      "thuoc": ["Cafein"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin làm tăng nồng độ cafein trong máu, nguy cơ kích thích, mất ngủ.",
+      "xu_ly": "Thông báo cho người bệnh về các tác dụng này, khuyên giảm dùng cafein nếu xuất hiện triệu chứng."
+    },
+    {
+      "thuoc": ["Ciclosporin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ ciclosporin trong máu do ức chế enzym.",
+      "xu_ly": "Tăng cường giám sát nồng độ ciclosporin khi có dấu hiệu quá liều hoặc thay thuốc chống loét dạ dày."
+    },
+    {
+      "thuoc": ["Clomethiazol"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin làm tăng tác dụng an thần gây ngủ của clomethiazol.",
+      "xu_ly": "Giảm liều clomethiazol hoặc thay cimetidin bằng ranitidin."
+    },
+    {
+      "thuoc": ["Cloramphenicol"],
+      "muc_do": 2,
+      "phan_tich": "Hiệp đồng ức chế tủy xương khi dùng cùng cimetidin.",
+      "xu_ly": "Phải thận trọng khi phối hợp."
+    },
+    {
+      "thuoc": ["Cloroquin"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin ức chế chuyển hoá cloroquin ở gan, làm tăng nguy cơ nhiễm độc.",
+      "xu_ly": "Theo dõi lâm sàng để phát hiện sớm dấu hiệu nhiễm độc khi phối hợp."
+    },
+    {
+      "thuoc": ["Dobutamin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng huyết áp mạnh khi truyền dobutamin cho người đang dùng cimetidin.",
+      "xu_ly": "Thận trọng giảm liều đầu tiên dobutamin ở người bệnh đang điều trị cimetidin."
+    },
+    {
+      "thuoc": ["Erythromycin"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin làm tăng nồng độ erythromycin, có thể gây điếc hồi phục.",
+      "xu_ly": "Thận trọng theo dõi lâm sàng khi phối hợp."
+    },
+    {
+      "thuoc": ["Fluorouracil"],
+      "muc_do": 2,
+      "phan_tich": "Nồng độ fluorouracil tăng khi phối hợp với cimetidin.",
+      "xu_ly": "Thận trọng khi phối hợp vì nguy cơ quá liều, có thể cần giảm liều fluorouracil."
+    },
+    {
+      "thuoc": [
+        "Terfenadin", "Cetirizin", "Hydroxyzin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin ức chế chuyển hoá, có thể gây độc với terfenadin.",
+      "xu_ly": "Tránh phối hợp với terfenadin. Cetirizin, hydroxyzin phối hợp không gây độc."
+    },
+    {
+      "thuoc": ["Lidocain"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin làm tăng nồng độ lidocain, nguy cơ quá liều.",
+      "xu_ly": "Giám sát nồng độ lidocain trong huyết tương khi có dấu hiệu quá liều, hoặc thay thuốc chống loét dạ dày."
+    },
+    {
+      "thuoc": ["Mebendazol"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ huyết thanh của mebendazol.",
+      "xu_ly": "Cảnh giác với các biểu hiện nhiễm độc do nồng độ cao mebendazol."
+    },
+    {
+      "thuoc": ["Methadon"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ quá liều hoặc ức chế hô hấp.",
+      "xu_ly": "Cảnh giác với biểu hiện quá liều methadon, điều trị bằng naloxon nếu cần."
+    },
+    {
+      "thuoc": [
+        "Metronidazol", "Nitroimidazol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ metronidazol, nguy cơ quá liều.",
+      "xu_ly": "Điều chỉnh liều metronidazol hoặc chọn kháng H2 khác ít ức chế enzym hơn."
+    },
+    {
+      "thuoc": ["Quinidin"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin ức chế chuyển hoá quinidin, nguy cơ quá liều.",
+      "xu_ly": "Điều chỉnh liều quinidin, giảm 25% (uống), 35% (tiêm tĩnh mạch). Theo dõi dấu hiệu quá liều."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng nồng độ đỉnh của rượu trong huyết tương, dễ gây say rượu.",
+      "xu_ly": "Thông báo tương tác này tới Trung tâm cảnh giác thuốc."
+    },
+    {
+      "thuoc": ["Theophylin"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin làm tăng nồng độ theophylin, nguy cơ quá liều.",
+      "xu_ly": "Giám sát nồng độ theophylin trong huyết tương khi có dấu hiệu quá liều hoặc thay thuốc chống loét dạ dày."
+    },
+    {
+      "thuoc": [
+        "Acebutolol", "Alprenolol", "Betaxolol", "Labetalol", "Metoprolol", "Oxprenolol", "Propranolol", "Timolol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin làm tăng nồng độ các thuốc chẹn beta chuyển hoá ở gan, nguy cơ tụt huyết áp và nhịp tim chậm.",
+      "xu_ly": "Điều chỉnh liều thuốc chẹn beta lúc bắt đầu, trong và sau khi điều trị bằng cimetidin."
+    },
+    {
+      "thuoc": [
+        "Diltiazem", "Nifedipin", "Felodipin", "Lacidipin", "Nimodipin", "Nisoldipin", "Nitrendipin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin ức chế chuyển hoá một số thuốc chẹn calci, tăng nồng độ huyết thanh.",
+      "xu_ly": "Giảm liều diltiazem 30-50%, nifedipin khoảng 4% khi phối hợp."
+    },
+    {
+      "thuoc": [
+        "Itraconazol", "Ketoconazol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin làm giảm hấp thu itraconazol và ketoconazol.",
+      "xu_ly": "Uống thuốc chống nấm azol và cimetidin cách nhau ít nhất 2-3 giờ."
+    },
+    {
+      "thuoc": ["Terbinafin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ huyết thanh của terbinafin.",
+      "xu_ly": "Theo dõi kết quả lâm sàng của terbinafin."
+    },
+    {
+      "thuoc": [
+        "Amitriptylin", "Desipramin", "Doxepin", "Imipramin", "Nortriptylin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin ức chế chuyển hoá các thuốc chống trầm cảm ba vòng, nguy cơ quá liều.",
+      "xu_ly": "Điều chỉnh liều thuốc chống trầm cảm (giảm 33-50%) khi bắt đầu, trong và sau khi điều trị bằng cimetidin."
+    },
+    {
+      "thuoc": [
+        "Nhôm hydroxyd", "Magnesi hydroxyd", "Than hoạt"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Thuốc kháng acid làm giảm hấp thu cimetidin qua đường tiêu hoá.",
+      "xu_ly": "Uống hai thuốc cách nhau ít nhất từ 1 đến 2 giờ."
+    },
+    {
+      "thuoc": [
+        "Acenocoumarol", "Phenindion", "Warfarin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ giảm thrombin huyết do ức chế dị hoá thuốc ở gan.",
+      "xu_ly": "Điều chỉnh liều thuốc chống đông tuỳ theo kết quả INR hoặc tỷ lệ prothrombin."
+    },
+    {
+      "thuoc": ["Metformin"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin làm tăng nồng độ metformin trong huyết thanh.",
+      "xu_ly": "Có thể phải giảm liều metformin khi dùng cùng cimetidin, chú ý nguy cơ nhiễm acid lactic."
+    },
+    {
+      "thuoc": ["Sulfonylurea"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin làm tăng tác dụng hạ glucose máu của sulfonylurea.",
+      "xu_ly": "Cảnh báo người bệnh về nguy cơ hạ glucose máu khi bắt đầu dùng cimetidin."
+    },
+    {
+      "thuoc": ["Zalcitabin"],
+      "muc_do": 2,
+      "phan_tich": "Giảm độ thanh lọc qua thận của zalcitabin, tăng độc tính.",
+      "xu_ly": "Thay cimetidin bằng sucralfat hoặc uống hai thuốc cách nhau 2 giờ."
+    },
+    {
+      "thuoc": ["Carmustin"],
+      "muc_do": 1,
+      "phan_tich": "Cimetidin làm tăng tác dụng ức chế tuỷ xương của carmustin.",
+      "xu_ly": "Điều chỉnh liều carmustin hoặc thay thuốc chống loét dạ dày."
+    },
+    {
+      "thuoc": [
+        "Levothyroxin", "Liothyronin", "Thyroxin"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Giảm hấp thu hormon giáp (khi uống).",
+      "xu_ly": "Theo dõi kết quả điều trị khi phối hợp, tăng liều hormon giáp nếu cần."
+    },
+    {
+      "thuoc": ["Mefloquin"],
+      "muc_do": 1,
+      "phan_tich": "Giảm đào thải mefloquin do cimetidin.",
+      "xu_ly": "Cảnh giác với biểu hiện tăng tác dụng không mong muốn của mefloquin."
+    },
+    {
+      "thuoc": ["Metronidazol"],
+      "muc_do": 1,
+      "phan_tich": "Tăng nồng độ metronidazol trong huyết thanh.",
+      "xu_ly": "Tác dụng yếu, chưa có báo cáo về nhiễm độc."
+    },
+    {
+      "thuoc": ["Praziquantel"],
+      "muc_do": 1,
+      "phan_tich": "Tăng nồng độ huyết thanh của praziquantel.",
+      "xu_ly": "Có thể rút ngắn thời gian điều trị bệnh ấu trùng sán lợn thần kinh."
+    },
+    {
+      "thuoc": ["Quinin"],
+      "muc_do": 1,
+      "phan_tich": "Cimetidin làm giảm đào thải quinin ra khỏi cơ thể.",
+      "xu_ly": "Cảnh giác với biểu hiện nhiễm độc quinin khi phối hợp."
+    },
+    {
+      "thuoc": ["Sertralin"],
+      "muc_do": 1,
+      "phan_tich": "Tăng nồng độ sertralin, nguy cơ tăng tác dụng phụ.",
+      "xu_ly": "Giám sát tác dụng phụ, giảm liều sertralin hoặc thay cimetidin nếu cần."
+    },
+    {
+      "thuoc": ["Tacrin"],
+      "muc_do": 1,
+      "phan_tich": "Tăng nồng độ tacrin trong huyết tương.",
+      "xu_ly": "Nên chọn một kháng H2 khác."
+    }
+  ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ];
