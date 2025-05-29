@@ -8971,7 +8971,6 @@ window.tuongTacData = [
     }
   }
 },
- },
 {
   "ten_nhom": "FIBRAT",
   "mo_ta": "Thuốc chống rối loạn lipid máu",
