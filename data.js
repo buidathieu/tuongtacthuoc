@@ -8280,7 +8280,87 @@ window.tuongTacData = [
       "xu_ly": "Tránh phối hợp. Nếu cần phối hợp, phải theo dõi chặt chẽ các dấu hiệu thiếu máu mô."
     }
   ]
+},
+ {
+  "hoat_chat": "Ergotamin hoặc dẫn chất",
+  "mo_ta": "Alcaloid nấm cựa gà dùng với tính chất trợ đẻ hoặc vận mạch và kháng serotonin (dihydroergotamin)",
+  "cac_thuoc_trong_nhom": [
+    "Ergotamin",
+    "Dihydroergotamin",
+    "Dihydroergocornin",
+    "Dihydroergocristin",
+    "Dihydroergotoxin",
+    "Diergo-Spray",
+    "Ikaran",
+    "Seglor lyoc",
+    "Tamik",
+    "Brekiya",
+    "Atzumi"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": "mức độ 3",
+    "mang_thai": "Ergotamin làm tăng trương lực cơ tử cung, tăng tần số co và rút ngắn giai đoạn duỗi cơ. Dihydroergotamin làm tăng trương lực cơ tử cung yếu hơn rõ rệt. Khả năng trợ đẻ được sử dụng trong kiểm soát chảy máu sau đẻ.",
+    "cho_con_bu": "Ergotamin làm giảm tiết sữa bằng cách ức chế tiết prolactin, và qua được sữa mẹ kèm theo nguy cơ ngộ độc (tiêu chảy, nôn, rối loạn huyết áp) cho trẻ đang bú.",
+    "tre_em": "Cần tránh dùng ergotamin cho trẻ em do có độc tính với tim mạch.",
+    "suy_mach_vanh": "Tăng huyết áp tĩnh mạch do ergotamin làm tăng nhu cầu chuyển hoá của cơ tim, có nguy cơ dẫn đến cơn đau thắt ngực trong trường hợp có bẩm chất dễ mắc.",
+    "suy_gan": "Mặc dầu chuyển hoá của ergotamin còn chưa rõ, người ta biết rằng suy gan làm tăng độc tính và nguy cơ ngộ độc ergotin cấp (thiếu máu cục bộ động mạch liên quan đến tác dụng co mạch ngoại vi). Dihydroergotamin ít co mạch hơn, nên nguy cơ thấp hơn.",
+    "tang_huyet_ap": "Ergotamin làm tăng huyết áp do tác dụng co mạch trực tiếp, mặc dầu lưu lượng tim giảm.",
+    "suy_than": "Do chậm đào thải, suy thận tạo thuận lợi cho nguy cơ thiếu máu cục bộ động mạch.",
+    "cuong_giap": "Trường hợp cường giáp, tác dụng của ergotamin kéo dài và khuếch đại.",
+    "can_theo_doi": "Theo dõi lâm sàng sát khi phối hợp với thuốc chẹn beta, hỏi người bệnh về tuần hoàn ngoại vi."
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Erythromycin", "Clarithromycin", "Azithromycin", "Telithromycin", "Josamycin", "Roxithromycin", "Troleandomycin", "Dirithromycin", "Spiramycin"],
+      "muc_do": 4,
+      "phan_tich": "Nguy cơ tai biến thiếu máu cục bộ nặng các đầu chi, có thể dẫn đến hoại tử, do ức chế chuyển hoá ergotamin ở gan (hiện nay chưa được mô tả với spiramycin)",
+      "xu_ly": "Bắt buộc phải hết sức thận trọng, vì thông báo chính thức áp dụng cho mọi thuốc macrolid, người kê đơn phải tránh những phối hợp này. Chống chỉ định phối hợp với tất cả các macrolid, trừ spiramycin."
+    },
+    {
+      "thuoc": ["Sumatriptan", "Zolmitriptan", "Rizatriptan", "Eletriptan", "Almotriptan", "Frovatriptan", "Naratriptan"],
+      "muc_do": 4,
+      "phan_tich": "Hai thuốc này có thể được kê đơn riêng rẽ trong bối cảnh migren khó chữa. Người bị migren cũng có thể không biết nên đã trộn lẫn hai thuốc. Đó là tương tác dược lực vì phối hợp hai thuốc co mạch, nhất là khi dùng sumatriptan dạng tiêm.",
+      "xu_ly": "Phối hợp này chống chỉ định vì nguy cơ xuất hiện co mạch vành và / hoặc phổi. Thay đổi cách điều trị. Thông báo cho người bệnh migren không phối hợp hai thuốc (dihydroergotamin có thể có trong tủ thuốc gia đình)."
+    },
+    {
+      "thuoc": ["Amprenavir", "Indinavir", "Ritonavir", "Saquinavir", "Nelfinavir", "Lopinavir", "Atazanavir", "Darunavir", "Fosamprenavir", "Tipranavir"],
+      "muc_do": 4,
+      "phan_tich": "Có thể tăng nguy cơ nhiễm độc nấm cựa gà (như co mạch ngoại biên, thiếu máu cục bộ đầu chi). Tương tác xảy ra chậm. Cơ chế: do thuốc ức chế protease có thể cản trở chuyển hoá ergotamin ở gan (CYP3A4).",
+      "xu_ly": "Chống chỉ định phối hợp thuốc ức chế protease với alkaloid nấm cựa gà."
+    },
+    {
+      "thuoc": ["Delavirdine", "Efavirenz", "Etravirine", "Nevirapine", "Rilpivirine"],
+      "muc_do": 4,
+      "phan_tich": "Có thể tăng nguy cơ nhiễm độc nấm cựa gà (như co mạch ngoại biên, thiếu máu cục bộ đầu chi). Tương tác xảy ra chậm. Cơ chế do thuốc ức chế NNRT có thể ức chế chuyển hoá ergotamin ở gan (CYP3A4).",
+      "xu_ly": "Chống chỉ định phối hợp hai thuốc."
+    },
+    {
+      "thuoc": ["Bromocriptin", "Cabergolin", "Pergolid", "Quinagolid", "Ropinirol", "Pramipexol"],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp các thuốc co mạch, nguy cơ có đợt kịch phát tăng huyết áp với các alcaloid nấm cựa gà có tính chất co mạch.",
+      "xu_ly": "Cần tránh phối hợp. Thay đổi cách điều trị."
+    },
+    {
+      "thuoc": ["Amyl nitrit", "Nitroglycerin", "Isosorbide mononitrate", "Isosorbide dinitrate"],
+      "muc_do": 3,
+      "phan_tich": "Sinh khả dụng của dihydroergotamin dạng uống có thể tăng, làm tăng huyết áp tâm thu trung bình thế đứng. Tính đối kháng về tác dụng giữa dihydroergotamin và nitroglycerin có thể làm giảm tác dụng chống đau thắt ngực. Cơ chế: Nitroglycerin do thông qua làm tăng lưu lượng máu nội tạng, nên làm giảm chuyển hoá bước đầu của dihydroergotamin, do đó làm tăng sinh khả dụng dihydroergotamin chống lại giãn mạch của động mạch vành.",
+      "xu_ly": "Nồng độ trong huyết tương của dihydroergotamin tăng, nên có thể gây nhiễm độc nấm cựa gà. Liều lượng dihydroergotamin có thể phải giảm. Theo dõi người bệnh và khuyên người bệnh chú ý phát hiện những dấu hiệu thiếu máu cục bộ ngoại biên."
+    },
+    {
+      "thuoc": ["Ephedrin", "Adrenalin", "Dopamin", "Noradrenalin", "Isoprenalin"],
+      "muc_do": 3,
+      "phan_tich": "Với ephedrin, adrenalin và dopamin, nguy cơ thiếu máu cục bộ ngoại vi, hoại thư và cả tăng huyết áp nặng (một số hiếm trường hợp tai biến mạch máu não đã được mô tả) khi chúng được phối hợp với ergotamin, dihydroergotamin, methysergid.",
+      "xu_ly": "Tránh phối hợp này vì các hậu quả nghiêm trọng có thể xảy ra."
+    },
+    {
+      "thuoc": ["Propranolol", "Metoprolol", "Atenolol", "Bisoprolol", "Carvedilol", "Nebivolol", "Sotalol"],
+      "muc_do": 2,
+      "phan_tich": "Đó là các thuốc chẹn beta; gặp phối hợp này trong những trường hợp migren khó chữa. Có thông báo về một số hiếm trường hợp thiếu máu cục bộ ngoại vi nặng kèm với hoại thư, phải cắt cụt. Phải theo dõi rất cẩn thận các phối hợp với propranolol, oxprenolol. Methylsergid cũng có thể có liên quan.",
+      "xu_ly": "Có thể phối hợp được, nhưng cần theo dõi lâm sàng, nhất là khi bắt đầu và trong những tuần đầu điều trị. Ngừng điều trị ngay tức khắc nếu thấy có dấu hiệu báo động. Hỏi người bệnh thường xuyên về những cảm giác tuần hoàn kém ở các đầu chi, nếu có."
+    }
+  ]
 }
+
 
 
     
