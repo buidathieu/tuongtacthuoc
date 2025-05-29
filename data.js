@@ -8282,7 +8282,7 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "Ergotamin hoặc dẫn chất",
+  "hoat_chat": "Ergotamin hoặc dẫn chất",
   "mo_ta": "Alcaloid nấm cựa gà dùng với tính chất trợ đẻ hoặc vận mạch và kháng serotonin (dihydroergotamin)",
   "cac_thuoc_trong_nhom": [
     "Ergotamin",
@@ -8361,7 +8361,7 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "Estrogen hoặc thuốc ngừa thai estroprogestogen",
+  "hoat_chat": "Estrogen hoặc thuốc ngừa thai estroprogestogen",
   "mo_ta": "Trong nhóm này có những thuốc ngừa thai estroprogestogen và các thuốc chứa estrogen liều cao hơn.",
   "cac_thuoc_trong_nhom": [
     "Estradiol",
@@ -8581,9 +8581,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "ETHAMBUTOL",
+  "hoat_chat": "ETHAMBUTOL",
   "mo_ta": "Thuốc chống lao",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "ETHAMBUTOL",
     "Combutol",
     "Dexambutol",
@@ -8626,9 +8626,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "ETHOSUXIMID",
+  "hoat_chat": "ETHOSUXIMID",
   "mo_ta": "Thuốc dùng chủ yếu để kiểm soát cơn động kinh nhỏ",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "ETHOSUXIMID",
     "Zarontin"
   ],
@@ -8804,9 +8804,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "ETRETINAT (dẫn chất)",
+  "hoat_chat": "ETRETINAT (dẫn chất)",
   "mo_ta": "Dẫn chất của vitamin A, dùng trong một vài bệnh da (bệnh vảy nến và trứng cá nặng) để tróc lớp sừng da.",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "ACITRETIN",
     "Soriatane",
     "ISOTRETINOIN",
@@ -8886,9 +8886,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "EUCALYPTOL",
+  "hoat_chat": "EUCALYPTOL",
   "mo_ta": "Thuốc (làm mất sung huyết) đường thông khí trên, chiết từ Eucalyptus",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "EUCALYPTOL",
     "Bạch hổ hoạt lạc",
     "Cao Ông thọ",
@@ -8948,9 +8948,9 @@ window.tuongTacData = [
   }
 },
 {
-  "ten_nhom": "FENOVERIN",
+  "hoat_chat": "FENOVERIN",
   "mo_ta": "Phenothiazin có tác dụng làm giảm co cứng nhu động trên hệ cơ trơn ống tiêu hoá, đường dẫn mật và cơ tử cung",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FENOVERIN",
     "Spasmopriv",
     "MEBEVERIN",
@@ -8972,9 +8972,9 @@ window.tuongTacData = [
   }
 },
 {
-  "ten_nhom": "FIBRAT",
+  "hoat_chat": "FIBRAT",
   "mo_ta": "Thuốc chống rối loạn lipid máu",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "BENZAFIBRAT",
     "Befizal",
     "CIPROFIBRAT",
@@ -9076,9 +9076,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "FINASTERID",
+  "hoat_chat": "FINASTERID",
   "mo_ta": "Thuốc chống phì đại lành tính tuyến tiền liệt, do ức chế 5 - alpha reductase",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FINASTERID",
     "Finast",
     "Proscar"
@@ -9094,9 +9094,9 @@ window.tuongTacData = [
   }
 },
 {
-  "ten_nhom": "FLAVOXAT",
+  "hoat_chat": "FLAVOXAT",
   "mo_ta": "Thuốc chống đau co thắt đường tiết niệu",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FLAVOXAT",
     "Urim",
     "Flavoxat viên nén 100 mg"
@@ -9110,9 +9110,9 @@ window.tuongTacData = [
   }
 },
 {
-  "ten_nhom": "FLECAINID HOẶC THUỐC TƯƠNG TỰ",
+  "hoat_chat": "FLECAINID HOẶC THUỐC TƯƠNG TỰ",
   "mo_ta": "Thuốc chống loạn nhịp thuộc nhóm 1C của Vaughan-Williams. Như tất cả các thuốc chống loạn nhịp nhóm 1, những thuốc này tác dụng bằng cách ổn định màng; ngoài ra chúng làm giảm dẫn truyền ở mọi khâu (nhĩ, bộ nối và thất) mà không biến đổi thời gian điện thế hoạt động",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "CIBENZOLIN",
     "Cipralan",
     "APRINDIN",
@@ -9235,9 +9235,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "FLOCTAFENIN",
+  "hoat_chat": "FLOCTAFENIN",
   "mo_ta": "Thuốc giảm đau ngoại vi, dẫn chất của acid anthranilic",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FLOCTAFENIN",
     "Idarac"
   ],
@@ -9279,9 +9279,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "FLUCYTOSIN",
+  "hoat_chat": "FLUCYTOSIN",
   "mo_ta": "Thuốc chống nấm phổ hẹp [Candida, Cryptococcus, các tác nhân gây bệnh nấm màu (chromomycose) và Aspergillus ở mức độ thấp hơn]",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FLUCYTOSIN",
     "Ancotil"
   ],
@@ -9309,9 +9309,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "FLUMAZENIL",
+  "hoat_chat": "FLUMAZENIL",
   "mo_ta": "Imidazobenzodiazepin là chất đối kháng benzodiazepin, do ức chế cạnh tranh ở thụ thể",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "IMIDAZOBENZODIAZEPIN",
     "Anexat"
   ],
@@ -9344,9 +9344,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "FLUOR (Dẫn chất)",
+  "hoat_chat": "FLUOR (Dẫn chất)",
   "mo_ta": "Nguyên tố kích thích tạo xương và tạo thuận lợi cho giữ calci trong xương",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "CALCI FLUORID",
     "Fluorure calcium",
     "MONOFLUOROPHOSPHAT DISODIC",
@@ -9378,9 +9378,9 @@ window.tuongTacData = [
   }
 },
 {
-  "ten_nhom": "FLUORO-5-URACIL",
+  "hoat_chat": "FLUORO-5-URACIL",
   "mo_ta": "Thuốc kìm tế bào, kháng pyrimidin",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FLUORO-5-URACIL",
     "Fluorouracil"
   ],
@@ -9574,9 +9574,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "FLUOXETIN",
+  "hoat_chat": "FLUOXETIN",
   "mo_ta": "Thuốc chống trầm cảm, thuộc nhóm các chất ức chế tái nhập serotonin",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FLUOXETIN",
     "Prozac"
   ],
@@ -9841,9 +9841,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "FLUVOXAMIN",
+  "hoat_chat": "FLUVOXAMIN",
   "mo_ta": "Thuốc chống trầm cảm, thuộc nhóm các chất ức chế tái thu nhập serotonin",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FLUVOXAMIN",
     "Floxyfral"
   ],
@@ -10031,9 +10031,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "FOSCARNET",
+  "hoat_chat": "FOSCARNET",
   "mo_ta": "Thuốc kìm virus phổ rộng, có tác dụng chọn lọc chống các virus nhóm herpes (virus Herpes typ I và II, virus varicella zona, Epstein Barr và cytomegalovirus)",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FOSCARNET",
     "Foscavir"
   ],
@@ -10149,9 +10149,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "FOSFOMYCIN",
+  "hoat_chat": "FOSFOMYCIN",
   "mo_ta": "Kháng sinh diệt khuẩn tác dụng chủ yếu với Staphylococcus, Pneumococcus, Meningococcus, và vi khuẩn đường ruột",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FOSFOMYCIN",
     "Fosfocina",
     "Monurol"
@@ -10169,9 +10169,9 @@ window.tuongTacData = [
   }
 },
  {
-  "ten_nhom": "FUROSEMID HOẶC THUỐC TƯƠNG TỰ",
+  "hoat_chat": "FUROSEMID HOẶC THUỐC TƯƠNG TỰ",
   "mo_ta": "Sulfamid lợi niệu thải kali, tác dụng ở quai Henlé",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "BUMETANID",
     "Burinex",
     "FUROSEMID",
@@ -10512,9 +10512,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "FUSAFUNGIN",
+  "hoat_chat": "FUSAFUNGIN",
   "mo_ta": "Thuốc kháng khuẩn có tính chất chống viêm",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "FUSAFUNGIN",
     "Locabiotal"
   ],
@@ -10526,9 +10526,9 @@ window.tuongTacData = [
   }
 },
 {
-  "ten_nhom": "GANCICLOVIR",
+  "hoat_chat": "GANCICLOVIR",
   "mo_ta": "Thuốc kìm virus, tác dụng trên Cytomegalovirus. Dành cho nhiễm virus nặng ảnh hưởng đến sự sống hoặc thị giác của người bệnh suy giảm miễn dịch",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "GANCICLOVIR",
     "Cymevan"
   ],
@@ -10628,9 +10628,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "GLUCAGON",
+  "hoat_chat": "GLUCAGON",
   "mo_ta": "Hormon tụy gây tăng glucose máu",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "Glucagon"
   ],
   "chu_y_khi_chi_dinh": {
@@ -10681,9 +10681,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "GLUCOCORTICOID",
+  "hoat_chat": "GLUCOCORTICOID",
   "mo_ta": "Thuốc chống viêm steroid, dẫn chất của các hormon vỏ thượng thận...",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "HYDROCORTISON",
     "Hydrocortison - Richter",
     "Lycortin-S",
@@ -10984,9 +10984,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "GLUTETHIMID HOẶC THUỐC TƯƠNG TỰ",
+  "hoat_chat": "GLUTETHIMID HOẶC THUỐC TƯƠNG TỰ",
   "mo_ta": "Thuốc ngủ dùng trong một số hình thái ung thư (vú) và trong chứng tăng năng vỏ thượng thận nhờ tính chất ức chế tổng hợp steroid của thuốc",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "GLUTETHIMID",
     "Rigenox"
   ],
@@ -11174,9 +11174,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "GLYCOSID TRỢ TIM",
+  "hoat_chat": "GLYCOSID TRỢ TIM",
   "mo_ta": "Thuốc trợ tim dùng trong suy tim có lưu lượng thấp và trong loạn nhịp trên thất. Thuốc có tính: tăng lực co cơ tim, làm chậm tần số tim, dẫn truyền cơ (tính dẫn) và làm tăng tính kích thích các tế bào cơ tim.",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "Digoxin",
     "Digoxine Nativelle"
   ],
@@ -11413,9 +11413,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "GRISEOFULVIN",
+  "hoat_chat": "GRISEOFULVIN",
   "mo_ta": "Kháng sinh chống nấm",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "Griseofulvin",
     "Griseofulvin kem bôi da 5%"
   ],
@@ -11536,9 +11536,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "GUANETHIDIN",
+  "hoat_chat": "GUANETHIDIN",
   "mo_ta": "Thuốc chống tăng huyết áp do làm liệt giao cảm hậu hạch",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "GUANETHIDIN",
     "Sanotensin",
     "Ismelin"
@@ -11742,9 +11742,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "HALOFANTRIN",
+  "hoat_chat": "HALOFANTRIN",
   "mo_ta": "Thuốc điều trị sốt rét, diệt thể phân liệt, đặc biệt trên các thể Plasmodium falciparum kháng chloroquin",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "HALOFANTRIN",
     "Halfan"
   ],
@@ -11817,9 +11817,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "HEPARIN HOẶC CÁC DẠNG PHÂN TỬ THẤP",
+  "hoat_chat": "HEPARIN HOẶC CÁC DẠNG PHÂN TỬ THẤP",
   "mo_ta": "Thuốc chống đông máu sinh lý. Thuốc giải độc là protamin sulfat. Các heparin phân tử lượng thấp, mặc dầu có tính chất chống đông máu thấp hơn nhiều, cũng thuộc nhóm này.",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "HEPARIN NATRI",
     "Calciparine",
     "Contratubex",
@@ -11920,9 +11920,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "HEPARIN TỔNG HỢP",
+  "hoat_chat": "HEPARIN TỔNG HỢP",
   "mo_ta": "Các dẫn chất bán tổng hợp, có các tính chất chống đông máu, tiêu fibrin",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "PENTOSAN POLYSULFAT",
     "Hemoclar",
     "Lasonil"
@@ -11935,9 +11935,9 @@ window.tuongTacData = [
   }
 },
 {
-  "ten_nhom": "HEPTAMINOL",
+  "hoat_chat": "HEPTAMINOL",
   "mo_ta": "Thuốc hồi sức tim mạch",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "HEPTAMINOL",
     "Heptamyl"
   ],
@@ -11973,9 +11973,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "HISTAMIN HOẶC DẪN CHẤT",
+  "hoat_chat": "HISTAMIN HOẶC DẪN CHẤT",
   "mo_ta": "Các thuốc có tác dụng tương tự histamin",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "BETAHISTIN",
     "Serc"
   ],
@@ -11999,9 +11999,9 @@ window.tuongTacData = [
   ]
 },
   {
-    "ten_nhom": "HORMON CHỐNG LỢI TIỂU HOẶC DẪN CHẤT",
+    "hoat_chat": "HORMON CHỐNG LỢI TIỂU HOẶC DẪN CHẤT",
     "mo_ta": "Hormon chống lợi tiểu và các dẫn chất tổng hợp",
-    "thuoc": ["LYPRESSIN", "Syntopressin", "TERLIPRESSIN", "Glypressin"],
+    "cac_thuoc_trong_nhom": ["LYPRESSIN", "Syntopressin", "TERLIPRESSIN", "Glypressin"],
     "chu_y_khi_chi_dinh": {
       "chong_chi_dinh": {
         "muc_do": 4,
@@ -12018,9 +12018,9 @@ window.tuongTacData = [
     }
   },
   {
-    "ten_nhom": "HORMON TĂNG TRƯỞNG HOẶC DẪN CHẤT",
+    "hoat_chat": "HORMON TĂNG TRƯỞNG HOẶC DẪN CHẤT",
     "mo_ta": "Hormon tăng trưởng polypeptid thu được do tái tổ hợp gen. Cấu trúc hoá học của nó giống cấu trúc của hormon tăng trưởng tự nhiên.",
-    "thuoc": ["SOMATROPIN", "Saizen 10", "Saizen 4"],
+    "cac_thuoc_trong_nhom": ["SOMATROPIN", "Saizen 10", "Saizen 4"],
     "chu_y_khi_chi_dinh": {
       "chong_chi_dinh": {
         "muc_do": 4,
@@ -12037,9 +12037,9 @@ window.tuongTacData = [
     }
   },
   {
-    "ten_nhom": "HORMON TUYẾN GIÁP",
+    "hoat_chat": "HORMON TUYẾN GIÁP",
     "mo_ta": "Các hormon tiết ra bởi tuyến giáp...",
-    "thuoc": [
+    "cac_thuoc_trong_nhom": [
       "LEVOTHYROXIN",
       "Euthyrox 50",
       "Euthyrox 100",
@@ -12137,9 +12137,9 @@ window.tuongTacData = [
     ]
   },
   {
-    "ten_nhom": "HUYẾT THANH KHÁC LOẠI ĐẶC HIỆU",
+    "hoat_chat": "HUYẾT THANH KHÁC LOẠI ĐẶC HIỆU",
     "mo_ta": "Các huyết thanh khác loại lấy từ huyết thanh ngựa đã được tăng cường miễn dịch, cho phép đạt được miễn dịch thụ động tức thì, kéo dài trong 15 đến 21 ngày đối với các nhiễm khuẩn đặc hiệu",
-    "thuoc": [
+    "cac_thuoc_trong_nhom": [
       "Huyết thanh chống bạch hầu",
       "Huyết thanh chống dại",
       "Huyết thanh chống uốn ván",
@@ -12153,9 +12153,9 @@ window.tuongTacData = [
     }
   },
   {
-    "ten_nhom": "8-HYDROXYQUINOLEIN (Dẫn chất)",
+    "hoat_chat": "8-HYDROXYQUINOLEIN (Dẫn chất)",
     "mo_ta": "Các dẫn chất của hydroxy- 8 - quinolein, ít được hấp thu, có hoạt tính trên các ấu trùng và nang sán lá. Thuốc có tác dụng kháng khuẩn đối với nhiều vi khuẩn đường ruột. Thuốc cũng được dùng tại chỗ để điều trị nhiều loại nhiễm khuẩn khác (âm đạo, da...)",
-    "thuoc": [
+    "cac_thuoc_trong_nhom": [
       "CHLORQUINALDOL",
       "Colposeptine",
       "Intetrix",
@@ -12170,9 +12170,9 @@ window.tuongTacData = [
     }
   },
   {
-    "ten_nhom": "IDOXURIDIN HOẶC THUỐC TƯƠNG TỰ",
+    "hoat_chat": "IDOXURIDIN HOẶC THUỐC TƯƠNG TỰ",
     "mo_ta": "Các thuốc kháng virus hoạt động trên các virus gây bệnh herpes, bệnh thuỷ đậu và bệnh zona, chỉ được dùng tại chỗ, do độc tính với tế bào túc chủ",
-    "thuoc": [
+    "cac_thuoc_trong_nhom": [
       "IBACITABIN",
       "Cuterpes",
       "IDOXURIDIN",
@@ -12192,9 +12192,9 @@ window.tuongTacData = [
     }
   },
  {
-  "ten_nhom": "IDROCILAMID",
+  "hoat_chat": "IDROCILAMID",
   "mo_ta": "Thuốc thư giãn cơ, dùng xoa bóp tại chỗ để điều trị co cơ đau",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "IDROCILAMID",
     "Srilane"
   ],
@@ -12214,9 +12214,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "IMMUNOGLOBULIN KHÁNG TẾ BÀO LYMPHO",
+  "hoat_chat": "IMMUNOGLOBULIN KHÁNG TẾ BÀO LYMPHO",
   "mo_ta": "Các immunoglobulin nguồn gốc động vật (thỏ, ngựa) có tính kháng tế bào lympho",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "LYMPHOGLOBULIN",
     "THYMOGLOBULIN"
   ],
@@ -12248,9 +12248,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "IMMUNOGLOBULIN NGƯỜI",
+  "hoat_chat": "IMMUNOGLOBULIN NGƯỜI",
   "mo_ta": "Các immunoglobulin người có tính đặc hiệu khi được điều chế từ máu người cho đã được tăng miễn nhiễm hoặc được tách phân đoạn từ máu người cho chuẩn; có tính đa trị khi được lấy từ các phần phân đoạn của huyết tương hay nhau thai của người cho chuẩn",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "SANDOGLOBULIN"
   ],
   "chu_y_khi_chi_dinh": {
@@ -12261,9 +12261,9 @@ window.tuongTacData = [
   }
 },
 {
-  "ten_nhom": "INDINAVIR",
+  "hoat_chat": "INDINAVIR",
   "mo_ta": "Thuốc kháng protease, dùng trong điều trị bệnh AIDS",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "INDINAVIR",
     "Crixivan"
   ],
@@ -12359,9 +12359,9 @@ window.tuongTacData = [
   ]
 },
  {
-  "ten_nhom": "INDOMETACIN HOẶC DẪN CHẤT",
+  "hoat_chat": "INDOMETACIN HOẶC DẪN CHẤT",
   "mo_ta": "Thuốc chống viêm không steroid",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "INDOMETHACIN",
     "Apo-methacin",
     "Indocid",
@@ -12567,9 +12567,9 @@ window.tuongTacData = [
   ]
 },
 {
-  "ten_nhom": "INSULIN",
+  "hoat_chat": "INSULIN",
   "mo_ta": "Hormon tụy làm hạ glucose máu",
-  "thuoc": [
+  "cac_thuoc_trong_nhom": [
     "INSULIN",
     "Actrapid HM",
     "Humulin 70/30",
