@@ -8309,7 +8309,7 @@ window.tuongTacData = [
     "cuong_giap": "Trường hợp cường giáp, tác dụng của ergotamin kéo dài và khuếch đại.",
     "can_theo_doi": "Theo dõi lâm sàng sát khi phối hợp với thuốc chẹn beta, hỏi người bệnh về tuần hoàn ngoại vi."
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Erythromycin", "Clarithromycin", "Azithromycin", "Telithromycin", "Josamycin", "Roxithromycin", "Troleandomycin", "Dirithromycin", "Spiramycin"],
       "muc_do": 4,
@@ -8421,7 +8421,7 @@ window.tuongTacData = [
       "suy_ho_hap_hen": "Vì nguy cơ huyết khối tắc mạch."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Methyldopa"],
       "muc_do": 4,
@@ -8607,7 +8607,7 @@ window.tuongTacData = [
       "Quá mẫn với thuốc."
     ]
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Aluminium hydroxide",
@@ -8644,7 +8644,7 @@ window.tuongTacData = [
       "suy_gan_suy_than": "Đã có thông báo về tổn thương gan và thận, nên cần giám sát các chức năng gan và thận khi có suy một trong hai cơ quan đó."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Rượu"],
       "muc_do": 3,
@@ -8842,7 +8842,7 @@ window.tuongTacData = [
       "tieu_duong_suy_mach_vanh": "Theo dõi cholesterol và triglycerid máu."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Levonorgestrel",
@@ -9003,7 +9003,7 @@ window.tuongTacData = [
       "tre_em": "An toàn sử dụng không được chứng minh."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Acid chenodesoxycholic",
@@ -9131,7 +9131,7 @@ window.tuongTacData = [
       "mang_thai": "Do thận trọng, đặc biệt trong ba tháng đầu"
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Sultoprid"
@@ -9256,7 +9256,7 @@ window.tuongTacData = [
       "soi_than": "Nguy cơ tinh thể niệu. Uống nhiều nước trong khi điều trị."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Sotalol"
@@ -9297,7 +9297,7 @@ window.tuongTacData = [
       "benh_ve_mau": ""
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Zidovudin"
@@ -9329,7 +9329,7 @@ window.tuongTacData = [
       "dong_kinh": "Mặc dầu flumazenil có tính chất chống co giật yếu, sử dụng thuốc này ở người bệnh điều trị bằng benzodiazepin có thể dẫn đến co giật."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Diazepam",
@@ -9387,7 +9387,7 @@ window.tuongTacData = [
   "chu_y_khi_chi_dinh": {
     "mo_ta": "Thuốc này phải do thầy thuốc chuyên khoa kê đơn. Vì vậy, các chống chỉ định phải được cân nhắc tuỳ theo tình trạng người bệnh và phải được nhà chuyên khoa đánh giá."
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Atorvastatin",
@@ -9597,7 +9597,7 @@ window.tuongTacData = [
       "suy_than": "Giảm đào thải. Điều chỉnh liều."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Phenylpropanolamin"
@@ -9864,7 +9864,7 @@ window.tuongTacData = [
       "suy_gan": "Nguy cơ tăng các enzym gan."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Procarbazin"],
       "muc_do": 4,
@@ -10050,7 +10050,7 @@ window.tuongTacData = [
       "truong_hop_khac": "Trường hợp calci máu thấp, nên theo dõi."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Gentamicin",
@@ -10196,7 +10196,7 @@ window.tuongTacData = [
       "suy_than": "Bất kỳ thuốc lợi tiểu nào đều gây suy thận chức năng, liên quan đến mất muối kèm giảm lọc cầu thận và tăng urê máu. Sự thương tổn chức năng này có thể làm nặng thêm suy thận có trước."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Cisaprid"],
       "muc_do": 4,
@@ -10553,7 +10553,7 @@ window.tuongTacData = [
       "nguoi_cao_tuoi": "Vì nguy cơ tổn hại đến chức năng thận ở người cao tuổi."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Didanosin"],
       "muc_do": 3,
@@ -10647,7 +10647,7 @@ window.tuongTacData = [
       "dai_thao_duong": "Glucagon không được dùng cho người tiểu đường, trừ khi để hạ glucose máu do insulin."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Glibenclamid", "Gliclazid", "Glimepirid"],
       "muc_do": 3,
@@ -10752,7 +10752,7 @@ window.tuongTacData = [
       "nhuoc_co": "Các corticoid, nhất là loại có fluo (triamcinolon, dexamethason) có thể gây teo cơ và các bệnh cơ, nhất là ở chi dưới, đôi khi có thể cản trở việc đi lại. Sau thời kỳ đó, có sự cải thiện nhược cơ và prednison dung nạp tốt hơn, được ưa dùng."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Sultoprid"],
       "muc_do": 3,
@@ -11001,7 +11001,7 @@ window.tuongTacData = [
       "cho_con_bu": "Thuốc qua được sữa mẹ."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": [
         "Diazepam",
@@ -11193,7 +11193,7 @@ window.tuongTacData = [
       "nguoi_cao_tuoi": "Ngộ độc digitalis thường hay gặp ở người cao tuổi. Tăng độc tính do giảm khối lượng cơ, tạo thuận lợi làm tăng nồng độ trong huyết tương, hạ kali máu (ăn uống không đủ, thuốc nhuận tràng, thuốc lợi niệu) và giảm đào thải ở thận. Cần giảm liều."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Sultoprid"],
       "muc_do": 4,
@@ -11429,7 +11429,7 @@ window.tuongTacData = [
       "noi_dung": "Thời kỳ cho con bú: Thuốc qua được sữa mẹ. Suy gan: Do nguy cơ tăng tác dụng độc với gan. Các trường hợp khác: Lưu ý ở người mẫn cảm với thuốc. Thận trọng khi dùng lần đầu tiên. Lupus ban đỏ. Quá mẫn với thuốc."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Rượu"],
       "muc_do": 3,
@@ -11564,7 +11564,7 @@ window.tuongTacData = [
       "nguoi_cao_tuoi": "Liều dùng phải tăng dần và thận trọng để tránh hạ huyết áp nặng và đột ngột."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Rượu"],
       "muc_do": 3,
@@ -11759,7 +11759,7 @@ window.tuongTacData = [
       "mang_thai": "Chống chỉ định halofantrin ở người mang thai (độc cho phôi ở động vật)."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Sultoprid"],
       "muc_do": 4,
@@ -11850,7 +11850,7 @@ window.tuongTacData = [
       "loet_da_day_ta_trang": "Loét tiến triển."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Latamoxef", "Cefoperazon", "Cefamandol", "Cefmenoxim", "Cefotetan"],
       "muc_do": 3,
@@ -11951,7 +11951,7 @@ window.tuongTacData = [
       "noi_dung": "Đái tháo đường/suy mạch vành: Do các tính chất cường thần kinh giao cảm. Động kinh: Không sử dụng cho người bệnh động kinh. Thời kỳ mang thai: Vì thận trọng, do các tác dụng cường thần kinh giao cảm."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Bromocriptin"],
       "muc_do": 3,
@@ -11989,7 +11989,7 @@ window.tuongTacData = [
       "noi_dung": "Suy hô hấp; hen: Do các tác dụng tương tự histamin, các thuốc này phải dùng thận trọng cho người bệnh hen."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Cetirizin", "Loratadin", "Diphenhydramin", "Chlorpheniramin", "Promethazin"],
       "muc_do": 2,
@@ -12067,7 +12067,7 @@ window.tuongTacData = [
         "noi_dung": "Đái tháo đường: Các hormon tuyến giáp là chất gây tăng glucose máu và việc dùng các hormon này ở người bệnh tiểu đường làm tăng nhu cầu insulin hoặc thuốc hạ glucose máu uống. Tăng huyết áp: Liều dùng phải rất tuần tự vì độc tính với tim mạch."
       }
     },
-    "tuong_tac_thuoc": [
+    "tuong_tac": [
       {
         "thuoc": ["Estrogen"],
         "muc_do": 3,
@@ -12204,7 +12204,7 @@ window.tuongTacData = [
       "noi_dung": "Loét dạ dày, tá tràng; viêm dạ dày: Do các tác dụng không mong muốn của thuốc."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Cafein"],
       "muc_do": 4,
@@ -12226,7 +12226,7 @@ window.tuongTacData = [
       "noi_dung": "Các trường hợp: Quá mẫn với thuốc, nhiễm virus tiến triển hay nhiễm nặng một chủng ký sinh nội tế bào."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Vaccin sống giảm độc lực"],
       "muc_do": 3,
@@ -12277,7 +12277,7 @@ window.tuongTacData = [
       "noi_dung": "Suy gan: Tránh dùng hoặc giảm liều trong trường hợp suy gan nặng."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Midazolam", "Triazolam", "Alprazolam"],
       "muc_do": 4,
@@ -12389,7 +12389,7 @@ window.tuongTacData = [
       "nguoi_cao_tuoi": "Tuổi tác có thể làm tăng nguy cơ xảy ra các tác dụng không mong muốn của indometacin và các dẫn chất, vì vậy phải thận trọng khi dùng cho người cao tuổi."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Methotrexat"],
       "muc_do": 4,
@@ -12589,7 +12589,7 @@ window.tuongTacData = [
       "an_uong_ruou": "Rượu phong bế tân tạo glucose ở gan, làm giảm glucose máu, làm tăng tác dụng của insulin, với nguy cơ hôn mê do hạ glucose máu bao giờ cũng nặng. Người tiểu đường phải biết những dấu hiệu báo trước hạ glucose máu: đói cồn cào, yếu cơ, mỏi mệt, tái nhợt, vã mồ hôi."
     }
   },
-  "tuong_tac_thuoc": [
+  "tuong_tac": [
     {
       "thuoc": ["Danazol"],
       "muc_do": 3,
