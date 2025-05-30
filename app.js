@@ -5,9 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const data = window.tuongTacData;
     const allDrugs = new Set();
 
-    // Tạo danh sách tất cả hoạt chất và thuốc tương tác (hỗ trợ mảng)
+    // Tạo danh sách tất cả hoạt chất và thuốc tương tác (hỗ trợ mảng hoặc chuỗi)
     data.forEach(item => {
-        allDrugs.add(item.hoat_chat);
+        if (Array.isArray(item.hoat_chat)) {
+            item.hoat_chat.forEach(hc => allDrugs.add(hc));
+        } else {
+            allDrugs.add(item.hoat_chat);
+        }
         item.tuong_tac.forEach(t => {
             if (Array.isArray(t.thuoc)) {
                 t.thuoc.forEach(th => allDrugs.add(th));
@@ -24,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const selectedCount = document.getElementById('selected-count');
     const selectedDrugs = new Set();
 
-    // Autocomplete & chọn hoạt chất (giữ nguyên)
+    // Autocomplete & chọn hoạt chất
     input.addEventListener('input', debounce(function(e) {
         const query = e.target.value.trim().toLowerCase();
         suggestions.innerHTML = '';
@@ -59,14 +63,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }, 250));
 
-    // Ẩn gợi ý khi click ngoài (giữ nguyên)
+    // Ẩn gợi ý khi click ngoài
     document.addEventListener("click", (e) => {
         if (!e.target.closest(".search-container")) {
             suggestions.style.display = "none";
         }
     });
 
-    // Xử lý Enter để thêm hoạt chất (giữ nguyên)
+    // Xử lý Enter để thêm hoạt chất
     input.addEventListener('keydown', function(e) {
         if (e.key === 'Enter') {
             const value = input.value.trim();
@@ -80,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Hiển thị danh sách đã chọn (giữ nguyên)
+    // Hiển thị danh sách đã chọn
     function updateSelectedDrugs() {
         selectedContainer.innerHTML = '';
         let index = 1;
@@ -115,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Tìm tương tác giữa các cặp hoạt chất (đã cập nhật)
+    // Tìm tương tác giữa các cặp hoạt chất (hỗ trợ hoat_chat là mảng hoặc chuỗi)
     function findInteractions() {
         results.innerHTML = '';
         if (selectedDrugs.size < 2) return;
@@ -125,34 +129,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
         drugsArray.forEach((drug1, i) => {
             drugsArray.slice(i + 1).forEach(drug2 => {
-                // Tìm tương tác drug1 -> drug2
                 data.forEach(item => {
-                    if (item.hoat_chat === drug1) {
+                    // Kiểm tra hoat_chat có thể là mảng hoặc chuỗi
+                    const isHoatChatMatch1 = Array.isArray(item.hoat_chat)
+                        ? item.hoat_chat.includes(drug1)
+                        : item.hoat_chat === drug1;
+                    if (isHoatChatMatch1) {
                         item.tuong_tac.forEach(t => {
-                            const isMatch = Array.isArray(t.thuoc) 
-                                ? t.thuoc.includes(drug2) 
+                            const isThuocMatch = Array.isArray(t.thuoc)
+                                ? t.thuoc.includes(drug2)
                                 : t.thuoc === drug2;
-                            
-                            if (isMatch) {
+                            if (isThuocMatch) {
                                 foundInteractions.push({
                                     hoatChat: drug1,
-                                    interaction: { ...t, thuoc: drug2 } // Chuẩn hoá hiển thị
+                                    interaction: { ...t, thuoc: drug2 }
                                 });
                             }
                         });
                     }
 
-                    // Tìm tương tác drug2 -> drug1
-                    if (item.hoat_chat === drug2) {
+                    // Kiểm tra chiều ngược lại
+                    const isHoatChatMatch2 = Array.isArray(item.hoat_chat)
+                        ? item.hoat_chat.includes(drug2)
+                        : item.hoat_chat === drug2;
+                    if (isHoatChatMatch2) {
                         item.tuong_tac.forEach(t => {
-                            const isMatch = Array.isArray(t.thuoc) 
-                                ? t.thuoc.includes(drug1) 
+                            const isThuocMatch = Array.isArray(t.thuoc)
+                                ? t.thuoc.includes(drug1)
                                 : t.thuoc === drug1;
-                            
-                            if (isMatch) {
+                            if (isThuocMatch) {
                                 foundInteractions.push({
                                     hoatChat: drug2,
-                                    interaction: { ...t, thuoc: drug1 } // Chuẩn hoá hiển thị
+                                    interaction: { ...t, thuoc: drug1 }
                                 });
                             }
                         });
@@ -171,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Tạo thẻ kết quả (giữ nguyên)
+    // Tạo thẻ kết quả
     function createResultCard(hoatChat, interaction) {
         const card = document.createElement('div');
         card.className = `result-card mucdo-${interaction.muc_do}`;
@@ -198,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return levels[mucdo] || 'Không xác định';
     }
 
-    // Hàm debounce (giữ nguyên)
+    // Hàm debounce
     function debounce(func, timeout = 300) {
         let timer;
         return (...args) => {
