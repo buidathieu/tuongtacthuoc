@@ -8359,6 +8359,226 @@ window.tuongTacData = [
       "xu_ly": "Có thể phối hợp được, nhưng cần theo dõi lâm sàng, nhất là khi bắt đầu và trong những tuần đầu điều trị. Ngừng điều trị ngay tức khắc nếu thấy có dấu hiệu báo động. Hỏi người bệnh thường xuyên về những cảm giác tuần hoàn kém ở các đầu chi, nếu có."
     }
   ]
+},
+ {
+  "hoat_chat": "Estrogen hoặc thuốc ngừa thai estroprogestogen",
+  "mo_ta": "Trong nhóm này có những thuốc ngừa thai estroprogestogen và các thuốc chứa estrogen liều cao hơn.",
+  "cac_thuoc_trong_nhom": [
+    "Estradiol",
+    "Benzo-estradiol",
+    "Benzo-Gynoestryl",
+    "Estreva",
+    "Estraderm TTS 100",
+    "Estraderm TTS 25",
+    "Estraderm TTS 50",
+    "Vagifem",
+    "Ethinylestradiol",
+    "Ethinyl-Oestradiol",
+    "Mikrofollin forte",
+    "Estriol",
+    "Ovestin",
+    "EstroGel liên hợp",
+    "Plentiva",
+    "Plentiva Cycle",
+    "Prempak",
+    "Prempak-C",
+    "Hydroxyestron",
+    "Colpormon",
+    "Promestrien",
+    "Colposeptine",
+    "Colpotrophine",
+    "Diane-35",
+    "Evra",
+    "Gynera",
+    "Marvelon",
+    "Mercilon",
+    "New-choice",
+    "Novynette",
+    "Regulon",
+    "Rigevidon",
+    "Trigegol"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "cho_con_bu": "Estrogen qua được sữa mẹ có thể gây chứng to vú (có hồi phục) ở trẻ trai đang bú sữa mẹ. Ngoài ra chúng làm giảm tiết sữa. Chống chỉ định dùng trong thời kỳ cho con bú.",
+      "mang_thai": "Ít tác dụng trên sự phát triển trước khi sinh. Một vài trường hợp dị tật tim và chân tay, đã được thông báo sau khi dùng liều cao trong hai tháng đầu, vì vậy tránh dùng estrogen trong thời kỳ này. Dùng diethylstilboestrol nguy hiểm (nguy cơ ung thư tuyến, cổ tử cung và âm đạo)",
+      "tang_huyet_ap": "Các oestrogen gây giữ muối và nước nên có thể làm tăng huyết áp động mạch nặng thêm.",
+      "suy_mach_vanh": "Các oestrogen có thể làm tăng nguy cơ huyết khối tắc mạch, tai biến mạch máu não và nhồi máu cơ tim do tăng lipid máu, thay đổi chuyển hoá glucid và nhiều yếu tố đông máu.",
+      "suy_gan": "Có thể biến đổi một số chức năng gan. Chậm đào thải bilirubin ở tế bào gan do ức chế cạnh tranh kèm với nguy cơ vàng da. U tuyến gan đã được mô tả ở phụ nữ uống thuốc ngừa thai.",
+      "suy_than": "Lưu ý đến các tác dụng không mong muốn (giữ muối và nước).",
+      "loan_chuyen_hoa_porphyrin": "Các estrogen gây tăng tổng hợp porphyrin ở gan do cảm ứng ALA-synthetase. Chúng có thể gây cơn loạn chuyển hoá porphyrin cấp.",
+      "truong_hop_khac": "Chống chỉ định dùng các estroprogestogen trong những trường hợp u ác tính tuyến vú, tử cung và u tuyến yên, do có thể làm nặng thêm những bệnh này. Chống chỉ định tương đối trong tăng lipid máu. Có bệnh hoặc tiền sử huyết khối tắc mạch, bệnh van tim, rối loạn nhịp tim gây huyết khối, bệnh não nguồn gốc mạch máu, bệnh mắt nguồn gốc mạch máu, chảy máu phụ khoa nguồn gốc không rõ, tăng prolactin máu, tiết nhiều sữa, xơ cứng tai, viêm mô liên kết."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "tieu_duong": "Các estrogen tự nhiên (estradiol, estron) làm giảm glucose máu, còn các estrogen tổng hợp (diethylstilboestrol, ethinylestradiol) có tác dụng gây tiểu đường. Tác dụng này phụ thuộc liều dùng.",
+      "truong_hop_khac": "Tăng lipid máu, béo phì, u tuyến vú lành tính, loạn dưỡng tử cung, lạc màng trong tử cung, tiền sử sỏi không mổ."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "tram_cam": "Suy nhược và khuynh hướng trầm cảm.",
+      "suy_ho_hap_hen": "Vì nguy cơ huyết khối tắc mạch."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Methyldopa"],
+      "muc_do": 4,
+      "phan_tich": "Tăng huyết áp do uống thuốc ngừa thai gây ra thường kháng với điều trị bằng methyldopa. Cơ chế chưa rõ.",
+      "xu_ly": "Trong trường hợp này khống chế huyết áp rất khó, thậm chí không thể được. Thay đổi cách điều trị."
+    },
+    {
+      "thuoc": ["Acid chenodesoxycholic", "Acid ursodeoxycholic"],
+      "muc_do": 3,
+      "phan_tich": "Acid ursochenodesoxycholic góp phần làm tăng tỷ số acid mật/ cholesterol. Bằng cách lập lại cân bằng những thành phần của mật, thuốc có thể góp phần thoái triển sỏi mật chứa cholesterol. Bằng cách phức hợp acid ursodesoxycholic (cholestyramin và kháng acid) hoặc bằng cách làm tăng độ bão hoà của mật (estrogen, progestogen, fibrat, neomycin uống), có sự giảm tác dụng của acid ursodesoxycholic.",
+      "xu_ly": "điều trị bằng acid ursodesoxycholic phải lâu dài (từ 6 tháng đến 1 năm). Nên tránh thất bại điều trị và không phối hợp với các thuốc làm giảm hiệu quả của acid chenodesoxycholic, trừ khi chỉ điều trị đồng thời trong thời gian rất ngắn."
+    },
+    {
+      "thuoc": ["Phenobarbital", "Thiopental", "Pentobarbital", "Secobarbital", "Carbamazepin", "Gluthetimid", "Griseofulvin", "Phenytoin", "Primidon", "Rifabutin"],
+      "muc_do": 3,
+      "phan_tich": "Tăng chuyển hoá các estroprogestogen ở gan, do cảm ứng enzym, do đó có nguy cơ thụ thai.",
+      "xu_ly": "Tránh dùng các thuốc ngừa thai liều thấp và nên dùng các thuốc ngừa thai liều cao hoặc khuyên dùng phương pháp ngừa thai khác, nếu điều trị bằng barbituric kéo dài. Cần nhớ cảm ứng enzym không bao giờ là một hiện tượng tức thời."
+    },
+    {
+      "thuoc": ["Bromocriptin", "Cabergolin", "Pergolid", "Quinagolid", "Ropinirol", "Pramipexol"],
+      "muc_do": 3,
+      "phan_tich": "Bromocriptin là chất chủ vận dopaminergic, ức chế prolactin. Phối hợp có thể dẫn đến vô kinh và / hoặc tiết ít sữa, ảnh hưởng đến tác dụng của bromocriptin.",
+      "xu_ly": "Không nên dùng phối hợp này, nhất là ở những người bệnh điều trị vô kinh hoặc giảm tiết sữa."
+    },
+    {
+      "thuoc": ["Modafinil"],
+      "muc_do": 3,
+      "phan_tich": "Modafinil là một sản phẩm mới, được coi có tiềm năng cảm ứng enzym. Với vai trò đó, nó có thể kích thích chuyển hoá của các thuốc ngừa thai estroprogestogen, đặc biệt là loại liều thấp.",
+      "xu_ly": "Chống chỉ định phối hợp. Thay đổi phương pháp ngừa thai, vì điều trị với modafinil là một điều trị dài ngày."
+    },
+    {
+      "thuoc": ["Rifampicin"],
+      "muc_do": 3,
+      "phan_tich": "Tăng chuyển hoá các progestogen ở gan, do cảm ứng enzym, do đó có nguy cơ thụ thai.",
+      "xu_ly": "Tránh dùng các thuốc ngừa thai liều thấp và nên dùng các thuốc ngừa thai liều cao hoặc khuyên dùng phương pháp ngừa thai khác, nếu điều trị bằng rifampicin kéo dài. Nên nhớ cảm ứng enzym không bao giờ là một hiện tượng tức thời."
+    },
+    {
+      "thuoc": ["Ritonavir"],
+      "muc_do": 3,
+      "phan_tich": "Giảm diện tích dưới đường cong (AUC) của thuốc estroprogestogen. Cơ chế chưa rõ. Nguy cơ thụ thai.",
+      "xu_ly": "Nên dùng một phương pháp ngừa thai khác."
+    },
+    {
+      "thuoc": ["Tacrin"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng độc tính với gan.",
+      "xu_ly": "Nếu cần, tăng cường theo dõi gan. Tránh các phối hợp có nguy cơ ở người cao tuổi."
+    },
+    {
+      "thuoc": ["Tamoxifen"],
+      "muc_do": 3,
+      "phan_tich": "Đối kháng dược lý giữa một kháng estrogen và một estrogen.",
+      "xu_ly": "Thường dùng tamoxifen ở cơ sở chuyên khoa; phối hợp này tỏ ra không hợp lý về mặt điều trị."
+    },
+    {
+      "thuoc": ["Amineptin", "Carmustin", "Dantrolen", "Fluvoxamin", "Isoniazid", "Erythromycin", "Clarithromycin", "Azithromycin", "Roxithromycin", "Josamycin", "Methotrexat", "Valproat natri", "Progabid", "Ketoconazol", "Miconazol", "Clotrimazol", "Itraconazol", "Fluconazol", "Voriconazol"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp những thuốc có tiềm năng độc với gan (cộng hợp các tác dụng không mong muốn).",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc nếu có thể, hoãn một trong hai liệu trình. Xác minh là người bệnh không uống rượu thường xuyên và không có tiền sử viêm gan do virus. Các triệu chứng lâm sàng chính không đặc hiệu: buồn nôn, sốt, vàng da. Nếu có phối hợp ban da, ngứa và hạch to, thì có khả năng do thuốc. Nên phân biệt tuỳ theo kết quả xét nghiệm sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Diazepam", "Chlordiazepoxide", "Flurazepam", "Triazolam", "Midazolam", "Alprazolam", "Clonazepam", "Bromazepam", "Nitrazepam"],
+      "muc_do": 2,
+      "phan_tich": "Các estrogen có thể ức chế các enzym tham gia oxy hoá các benzodiazepin ở gan (chlorazepat, flurazepam, diazepam, triazolam), do đó kéo dài nửa đời của chúng. Điều này còn bàn cãi đối với các benzodiazepin chịu quá trình liên hợp glucuronic. Nguy cơ tăng tác dụng của benzodiazepin lâu dài.",
+      "xu_ly": "Có thể phải giảm liều benzodizepin ở những phụ nữ đang dùng thuốc ngừa thai dài hạn. Chú ý khi lái xe, vận hành máy móc hoặc cần phải tỉnh táo."
+    },
+    {
+      "thuoc": ["Acebutolol", "Alprenolol", "Betaxolol", "Labetalol", "Metoprolol", "Oxprenolol", "Propranolol", "Timolol"],
+      "muc_do": 2,
+      "phan_tich": "Có thể có sự ức chế của estrogen đối với các enzym ở microsom gan làm nhiệm vụ xúc tác cho chuyển hoá một số thuốc chẹn beta khi qua gan lần đầu (acebutolol, alprenolol, betaxolol, labetalol, metoprolol, oxprenolol, propranolol, timolol). Các thuốc chẹn beta khác có tương tác ít hơn.",
+      "xu_ly": "Nguy cơ tăng tác dụng của một số thuốc chẹn beta. Phối hợp cần được theo dõi lâm sàng."
+    },
+    {
+      "thuoc": ["Cholestyramin"],
+      "muc_do": 2,
+      "phan_tich": "Giảm hấp thu các estrogen và thuốc ngừa thai estroprogestogen qua đường tiêu hoá do có thể bị gắn bởi cholestyramin.",
+      "xu_ly": "Nếu kê đơn hai thuốc, khuyên dùng các estrogen và thuốc ngừa thai estroprogestogen trước hai giờ hoặc sau 4 giờ khi dùng cholestyramin."
+    },
+    {
+      "thuoc": ["Didanosin"],
+      "muc_do": 2,
+      "phan_tich": "Hiệp đồng các tác dụng không mong muốn. Tăng nguy cơ xuất hiện viêm tuỵ do thuốc",
+      "xu_ly": "Theo dõi lâm sàng và nếu cần, khi bị đau bụng, khuyên theo dõi sinh học chức năng tuỵ (amylase máu và amylase nước tiểu)"
+    },
+    {
+      "thuoc": ["Prednison", "Prednisolon", "Hydrocortison", "Dexamethason", "Betamethason"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng và độc tính của một số glucocorticoid (prednison và prednisolon) do chậm chuyển hoá, khi chúng được dùng cùng với các thuốc ngừa thai uống.",
+      "xu_ly": "Phải theo dõi bệnh nhân về tác dụng và độc tính của corticoid để tránh quá liều. Nên giảm liều nếu cần thiết."
+    },
+    {
+      "thuoc": ["Guanethidin", "Reserpin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng huyết áp do các thuốc ngừa thai uống gây ra thường kháng với điều trị bằng guanethidin. Cơ chế chưa biết rõ.",
+      "xu_ly": "Khống chế huyết áp trong trường hợp này rất khó, thậm chí không thể được. Thay đổi cách điều trị. Tránh methyldopa cũng vì lý do như vậy."
+    },
+    {
+      "thuoc": ["Levothyroxin", "Liothyronin"],
+      "muc_do": 2,
+      "phan_tich": "Nồng độ trong huyết tương của thyroxin tự do có thể bị giảm, làm tăng nồng độ huyết tương thyrotropin và làm tăng nhu cầu hormon giáp. Tương tác xảy ra chậm. Cơ chế: Thay đổi nồng độ huyết tương của thyroxin và thyrotropin do dùng estrogen có thể do tăng nồng độ huyết tương của globulin gắn vào thyroxin ở phụ nữ bị suy tuyến giáp.",
+      "xu_ly": "ở nữ bị suy tuyến giáp, định lượng nồng độ trong huyết tương của thyrotropin khoảng 12 tuần sau khi bắt đầu dùng estrogen và điều chỉnh liều hormon giáp nếu cần."
+    },
+    {
+      "thuoc": ["Insulin", "Glibenclamid", "Gliclazid", "Glipizid", "Glimepirid", "Tolbutamid", "Chlorpropamid"],
+      "muc_do": 2,
+      "phan_tich": "Có thể có những biến đổi không hằng định của glucose máu vì tính chất gây tăng nhẹ glucose máu của estroprogestogen; có thể thấy giảm tác dụng của insulin.",
+      "xu_ly": "Thông tin cho người bệnh về khả năng biến đổi glucose máu này. Điều chỉnh liều insulin theo đáp ứng sinh học."
+    },
+    {
+      "thuoc": ["Diphenhydramin", "Promethazin", "Alimemazin", "Hydroxyzin", "Ketotifen", "Oxadomid", "Flunarizin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tiết nhiều sữa (chỉ thông báo với flunarizin, Sibelium)",
+      "xu_ly": "Theo dõi lâm sàng. Thông tin cho người bệnh."
+    },
+    {
+      "thuoc": ["Nelfinavir"],
+      "muc_do": 2,
+      "phan_tich": "Giảm diện tích dưới đường cong (AUC) của estroprogestogen, cơ chế chưa rõ. Nguy cơ thụ thai.",
+      "xu_ly": "Đề xuất cách ngừa thai khác"
+    },
+    {
+      "thuoc": ["Penicilin", "Ampicilin", "Amoxicilin", "Tetracyclin", "Doxycyclin", "Minocyclin"],
+      "muc_do": 2,
+      "phan_tich": "Do làm giảm hệ vi khuẩn đường ruột, điều trị kháng sinh có thể làm giảm tái hấp thu các steroid trong chu trình ruột-gan. Nguy cơ giảm tác dụng estroprogestogen. Không tiên đoán được.",
+      "xu_ly": "Nguy cơ này tuỳ thuộc vào thời gian điều trị và những tổn hại đến hệ vi khuẩn đường ruột. Tuy nhiên cần phải xem xét nguy cơ này, nếu xuất hiện tiêu chảy ở phụ nữ đang dùng estroprogestogen cùng thời gian."
+    },
+    {
+      "thuoc": ["Tetracosactid"],
+      "muc_do": 2,
+      "phan_tich": "Các estrogen có thể gây cản trở chuyển hoá và liên kết protein của các glucocorticoid, làm tăng nửa đời đào thải kèm với nguy cơ tăng tác dụng điều trị và độc tính của các glucocorticoid.",
+      "xu_ly": "Vẫn cần phải xác nhận tương tác dược động học này bằng cách nhận xét lâm sàng. Người kê đơn vẫn phải chú ý liều lượng của glucocorticoid và cân nhắc nguy cơ tuỳ theo các liều estrogen đã dùng."
+    },
+    {
+      "thuoc": ["Dầu vô cơ (paraffin)"],
+      "muc_do": 2,
+      "phan_tich": "Sử dụng các dầu vô cơ cùng với các estroprogestogen làm giảm hấp thu và giảm tác dụng của estroprogestogen.",
+      "xu_ly": "Hậu quả của tương tác này có thể tránh bằng cách khuyên người bệnh dùng những thuốc này xa nhau nhiều giờ (2 giờ trước hoặc 4 giờ sau khi dùng dầu vô cơ)."
+    },
+    {
+      "thuoc": ["Ciclosporin"],
+      "muc_do": 1,
+      "phan_tich": "Nồng độ của ciclosporin trong tuần hoàn có thể tăng, do giảm đào thải ở gan và tăng creatinin và transaminase trong máu.",
+      "xu_ly": "Lưu ý các nguy cơ này và tiến hành định lượng ciclosporin máu thường xuyên (do có sự biến động nhiều giữa các cá thể), đặc biệt ở phụ nữ đang dùng thuốc ngừa thai uống. Việc kê đơn ciclosporin do thầy thuốc chuyên khoa đảm nhiệm."
+    },
+    {
+      "thuoc": ["Lansoprazol", "Omeprazol", "Pantoprazol", "Rabeprazol", "Esomeprazol"],
+      "muc_do": 1,
+      "phan_tich": "Tương tác dược động học. Phải thận trọng với các thuốc được chuyển hoá bởi cytochrom P450, vì có nguy cơ giảm tác dụng của những sản phẩm này do cảm ứng enzym, nên có thể dẫn đến thất bại điều trị.",
+      "xu_ly": "Lansoprazol là thuốc tương đối mới, nên còn thiếu các nhận xét lâm sàng. Xem xét nguy cơ trong bối cảnh điều trị vì thất bại trong việc dùng estroprogestogen liều thấp có thể gây tác hại cho phụ nữ dùng thuốc. Do thận trọng, nên cần thay đổi chất ức chế bơm proton hoặc thuốc chống loét."
+    },
+    {
+      "thuoc": ["Phenylbutazon"],
+      "muc_do": 1,
+      "phan_tich": "Phenylbutazon là chất cảm ứng enzym. Dùng dài ngày, có thể có giảm tác dụng của các estrogen và các thuốc ngừa thai estroprogestogen do cảm ứng enzym, làm tăng dị hoá các thuốc này ở gan.",
+      "xu_ly": "Tuỳ theo thời gian điều trị ở phụ nữ đang dùng thuốc estroprogestogen liều thấp, thay đổi thuốc chống viêm."
+    }
+  ]
 }
 
 
