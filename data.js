@@ -582,7 +582,7 @@ window.tuongTacData = [
     },
     {
       "thuoc": [
-        "Alopurinol",
+        "Allopurinol",
         "Febuxostat",
         "Colchicin",
         "Thiocolchicosid"
