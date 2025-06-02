@@ -685,10 +685,10 @@ window.tuongTacData = [
   ]
 },
 {
-  "hoat_chat": "Alopurinol hoặc dẫn chất",
+  "hoat_chat": "Allopurinol hoặc dẫn chất",
   "mo_ta": "Thuốc chống bệnh thống phong (gút), ức chế tổng hợp acid uric.",
   "cac_thuoc_trong_nhom": [
-    "Alopurinol",
+    "Allopurinol",
     "Apo-Allopurinol",
     "Domedol",
     "Milurit",
@@ -732,13 +732,13 @@ window.tuongTacData = [
     {
       "thuoc": ["Azathioprin", "Mercaptopurin"],
       "muc_do": 2,
-      "phan_tich": "Alopurinol ức chế chuyển hoá oxy hoá của azathioprin, mercaptopurin, gây nguy cơ tích luỹ các chất kháng chuyển hoá.",
+      "phan_tich": "Allopurinol ức chế chuyển hoá oxy hoá của azathioprin, mercaptopurin, gây nguy cơ tích luỹ các chất kháng chuyển hoá.",
       "xu_ly": "Nếu cần phối hợp, giảm liều chất kháng chuyển hoá xuống 25-30%."
     },
     {
       "thuoc": ["Cyclophosphamid", "Ifosfamid"],
       "muc_do": 2,
-      "phan_tich": "Sử dụng đồng thời alopurinol với cyclophosphamid có thể làm tăng tác dụng ức chế tuỷ xương.",
+      "phan_tich": "Sử dụng đồng thời allopurinol với cyclophosphamid có thể làm tăng tác dụng ức chế tuỷ xương.",
       "xu_ly": "Nếu cần phối hợp, phải theo dõi huyết đồ chặt chẽ."
     },
     {
@@ -757,18 +757,18 @@ window.tuongTacData = [
       "thuoc": ["Pentostatin"],
       "muc_do": 2,
       "phan_tich": "Pentostatin có thể làm tăng nồng độ acid uric.",
-      "xu_ly": "Nên dùng alopurinol thay cho các chất gây urat niệu để tránh nguy cơ bệnh thận vì urat."
+      "xu_ly": "Nên dùng allopurinol thay cho các chất gây urat niệu để tránh nguy cơ bệnh thận vì urat."
     },
     {
       "thuoc": ["Glibenclamid", "Glimepirid", "Gliclazid", "Chlorpropamid"],
       "muc_do": 2,
-      "phan_tich": "Alopurinol có thể ức chế bài tiết clorpropamid qua ống thận, tăng nguy cơ hạ glucose máu nặng.",
+      "phan_tich": "Allopurinol có thể ức chế bài tiết clorpropamid qua ống thận, tăng nguy cơ hạ glucose máu nặng.",
       "xu_ly": "Cần đặc biệt cảnh giác với người suy thận dùng hai thuốc này. Theo dõi chặt chẽ glucose máu."
     },
     {
       "thuoc": ["Theophylin", "Aminophylin"],
       "muc_do": 2,
-      "phan_tich": "Dùng alopurinol liều cao với theophylin sẽ giảm độ thanh lọc theophylin ở thận và làm tăng nồng độ trong huyết thanh.",
+      "phan_tich": "Dùng allopurinol liều cao với theophylin sẽ giảm độ thanh lọc theophylin ở thận và làm tăng nồng độ trong huyết thanh.",
       "xu_ly": "Phải theo dõi chặt chẽ nồng độ theophylin, điều chỉnh liều lượng."
     },
     {
@@ -792,8 +792,8 @@ window.tuongTacData = [
     {
       "thuoc": ["Nhôm hydroxyd", "Magnesi hydroxyd", "Calci carbonat", "Than hoạt"],
       "muc_do": 2,
-      "phan_tich": "Làm giảm hấp thu alopurinol theo đường tiêu hoá.",
-      "xu_ly": "Cần để một khoảng thời gian 1-2 giờ giữa lúc uống thuốc kháng acid và alopurinol."
+      "phan_tich": "Làm giảm hấp thu allopurinol theo đường tiêu hoá.",
+      "xu_ly": "Cần để một khoảng thời gian 1-2 giờ giữa lúc uống thuốc kháng acid và allopurinol."
     }
   ]
 },
@@ -1629,16 +1629,16 @@ window.tuongTacData = [
       "xu_ly": "Khoảng cách giữa hai thuốc từ 3 tháng tới một năm tuỳ theo mức độ giảm miễn dịch."
     },
     {
-      "thuoc": ["Alopurinol", "Probenecid"],
+      "thuoc": ["Allopurinol", "Probenecid"],
       "muc_do": 2,
       "phan_tich": "Asparaginase làm tăng nồng độ acid uric trong máu.",
-      "xu_ly": "Phối hợp cần thực hiện ở bệnh viện. Điều chỉnh liệu pháp chống gút. Để tránh sỏi uric, nên dùng alopurinol hơn là các thuốc gây acid uric niệu."
+      "xu_ly": "Phối hợp cần thực hiện ở bệnh viện. Điều chỉnh liệu pháp chống gút. Để tránh sỏi uric, nên dùng allopurinol hơn là các thuốc gây acid uric niệu."
     },
     {
       "thuoc": ["Colchicin", "Thiocolchicosid"],
       "muc_do": 2,
       "phan_tich": "Dùng đồng thời một thuốc kìm tế bào và một thuốc chống gút làm tăng nồng độ acid uric. Hơn nữa còn tăng nguy cơ giảm bạch cầu và giảm tiểu cầu do hiệp đồng các tác dụng không mong muốn của các thuốc.",
-      "xu_ly": "Tránh phối hợp hai thuốc cùng một lúc, nếu không, liệu pháp chống gút sẽ thất bại. Nên dùng alopurinol (ức chế tổng hợp acid uric) hơn dùng các thuốc gây acid uric niệu để tránh các bệnh thận."
+      "xu_ly": "Tránh phối hợp hai thuốc cùng một lúc, nếu không, liệu pháp chống gút sẽ thất bại. Nên dùng allopurinol (ức chế tổng hợp acid uric) hơn dùng các thuốc gây acid uric niệu để tránh các bệnh thận."
     },
     {
       "thuoc": [
@@ -1697,9 +1697,9 @@ window.tuongTacData = [
   },
   "tuong_tac": [
     {
-      "thuoc": ["Alopurinol"],
+      "thuoc": ["Allopurinol"],
       "muc_do": 3,
-      "phan_tich": "Tác dụng của azathioprin và mercaptopurin tăng lên rõ rệt khi phối hợp với alopurinol. Alopurinol ức chế chuyển hoá oxy hoá azathioprin và mercaptopurin bằng cách ức chế xanthin oxydase, gây nguy cơ tích luỹ azathioprin và mercaptopurin.",
+      "phan_tich": "Tác dụng của azathioprin và mercaptopurin tăng lên rõ rệt khi phối hợp với allopurinol. Allopurinol ức chế chuyển hoá oxy hoá azathioprin và mercaptopurin bằng cách ức chế xanthin oxydase, gây nguy cơ tích luỹ azathioprin và mercaptopurin.",
       "xu_ly": "Liều lượng azathioprin và mercaptopurin phải giảm tới khoảng 1/3 hoặc 1/4 khi dùng thuốc đường uống để giảm gây ngộ độc. Phải giám sát chặt người bệnh."
     },
     {
@@ -4211,7 +4211,7 @@ window.tuongTacData = [
       "thuoc": ["Colchicin"],
       "muc_do": 2,
       "phan_tich": "Sử dụng đồng thời một thuốc kìm tế bào và một thuốc chống bệnh gút làm tăng hàm lượng acid uric. Ngoài ra còn tăng nguy cơ giảm bạch cầu và giảm tiểu cầu do hiệp đồng các tác dụng không mong muốn của các thuốc.",
-      "xu_ly": "Nên tránh dùng hai thuốc đồng thời, nếu không điều trị chống gút sẽ thất bại. Nên dùng alopurinol (thuốc ức chế tổng hợp acid uric) hơn là dùng các thuốc gây acid uric niệu để tránh các bệnh thận."
+      "xu_ly": "Nên tránh dùng hai thuốc đồng thời, nếu không điều trị chống gút sẽ thất bại. Nên dùng allopurinol (thuốc ức chế tổng hợp acid uric) hơn là dùng các thuốc gây acid uric niệu để tránh các bệnh thận."
     },
     {
       "thuoc": ["Digitoxin", "Digoxin", "Deslanosid", "Metildigoxin"],
@@ -6132,7 +6132,7 @@ window.tuongTacData = [
       ],
       "muc_do": 2,
       "phan_tich": "Dùng đồng thời một thuốc kìm tế bào và một thuốc chống gút làm tăng hàm lượng acid uric. Ngoài ra, tăng nguy cơ giảm bạch cầu và giảm tiểu cầu do hiệp đồng các tác dụng không mong muốn của các thuốc.",
-      "xu_ly": "Nên tránh dùng hai thuốc trong cùng thời gian, nếu không sẽ thấy điều trị chống gút thất bại. Nên dùng alopurinol (thuốc ức chế tổng hợp acid uric) hơn là các thuốc bài acid uric qua đường tiết niệu để tránh các bệnh thận."
+      "xu_ly": "Nên tránh dùng hai thuốc trong cùng thời gian, nếu không sẽ thấy điều trị chống gút thất bại. Nên dùng allopurinol (thuốc ức chế tổng hợp acid uric) hơn là các thuốc bài acid uric qua đường tiết niệu để tránh các bệnh thận."
     },
     {
       "thuoc": ["Clozapin"],
@@ -6196,7 +6196,7 @@ window.tuongTacData = [
       "thuoc": ["Pentostatin"],
       "muc_do": 2,
       "phan_tich": "Pentostatin có thể làm tăng hàm lượng acid uric. Điều chỉnh liều của thuốc chống gút có thể cần để kiểm soát tăng acid uric máu.",
-      "xu_ly": "Nên dùng alopurinol (chất ức chế tổng hợp acid uric) hơn là dùng những chất đào thải acid uric, vì có thể gặp nguy cơ bệnh thận với acid uric."
+      "xu_ly": "Nên dùng allopurinol (chất ức chế tổng hợp acid uric) hơn là dùng những chất đào thải acid uric, vì có thể gặp nguy cơ bệnh thận với acid uric."
     },
     {
       "thuoc": ["Rượu"],
@@ -6424,9 +6424,9 @@ window.tuongTacData = [
       "xu_ly": "Khoảng cách cần tôn trọng giữa 2 thuốc là từ 3 tháng đến 1 năm và tuỳ thuộc vào cường độ của sự ức chế miễn dịch."
     },
     {
-      "thuoc": ["Alopurinol"],
+      "thuoc": ["Allopurinol"],
       "muc_do": 2,
-      "phan_tich": "Dùng đồng thời alopurinol với cyclophosphamid có thể làm tăng tác dụng ức chế tuỷ xương, do đó tăng nguy cơ chảy máu hoặc nhiễm khuẩn.",
+      "phan_tich": "Dùng đồng thời Allopurinol với cyclophosphamid có thể làm tăng tác dụng ức chế tuỷ xương, do đó tăng nguy cơ chảy máu hoặc nhiễm khuẩn.",
       "xu_ly": "Nếu cần phối hợp, theo dõi chặt chẽ huyết đồ."
     },
     {
@@ -6465,7 +6465,7 @@ window.tuongTacData = [
       ],
       "muc_do": 2,
       "phan_tich": "Dùng đồng thời một thuốc kìm tế bào và một thuốc chống gút làm tăng hàm lượng acid uric. Ngoài ra, có sự tăng nguy cơ giảm bạch cầu và giảm tiểu cầu do hiệp đồng tác dụng không mong muốn của các thuốc.",
-      "xu_ly": "Tốt nhất, nên tránh dùng hai thuốc cùng thời gian nếu không điều trị chống gút sẽ thất bại. Nên dùng alopurinol (chất ức chế tổng hợp acid uric) hơn là các thuốc thải acid uric để tránh các bệnh thận."
+      "xu_ly": "Tốt nhất, nên tránh dùng hai thuốc cùng thời gian nếu không điều trị chống gút sẽ thất bại. Nên dùng Allopurinol (chất ức chế tổng hợp acid uric) hơn là các thuốc thải acid uric để tránh các bệnh thận."
     },
     {
       "thuoc": ["Clozapin"],
@@ -8056,16 +8056,16 @@ window.tuongTacData = [
       "xu_ly": "Khoảng cách cần tôn trọng giữa hai thuốc là từ ba tháng đến một năm, tuỳ theo mức độ ức chế miễn dịch."
     },
     {
-      "thuoc": ["Alopurinol", "Febuxostat"],
+      "thuoc": ["Allopurinol", "Febuxostat"],
       "muc_do": 2,
       "phan_tich": "Sử dụng đồng thời một thuốc kìm tế bào và một thuốc chống gút làm tăng nồng độ acid uric. Ngoài ra, tăng nguy cơ giảm bạch cầu và giảm tiểu cầu do cộng hợp tác dụng không mong muốn của các thuốc.",
-      "xu_ly": "Tốt nhất nên tránh phối hợp hai thuốc trong cùng thời gian, nếu không sẽ thấy điều trị chống gút thất bại. Nên dùng alopurinol (ức chế sinh tổng hợp acid uric) hơn là dùng các thuốc đào thải acid uric, để tránh các bệnh thận."
+      "xu_ly": "Tốt nhất nên tránh phối hợp hai thuốc trong cùng thời gian, nếu không sẽ thấy điều trị chống gút thất bại. Nên dùng Allopurinol (ức chế sinh tổng hợp acid uric) hơn là dùng các thuốc đào thải acid uric, để tránh các bệnh thận."
     },
     {
       "thuoc": ["Colchicin", "Thiocolchicosid"],
       "muc_do": 2,
       "phan_tich": "Sử dụng đồng thời một thuốc kìm tế bào và một thuốc chống gút làm tăng nồng độ acid uric. Ngoài ra, tăng nguy cơ giảm bạch cầu và giảm tiểu cầu do cộng hợp tác dụng không mong muốn của các thuốc.",
-      "xu_ly": "Tốt nhất nên tránh phối hợp hai thuốc trong cùng thời gian, nếu không sẽ thấy điều trị chống gút thất bại. Nên dùng alopurinol (ức chế sinh tổng hợp acid uric) hơn là dùng các thuốc đào thải acid uric, để tránh các bệnh thận."
+      "xu_ly": "Tốt nhất nên tránh phối hợp hai thuốc trong cùng thời gian, nếu không sẽ thấy điều trị chống gút thất bại. Nên dùng Allopurinol (ức chế sinh tổng hợp acid uric) hơn là dùng các thuốc đào thải acid uric, để tránh các bệnh thận."
     },
     {
       "thuoc": ["Amphotericin B"],
