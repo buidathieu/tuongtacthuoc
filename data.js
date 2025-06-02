@@ -8945,7 +8945,8 @@ window.tuongTacData = [
       "muc_do": 4,
       "noi_dung": "Trẻ em: ở trẻ em dưới 20 tháng tuổi, có nguy cơ xuất hiện co giật."
     }
-  }
+  },
+  "tuong_tac": []
 },
 {
   "hoat_chat": "FENOVERIN",
@@ -8969,7 +8970,8 @@ window.tuongTacData = [
       "muc_do": 2,
       "mang_thai": "Do thận trọng, vì thiếu dữ liệu."
     }
-  }
+  },
+ "tuong_tac": []
 },
 {
   "hoat_chat": "FIBRAT",
@@ -9091,7 +9093,8 @@ window.tuongTacData = [
       "suy_gan": "Cần theo dõi, do thiếu thông tin và nghiên cứu chính xác ở người suy gan.",
       "truong_hop_khac": "Quá mẫn với một trong những thành phần của sản phẩm (hoạt chất hoặc tá dược)"
     }
-  }
+  },
+ "tuong_tac": []
 },
 {
   "hoat_chat": "FLAVOXAT",
@@ -9107,7 +9110,8 @@ window.tuongTacData = [
       "cho_con_bu": "Vì thận trọng, do thiếu dữ liệu.",
       "truong_hop_khac": "Tắc môn vị và tá tràng, thương tổn tắc ruột, chảy máu dạ dày tá tràng."
     }
-  }
+  },
+ "tuong_tac": []
 },
 {
   "hoat_chat": "FLECAINID HOẶC THUỐC TƯƠNG TỰ",
