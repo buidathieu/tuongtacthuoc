@@ -5,18 +5,28 @@ document.addEventListener("DOMContentLoaded", function() {
     const data = window.tuongTacData;
     const allDrugs = new Set();
 
-    // Tạo danh sách tất cả hoạt chất và thuốc tương tác (hỗ trợ mảng hoặc chuỗi)
+    // Tạo danh sách tất cả thuốc trong nhóm và thuốc tương tác (KHÔNG thêm hoat_chat)
     data.forEach(item => {
-        if (Array.isArray(item.hoat_chat)) {
-            item.hoat_chat.forEach(hc => allDrugs.add(hc));
-        } else {
-            allDrugs.add(item.hoat_chat);
+        // KHÔNG thêm hoat_chat vào allDrugs
+        // Thêm cac_thuoc_trong_nhom
+        if (item.cac_thuoc_trong_nhom) {
+            const drugs = Array.isArray(item.cac_thuoc_trong_nhom) 
+                ? item.cac_thuoc_trong_nhom 
+                : [item.cac_thuoc_trong_nhom];
+            drugs.forEach(d => d && allDrugs.add(String(d)));
         }
+        // Thêm các thuốc tương tác
         item.tuong_tac.forEach(t => {
-            if (Array.isArray(t.thuoc)) {
-                t.thuoc.forEach(th => allDrugs.add(th));
-            } else {
-                allDrugs.add(t.thuoc);
+            if (t.thuoc) {
+                if (Array.isArray(t.thuoc)) {
+                    t.thuoc.forEach(th => {
+                        if (th) {
+                            allDrugs.add(String(th));
+                        }
+                    });
+                } else {
+                    allDrugs.add(String(t.thuoc));
+                }
             }
         });
     });
@@ -37,9 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        const filtered = Array.from(allDrugs).filter(d =>
-            d.toLowerCase().includes(query) && !selectedDrugs.has(d)
-        );
+        // Chỉ lọc các thuốc là chuỗi, bỏ qua giá trị null/undefined
+        const filtered = Array.from(allDrugs)
+            .filter(d => typeof d === 'string')
+            .filter(d => String(d).toLowerCase().includes(query) && !selectedDrugs.has(d));
 
         if (filtered.length > 0) {
             filtered.forEach(drug => {
@@ -119,80 +130,90 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Tìm tương tác giữa các cặp hoạt chất (hỗ trợ hoat_chat là mảng hoặc chuỗi)
+    // Hàm xóa trùng lặp kết quả (chỉ kiểm tra cặp thuốc)
+    function removeDuplicates(interactions) {
+        const seen = new Set();
+        return interactions.filter(({ groupDrugs, interaction }) => {
+            const drugs = [...groupDrugs, interaction.thuoc].sort();
+            const key = drugs.join("-");
+            return seen.has(key) ? false : seen.add(key);
+        });
+    }
+
+    // Hàm tìm tương tác giữa các thuốc trong nhóm và thuốc tương tác
     function findInteractions() {
         results.innerHTML = '';
         if (selectedDrugs.size < 2) return;
 
         const drugsArray = Array.from(selectedDrugs);
         const foundInteractions = [];
+        const processedPairs = new Set();
 
         drugsArray.forEach((drug1, i) => {
             drugsArray.slice(i + 1).forEach(drug2 => {
-                data.forEach(item => {
-                    // Kiểm tra hoat_chat có thể là mảng hoặc chuỗi
-                    const isHoatChatMatch1 = Array.isArray(item.hoat_chat)
-                        ? item.hoat_chat.includes(drug1)
-                        : item.hoat_chat === drug1;
-                    if (isHoatChatMatch1) {
-                        item.tuong_tac.forEach(t => {
-                            const isThuocMatch = Array.isArray(t.thuoc)
-                                ? t.thuoc.includes(drug2)
-                                : t.thuoc === drug2;
-                            if (isThuocMatch) {
-                                foundInteractions.push({
-                                    hoatChat: drug1,
-                                    interaction: { ...t, thuoc: drug2 }
-                                });
-                            }
-                        });
-                    }
+                // Tránh kiểm tra trùng lặp cặp thuốc
+                const pairKey = [drug1, drug2].sort().join("-");
+                if (processedPairs.has(pairKey)) return;
+                processedPairs.add(pairKey);
 
-                    // Kiểm tra chiều ngược lại
-                    const isHoatChatMatch2 = Array.isArray(item.hoat_chat)
-                        ? item.hoat_chat.includes(drug2)
-                        : item.hoat_chat === drug2;
-                    if (isHoatChatMatch2) {
-                        item.tuong_tac.forEach(t => {
-                            const isThuocMatch = Array.isArray(t.thuoc)
-                                ? t.thuoc.includes(drug1)
-                                : t.thuoc === drug1;
-                            if (isThuocMatch) {
-                                foundInteractions.push({
-                                    hoatChat: drug2,
-                                    interaction: { ...t, thuoc: drug1 }
-                                });
-                            }
-                        });
-                    }
+                // Kiểm tra tương tác từng cặp thuốc
+                data.forEach(item => {
+                    // Lấy danh sách thuốc trong nhóm (cac_thuoc_trong_nhom)
+                    const groupDrugs = item.cac_thuoc_trong_nhom 
+                        ? (Array.isArray(item.cac_thuoc_trong_nhom) 
+                            ? item.cac_thuoc_trong_nhom 
+                            : [item.cac_thuoc_trong_nhom])
+                        : [];
+                    
+                    // Kiểm tra drug1 và drug2 có trong nhóm hoặc là thuốc tương tác
+                    item.tuong_tac.forEach(t => {
+                        const interactingDrugs = Array.isArray(t.thuoc) ? t.thuoc : [t.thuoc];
+                        // Nếu drug1 thuộc nhóm và drug2 là thuốc tương tác
+                        if (groupDrugs.includes(drug1) && interactingDrugs.includes(drug2)) {
+                            foundInteractions.push({
+                                groupDrugs: groupDrugs.filter(d => selectedDrugs.has(d)),
+                                interaction: { ...t, thuoc: drug2 }
+                            });
+                        }
+                        // Nếu drug2 thuộc nhóm và drug1 là thuốc tương tác
+                        if (groupDrugs.includes(drug2) && interactingDrugs.includes(drug1)) {
+                            foundInteractions.push({
+                                groupDrugs: groupDrugs.filter(d => selectedDrugs.has(d)),
+                                interaction: { ...t, thuoc: drug1 }
+                            });
+                        }
+                    });
                 });
             });
         });
 
-        // Hiển thị kết quả
-        if (foundInteractions.length > 0) {
-            foundInteractions.forEach(({ hoatChat, interaction }) => {
-                results.appendChild(createResultCard(hoatChat, interaction));
+        // Loại bỏ trùng lặp trước khi hiển thị
+        const uniqueInteractions = removeDuplicates(foundInteractions);
+
+        if (uniqueInteractions.length > 0) {
+            uniqueInteractions.forEach(({ groupDrugs, interaction }) => {
+                results.appendChild(createResultCard(groupDrugs, interaction));
             });
         } else {
             results.innerHTML = `<div class="result-card">Không tìm thấy tương tác nào giữa các hoạt chất đã chọn.</div>`;
         }
     }
 
-    // Tạo thẻ kết quả
-    function createResultCard(hoatChat, interaction) {
+    // Hàm tạo thẻ kết quả
+    function createResultCard(groupDrugs, interaction) {
         const card = document.createElement('div');
         card.className = `result-card mucdo-${interaction.muc_do}`;
+        // Hiển thị các thuốc trong nhóm đã chọn (nếu có nhiều)
+        const groupDisplay = groupDrugs.length > 1 ? groupDrugs.join(", ") : groupDrugs[0] || '';
 
         card.innerHTML = `
-            <h3>${hoatChat} ↔ ${interaction.thuoc}</h3>
+            <h3>${groupDisplay} ↔ ${interaction.thuoc}</h3>
             <div class="severity mucdo-${interaction.muc_do}">
                 Mức độ ${interaction.muc_do}: ${getSeverityText(interaction.muc_do)}
             </div>
             <p><strong>Phân tích:</strong> ${interaction.phan_tich}</p>
             <p><strong>Xử lý:</strong> ${interaction.xu_ly}</p>
         `;
-
         return card;
     }
 
