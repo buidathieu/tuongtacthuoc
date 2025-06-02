@@ -8884,6 +8884,355 @@ window.tuongTacData = [
       "xu_ly": "Xác minh là người bệnh không uống rượu trong suốt quá trình điều trị. Theo dõi chặt chẽ nồng độ triglycerid nếu vẫn còn nghi ngờ."
     }
   ]
+},
+ {
+  "hoat_chat": "EUCALYPTOL",
+  "mo_ta": "Thuốc (làm mất sung huyết) đường thông khí trên, chiết từ Eucalyptus",
+  "cac_thuoc_trong_nhom": [
+    "EUCALYPTOL",
+    "Bạch hổ hoạt lạc",
+    "Cao Ông thọ",
+    "Dầu cù là Bảo Long",
+    "Dầu cù là Hiệu Con khỉ",
+    "Dầu gió Bảo Long",
+    "Dầu gió Con Rồng",
+    "Dầu gió Hướng Dương",
+    "Dầu gió Hoàng Đế",
+    "Dầu gió Hoành Sơn",
+    "Dầu gió Loan",
+    "Dầu gió nâu Thiên Lý",
+    "Dầu gió Nhân Hoà",
+    "Dầu gió P",
+    "Dầu gió Song Yến",
+    "Dầu gió Thiên Thảo",
+    "Dầu gió Trường Sơn",
+    "Dầu gió Trường Sa",
+    "Dầu gió VIM 1",
+    "Dầu gió xanh Kỳ Lân",
+    "Dầu Hoà An",
+    "Dầu khu phong song lân",
+    "Dầu khuynh diệp OPC",
+    "Dầu nóng Bình Quan",
+    "Dầu nóng Cửu Long",
+    "Dầu nóng Gió Kim",
+    "Dầu nóng Hiệu Khang Ninh",
+    "Dầu nóng Kim Long",
+    "Dầu nóng khuynh diệp",
+    "Dầu nóng Lạc Đà",
+    "Dầu nóng Quảng Đà",
+    "Dầu nóng Rồng Vàng",
+    "Dầu nóng Thiên Phật",
+    "Dầu nóng Trường Thọ",
+    "Dầu Thiên An",
+    "ống hít Hải âu",
+    "ống hít hiệu Con Voi",
+    "ống hít Mentha",
+    "Eucalyptil",
+    "Eucalyptine Ie Brun",
+    "Eucalyptol",
+    "Eucarose",
+    "Mentholatum",
+    "Orafar",
+    "Patitussin",
+    "Solclean",
+    "Thuốc ho người lớn",
+    "Thuốc ho trẻ em",
+    "Traguton",
+    "Viên xông Hương Tràm"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Trẻ em: ở trẻ em dưới 20 tháng tuổi, có nguy cơ xuất hiện co giật."
+    }
+  }
+},
+{
+  "hoat_chat": "FENOVERIN",
+  "mo_ta": "Phenothiazin có tác dụng làm giảm co cứng nhu động trên hệ cơ trơn ống tiêu hoá, đường dẫn mật và cơ tử cung",
+  "cac_thuoc_trong_nhom": [
+    "FENOVERIN",
+    "Spasmopriv",
+    "MEBEVERIN",
+    "Duspatalin"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Quá mẫn với thuốc: Theo dõi lâm sàng người bệnh ở lần dùng đầu tiên"
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "cho_con_bu": "Vì thiếu dữ liệu, tránh kê đơn trong thời kỳ cho con bú."
+    },
+    "than_trong": {
+      "muc_do": 2,
+      "mang_thai": "Do thận trọng, vì thiếu dữ liệu."
+    }
+  }
+},
+{
+  "hoat_chat": "FIBRAT",
+  "mo_ta": "Thuốc chống rối loạn lipid máu",
+  "cac_thuoc_trong_nhom": [
+    "BENZAFIBRAT",
+    "Befizal",
+    "CIPROFIBRAT",
+    "Lipanor",
+    "CLOFIBRAT",
+    "Lipavlon",
+    "GEMFIBROZIL",
+    "Lipur",
+    "FENOFIBRAT",
+    "Fenofibrat Bayer",
+    "Fenofibrate MSD",
+    "Lipanthyl",
+    "Lipanthyl Sapra",
+    "Secalip"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "cho_con_bu": "Do thận trọng, vì thiếu dữ liệu.",
+      "mang_thai": "Nên tránh dùng thuốc này, mặc dầu không thấy gây quái thai sau khi điều trị trong những tháng đầu của thai kỳ.",
+      "suy_gan": "Các rối loạn gan (tăng transaminase, gan hơi to) ở thời kỳ đầu điều trị đã được thông báo, nhưng dung nạp của gan nói chung tốt, trừ trường hợp suy gan nặng.",
+      "suy_than": "Clofibrat hoàn toàn đào thải qua thận sau khi glucuronic liên hợp tại chỗ. Trường hợp suy thận, nửa đời của thuốc kéo dài nhiều, độc tính, đặc biệt ở cơ tăng (đau cơ) và nguy cơ sỏi mật cũng tăng."
+    },
+    "than_trong": {
+      "muc_do": 2,
+      "tre_em": "An toàn sử dụng không được chứng minh."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Acid chenodesoxycholic",
+        "Acid ursodesoxycholic",
+        "Cholestyramin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Acid ursochenodesoxycholic góp phần làm tăng tỷ số acid mật/cholesterol. Nên lập lại cân bằng các thành phần trong mật, và như vậy thuốc có thể góp phần làm thoái triển sỏi mật cholesterol. Phức hợp acid ursodesoxycholic (cholestyramin và các kháng acid), hoặc làm tăng độ bão hoà của mật (estrogen, progestogen, fibrat, neomycin uống) có sự giảm hoạt tính của acid ursodesoxycholic.",
+      "xu_ly": "Điều trị với acid ursodesoxycholic phải lâu dài (từ 6 tháng đến 1 năm). Nên tránh thất bại điều trị và không phối hợp với các thuốc làm giảm hiệu lực của thuốc acid chenodesoxycholic, trừ khi việc phối hợp chỉ tiến hành trong một thời gian rất ngắn."
+    },
+    {
+      "thuoc": [
+        "Atorvastatin",
+        "Simvastatin",
+        "Rosuvastatin",
+        "Pravastatin",
+        "Fluvastatin",
+        "Lovastatin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tăng nguy cơ viêm cơ, đặc biệt với gemfibrozil. Theo dõi nồng độ creatin phosphokinase huyết thanh.",
+      "xu_ly": "Tránh phối hợp các thuốc có thể có cùng những tính chất điều trị và sinh học. Các tác dụng không mong muốn sẽ hiệp đồng với nhau và vì nguy cơ tiêu cơ vân, thầy thuốc kê đơn cần hướng theo cách điều trị khác."
+    },
+    {
+      "thuoc": [
+        "Furosemid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cạnh tranh ở các vị trí gắn trên protein huyết tương kèm với khả năng tăng tác dụng lợi niệu và tăng mất kali. Tương tác này được nêu trong y văn với furosemid cần được xác nhận.",
+      "xu_ly": "Theo dõi phối hợp này và thông báo cho Trung tâm cảnh giác thuốc của vùng mọi bất thường sinh học hoặc lâm sàng. Tăng cường theo dõi ở người suy thận."
+    },
+    {
+      "thuoc": [
+        "Glibenclamid",
+        "Gliclazid",
+        "Glimepirid",
+        "Chlorpropamid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng tác dụng hạ glucose máu do đẩy thuốc ra khỏi các liên kết protein. Nửa đời của thuốc chống tiểu đường có thể tăng (được nêu với clorpropamid) và kháng insulin có thể giảm.",
+      "xu_ly": "Khi dùng phối hợp này, cần định lượng đều đặn glucose máu khi bắt đầu điều trị bằng thuốc chống tiểu đường hoặc fibrat, trong và sau khi ngừng điều trị fibrat. Thực hiện đúng giờ giấc uống thuốc là quan trọng để nắm được những thay đổi glucose máu và điều chỉnh liều của thuốc chống tiểu đường. Thông tin cho người bệnh để tăng cường tự theo dõi."
+    },
+    {
+      "thuoc": [
+        "Furosemid",
+        "Hydrochlorothiazid",
+        "Indapamid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cạnh tranh ở các vị trí gắn trên protein huyết tương kèm với khả năng tăng tác dụng lợi tiểu và mất kali. Tương tác này được nêu trong y văn chỉ riêng với furosemid (lợi tiểu thải kali), cần được xác nhận với các thiazid lợi tiểu.",
+      "xu_ly": "Theo dõi phối hợp này và tuỳ trường hợp thông báo cho Trung tâm cảnh giác thuốc mọi bất thường sinh học hoặc lâm sàng. Tăng cường theo dõi ở người bệnh suy thận."
+    },
+    {
+      "thuoc": [
+        "Warfarin",
+        "Acenocoumarol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ giảm prothrombin máu do thuốc kháng vitamin K bị đẩy ra khỏi các vị trí gắn với protein huyết tương. Phần tự do của thuốc kháng vitamin K tăng, chảy máu và tử vong đã từng xảy ra. Tương tác dược động học.",
+      "xu_ly": "Nếu cần phối hợp, theo dõi tỷ lệ prothrombin và / hoặc INR (tỷ lệ chuẩn quốc tế) khi bắt đầu, khi đang và sau khi điều trị bằng fibrat. Điều chỉnh liều lượng hay không tuỳ theo kết quả sinh học. Thông báo cho người bệnh lưu ý đến sự điều chỉnh liều lượng này."
+    },
+    {
+      "thuoc": [
+        "Desmopressin"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng chống lợi tiểu.",
+      "xu_ly": "Theo dõi lâm sàng và điều chỉnh liều của desmopressin tuỳ theo kết quả sinh học và lâm sàng."
+    }
+  ]
+},
+{
+  "hoat_chat": "FINASTERID",
+  "mo_ta": "Thuốc chống phì đại lành tính tuyến tiền liệt, do ức chế 5 - alpha reductase",
+  "cac_thuoc_trong_nhom": [
+    "FINASTERID",
+    "Finast",
+    "Proscar"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "tre_em": "Kê đơn không hợp lý.",
+      "mang_thai": "Thuốc này không có chỉ định nào cho phụ nữ, nếu vô ý dùng có thể gây dị tật thai.",
+      "suy_gan": "Cần theo dõi, do thiếu thông tin và nghiên cứu chính xác ở người suy gan.",
+      "truong_hop_khac": "Quá mẫn với một trong những thành phần của sản phẩm (hoạt chất hoặc tá dược)"
+    }
+  }
+},
+{
+  "hoat_chat": "FLAVOXAT",
+  "mo_ta": "Thuốc chống đau co thắt đường tiết niệu",
+  "cac_thuoc_trong_nhom": [
+    "FLAVOXAT",
+    "Urim",
+    "Flavoxat viên nén 100 mg"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "cho_con_bu": "Vì thận trọng, do thiếu dữ liệu.",
+      "truong_hop_khac": "Tắc môn vị và tá tràng, thương tổn tắc ruột, chảy máu dạ dày tá tràng."
+    }
+  }
+},
+{
+  "hoat_chat": "FLECAINID HOẶC THUỐC TƯƠNG TỰ",
+  "mo_ta": "Thuốc chống loạn nhịp thuộc nhóm 1C của Vaughan-Williams. Như tất cả các thuốc chống loạn nhịp nhóm 1, những thuốc này tác dụng bằng cách ổn định màng; ngoài ra chúng làm giảm dẫn truyền ở mọi khâu (nhĩ, bộ nối và thất) mà không biến đổi thời gian điện thế hoạt động",
+  "cac_thuoc_trong_nhom": [
+    "CIBENZOLIN",
+    "Cipralan",
+    "APRINDIN",
+    "Fiboran",
+    "FLECAINID",
+    "Flecaine"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "suy_tim": "Vì có tác dụng giảm lực co cơ, theo dõi chặt chẽ chức năng tim.",
+      "truong_hop_khac": "Bloc nhĩ-thất, bloc nhánh trái, nhồi máu cơ tim."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "mang_thai": "Do thận trọng, đặc biệt trong ba tháng đầu"
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Sultoprid"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Duy nhất sultoprid (Barnetil) trong nhóm benzamid, có thể gây nguy cơ. Tất cả các thuốc giảm lực co cơ tim (gây chậm nhịp tim) có thể dẫn đến tăng nguy cơ rối loạn nhịp thất, nhất là xoắn đỉnh, do thêm các tính chất điện sinh lý của sultoprid.",
+      "xu_ly": "Chống chỉ định và cấm dùng phối hợp này."
+    },
+    {
+      "thuoc": [
+        "Cisaprid"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Có thể tăng nguy cơ rối loạn nhịp tim đe doạ tính mạng, bao gồm xoắn đỉnh. Cơ chế do kéo dài thêm khoảng QT.",
+      "xu_ly": "Chống chỉ định dùng cisaprid cho bệnh nhân đang dùng các thuốc chống loạn nhịp nhóm Ia và nhóm III."
+    },
+    {
+      "thuoc": [
+        "Lidocain"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Phối hợp hai thuốc chống loạn nhịp, một thuộc nhóm Ib của Vaughan-Williams, một thuộc nhóm Ic (ức chế dẫn truyền trong thất). Phối hợp cần có sự dõi điện tâm đồ đều đặn, vì có nguy cơ tăng các tác dụng không mong muốn về tim.",
+      "xu_ly": "Sự phối hợp hai thuốc chống loạn nhịp này thuộc thẩm quyền của thầy thuốc chuyên khoa và chỉ có thể thực hiện kèm với theo dõi điện tâm đồ."
+    },
+    {
+      "thuoc": [
+        "Quinidin"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Phối hợp hai thuốc chống loạn nhịp, một thuộc nhóm Ia của Vaughan-Williams, một thuộc nhóm Ic (ức chế dẫn truyền trong thất). Nồng độ flecainid trong huyết tương có thể tăng, làm tăng tác dụng dược lý và độc tính của flecainid. Cơ chế chưa rõ, có thể do chuyển hoá của flecainid bị ức chế. Phối hợp cần có sự theo dõi điện tâm đồ đều đặn, vì có nguy cơ tăng các tác dụng không mong muốn về tim.",
+      "xu_ly": "Sự phối hợp hai thuốc loạn nhịp này thuộc thẩm quyền của thầy thuốc chuyên khoa và chỉ có thể thực hiện kèm với sự theo dõi điện tâm đồ. Điều chỉnh liều của flecainid cho phù hợp."
+    },
+    {
+      "thuoc": [
+        "Ritonavir"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Nồng độ flecainid trong huyết thanh có thể tăng cao, làm tăng nguy cơ độc tính của flecainid. Cơ chế do ritonavir ức chế chuyển hoá của flecainid (cytochrom P450 2D6).",
+      "xu_ly": "Chống chỉ định ritonavir cho bệnh nhân đang dùng flecainid."
+    },
+    {
+      "thuoc": [
+        "Amiodaron"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Hàm lượng flecainid trong huyết tương có thể tăng. Cơ chế do amiodaron có thể làm giảm chuyển hoá của flecainid.",
+      "xu_ly": "Theo dõi chặt chẽ người bệnh khi dùng phối hợp này. Có thể cần phải điều chỉnh liều của flecainid, giảm 33% đến 50%."
+    },
+    {
+      "thuoc": [
+        "Dihydropyridin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Dùng các dihydropyridin có tính chất giảm lực co cơ (làm chậm nhịp tim) phối hợp với một số thuốc chống loạn nhịp có thể dẫn đến nhịp tim chậm quá mức.",
+      "xu_ly": "Khuyên không dùng những thuốc này trong vòng 48 giờ trước hoặc trong vòng 24 giờ sau khi dùng các thuốc đối kháng calci có tính chất giảm lực co cơ. Nếu phải phối hợp, cần theo dõi điện tâm đồ. Cần biết rằng một số dihydropyridin giảm lực co cơ ít hay nhiều."
+    },
+    {
+      "thuoc": [
+        "Propafenon",
+        "Sotalol"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp các thuốc chống loạn nhịp thuộc nhóm khác nhau có thể dẫn đến tăng nguy cơ tác dụng không mong muốn về tim (ở các khâu: tự động, dẫn truyền, nhịp, hướng lực co cơ…).",
+      "xu_ly": "Theo dõi lâm sàng và điện tâm đồ chặt chẽ."
+    },
+    {
+      "thuoc": [
+        "Cimetidin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin có thể làm tăng diện tích dưới đường cong (AUC) và sự đào thải toàn phần ở thận của flecainid. Cơ chế do cimetidin có thể làm tăng sinh khả dụng hoặc ức chế chuyển hoá của flecainid.",
+      "xu_ly": "Khi dùng đồng thời cimetidin và flecainid nên thận trọng. Bệnh nhân suy thận có thể có nguy cơ cao và cần điều chỉnh liều."
+    },
+    {
+      "thuoc": [
+        "Digoxin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng dược lý của digoxin có thể tăng. Tương tác xảy ra chậm. Cơ chế chưa rõ.",
+      "xu_ly": "Nếu có dấu hiệu nhiễm độc digoxin và nghi có tương tác, cần giảm liều digoxin. Theo dõi nồng độ huyết thanh của digoxin."
+    },
+    {
+      "thuoc": [
+        "Disopyramid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Khi phối hợp các thuốc chống loạn nhịp thuộc các nhóm khác nhau trong phân loại Vaughan-Williams, cần phải tăng cường theo dõi (điện tâm đồ) nhất là với disopyramid.",
+      "xu_ly": "Phối hợp các thuốc chống loạn nhịp với nhau cần có chuyên khoa, ngay cả trong khoa tim và có phương tiện theo dõi (khoa hồi sức tim)."
+    },
+    {
+      "thuoc": [
+        "Propranolol",
+        "Atenolol",
+        "Metoprolol",
+        "Bisoprolol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng dược lý của propranolol (và có thể của các thuốc chẹn beta khác) và của flecainid có thể tăng. Cơ chế chưa rõ, có thể có sự ức chế chuyển hoá của cả hai thuốc và có hiệp đồng tác dụng dược lý.",
+      "xu_ly": "Theo dõi lâm sàng và điện tâm đồ phải được tăng cường."
+    }
+  ]
 }
 
 
