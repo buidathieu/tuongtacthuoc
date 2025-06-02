@@ -10171,7 +10171,8 @@ window.tuongTacData = [
       "cho_con_bu": "Qua được sữa mẹ với lượng nhỏ.",
       "mang_thai": "Do thận trọng, trong ba tháng đầu của thai kỳ."
     }
-  }
+  },
+"tuong_tac": []
 },
  {
   "hoat_chat": "FUROSEMID HOẶC THUỐC TƯƠNG TỰ",
@@ -12177,7 +12178,8 @@ window.tuongTacData = [
         "muc_do": 3,
         "noi_dung": "Suy gan, suy thận: Nguy cơ tăng aminotransferase (transaminase) khi dùng với tiliquinol. Với liều cao và điều trị kéo dài, gây viêm tuỷ bán cấp, viêm dây thần kinh ngoại biên, viêm dây thần kinh thị giác, gây teo. Viêm da đầu chi do bệnh ruột."
       }
-    }
+    },
+    "tuong_tac": []
   },
   {
     "hoat_chat": "IDOXURIDIN HOẶC THUỐC TƯƠNG TỰ",
@@ -12199,7 +12201,8 @@ window.tuongTacData = [
         "muc_do": 2,
         "noi_dung": "Phụ nữ mang thai: Vì thận trọng, do không có đủ thông tin."
       }
-    }
+    },
+  "tuong_tac": []
   },
  {
   "hoat_chat": "IDROCILAMID",
