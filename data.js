@@ -12584,7 +12584,7 @@ window.tuongTacData = [
   "hoat_chat": "INSULIN",
   "mo_ta": "Hormon tụy làm hạ glucose máu",
   "cac_thuoc_trong_nhom": [
-    "INSULIN",
+    "Insulin",
     "Actrapid HM",
     "Humulin 70/30",
     "Humulin",
