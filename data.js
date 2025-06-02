@@ -8579,6 +8579,311 @@ window.tuongTacData = [
       "xu_ly": "Tuỳ theo thời gian điều trị ở phụ nữ đang dùng thuốc estroprogestogen liều thấp, thay đổi thuốc chống viêm."
     }
   ]
+},
+ {
+  "hoat_chat": "ETHAMBUTOL",
+  "mo_ta": "Thuốc chống lao",
+  "cac_thuoc_trong_nhom": [
+    "ETHAMBUTOL",
+    "Combutol",
+    "Dexambutol",
+    "Lybutol",
+    "Mycobutol",
+    "Servambutol"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Chống chỉ định: mức độ 4"
+    },
+    "mang_thai": "Tác dụng gây quái thai ở súc vật.",
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Cân nhắc nguy cơ/ lợi ích: mức độ 3"
+    },
+    "suy_than": "Trường hợp suy thận, thuốc có thể bị giữ lại và tăng nguy cơ viêm dây thần kinh thị giác.",
+    "truong_hop_khac": [
+      "Viêm dây thần kinh thị giác: cần khám mắt trước, rồi đều đặn sau đó trong quá trình điều trị. Ngừng thuốc ngay nếu có bất kỳ dấu hiệu viêm dây thần kinh thị giác nào.",
+      "Quá mẫn với thuốc."
+    ]
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Aluminium hydroxide",
+        "Magnesium hydroxide",
+        "Calcium carbonate",
+        "Sodium bicarbonate",
+        "Phosphalugel",
+        "Maalox",
+        "Gaviscon",
+        "Than hoạt"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Giảm hấp thu ethambutol qua đường tiêu hoá bởi chất kháng acid.",
+      "xu_ly": "Cần uống hai thuốc cách nhau ít nhất hai giờ. Nên nhớ rằng các kháng acid thường uống 1 giờ 30 phút sau các bữa ăn, vì ăn uống là nguồn gốc tăng tiết dịch dạ dày."
+    }
+  ]
+},
+{
+  "hoat_chat": "ETHOSUXIMID",
+  "mo_ta": "Thuốc dùng chủ yếu để kiểm soát cơn động kinh nhỏ",
+  "cac_thuoc_trong_nhom": [
+    "ETHOSUXIMID",
+    "Zarontin"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "cho_con_bu": "Không có dữ liệu.",
+      "mang_thai": "Có đặc tính sinh quái thai ở động vật, nên kê thuốc khác cho phụ nữ đang tuổi sinh đẻ hoặc đang mang thai.",
+      "man_cam": "Mẫn cảm với thuốc trong họ."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "suy_gan_suy_than": "Đã có thông báo về tổn thương gan và thận, nên cần giám sát các chức năng gan và thận khi có suy một trong hai cơ quan đó."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 3,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần gây buồn ngủ. Một số thuốc trong họ có thể gây tác dụng tâm thần - vận động, nhất là trong tuần điều trị đầu tiên.",
+      "xu_ly": "Không nên uống rượu hoặc chế phẩm có rượu khi dùng thuốc này. Nguy cơ gây an thần buồn ngủ, đặc biệt nguy hiểm ở người lái xe hoặc vận hành máy."
+    },
+    {
+      "thuoc": ["Tacrin"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng độc với gan.",
+      "xu_ly": "Nếu cần kết hợp, tăng cường giám sát chức năng gan. Tránh các phối hợp có nguy cơ ở người cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Baclofen",
+        "Metoclopramid",
+        "Sulpirid",
+        "Amisulprid",
+        "Levosulpirid",
+        "Dextropropoxyphen",
+        "Reserpin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế thần kinh trung ương, dẫn đến tăng tác dụng an thần gây buồn ngủ.",
+      "xu_ly": "Điều chỉnh liều của hai thuốc nếu cần phối hợp. Chú ý giảm tỉnh táo ở người lái xe hoặc vận hành máy. Khuyên không uống rượu và không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": [
+        "Diazepam",
+        "Alprazolam",
+        "Clonazepam",
+        "Bromazepam",
+        "Midazolam",
+        "Triazolam",
+        "Nitrazepam",
+        "Clordiazepoxyd",
+        "Gluthetimid",
+        "Interferon alpha tái tổ hợp",
+        "Medifoxamin",
+        "Paroxetin",
+        "Phenothiazin",
+        "Primidon",
+        "Procarbazin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần gây buồn ngủ.",
+      "xu_ly": "Chú ý giảm tỉnh táo ở người lái xe hoặc vận hành máy. Khuyên không uống rượu và không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Carbamazepin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần gây buồn ngủ. Nồng độ ethosuximid giảm trong huyết tương do cảm ứng enzym.",
+      "xu_ly": "Điều chỉnh liều của hai thuốc nếu cần phối hợp. Khuyên không uống rượu và không dùng chế phẩm có rượu. Giám sắt lâm sàng hiệu quả điều trị động kinh."
+    },
+    {
+      "thuoc": [
+        "Clonidin",
+        "Rilmenidin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần gây buồn ngủ. Rilmenidin không làm tăng tác dụng ức chế hệ thần kinh trung ương với liều thông thường.",
+      "xu_ly": "Chú ý giảm tỉnh táo ở người lái xe hoặc vận hành máy. Khuyên không uống rượu và không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Isoniazid"],
+      "muc_do": 2,
+      "phan_tich": "Làm tăng nồng độ trong huyết tương của ethosuximid, tăng nguy cơ độc tính do ức chế chuyển hoá.",
+      "xu_ly": "Thận trọng giám sát lâm sàng khi phối hợp."
+    },
+    {
+      "thuoc": ["Lamotrigin"],
+      "muc_do": 2,
+      "phan_tich": "Nồng độ lamotrigin trong huyết thanh có thể giảm do cảm ứng enzym của ethosuximid.",
+      "xu_ly": "Điều chỉnh liều lamotrigin khi bắt đầu, ngừng hoặc thay đổi liều ethosuximid. Theo dõi đáp ứng lâm sàng."
+    },
+    {
+      "thuoc": [
+        "Natri valproat",
+        "Valproat"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế thần kinh trung ương, biến đổi nồng độ trong huyết tương.",
+      "xu_ly": "Điều chỉnh liều nếu cần phối hợp. Khuyên không uống rượu và không dùng các chế phẩm có rượu. Giám sát nồng độ thuốc trong huyết thanh."
+    },
+    {
+      "thuoc": [
+        "Amitriptylin",
+        "Imipramin",
+        "Clomipramin",
+        "Nortriptylin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Làm hạ thấp ngưỡ gây động kinh, tăng nguy cơ co giật.",
+      "xu_ly": "Lưu ý nguy cơ và điều chỉnh liều nếu cần."
+    },
+    {
+      "thuoc": [
+        "Morphine",
+        "Codeine",
+        "Fentanyl",
+        "Pethidine"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế thần kinh trung ương, ức chế hô hấp, hạ huyết áp, tăng nguy cơ nghiện thuốc.",
+      "xu_ly": "Điều chỉnh liều nếu cần phối hợp. Khuyên không uống rượu và không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": [
+        "Mefloquin",
+        "Chloroquin",
+        "Hydroxychloroquin",
+        "Quinine"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Mefloquin đối kháng tác dụng chống co giật. Chloroquin và hydroxychloroquin đôi khi làm giảm ngưỡng gây co giật.",
+      "xu_ly": "Không dùng mefloquin để dự phòng cho người bị động kinh."
+    },
+    {
+      "thuoc": [
+        "Ethinylestradiol + Levonorgestrel",
+        "Ethinylestradiol + Drospirenone",
+        "Ethinylestradiol + Norgestimate"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Giảm tác dụng ngừa thai do cảm ứng enzym tăng chuyển hoá steroid ngừa thai.",
+      "xu_ly": "Dùng biện pháp ngừa thai khác thay thế."
+    },
+    {
+      "thuoc": [
+        "Amphetamine"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Đối kháng tác dụng, có thể tăng tính hung hãn ở người nghiện.",
+      "xu_ly": "Lưu ý tương tác dược lực, khuyên người bệnh gặp lại thầy thuốc nếu hiệu quả điều trị không rõ rệt."
+    },
+    {
+      "thuoc": [
+        "Barbituric",
+        "Dantrolen",
+        "Diphenhydramin",
+        "Fluvoxamin",
+        "Fluoxetin",
+        "Viloxazin"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, gây an thần buồn ngủ.",
+      "xu_ly": "Chú ý giảm tỉnh táo ở người lái xe hoặc vận hành máy. Khuyên không uống rượu."
+    },
+    {
+      "thuoc": [
+        "Methadon"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, an thần buồn ngủ mạnh, nguy hiểm cho người lái xe hoặc vận hành máy.",
+      "xu_ly": "Khuyên không lái xe, không vận hành máy."
+    }
+  ]
+},
+{
+  "hoat_chat": "ETRETINAT (dẫn chất)",
+  "mo_ta": "Dẫn chất của vitamin A, dùng trong một vài bệnh da (bệnh vảy nến và trứng cá nặng) để tróc lớp sừng da.",
+  "cac_thuoc_trong_nhom": [
+    "ACITRETIN",
+    "Soriatane",
+    "ISOTRETINOIN",
+    "Isotrex",
+    "Roaccutane",
+    "TRETINOIN",
+    "Alten",
+    "Effederm",
+    "Locacid",
+    "Retacnyl",
+    "Renova",
+    "Stieva A"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Chống chỉ định: mức độ 4"
+    },
+    "thoi_ky_cho_con_bu": "Do thuốc qua được sữa mẹ",
+    "thoi_ky_mang_thai": "Sản phẩm này gây quái thai. Ở phụ nữ độ tuổi sinh đẻ, thuốc cần được phối hợp với một liệu trình ngừa thai hiệu lực. Liệu trình này phải tiếp tục ít nhất 12 tháng sau khi ngừng điều trị bệnh da.",
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "tre_em_tre_bu": "Do nguy cơ ảnh hưởng đến sự tăng trưởng, người kê đơn phải cân nhắc tương quan lợi ích/ nguy cơ.",
+      "suy_gan": "Do độc với gan",
+      "suy_than": "Do độc với thận."
+    },
+    "truong_hop_khac": [
+      "Quá liều vitamin A.",
+      "Rối loạn chuyển hoá lipid."
+    ],
+    "can_theo_doi": {
+      "muc_do": 1,
+      "tieu_duong_suy_mach_vanh": "Theo dõi cholesterol và triglycerid máu."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Levonorgestrel",
+        "Norethisterone",
+        "Desogestrel",
+        "Drospirenone",
+        "Norgestimate"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Giảm tác dụng của các thuốc ngừa thai progestogen liều thấp kèm với nguy cơ thất bại ngừa thai chừng nào điều trị càng kéo dài.",
+      "xu_ly": "Chống chỉ định dùng phối hợp này. Nên thay thuốc ngừa thai progestogen liều thấp bằng một thuốc estroprogestogen hoặc chọn một phương pháp ngừa thai khác trong thời gian điều trị etretinat."
+    },
+    {
+      "thuoc": [
+        "Tetracyclin",
+        "Doxycyclin",
+        "Minocyclin"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Phối hợp hai thuốc có thể dẫn đến xuất hiện nhức đầu, chóng mặt, rối loạn thị giác do tăng áp lực trong sọ (hiệp đồng tác dụng tăng áp lực trong sọ của từng thuốc).",
+      "xu_ly": "Chống chỉ định phối hợp này và cần tìm một giải pháp điều trị kháng sinh khác (hướng về một số macrolid)."
+    },
+    {
+      "thuoc": ["Vitamin A"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ quá liều vitamin A do tác dụng cộng hợp, có thể dẫn đến rối loạn phát triển xương nhất là ở trẻ em.",
+      "xu_ly": "Phối hợp này bất hợp lý, nguy cơ quá liều vitamin A. Nếu xét thấy cần phối hợp, theo dõi chặt chẽ hàm lượng vitamin A trong huyết tương và theo dõi các tác dụng không mong muốn (rối loạn thị giác khi bắt đầu). Báo cho người bệnh biết để tự theo dõi các tác dụng không mong muốn."
+    },
+    {
+      "thuoc": ["Methotrexat"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp các thuốc có tiềm năng độc với gan (cộng hợp các tác dụng không mong muốn)",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, cần theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc nếu có thể, hoãn một trong hai liệu trình. Xác minh là người bệnh không uống rượu thường xuyên và không có tiền sử viêm gan do virus."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 2,
+      "phan_tich": "Riêng từng sản phẩm này đều làm tăng triglycerid máu.",
+      "xu_ly": "Xác minh là người bệnh không uống rượu trong suốt quá trình điều trị. Theo dõi chặt chẽ nồng độ triglycerid nếu vẫn còn nghi ngờ."
+    }
+  ]
 }
 
 
