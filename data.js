@@ -14047,6 +14047,4460 @@ window.tuongTacData = [
       "xu_ly": "Khuyên người bệnh phải phẫu thuật, thông báo cho bác sĩ gây mê biết các thuốc đang dùng."
     }
   ]
+},
+{
+  "hoat_chat": "Lidocain hoặc thuốc tương tự",
+  "mo_ta": "Thuốc chống loạn nhịp nhóm Ib theo Vaughan - Williams, có tác dụng ổn định màng (một số có tính chất gây tê).",
+  "cac_thuoc_trong_nhom": [
+    "Lidocain",
+    "Xylocain",
+    "Bupivacain",
+    "Marcain"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Bloc nhĩ-thất. Cần tránh dùng các chất cùng họ hoá học cho những người quá mẫn với một trong các chất đó. Có tiền sử thần kinh-tâm thần nặng. Quá mẫn với thuốc. Sốc do tim."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Suy tim: Nguy cơ gây rối loạn nhịp dẫn truyền và tần số tim. Suy gan: Do các chất này chuyển hoá ở gan. Suy thận: Nguy cơ tích luỹ chất này, do đào thải qua nước tiểu."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Thời kỳ mang thai: Do thận trọng, vì còn thiếu thông tin."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Amiodaron"],
+      "muc_do": 4,
+      "phan_tich": "Tăng nguy cơ xuất hiện xoắn đỉnh do cộng hợp các tác dụng. Hạ kali máu, nhịp tim chậm và khoảng QT dài từ trước (chỉ biết được trên điện tâm đồ) là những yếu tố tạo điều kiện xuất hiện xoắn đỉnh. Xoắn đỉnh là một dạng nhịp thất đặc biệt, có thể xuất hiện thành cơn rất ngắn (vài giây, mệt thỉu: có cảm giác ngất, nhưng không mất ý thức).",
+      "xu_ly": "Chống chỉ định phối hợp thuốc vì có tiềm năng gây tử vong và không được kê đơn."
+    },
+    {
+      "thuoc": ["Sultoprid"],
+      "muc_do": 4,
+      "phan_tich": "Đây không phải là một tương tác của cả họ thuốc, mà là tương tác được mô tả với sultoprid, thuộc nhóm benzamid. Có nguy cơ xuất hiện xoắn đỉnh (rối loạn nhịp thất) do cộng hợp các tác dụng điện sinh lý.",
+      "xu_ly": "Chống chỉ định phối hợp, trừ ở đơn vị chăm sóc tăng cường về tim mạch. Nếu không, thay đổi chiến lược điều trị."
+    },
+    {
+      "thuoc": ["Flecainid"],
+      "muc_do": 4,
+      "phan_tich": "Phối hợp hai thuốc chống loạn nhịp, một thuộc nhóm Ib theo Vaughan-Williams, một thuộc nhóm Ic (ức chế dẫn truyền trong thất). Phối hợp đòi hỏi phải theo dõi điện tâm đồ đều đặn, vì có nguy cơ tăng tác dụng không mong muốn về tim.",
+      "xu_ly": "Phối hợp hai thuốc chống loạn nhịp là vấn đề của các bác sĩ chuyên khoa, và chỉ được thực hiện với sự theo dõi bằng điện tâm đồ."
+    },
+    {
+      "thuoc": ["Mexiletin"],
+      "muc_do": 3,
+      "phan_tich": "Tương tác dược lực giữa hai thuốc chống loạn nhịp cùng nhóm Ib theo Vaughan-Williams.",
+      "xu_ly": "Trừ trường hợp người bệnh được điều trị tại một cơ sở chuyên khoa có thể được theo dõi liên tục, nên tránh phối hợp hai thuốc chống loạn nhịp cùng nhóm."
+    },
+    {
+      "thuoc": ["Barbiturat", "Phenobarbital", "Pentobarbital"],
+      "muc_do": 2,
+      "phan_tich": "Tăng chuyển hoá lidocain ở gan do cảm ứng enzym, kéo theo giảm tác dụng lidocain.",
+      "xu_ly": "Chỉ cần quan tâm đến tương tác này khi lidocain được dùng thường xuyên do cảm ứng enzym chỉ xuất hiện dần dần. Khi đó, phải hiệu chỉnh lại liều lượng. Kiểm tra nồng độ lidocain trong máu nếu cần, và phải cảnh giác khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Dextropropoxyphen"],
+      "muc_do": 2,
+      "phan_tich": "Dextropropoxyphen làm hạ huyết áp nhẹ. Phối hợp với các thuốc hạ huyết áp khác sẽ làm tăng tác dụng hạ huyết áp và tăng nguy cơ hạ huyết áp thế đứng.",
+      "xu_ly": "Phải theo dõi huyết áp trong khi phối hợp thuốc (khi dùng và khi ngừng một trong hai thuốc). Tuỳ theo thuốc dùng, hạ huyết áp có thể nặng hay nhẹ. Khi cần, hiệu chỉnh liều lượng một hay cả hai thuốc. Lập một kế hoạch dùng thuốc đều đặn. Khuyên người bệnh gặp lại bác sĩ để điều chỉnh liều lượng nếu thấy chóng mặt lúc bắt đầu dùng thuốc. Tăng cường theo dõi người bệnh cao tuổi (nguy cơ ngã) và khuyên họ chuyển dần dần từ tư thế nằm hoặc ngồi sang tư thế đứng."
+    },
+    {
+      "thuoc": ["Disopyramid"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp với các thuốc chống loạn nhịp khác nhóm theo phân loại Vaughan-Williams đòi hỏi phải tăng cường theo dõi (điện tâm đồ), nhất là với disopyramid.",
+      "xu_ly": "Phối hợp các thuốc chống loạn nhịp với nhau đòi hỏi phải có trình độ chuyên khoa tim mạch, và thiết bị theo dõi tự động (đơn vị hồi sức tim mạch)."
+    },
+    {
+      "thuoc": ["Furosemid", "Morphin", "Nitroglycerin", "Hydralazin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng hạ huyết áp và tăng nguy cơ hạ huyết áp thế đứng.",
+      "xu_ly": "Theo dõi huyết áp trong thời gian dùng phối hợp thuốc. Tuỳ theo thuốc, hạ huyết áp có thể nặng nhẹ khác nhau. Khi cần, hiệu chỉnh liều lượng của một hay cả hai thuốc. Xây dựng một kế hoạch dùng thuốc đều đặn. Khuyên người bệnh gặp lại bác sĩ để điều chỉnh liều lượng, nếu thấy chóng mặt lúc bắt đầu điều trị. Tăng cường theo dõi người bệnh cao tuổi (nguy cơ ngã) và khuyên họ chuyển dần dần từ thế nằm hoặc ngồi sang tư thế đứng."
+    },
+    {
+      "thuoc": ["Phenytoin"],
+      "muc_do": 2,
+      "phan_tich": "Sử dụng đồng thời hai thuốc này ở khoa tim mạch có thể làm tăng tác dụng ức chế tim. Ngoài ra, phenytoin còn có thể làm tăng chuyển hoá ở gan, như vậy làm giảm nồng độ lidocain huyết thanh.",
+      "xu_ly": "Khi phối hợp thuốc này, phải có sẵn thiết bị để theo dõi. Nếu cần, theo dõi nồng độ lidocain trong máu, hoặc làm điện tâm đồ nếu lâm sàng đòi hỏi, nhất là khi dùng dạng tiêm."
+    },
+    {
+      "thuoc": ["Quinidin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh và khoảng QT bị dài trên điện tâm đồ.",
+      "xu_ly": "Phối hợp thuốc này cần được theo dõi đặc biệt (điện tâm đồ). Về nguyên tắc chung, phải tránh phối hợp các thuốc chống loạn nhịp nhóm I theo Vaughan-Williams, do kéo dài thời gian dẫn truyền tim."
+    },
+    {
+      "thuoc": ["Succinylcholin"],
+      "muc_do": 2,
+      "phan_tich": "Có thể xảy ra hiện tượng kéo dài phong bế thần kinh cơ do succinylcholin. Cơ chế chưa rõ.",
+      "xu_ly": "Bình thường không cần phải thay đổi liệu pháp. Tuy nhiên cần phải theo dõi kỹ người bệnh dùng lidocain với liều cao dưới dạng tiêm truyền, người bệnh mà nồng độ lidocain trong huyết tương cao hơn dự kiến do giảm hiệu suất tim, và người bệnh dùng lidocain tiêm truyền lâu dài. Cần phải chuẩn bị thiết bị trợ giúp hô hấp cho những trường hợp suy hô hấp kéo dài."
+    },
+    {
+      "thuoc": ["Propranolol", "Metoprolol", "Nadolol"],
+      "muc_do": 2,
+      "phan_tich": "Thuốc chẹn beta (bao gồm cả loại thuốc nhỏ mắt) làm giảm lưu lượng máu ở gan, do đó làm giảm đào thải lidocain và làm tăng nồng độ của chất này trong máu. Tương tác này được mô tả với propranolol, metoprolol, nadolol.",
+      "xu_ly": "Hiệu chỉnh lại liều lượng. Theo dõi điện tầm đồ và nồng độ lidocain  trong huyết tương trong khi và cả khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Cimetidin"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin ức chế oxydase gan (cytochrom P450), là enzym có trách nhiệm trong chuyển hoá sinh học của một số thuốc. Ngoài ra, nó làm giảm lưu lượng máu ở gan. Do đó nồng độ một số thuốc trong huyết tương tăng lên (nguy cơ quá liều), và do ức chế một số quá trình chuyển hoá sinh học, nên cimetidin ngăn cản một số cơ chế giải độc. Chuyển hoá ở gan chậm do ức chế enzym, nên tăng nồng độ lidocain trong máu, và nguy cơ có các tác dụng về thần kinh và tim.",
+      "xu_ly": "Lidocain có phạm vi điều trị hẹp nên ức chế quá trình biến đổi sinh học sẽ dẫn đến nguy cơ quá liều. Nếu cần, tăng cường theo dõi nồng độ thuốc trong huyết tương. Dù lidocain được chỉ định để phòng và điều trị loạn nhịp tim do tâm thất dễ bị kích thích, hay được chỉ định làm thuốc gây tê, đều chỉ dành riêng cho bệnh viện. Khi đó phải theo dõi chặt chẽ nồng độ lidocain trong máu, bất kể chỉ định nào. Các dấu hiệu quá liều lidocain là dễ kích động, mê sảng, lú lẫn, thậm chí co giật, hôn mê, truỵ tim mạch."
+    },
+    {
+      "thuoc": ["Pancuronium", "Vecuronium", "Rocuronium", "Atracurium"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng ức chế trung tâm hô hấp của các thuốc giảm đau trung tâm có thể cộng thêm nguy cơ gây liệt hô hấp do thuốc loại cura.",
+      "xu_ly": "Trong gây mê, tương tác này có thể khắc phục bằng thông khí tự động. Tuy nhiên cũng vẫn phải theo dõi hậu phẫu chặt chẽ người bệnh tùy theo đã dùng một thuốc hay phối hợp cả hai thuốc."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Lincosamid",
+  "mo_ta": "Kháng sinh diệt khuẩn.",
+  "cac_thuoc_trong_nhom": [
+    "Lincosamid",
+    "Lincomycin",
+    "Lincocin",
+    "Lincople",
+    "Clindamycin",
+    "Dalacin C",
+    "Dalacin T",
+    "Dalacin V"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Lincosamid qua được sữa mẹ. Bệnh đại tràng: Chống chỉ định sử dụng lincosamid cho những người viêm ruột do nguy cơ gây tiêu chảy nặng và kéo dài. Các trường hợp khác: Nhiễm khuẩn màng não, bất kể do chủng gây bệnh não, đều chống chỉ định dùng lincosamid do khuếch tán vào dịch não tuỷ rất ít. Tránh dùng khi quá mẫn với licosamid."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy gan/suy thận: Suy gan hay suy thận nặng làm tăng nửa đời của các lincosamid, kèm theo nguy cơ độc tính đường tiêu hoá (viêm đại tràng loét giả, thường lành tính, hoặc viêm đại tràng màng giả thường gặp hơn và nặng hơn) có cơ chế chưa rõ (nguồn gốc miễn dịch hay độc tính trực tiếp). Giảm liều lượng và định lượng thuốc trong huyết thanh. Thời kỳ mang thai: Tính an toàn tuyệt đối của việc dùng các lincosamid cho người mang thai chưa được xác định chắc chắn."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy hô hấp; hen: Bệnh hen hay các tiền sử dị ứng đòi hỏi phải thận trọng khi sử dụng lincosamid."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Gentamicin", "Amikacin", "Streptomycin", "Tobramycin", "Netilmicin", "Foscarnet"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tăng nguy cơ độc với thận khi phối hợp hai thuốc có tiềm năng độc với thận. Cộng hợp các tác dụng không mong muốn.",
+      "xu_ly": "Phối hợp thuốc này có thể hay gặp, nhất là tại bệnh viện. Mặc dầu cách dùng một liều duy nhất trong ngày sẽ làm giảm độc tính với tai và thận, nhưng khi cần phối hợp thuốc, vẫn nên điều chỉnh liều lượng theo độ thanh lọc creatinin (công thức Cockroft và Gault). Đặc biệt cần theo dõi ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Chloramphenicol", "Thiamphenicol"],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng kìm khuẩn của các phenicol có thể đối kháng tác dụng diệt khuẩn của họ thuốc phối hợp này. Tác dụng diệt khuẩn này biểu hiện trên những vi khuẩn ở giai đoạn phát triển theo hàm mũ. Tính đối kháng này có thể gây hại cho điều trị viêm màng não, vì cần can thiệp nhanh và mạnh.",
+      "xu_ly": "Cần tính tới nguy cơ này theo hoàn cảnh sinh bệnh lý cụ thể. Có thể phối hợp thuốc này tuỳ theo thuốc dùng cụ thể và chủng gây bệnh (chú ý đến nồng độ tối thiểu ức chế-MIC)."
+    },
+    {
+      "thuoc": [
+        "Enfluran", "Isofluran", "Sevofluran", "Halothan"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ phong bế thần kinh-cơ tăng, có thể kéo theo yếu cơ và suy hô hấp, thậm chí liệt hô hấp, đặc biệt với enfluran và isofluran.",
+      "xu_ly": "Bác sĩ gây mê phải tránh nguy cơ này, và phải chuẩn bị các thuốc kháng cholinesterase và các muối calci tiêm để giải toả phong bế thần kinh cơ. Nguy cơ giảm khi hỗ trợ hô hấp. Cẩn thận khi người bệnh tỉnh dậy."
+    },
+    {
+      "thuoc": [
+        "Pancuronium", "Vecuronium", "Rocuronium", "Atracurium"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng các thuốc cura, có thể gây nguy cơ phong bế thần kinh - cơ, tiến triển đến liệt hô hấp.",
+      "xu_ly": "Phối hợp thuốc phải do bác sĩ gây mê ở cơ sở chuyên khoa theo dõi. Tuỳ theo người bệnh có được hỗ trợ hô hấp hay không mà nguy cơ này có thể nặng nhẹ khác nhau."
+    },
+    {
+      "thuoc": [
+        "Aldesleukin", "Proleukin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Chỉ được dùng interleukin tại cơ sở chuyên khoa. Có nguy cơ cộng hợp các tác dụng độc với thận của hai thuốc.",
+      "xu_ly": "Điều trị bằng interleukin chỉ được thực hiện tại một cơ sở chuyên khoa, do tính chất nghiêm trọng của chỉ định. Khi đó tương tác thuốc được xem xét tuỳ theo thể trạng chung của người bệnh. Nếu không thể hoãn dùng một trong hai thuốc, phải theo dõi chặt chẽ ion đồ và độ thanh lọc creatinin."
+    },
+    {
+      "thuoc": [
+        "Morphin", "Fentanyl", "Oxycodon"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng ức chế hô hấp của các thuốc có tác dụng phong bế chỗ nối thần kinh-cơ cộng thêm vào tác dụng ức chế hô hấp của các thuốc giảm đau trung ương.",
+      "xu_ly": "Bác sĩ gây mê cần lưu ý đến tương tác này, và khi cần phải hỗ trợ hô hấp. Chú ý khi tỉnh dậy và khi ngừng hỗ trợ hô hấp. Khuyên người bệnh thông báo cho bác sĩ gây mê các thuốc đang dùng."
+    },
+    {
+      "thuoc": [
+        "Aluminium hydroxide", "Magnesium hydroxide", "Maalox", "Gastropulgite", "Phosphalugel", "Than hoạt"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Kaolin làm giảm hấp thu các lincosamid theo đường tiêu hoá và do đó làm giảm tác dụng của các thuốc này.",
+      "xu_ly": "Cần phải có một khoảng cách ít nhất hai giờ giữa lần dùng thuốc kháng acid và lần dùng licosamid. Thông thường thuốc kháng acid được dùng sau bữa ăn 1 giờ 30 phút, và ăn là nguyên nhân tăng tiết dịch vị."
+    }
+  ]
+},
+{
+  "hoat_chat": "Lipid (nhũ dịch tiêm truyền)",
+  "mo_ta": "Nhũ dịch lipid dùng để cung cấp năng lượng trong nuôi dưỡng ngoài đường tiêu hoá.",
+  "cac_thuoc_trong_nhom": [
+    "Lipid (nhũ dịch tiêm truyền)",
+    "Nhũ dịch dầu đậu tương tinh chế",
+    "Intralipid",
+    "Intralipos",
+    "Vitrimix KV"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Rối loạn đông máu."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Suy gan: Nguy cơ ứ mật."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Thời kỳ cho con bú/ thời kỳ mang thai: Vì thiếu dữ liệu. Trường hợp tăng lipid máu, dị ứng với lecithin lòng đỏ trứng và thận hư nhiễm mỡ."
+    }
+  },
+  "tuong_tac": []
+}
+,
+{
+  "hoat_chat": "Lithi (muối)",
+  "mo_ta": "Thuốc điều trị các trạng thái hưng trầm cảm.",
+  "cac_thuoc_trong_nhom": [
+    "Lithi (muối)",
+    "Lithium carbonat",
+    "Teralithe",
+    "Teralithe LP"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ mang thai: Nếu tỷ lệ các trẻ em có dị tật do các bà mẹ được điều trị bằng lithi cũng giống như tỷ lệ này trong dân chúng nói chung, thì tần số xuất hiện các dị tật về tim mạch nghiêm trọng (bệnh Ebstein) đã khiến phải ngừng điều trị trong giai đoạn đầu thai kỳ, dù sau đó phải điều trị lại trong giai đoạn sau, có kiểm tra nghiêm ngặt nồng độ lithi trong máu."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Do lithi qua được sữa mẹ, nên bắt buộc phải ngừng cho trẻ bú mẹ. Suy thận: Mọi nguyên nhân làm giảm bài tiết thuốc qua thận đều có nguy cơ làm tăng lithi máu (xem phần: thức ăn; rượu)."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Thức ăn; rượu: Đối với người bệnh dùng lithi, yêu cầu chế độ ăn có muối như bình thường. Tái hấp thu lithi và natri ở ống thận gần liên quan chặt chẽ với nhau. Hạ natri máu có thể gây tăng lithi máu, thể hiện: chóng mặt, run, nôn, tiêu chảy, nói khó, rối loạn ý thức và thậm chí hôn mê."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy tim: Lithi làm nặng thêm mất cân bằng muối và nước khi suy tim. Ngoài ra, điều trị suy tim (chế độ ăn nhạt, và dùng các thuốc lợi tiểu thải muối) làm tăng nguy cơ nhiễm độc do tăng lithi máu (xem phần: thức ăn; rượu)."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Sulpirid", "Amisulprid", "Haloperidol", "Risperidon", "Olanzapin", "Quetiapin",
+        "Droperidol", "Chlorpromazin", "Fluphenazin", "Thioridazin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Đã có thông báo về các tai biến độc thần kinh kiểu hội chứng lú lẫn ở người bệnh dùng phối hợp thuốc này.",
+      "xu_ly": "Nên tránh phối hợp thuốc này. Thay đổi chiến lược điều trị, trừ trường hợp người bệnh nằm trong một cơ sở chuyên khoa, được theo dõi liên tục."
+    },
+    {
+      "thuoc": ["Carbamazepin"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ độc với thần kinh, ngay cả với liều bình thường, do tác dụng hiệp đồng. Người giảm năng tuyến giáp đặc biệt dễ nhạy cảm.",
+      "xu_ly": "Nên tránh phối hợp thuốc này, nhưng một số bác sĩ chuyên khoa được dùng trong một số trường hợp trầm cảm khó chữa."
+    },
+    {
+      "thuoc": [
+        "Furosemid", "Hydrochlorothiazid", "Spironolacton", "Amilorid", "Triamteren"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Do sự cạnh tranh giữa ion lithi và natri, nên chế độ ăn nhạt dẫn đến giảm bài tiết lithi qua nước tiểu. Các thuốc lợi tiểu quai và các thuốc lợi tiểu thiazid làm giảm natri máu, và vì vậy làm tăng lithi máu, kèm theo nguy cơ quá liều. Tương tác dược động học về đào thải thuốc.",
+      "xu_ly": "Lithi có phạm vi điều trị hẹp, do đó phải theo dõi chặt chẽ và đều đặn nồng độ lithi trong huyết thanh (nồng độ cân bằng trong huyết tương khoảng 0,5 đến 1 mEq/lit). Trong số những dấu hiệu quá liều lithi, có hiện tượng suy nhược, run rẩy, yếu cơ, buồn nôn, tiêu chảy, nói khó, mất phối hợp vận động... ở người bệnh có chức năng thận bình thường, nếu cần phối hợp thuốc, phải tăng cường theo dõi lithi máu, và tiến hành hiệu chỉnh liều cho thật chính xác trong và khi ngừng điều trị bằng thuốc lợi tiểu."
+    },
+    {
+      "thuoc": ["Haloperidol"],
+      "muc_do": 3,
+      "phan_tich": "Kết hợp thuốc có thể gây suy giảm ý thức, bệnh về não, các tác dụng ngoại tháp, sốt, tăng bạch cầu, và hoạt tính enzym huyết thanh tăng.",
+      "xu_ly": "Nếu phải kết hợp thuốc này, phải theo dõi người bệnh chặt chẽ, đặc biệt trong vòng ba tuần lễ đầu dùng liệu pháp kết hợp. Nếu nghi ngờ có tương tác thuốc, ngừng dùng một trong hai thứ thuốc đó, điều trị các triệu chứng xuất hiện."
+    },
+    {
+      "thuoc": [
+        "Chlorpromazin", "Fluphenazin", "Thioridazin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Đã có báo cáo về các tai biến độc thần kinh kiểu hội chứng lú lẫn, đối với người bệnh dùng phối hợp thuốc lithi - thuốc an thần kinh loại phenothiazin (được mô tả với chlorpromazin, fluphenazin, thioridazin).",
+      "xu_ly": "Nên tránh phối hợp thuốc. Thay đổi chiến lược điều trị, trừ khi người bệnh nằm trong một cơ sở chuyên khoa và được theo dõi thường xuyên."
+    },
+    {
+      "thuoc": ["Sibutramin"],
+      "muc_do": 3,
+      "phan_tich": "Có thể xảy ra hội chứng serotonin bao gồm dễ kích thích hệ thần kinh trung ương, yếu cơ vận động, giật rung cơ, suy giảm ý thức. Các tác dụng serotoninergic của sibutramin và lithi cộng với nhau.",
+      "xu_ly": "Tránh sử dụng đồng thời hai thuốc này. Nếu không thể tránh được điều này, phải theo dõi chặt bệnh nhân về các tác dụng phụ có thể xảy ra."
+    },
+    {
+      "thuoc": [
+        "Losartan", "Valsartan", "Candesartan", "Irbesartan", "Telmisartan"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp thuốc lithi với các thuốc đối kháng thụ thể angiotensin II (như losartan, valsartan…) có thể làm tăng nồng độ lithi trong huyết tương, kèm theo tăng tác dụng dược lý và độc tính, như lú lẫn, mất điều hoà, hoang tưởng. Cơ chế là do các thuốc đối kháng thụ thể angiotensin II có thể làm giảm đào thải lithi qua thận do làm tái hấp thu nguyên tố này.",
+      "xu_ly": "Phải theo dõi những triệu chứng nhiễm độc lithi ở bệnh nhân và nếu cần, thì hiệu chỉnh liều."
+    },
+    {
+      "thuoc": [
+        "Captopril", "Enalapril", "Lisinopril", "Perindopril", "Ramipril"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tăng nồng độ lithi trong máu, có thể dẫn đến hội chứng lú lẫn chứng tỏ quá liều do giảm bài tiết qua thận.",
+      "xu_ly": "Thay đổi chiến lược điều trị; nên tránh phối hợp thuốc này."
+    },
+    {
+      "thuoc": ["Verapamil"],
+      "muc_do": 3,
+      "phan_tich": "Có thể có nhiều loại tương tác, theo những cơ chế còn chưa biết, trong đó có: Tăng độc tính của lithi; giảm nồng độ lithi trong huyết thanh;  có hai trường hợp nhịp tim chậm (trong đó có một trường hợp dẫn tới nhồi máu cơ tim gây tử vong).",
+      "xu_ly": "Ngay ban đầu, xét xem phối hợp thuốc này có thật cần không. Nếu đúng như vậy, phải theo dõi những phản ứng của từng người bệnh (cho đến nay, những phản ứng này vẫn chưa dự kiến trước được), đặc biệt của những người bệnh cao tuổi và/hoặc người có rối loạn tim mạch. Đã mô tả độc tính thần kinh kiểu buồn nôn, nôn, tiêu chảy, mất phối hợp vận động... Thông báo mọi hiện tượng bất thường cho Trung tâm cảnh giác thuốc."
+    },
+    {
+      "thuoc": [
+        "Natri bicarbonat", "Natri citrat", "Natri lactat"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Khi kiềm hoá nước tiểu, nồng độ lithi trong huyết tương giảm và làm giảm tác dụng của lithi. Cơ chế là sự thanh lọc lithi qua thận sẽ tăng khi độ kiềm của nước tiểu tăng.",
+      "xu_ly": "Khi điều trị bằng lithi, tránh dùng thường xuyên các thuốc kiềm hoá nước tiểu, hoặc dùng đột xuất loại thuốc này với liều cao. Một số thuốc kháng acid có chứa natri bicarbonat có tác dụng kiềm hoá nước tiểu, do đó cần phải đọc kỹ đơn thuốc."
+    },
+    {
+      "thuoc": ["Cafein"],
+      "muc_do": 2,
+      "phan_tich": "ở những người nghiện cà phê, có nguy cơ tăng đào thải lithi qua nước tiểu, làm giảm tác dụng điều trị.",
+      "xu_ly": "Khuyên người bệnh giảm, thậm chí không uống cà phê để tránh những dao động lithi máu và đạt được cân bằng điều trị."
+    },
+    {
+      "thuoc": ["Clozapin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính thần kinh (bất tỉnh, lú lẫn, loạn vận động) do một cơ chế còn chưa rõ.",
+      "xu_ly": "Nếu vẫn giữ phối hợp thuốc này, nhất thiết phải theo dõi lâm sàng. Khi xuất hiện các triệu chứng, thay đổi liệu pháp."
+    },
+    {
+      "thuoc": ["Didanosin"],
+      "muc_do": 2,
+      "phan_tich": "Viên didanosin chứa một chất kháng acid, nên có nguy cơ giảm hấp thu lithi qua đường tiêu hóa theo sự tăng pH dạ dày.",
+      "xu_ly": "Khuyên người bệnh uống hai thuốc cách nhau ít nhất 2 giờ."
+    },
+    {
+      "thuoc": ["Diltiazem"],
+      "muc_do": 2,
+      "phan_tich": "Tương tác còn đang tranh cãi. Có những trường hợp được thông báo tăng hay giảm nồng độ lithi trong huyết thanh, gây độc tính với thần kinh, thể hiện: buồn nôn, nôn, tiêu chảy, mất phối hợp vận động, run.",
+      "xu_ly": "Trước mâu thuẫn này, cần theo dõi chính xác lithi máu lúc bắt đầu, trong và sau khi điều trị bằng diltiazem. Chuyển các nhận xét, nếu có, đến Trung tâm cảnh giác thuốc."
+    },
+    {
+      "thuoc": [
+        "Fluoxetin", "Fluvoxamin", "Paroxetin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Cộng hợp các tác dụng không mong muốn: tăng độc tính thần kinh của các muối lithi với nguy cơ xuất hiện hội chứng serotonin (kích động, run rẩy, cứng nhắc, tăng hoặc hạ huyết áp, nhịp tim nhanh, toát mồ hôi, rét run..).",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải theo dõi đều đặn lâm sàng. Khi cần, hiệu chỉnh liều lượng trong và sau khi điều trị với thuốc chống trầm cảm, và kiểm tra nồng độ lithi trong huyết thanh."
+    },
+    {
+      "thuoc": [
+        "Iod", "Kali iodid", "Natri iodid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Lithi hoặc các muối iodid có thể có tác dụng hiệp đồng làm giảm năng tuyến giáp. Cơ chế chưa rõ.",
+      "xu_ly": "Các bệnh nhân điều trị bằng lithi nói chung cần tránh dùng iod hoặc các muối iodid. Nếu có hiện tượng giảm năng tuyến giáp hoặc xuất hiện bướu cổ, thì các hormon tuyến giáp có thể làm giảm nhẹ triệu chứng và hết bướu cổ."
+    },
+    {
+      "thuoc": [
+        "Indometacin", "Piroxicam", "Aspirin", "Ibuprofen", "Naproxen"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Các thuốc chống viêm có thể làm giảm độ thanh lọc của lithi qua thận, gây tăng tái hấp thu lithi ở ống thận, kéo theo quá liều lithi.",
+      "xu_ly": "Phối hợp thuốc này đòi hỏi phải hiệu chỉnh liều lượng lithi lúc bắt đầu, trong khi, và cả khi ngừng dùng thuốc chống viêm. Nếu cần, nên theo dõi chặt chẽ lithi máu."
+    },
+    {
+      "thuoc": ["Methyldopa"],
+      "muc_do": 2,
+      "phan_tich": "Methyldopa có thể làm tăng lithi máu, và gây quá liều lithi, với các dấu hiệu thần kinh.",
+      "xu_ly": "Kết hợp thuốc này đòi hỏi phải hiệu chỉnh liều lượng lithi khi bắt đầu, trong và khi ngừng methyldopa. Nếu cần, phải theo dõi chặt chẽ lithi máu."
+    },
+    {
+      "thuoc": [
+        "Theophylline", "Aminophylline"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tương tác dược động học. Tăng đào thải lithi qua nước tiểu.",
+      "xu_ly": "Theo dõi lâm sàng. Nếu cần, hiệu chỉnh lại liều lượng theo nồng độ điều trị."
+    },
+    {
+      "thuoc": [
+        "Carbimazol", "Methimazol", "Propylthiouracil"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời hai thuốc này làm tăng nguy cơ giảm năng giáp và dẫn tới bướu cổ.",
+      "xu_ly": "Kiểm tra đều đặn trong và sau khi điều trị với lithi, nồng độ iod trong máu liên kết với protein và TSH huyết tương."
+    },
+    {
+      "thuoc": ["Amphetamin"],
+      "muc_do": 1,
+      "phan_tich": "Các tác dụng kích thích hệ thần kinh trung ương của amphetamin có thể bị lithi đối kháng.",
+      "xu_ly": "Tính tới tương tác này để xác định hoặc xác định lại chiến lược điều trị."
+    },
+    {
+      "thuoc": ["Citalopram"],
+      "muc_do": 1,
+      "phan_tich": "Nguy cơ xuất hiện hội chứng serotonin kinh điển gồm các triệu chứng tâm thần (kích động, lú lẫn, thậm chí hôn mê), vận động (giật cơ, run rẩy, hoạt động quá mức...), thực vật (tăng hay hạ huyết áp, rét run, rùng mình, sốt cao, toát mồ hôi), tiêu hoá (tiêu chảy).",
+      "xu_ly": "Nếu không thể tránh được phối hợp thuốc, bắt buộc phải theo dõi lâm sàng."
+    }
+  ]
+},
+{
+  "hoat_chat": "Loperamid",
+  "mo_ta": "Loperamid là thuốc điều trị tiêu chảy kiểu morphin tác động bằng cách làm chậm sự chuyển vận của đường tiêu hoá. Với liều điều trị, loperamid không có đặc tính gây nghiện và giảm đau của thuốc họ opi trên hệ thần kinh trung ương.",
+  "cac_thuoc_trong_nhom": [
+    "Loperamid",
+    "Arestal",
+    "Eldoper",
+    "Imodium",
+    "Lomedium",
+    "Lormide",
+    "Novo-Loperamid",
+    "Stopare"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Trẻ em: Không dùng cho trẻ em dưới 6 tuổi. Các trường hợp khác: Đợt kịch phát cấp tính viêm đại-trực tràng chảy máu, trướng bụng."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Thời kỳ cho con bú: Vì thận trọng, không nên dùng loperamid trong thời kỳ cho con bú. Thời kỳ mang thai: Vì thận trọng, không nên dùng loperamid trong thai kỳ."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Cholestyramin"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng của loperamid có thể bị giảm do cholestyramin. Có thể do cholestyramin gắn vào loperamid ở ruột non, nên làm giảm tác dụng của thuốc này. Tương tác xảy ra chậm.",
+      "xu_ly": "Nên uống hai thuốc cách nhau càng xa càng tốt, hoặc tăng liều loperamid."
+    },
+    {
+      "thuoc": ["Theophylin"],
+      "muc_do": 2,
+      "phan_tich": "Làm chậm hấp thu theophylin ở dạng giải phóng chậm. Loperamid làm cho ruột chậm chuyển vận, nên làm chậm hoà tan viên theophylin giải phóng chậm.",
+      "xu_ly": "Nên uống hai thuốc này cách xa nhau."
+    },
+    {
+      "thuoc": ["Co-trimoxazol"],
+      "muc_do": 1,
+      "phan_tich": "Co-trimoxazol có thể làm tăng nồng độ của loperamid trong huyết tương, nhưng có thể ít gây ảnh hưởng về lâm sàng. Co-trimoxazol có thể ức chế chuyển hoá của loperamid.",
+      "xu_ly": "Loperamid có phạm vi an toàn rất rộng, nên có thể không cần phải điều chỉnh liều, mà chỉ cần theo dõi lâm sàng."
+    },
+    {
+      "thuoc": ["Desmopressin"],
+      "muc_do": 1,
+      "phan_tich": "Nồng độ trong huyết tương của desmopressin có thể tăng, nên tăng tác dụng dược lý và tác dụng có hại, do loperamid làm chậm sự chuyển vận của đường tiêu hoá, nên làm tăng hấp thu desmopressin.",
+      "xu_ly": "Dựa trên thông tin hiện có, không cần phải xử lý gì đặc biệt, ngoài theo dõi lâm sàng."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Lợi tiểu giữ kali",
+  "mo_ta": "Thuốc tác dụng ở ống lượn xa, ức chế tái hấp thu natri bằng cách trao đổi với kali, trực tiếp lên các tế bào (triamteren, amilorid) hoặc bằng cách đối kháng với aldosteron (spironolacton, canrenon, kali canrenoat).",
+  "cac_thuoc_trong_nhom": [
+    "Spironolacton",
+    "Verospiron",
+    "Triamteren",
+    "Dyrenium"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ cho con bú: Các kháng aldosteron qua được sữa mẹ đòi hỏi cách ăn uống khác cho trẻ đang bú. Trường hợp khác: Quá mẫn với một trong các thành phần. Tăng kali máu."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Suy thận: Suy thận làm tăng nguy cơ tăng kali máu, có thể dẫn đến tai biến chết người."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Thời kỳ mang thai: Việc dùng những thuốc lợi tiểu này cũng như việc dùng các thiazid hạ kali máu không được minh chứng trong điều trị phù và tăng huyết áp ở người mang thai, vì có thể dẫn đến thiếu máu cục bộ ở thai-nhau thai, kèm theo nguy cơ suy dinh dưỡng thai. Tiểu đường: Tăng glucose máu tạo thuận lợi cho tăng kali máu, việc dùng những thuốc lợi tiểu này có thể nguy hiểm cho người tiểu đường. Suy gan: Các kháng aldosteron giả có thể gây thiếu hụt acid folic ở người xơ gan. Trường hợp khác: Triamteren có tính chất kháng folic có thể dẫn đến thiếu máu nguyên hồng cầu khổng lồ và không được phối hợp với các thuốc kháng folic khác (trimethoprim, pyrimethamin, methotrexat, zidovudin). Trường hợp quá mẫn với thuốc, nên tránh kê đơn thuốc này."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Kali clorid", "Potassium chloride", "Kaleorid"],
+      "muc_do": 4,
+      "phan_tich": "Phối hợp các muối kali với thuốc lợi tiểu giữ kali có nguy cơ dẫn đến tăng kali máu.",
+      "xu_ly": "Tránh cùng kê đơn hai thuốc này vì nguy cơ tăng kali máu và rối loạn dẫn truyền tim, đặc biệt ở người bệnh cao tuổi, người suy thận và suy tim."
+    },
+    {
+      "thuoc": ["Tacrolimus"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng kali máu có tiềm năng gây tử vong, do cộng hợp các tác dụng gây tăng kali máu của hai thuốc này (nhất là trong trường hợp suy thận; chú ý đến người bệnh cao tuổi). Tương tác dược lực học.",
+      "xu_ly": "Nếu không thể tránh được phối hợp này, theo dõi kali máu đều đặn."
+    },
+    {
+      "thuoc": [
+        "Captopril", "Enalapril", "Lisinopril", "Perindopril", "Ramipril"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Chẹn hệ renin-angiotensin, dẫn đến tích luỹ renin lưu thông, hệ thống này phụ thuộc natri. Nguy cơ tăng kali máu nghiêm trọng.",
+      "xu_ly": "Thay đổi phối hợp do nguy cơ tăng kali máu."
+    },
+    {
+      "thuoc": [
+        "Acid folic", "Pyrimethamin", "Trimethoprim", "Methotrexat", "Zidovudin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Chỉ riêng triamteren trong nhóm thuốc lợi tiểu giữ kali có tính chất đối kháng acid folic, do ức chế dihydrofolat reductase. Tương tác này càng có ý nghĩa nếu dùng liều cao và điều trị kéo dài.",
+      "xu_ly": "Kiểm tra huyết đồ và tuỳ trường hợp, cho dùng acid folinic nhất là ở người dùng liều cao chất kháng folic, hoặc ở người điều trị dài ngày. ở những người bệnh này, khuyên nên bổ sung acid folinic, nhất là trong thời kỳ mang thai."
+    },
+    {
+      "thuoc": ["Amantadin"],
+      "muc_do": 2,
+      "phan_tich": "Các thiazid trong số các thuốc lợi niệu thải kali và triamteren trong số các thuốc lợi niệu giữ kali đã được mô tả là làm giảm độ thanh lọc của amantadin ở thận, cơ chế chưa biết rõ, do đó có thể làm tăng độc tính của amantadin.",
+      "xu_ly": "Nếu phối hợp, phải điều chỉnh liều của amantadin. Nên lưu ý là tương tác được mô tả này cần được xác nhận."
+    },
+    {
+      "thuoc": ["Amphetamin"],
+      "muc_do": 2,
+      "phan_tich": "Amphetamin là thuốc cường giao cảm trực tiếp, và do dó có tính chất gây tăng huyết áp. Phối hợp với các thuốc chống tăng huyết áp dẫn đến đối kháng tác dụng và rất khó đạt cân bằng huyết áp.",
+      "xu_ly": "ở người tăng huyết áp, nên tránh kê đơn các sản phẩm amphetamin."
+    },
+    {
+      "thuoc": [
+        "Baclofen", "Chlorpromazin", "Morphin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng hạ huyết áp và tăng nguy cơ hạ huyết áp thế đứng.",
+      "xu_ly": "Theo dõi huyết áp trong khi phối hợp hai thuốc. Tuỳ theo thuốc, hạ huyết áp có thể nặng nhẹ khác nhau. Tuỳ trường hợp, điều chỉnh liều của một hoặc hai thuốc. Xây dựng một kế hoạch dùng thuốc đều đặn. Khuyên người bệnh nếu bị chóng mặt khi bắt đầu điều trị, nên gặp lại bác sĩ điều trị để nếu cần, điều chỉnh liều của một hoặc hai thuốc. Tăng cường theo dõi ở người bệnh cao tuổi (nguy cơ ngã) và khuyên họ khi ở tư thế nằm hoặc ngồi mà chuyển sang tư thế đứng thì phải từ từ."
+    },
+    {
+      "thuoc": ["Metformin", "Stagid", "Glucophage", "Glucinan"],
+      "muc_do": 2,
+      "phan_tich": "Khi suy thận chức năng, sinh lý và / hoặc liên quan đến thuốc lợi tiểu, có nguy cơ tăng trạng thái nhiễm acid lactic do metformin.",
+      "xu_ly": "Lưu ý tương tác này và tránh kê đơn metformin nếu người bệnh bị suy thận, có creatinin máu lớn hơn 15mg/ lit (135 micromol/ lít) ở nam, và 12mg/lít (110 micromol / lít) ở nữ. Đặc biệt chú ý đến việc kê đơn metformin kèm với thuốc lợi tiểu ở người bệnh cao tuổi. Phải theo dõi thận ở người bệnh khi bắt đầu điều trị. Nên nhớ những dấu hiệu báo trước trạng thái nhiễm acid lactic: buồn nôn, nôn, co cứng cơ, tăng thông khí, cảm giác mệt nhọc, đau bụng."
+    },
+    {
+      "thuoc": ["Haloperidol"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng hạ huyết áp của những thuốc này.",
+      "xu_ly": "Nếu cần phối hợp này, tăng cường theo dõi huyết áp trong và sau khi ngừng điều trị bằng một trong hai thuốc. Tuỳ trường hợp, điều chỉnh liều. Nhấn mạnh về kế hoạch dùng thuốc và sự tuân thủ. Đặc biệt cảnh giác ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Ciclosporin"],
+      "muc_do": 2,
+      "phan_tich": "Đã ghi nhận có tăng creatinin máu mà không thay đổi ciclosporin máu.",
+      "xu_ly": "Theo dõi creatinin máu và chức năng thận khi cần phối hợp."
+    },
+    {
+      "thuoc": [
+        "Iopamidol", "Iohexol", "Iopromid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ suy thận cấp, nếu bị mất nước do thuốc lợi tiểu (đặc biệt là với các chất chứa 3 iod ion hoá và các chất 6 iod).",
+      "xu_ly": "Nên tiếp nước cho người bệnh trước khi dùng chất cản quan chứa iod. Khuyên người bệnh báo cho thầy thuốc X quang biết là đang điều trị thuốc lợi tiểu để có biện pháp xử lý."
+    },
+    {
+      "thuoc": [
+        "Clonidin", "Furosemid", "Levodopa", "Methyldopa", "Metoprolol", "Propranolol", "Nifedipin", "Amlodipin", "Hydralazin", "Indapamid", "Chlortalidon"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng làm hạ huyết áp.",
+      "xu_ly": "Cần phải điều chỉnh liều, xây dựng kế hoạch dùng thuốc và nhấn mạnh với người bệnh về sự tuân thủ. Lúc đầu điều trị, cần đo huyết áp đều đặn cho tới khi đạt cân bằng điều trị."
+    },
+    {
+      "thuoc": ["Clozapin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng tác dụng làm hạ huyết áp.",
+      "xu_ly": "Theo dõi huyết áp và điều chỉnh liều của thuốc lợi tiểu giữ kali trong và sau khi ngừng điều trị bằng clozapin. Thận trọng đặc biệt ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Colchicin", "Probenecid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Thuốc lợi tiểu giữ kali làm tăng acid uric máu và làm giảm tác dụng điều trị chống gút.",
+      "xu_ly": "Tốt nhất, nên tránh dùng hai thuốc trong cùng thời gian, nếu không sẽ thấy điều trị chống gút thất bại."
+    },
+    {
+      "thuoc": ["Fludrocortison"],
+      "muc_do": 2,
+      "phan_tich": "Hiệu lực của thuốc chống tăng huyết áp giảm có thể do tác dụng giữ natri của các steroid.",
+      "xu_ly": "Nếu cần phối hợp, tăng cường theo dõi huyết áp, trong và khi ngừng điều trị bằng một trong hai thuốc. Có khi phải điều chỉnh liều. Nhấn mạnh về kế hoạch và tuân thủ dùng thuốc. Đặc biệt cảnh giác khi dùng với người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Prednisolon", "Dexamethason", "Hydrocortison"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp một thuốc lợi tiểu có tác dụng hạ huyết áp với corticoid có tác dụng giữ muối và nước. Tác dụng giữ muối và nước có thể làm giảm tác dụng chống tăng huyết áp.",
+      "xu_ly": "Lưu ý những tác dụng dược lý này để điều chỉnh liều thường xuyên. Thông tin cho người bệnh để tăng cường tự theo dõi huyết áp. Xây dựng kế hoạch dùng thuốc đúng giờ giấc đều đặn."
+    },
+    {
+      "thuoc": ["Dextropropoxyphen"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng hạ huyết áp nhẹ của dextropropoxyphen. Tăng tác dụng hạ huyết áp và tăng nguy cơ hạ huyết áp thế đứng.",
+      "xu_ly": "Cần phải theo dõi huyết áp trong khi phối hợp (trong khi điều trị và sau khi ngừng một trong hai thuốc)."
+    },
+    {
+      "thuoc": ["Diazoxyd"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc có tính chất làm hạ huyết áp.",
+      "xu_ly": "Diazoxyd gây tăng glucose máu, nên cảnh giác khi phối hợp hai thuốc tuỳ theo mục tiêu điều trị chính cần đạt. Theo dõi huyết áp động mạch đều đặn nếu phối hợp tỏ ra cần thiết."
+    },
+    {
+      "thuoc": ["Digoxin"],
+      "muc_do": 2,
+      "phan_tich": "Spironolacton có thể làm giảm nhẹ lực co cơ dương tính của digoxin. Nồng độ digoxin trong huyết thanh cũng có thể tăng. Ngoài ra, spironolacton có thể ảnh hưởng đến xét nghiệm miễn dịch phóng xạ đo digoxin, dẫn đến tăng giả tạo lượng digoxin trong huyết thanh. Cơ chế: tác dụng lực co cơ dương tính của digoxin có thể bị giảm bớt bởi lực co cơ âm tính của spironolacton. Ngoài ra, spironolacton có thể cản sự đào thải digoxin ở ống thận, làm giảm độ thanh lọc và làm tăng nồng độ của thuốc này trong huyết tương.",
+      "xu_ly": "Có thể phải điều chỉnh liều của digoxin trong thời gian uống cùng với spironolacton; theo dõi người bệnh chặt chẽ. Cũng nên nhận biết về nồng độ cao giả tạo của digoxin trong xét nghiệm miễn dịch phóng xạ để không căn cứ vào đó mà điều chỉnh liều."
+    },
+    {
+      "thuoc": [
+        "Indometacin", "Aspirin", "Ibuprofen", "Naproxen"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Giảm tác dụng hạ huyết áp: Thuốc chống viêm không steroid ức chế tổng hợp prostaglandin ở thận (chất gây giãn mạch) và/ hoặc dẫn đến giữ muối và nước. Nguy cơ suy thận cấp ở người bệnh mất nước.",
+      "xu_ly": "Cần bảo đảm tiếp nước tốt cho người bệnh; theo dõi chức năng thận (độ thanh lọc creatinin); kiểm tra sự ổn định huyết áp động mạch, đặc biệt khi bắt đầu điều trị. Khuyên người bệnh theo dõi đều đặn huyết áp."
+    },
+    {
+      "thuoc": ["Guanethidin"],
+      "muc_do": 2,
+      "phan_tich": "Sự tăng tác dụng hạ huyết áp, thường được sử dụng trong điều trị và cần phải dùng liều thích hợp.",
+      "xu_ly": "Tăng cường theo dõi huyết áp. Nhấn mạnh về sự tuân thủ và giờ giấc dùng thuốc đều đặn, khi áp dụng liệu pháp hai thuốc. Cảnh giác khi sử dụng  ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Nicorandil", "Nitroglycerin"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp với bất kỳ thuốc nào có tính chất chống tăng huyết áp có thể làm tăng nguy cơ hạ huyết áp đôi khi dẫn đến sốc.",
+      "xu_ly": "Theo dõi huyết áp trong khi điều trị và sau khi ngừng một trong hai thuốc. Thận trọng đặc biệt ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Reserpin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng tác dụng hạ huyết áp, có thể sử dụng trong điều trị.",
+      "xu_ly": "Theo dõi huyết áp động mạch và điều chỉnh liều của thuốc chống tăng huyết áp lựa chọn ban đầu, trong khi điều trị và sau khi ngừng reserpin."
+    },
+    {
+      "thuoc": ["Sotalol"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng hạ huyết áp. Sotalol thường chỉ được dùng làm thuốc chống loạn nhịp.",
+      "xu_ly": "Cần phải điều chỉnh liều; xây dựng kế hoạch dùng thuốc và nhấn mạnh cho người bệnh về sự tuân thủ dùng thuốc. Lúc đầu điều trị, cần đo đều đặn huyết áp động mạch cho tới khi đạt cân bằng điều trị."
+    },
+    {
+      "thuoc": ["Tetracyclin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng ure máu ở người suy thận, cơ chế không rõ; chỉ riêng tetracyclin đã có thể gây tăng ure máu. Tương tác này hình như ít ý nghĩa lâm sàng.",
+      "xu_ly": "Nếu ure máu tăng ở người bệnh, đó có thể do một trong hai thuốc hoặc do phối hợp hai thuốc."
+    },
+    {
+      "thuoc": [
+        "Amitriptylin", "Imipramin", "Clomipramin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng hạ huyết áp của những thuốc này. Hạ huyết áp là một tác dụng không mong muốn của các thuốc chống trầm cảm ba vòng.",
+      "xu_ly": "Nếu cần phối hợp, phải tăng cường theo dõi huyết áp, trong và khi ngừng điều trị bằng một trong hai thuốc. Có khi phải điều chỉnh liều. Nhấn mạnh về kế hoạch dùng thuốc và việc tuân thủ. Đặc biệt cảnh giác ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Thiopental", "Pentobarbital", "Phenobarbital"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Dùng các thuốc chống tăng huyết áp hoặc các thuốc có thể dẫn đến hạ huyết áp đồng thời với các thuốc gây mê barbituric có thể gây tụt huyết áp nặng.",
+      "xu_ly": "Khuyên người bệnh báo cho thầy thuốc gây mê biết các thuốc mình đang dùng."
+    },
+    {
+      "thuoc": [
+        "Adrenalin", "Noradrenalin", "Isoprenalin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng chống tăng huyết áp của thuốc lợi tiểu giữ kali có thể giảm khi dùng đồng thời với các thuốc cường giao cảm.",
+      "xu_ly": "Theo dõi huyết áp phải thường xuyên. Tất cả phụ thuộc vào bối cảnh điều trị và dạng bào chế dùng. Nếu có thể, phải tránh phối hợp để ngăn ngừa nguy cơ biến động huyết áp nhiều."
+    },
+    {
+      "thuoc": [
+        "Sevofluran", "Enfluran", "Halothan"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Vì có thể có rối loạn nước-điện giải.",
+      "xu_ly": "Khuyên người bệnh phải can thiệp ngoại khoa báo cho thầy thuốc gây mê những thuốc đang dùng."
+    }
+  ]
+},
+{
+  "hoat_chat": "Lợi tiểu thải kali",
+  "mo_ta": "Thuốc ức chế tái hấp thu natri ở phần trên của ống lượn xa và làm tăng đào thải kali, kèm theo nguy cơ hạ kali máu.",
+  "cac_thuoc_trong_nhom": [
+    "Clorothiazid",
+    "Chlotride",
+    "Diurilix",
+    "Hydrochlorothiazid",
+    "Apo-Hydro",
+    "Cyclothiazid",
+    "Anhydron",
+    "Doburil",
+    "Fluidil",
+    "Acetazolamid",
+    "Diamox",
+    "Apo-Acetazolamide",
+    "Indapamid",
+    "Fludex",
+    "Lorvas",
+    "Chlorthalidon",
+    "Hygroton",
+    "Bendroflumethiazid",
+    "Moduretic",
+    "Xipamid",
+    "Diurex",
+    "Zipix"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Không kê đơn khi có quá mẫn cảm với thuốc nhóm này."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Cần tránh cho con bú, vì một số thuốc lợi tiểu qua được sữa mẹ do khuếch tán thụ động. Thời kỳ mang thai: Không dùng các thuốc lợi tiểu trong điều trị phù và tăng huyết áp ở người mang thai, vì có thể dẫn đến thiếu máu cục bộ nhau thai kèm theo nguy cơ suy dinh dưỡng thai. Suy thận: Bất kỳ thuốc lợi tiểu mạnh nào đều có thể gây suy thận chức năng liên quan đến mất muối kèm với giảm lọc cầu thận và tăng ure máu. Tổn thương chức năng này có thể làm nặng thêm suy thận sẵn có."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Bệnh gút: Nguy cơ tăng acid uric máu, buộc phải theo dõi chặt chẽ ở người bệnh gút, nếu phối hợp là cần thiết. Suy gan: Các thuốc lợi tiểu thải kali có thể khởi phát hôn mê gan. Chúng làm tăng nguy cơ nhiễm kiềm chuyển hoá, tình trạng này làm thận tăng sản sinh amoniac và làm chất này chuyển dễ dàng vào não."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Tiểu đường: Các thuốc lợi tiểu thiazid hoặc thuốc tương tự và cả acid etacrynic có thể gây tiểu đường, có giảm dung nạp glucose, còn glucose máu khi đói thường tăng. Việc sử dụng chúng có thể làm tiểu đường mất cân bằng và tạo thuận lợi xuất hiện hôn mê tăng glucose máu."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Cisaprid"],
+      "muc_do": 4,
+      "phan_tich": "Tăng nguy cơ loạn nhịp tim đe doạ tính mạng bao gồm xoắn đỉnh. Cơ chế do mất điện giải, có thể kéo dài thêm khoảng QT.",
+      "xu_ly": "Chống chỉ định dùng cisaprid ở người bệnh bị giảm nhanh kali trong huyết tương, thí dụ người đang dùng thuốc lợi tiểu thiazid."
+    },
+    {
+      "thuoc": ["Sultoprid"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi dùng phối hợp này. Chú ý, tương tác chỉ mô tả với riêng sultoprid (barnetil) trong nhóm benzamid. Hạ kali máu, nhịp tim chậm và khoảng QT dài có từ trước (chỉ nhìn được trên điện tâm đồ) là những yếu tố thuận lợi cho sự xuất hiện xoắn đỉnh.",
+      "xu_ly": "Phối hợp này cần tránh. Nên sử dụng các thuốc không dẫn đến xoắn đỉnh. Nếu cần phối hợp, nên theo dõi thường xuyên khoảng QT và tiến hành kiểm tra đều đặn kali máu. Chú ý các dấu hiệu lâm sàng có thể báo hiệu hạ kali máu như mệt mỏi, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Bepridil", "Halofantrin", "Pentamidin", "Vincamin"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi dùng phối hợp này. Hạ kali máu, nhịp tim chậm và khoảng QT dài có từ trước là những yếu tố thuận lợi cho sự xuất hiện xoắn đỉnh.",
+      "xu_ly": "Phối hợp này cần tránh. Nên sử dụng các thuốc không dẫn đến xoắn đỉnh. Nếu cần phối hợp, theo dõi thường xuyên khoảng QT và kiểm tra đều đặn kali máu. Chú ý các dấu hiệu lâm sàng có thể báo hiệu hạ kali máu, như mệt nhọc, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": [
+        "Furosemid",
+        "Lithi",
+        "Erythromycin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp bất hợp lý giữa các thuốc cùng một nhóm dược lý. Kê đơn rườm rà vô ích (Furosemid). Sự cạnh tranh giữa các ion natri và lithi được giải thích là với chế độ ăn thiếu muối, có sự giảm đào thải lithi ra nước tiểu. Các thuốc lợi niệu quai và thiazid dẫn đến giảm natri, do đó làm tăng lithi máu, kèm với nguy cơ quá liều. Nguy cơ xuất hiện xoắn đỉnh khi dùng phối hợp mô tả với riêng erythromycin tiêm tĩnh mạch.",
+      "xu_ly": "Lithi có phạm vi điều trị hẹp, nên cần theo dõi cẩn thận và đều đặn nồng độ trong huyết thanh. Nếu phối hợp này tỏ ra cần thiết, thì cần tăng cường theo dõi lithi máu và điều chỉnh liều chính xác, trong và sau khi ngừng điều trị thuốc lợi tiểu. Phối hợp này cần tránh với erythromycin tiêm tĩnh mạch, nên dùng các thuốc không dẫn đến xoắn đỉnh, hoặc theo dõi thường xuyên khoảng QT và kiểm tra đều đặn kali máu."
+    },
+    {
+      "thuoc": ["Sparfloxacin"],
+      "muc_do": 3,
+      "phan_tich": "Tăng nguy cơ xoắn đỉnh do cộng hợp các tác dụng điện sinh lý. Hạ kali máu, nhịp tim chậm và khoảng QT dài có từ trước là những yếu tố thuận lợi cho xuất hiện xoắn đỉnh.",
+      "xu_ly": "Phối hợp này cần tránh. Nên dùng các thuốc không dẫn đến xoắn đỉnh. Nếu cần phối hợp, nên theo dõi thường xuyên khoảng QT và kiểm tra đều đặn kali máu. Chú ý đến các dấu hiệu lâm sàng có thể báo hiệu hạ kali máu, thí dụ mệt nhọc, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Astemizol"],
+      "muc_do": 3,
+      "phan_tich": "Hạ kali máu (và cả tiêu chảy kéo dài có thể gây mất nước và điện giải) là yếu tố thuận lợi cho xuất hiện xoắn đỉnh. Nguy cơ tăng khi các thuốc gây hạ kali máu được phối hợp với các thuốc khác có thể gây xoắn đỉnh.",
+      "xu_ly": "Phối hợp này cần tránh; nên thay đổi chiến lược điều trị và chọn những thuốc không có bất lợi gây xoắn đỉnh. Nếu cần giữ phối hợp, theo dõi kali máu và bổ sung kali nếu cần."
+    },
+    {
+      "thuoc": ["Methenamin"],
+      "muc_do": 3,
+      "phan_tich": "Trong nước tiểu acid, methenamin phân giải thành formol có nguy cơ tủa với các sulfamid kém hoà tan, có thể dẫn đến tinh thể niệu và sỏi thận.",
+      "xu_ly": "Tốt nhất là nên thay đổi thuốc. Tính acid của nước tiểu có thể đánh giá bằng các băng giấy thử."
+    },
+    {
+      "thuoc": ["Macrolid"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi dùng phối hợp mô tả với riêng erythromycin tiêm tĩnh mạch.",
+      "xu_ly": "Phối hợp này cần tránh. Nên dùng các thuốc không dẫn đến xoắn đỉnh. Nếu cần phối hợp, phải theo dõi thường xuyên khoảng QT và tiến hành kiểm tra đều đặn kali máu."
+    },
+    {
+      "thuoc": ["Pentamidin"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi dùng phối hợp này.",
+      "xu_ly": "Phối hợp này cần tránh. Nếu cần phối hợp, theo dõi thường xuyên khoảng QT và kiểm tra đều đặn kali máu."
+    },
+    {
+      "thuoc": ["Vincristin"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi dùng phối hợp này.",
+      "xu_ly": "Phối hợp này cần tránh. Nếu cần phối hợp, theo dõi thường xuyên khoảng QT và kiểm tra đều đặn kali máu."
+    },
+    {
+      "thuoc": ["Thuốc nhuận tràng làm trơn"],
+      "muc_do": 3,
+      "phan_tich": "Sử dụng thuốc nhuận tràng làm trơn dài hạn (cũng giống như tiêu chảy nặng) có thể gây hạ kali máu.",
+      "xu_ly": "Nếu cần phối hợp giữa thuốc nhuận tràng làm trơn và thuốc lợi niệu thải kali, phòng ngừa hạ kali máu bằng cách bổ sung kali và nếu cần, tuỳ theo lâm sàng, theo dõi điện tâm đồ."
+    },
+    {
+      "thuoc": ["Alopurinol", "Colchicin", "Probenecid"],
+      "muc_do": 2,
+      "phan_tich": "Thuốc lợi tiểu thải kali làm tăng acid uric máu và làm giảm tác dụng điều trị chống gút.",
+      "xu_ly": "Tốt nhất, nên tránh dùng hai thuốc trong cùng thời gian, nếu không sẽ thấy điều trị chống gút thất bại."
+    },
+    {
+      "thuoc": ["Amantadin"],
+      "muc_do": 2,
+      "phan_tich": "Các thiazid trong nhóm thuốc lợi tiểu thải kali và triamteren trong nhóm thuốc lợi tiểu giữ kali đã được mô tả là gây giảm thanh lọc amantadin ở thận bằng cơ chế chưa rõ, do đó có thể làm tăng độc tính của amantadin.",
+      "xu_ly": "Khi phối hợp, cần điều chỉnh liều của amantadin. Tương tác này cần được xác nhận thêm."
+    },
+    {
+      "thuoc": ["Gentamicin", "Amikacin", "Streptomycin", "Tobramycin", "Netilmicin"],
+      "muc_do": 2,
+      "phan_tich": "Độc tính với tai của các aminosid và của thuốc lợi tiểu thải kali có thể tăng lên khi hai nhóm thuốc này được dùng phối hợp.",
+      "xu_ly": "Nếu cần phối hợp, khuyên nên theo dõi đều đặn chức năng thính giác. Có thể cần phải giảm liều một trong hai thuốc, hoặc cả hai ở người suy thận."
+    },
+    {
+      "thuoc": ["Amiodaron"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ xoắn đỉnh được tạo thuận lợi bởi hạ kali máu.",
+      "xu_ly": "Nếu cần phối hợp các thuốc gây hạ kali máu với amiodaron, phải ngăn ngừa hạ kali máu bằng cách tăng cường theo dõi và theo dõi điện tâm đồ."
+    },
+    {
+      "thuoc": ["Amphetamin"],
+      "muc_do": 2,
+      "phan_tich": "Amphetamin là thuốc cường giao cảm trực tiếp, vì vậy có tính chất tăng huyết áp. Phối hợp với các thuốc lợi tiểu thải kali có tác dụng hạ huyết áp dẫn đến đối kháng tác dụng và rất khó đạt cân bằng huyết áp.",
+      "xu_ly": "Với người bệnh tăng huyết áp, nên tránh kê đơn amphetamin."
+    },
+    {
+      "thuoc": ["Amphotericin B"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng hạ kali máu với dạng tiêm.",
+      "xu_ly": "Theo dõi kali máu. Đánh giá các nguy cơ của tương tác tùy theo đường dùng thuốc amphotericin B."
+    },
+    {
+      "thuoc": ["Baclofen", "Chlorpromazin", "Morphin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng hạ huyết áp và tăng nguy cơ hạ huyết áp thế đứng.",
+      "xu_ly": "Theo dõi huyết áp trong khi phối hợp. Tuỳ theo thuốc dùng, hạ huyết áp có thể nặng nhẹ khác nhau. Điều chỉnh liều của một hoặc hai thuốc, tuỳ trường hợp. Xây dựng kế hoạch dùng thuốc đều đặn. Khuyên người bệnh, nếu bị chóng mặt khi bắt đầu điều trị nên gặp lại thầy thuốc điều trị để điều chỉnh liều một hoặc hai thuốc, tuỳ trường hợp. Tăng cường theo dõi ở người bệnh cao tuổi (nguy cơ ngã) và khuyên họ cẩn thận khi đang ở tư thế nằm hoặc ngồi mà chuyển sang tư thế đứng thì phải từ từ."
+    },
+    {
+      "thuoc": ["Metformin", "Stagid", "Glucophage", "Glucinan"],
+      "muc_do": 2,
+      "phan_tich": "Trong trường hợp suy thận chức năng, sinh lý và / hoặc liên quan đến thuốc lợi tiểu, có nguy cơ tăng nhiễm acid lactic do metformin.",
+      "xu_ly": "Lưu ý tương tác này và tránh kê đơn metformin nếu người bệnh suy thận, với creatinin máu trên 15 mg/lít (135 micromol/lít) ở nam và 12 mg/lít (110 micromol/lít) ở nữ. Đặc biệt chú ý đến kê đơn đồng thời metformin và thuốc lợi tiểu, ở người bệnh cao tuổi. Nên nhớ các dấu hiệu báo trước nhiễm acid lactic gồm: buồn nôn, nôn, co cứng cơ, giảm thông khí, cảm giác mệt nhọc, đau bụng."
+    },
+    {
+      "thuoc": ["Haloperidol"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng làm hạ huyết áp của những thuốc này.",
+      "xu_ly": "Nếu cần phối hợp, tăng cường theo dõi huyết áp động mạch trong khi điều trị và sau khi ngừng một trong hai thuốc. Điều chỉnh liều tuỳ trường hợp. Nhấn mạnh về kế hoạch và sự tuân thủ dùng thuốc. Đặc biệt cảnh giác ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Cholestyramin"],
+      "muc_do": 2,
+      "phan_tich": "Giảm hấp thu thuốc lợi tiểu thải kali ở đường tiêu hoá, do cholestyramin gắn thuốc lợi tiểu.",
+      "xu_ly": "Nếu kê đơn hai thuốc, khuyên dùng thuốc lợi tiểu thải kali trước cholestyramin 2 giờ hoặc sau khi dùng cholestyramin 4 giờ."
+    },
+    {
+      "thuoc": ["Ciclosporin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng creatinin máu, nhất là với các thuốc lợi tiểu thiazid.",
+      "xu_ly": "Theo dõi chức năng thận khi phối hợp hai thuốc này."
+    },
+    {
+      "thuoc": [
+        "Clonidin", "Guanethidin", "Levodopa", "Methyldopa", "Reserpin", "Spironolacton"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng làm hạ huyết áp.",
+      "xu_ly": "Cần phải điều chỉnh liều, xây dựng kế hoạch dùng thuốc và nhấn mạnh về tuân thủ dùng thuốc. Lúc đầu điều trị, cần đo đều đặn huyết áp động mạch cho tới khi đạt cân bằng điều trị."
+    },
+    {
+      "thuoc": ["Clozapin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng tác dụng làm hạ huyết áp.",
+      "xu_ly": "Theo dõi huyết áp động mạch và điều chỉnh liều của thuốc chống tăng huyết áp lựa chọn ban đầu, trong và sau khi ngừng điều trị với clozapin. Thận trọng đặc biệt ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Corticoid", "Tetracosactid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai chế phẩm gây hạ kali máu dẫn đến tăng nguy cơ hạ kali trong máu, và nguy cơ xuất hiện xoắn đỉnh.",
+      "xu_ly": "Theo dõi kali máu và hiệu chỉnh bằng muối kali, nếu cần. Hạ kali máu thể hiện lâm sàng bằng mệt nhọc, thậm chí co cứng cơ và đôi khi rối loạn nhịp tim. Chú ý đến mất nước quá mức, làm trầm trọng thêm sự mất kali. Trường hợp cần thiết, có thể khuyên bổ sung tạm thời kali (chuối, mận hoặc muối kali)."
+    },
+    {
+      "thuoc": ["Pancuronium", "Vecuronium", "Rocuronium", "Atracurium"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng chẹn thần kinh-cơ, do hạ kali máu, nhất là với các thuốc loại cura không khử cực.",
+      "xu_ly": "Định lượng kali máu có thể cần, trước khi dùng thuốc loại cura không khử cực."
+    },
+    {
+      "thuoc": ["Dextropropoxyphen"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng hạ huyết áp nhẹ của dextropropoxyphen. Với các thuốc hạ huyết áp khác, sẽ tăng tác dụng hạ huyết áp và tăng nguy cơ hạ huyết áp thế đứng.",
+      "xu_ly": "Cần thiết phải theo dõi huyết áp trong khi phối hợp (trong khi điều trị và sau khi ngừng một trong hai thuốc.) Tuỳ theo thuốc dùng, hạ huyết áp có thể nặng hay nhẹ. Điều chỉnh liều, của một hoặc hai thuốc nếu cần. Xây dựng kế hoạch dùng thuốc đều đặn. Khuyên người bệnh, nếu bị chóng mặt lúc bắt đầu điều trị, nên gặp lại thầy thuốc để điều chỉnh liều của một hoặc hai thuốc, tuỳ trường hợp. Tăng cường theo dõi ở người bệnh cao tuổi (nguy cơ ngã) và khuyên họ khi ở tư thế nằm hoặc ngồi mà chuyển sang tư thế đứng thì phải từ từ."
+    },
+    {
+      "thuoc": ["Diazoxid"],
+      "muc_do": 2,
+      "phan_tich": "Tương tác ở 3 khâu: 1/ Tăng tác dụng làm tăng glucose máu; 2/ Tăng tác dụng làm tăng acid uric máu; 3/ Tăng tác dụng làm hạ huyết áp.",
+      "xu_ly": "Phối hợp chỉ có thể thực hiện tại bệnh viện. Tuỳ theo mục tiêu điều trị và sinh bệnh lý của người bệnh, lưu ý ba tác dụng này để theo dõi lâm sàng và sinh học phù hợp."
+    },
+    {
+      "thuoc": ["Didanosin"],
+      "muc_do": 2,
+      "phan_tich": "Cộng hợp các tác dụng không mong muốn: tăng nguy cơ viêm tuỵ do thuốc.",
+      "xu_ly": "Theo dõi lâm sàng, và nếu cần, theo dõi sinh học chức năng tuỵ (amylase máu và amylase nước tiểu) khi bị đau bụng."
+    },
+    {
+      "thuoc": ["Disopyramid"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ xoắn đỉnh khi phối hợp các thuốc này. Hạ kali máu, nhịp tim chậm và khoảng QT dài có từ trước là những yếu tố thuận lợi cho xuất hiện xoắn đỉnh.",
+      "xu_ly": "Nếu cần phối hợp, ngăn ngừa hạ kali máu bằng cách tăng cường theo dõi và theo dõi điện tâm đồ. Trường hợp xuất hiện xoắn đỉnh, không dùng thuốc chống loạn nhịp."
+    },
+    {
+      "thuoc": ["Fibrat"],
+      "muc_do": 2,
+      "phan_tich": "Cạnh tranh ở các vị trí gắn với protein huyết tương kèm với tăng tác dụng lợi tiểu và tăng mất kali.",
+      "xu_ly": "Theo dõi phối hợp này và thông báo cho Trung tâm cảnh giác thuốc mọi bất thường sinh học hoặc lâm sàng. Tăng cường theo dõi ở người suy thận."
+    },
+    {
+      "thuoc": ["Insulin"],
+      "muc_do": 2,
+      "phan_tich": "Trong nhóm các thuốc lợi tiểu quai, có mô tả những tính chất gây tăng glucose máu của furosemid, có thể dẫn đến giảm tác dụng của các thuốc chống tiểu đường.",
+      "xu_ly": "Có thể dùng thuốc lợi tiểu ở người tiểu đường, nhưng ngưòi kê đơn phải chú ý về những biến đổi glucose máu có thể có và điều chỉnh liều tuỳ theo kết quả sinh học."
+    },
+    {
+      "thuoc": ["Nicorandil", "Nitrat"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp với bất kỳ thuốc nào có tính chất chống tăng huyết áp có thể làm tăng nguy cơ tụt huyết áp, đôi khi dẫn đến sốc.",
+      "xu_ly": "Theo dõi huyết áp trong khi điều trị và sau khi ngừng một trong hai thuốc. Đặc biệt thận trọng ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Digoxin"],
+      "muc_do": 2,
+      "phan_tich": "Rối loạn điện giải do thuốc lợi tiểu gây nên có thể dẫn đến loạn nhịp tim do digitalis.",
+      "xu_ly": "Khi dùng phối hợp những thuốc này, đo hàm lượng kali và magnesi trong huyết tương. Tránh tình trạng hạ kali hoặc hạ magnesi huyết ở bệnh nhân điều trị glycosid trợ tim bằng cách giảm natri trong ăn uống, bổ sung hoặc dùng thuốc lợi tiểu giữ kali/magnesi thay cho thuốc lợi tiểu thải kali."
+    },
+    {
+      "thuoc": ["Quinidin", "Sotalol"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh (rối loạn nhịp thất) khi phối hợp một thuốc lợi tiểu thải kali và một thuốc chống loạn nhịp.",
+      "xu_ly": "Nếu cần phối hợp các thuốc lợi tiểu thải kali với thuốc chống loạn nhịp này, phải ngăn ngừa hạ kali bằng cách bổ sung kali có tính toán và nếu cần thiết, làm điện tâm đồ."
+    },
+    {
+      "thuoc": ["Sulfonylurea"],
+      "muc_do": 2,
+      "phan_tich": "Các thuốc lợi tiểu thiazid làm tăng glucose máu khi đói và có thể làm giảm hạ glucose máu do sulfonylurea.",
+      "xu_ly": "Theo dõi chặt chẽ glucose máu ở người bệnh. Nếu thấy tăng glucose máu, có thể phải tăng liều của sulfonylurea."
+    },
+    {
+      "thuoc": ["Tetracyclin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng ure máu ở ngưòi suy thận, cơ chế chưa rõ. Riêng tetracyclin có thể đã gây tăng ure máu. Ý nghĩa lâm sàng của tương tác này có lẽ không lớn.",
+      "xu_ly": "Nếu ure máu tăng ở người bệnh, có thể do một hoặc hai thuốc này. Có lẽ không cần phải can thiệp lâm sàng. Nhưng nếu tăng ure máu chứng tỏ có rối loạn chức năng thì nên cân nhắc ngừng một hoặc có thể cả hai thuốc."
+    },
+    {
+      "thuoc": ["Adrenalin", "Noradrenalin", "Isoprenalin"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng làm hạ huyết áp của thuốc lợi niệu thải kali có thể giảm khi dùng đồng thời với các thuốc cường giao cảm.",
+      "xu_ly": "Việc theo dõi huyết áp phải thường xuyên. Nếu có thể, phải tránh phối hợp để ngăn chặn nguy cơ quan trọng về biến động huyết áp."
+    },
+    {
+      "thuoc": ["Thuốc cường thần kinh giao cảm beta"],
+      "muc_do": 2,
+      "phan_tich": "Tương tác kiểu đối kháng dược lý. Các thuốc giống beta có tác dụng tăng huyết áp, tác dụng này có thể giảm khi dùng đồng thời với các thuốc lợi tiểu thải kali.",
+      "xu_ly": "Theo dõi đều đặn huyết áp. Thông tin cho người bệnh về nguy cơ biến đổi huyết áp, xây dựng kế hoạch dùng thuốc đều đặn và tính đến dạng thuốc sử dụng để đánh giá mức độ nặng nhẹ về biến động huyết áp."
+    },
+    {
+      "thuoc": ["Thuốc gây mê bay hơi chứa halogen"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ hạ huyết áp do giảm thể tích máu.",
+      "xu_ly": "Theo dõi huyết động học và điều chỉnh các rối loạn chuyển hoá. Khuyên người bệnh phải can thiệp ngoại khoa thông tin cho thầy thuốc gây mê những thuốc đang dùng."
+    },
+    {
+      "thuoc": ["Thuốc đối quang có iod"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ suy thận cấp, nếu đã bị mất nước do thuốc lợi tiểu.",
+      "xu_ly": "Nên tiếp nước cho người bệnh trước khi dùng thuốc đối quang có iod. Khuyên người bệnh thông tin cho bác sĩ X quang là đang điều trị thuốc lợi tiểu để có những biện pháp cần thiết."
+    },
+    {
+      "thuoc": ["Thuốc nhuận tràng kích thích"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc gây hạ kali máu dẫn đến tăng nguy cơ hạ kali máu, nhất là khi các thuốc nhuận tràng được dùng dài ngày.",
+      "xu_ly": "Theo dõi kali máu và hiệu chỉnh lại bằng bổ sung muối kali, nếu cần. Hạ kali máu thể hiện lâm sàng bằng mệt nhọc, thậm chí co cứng cơ và đôi khi rối loạn nhịp tim. Chú ý đến mất nước quá mức làm trầm trọng thêm sự mất kali. Nếu cần, có thể khuyên bổ sung tạm thời kali."
+    },
+    {
+      "thuoc": ["Captopril", "Enalapril", "Lisinopril", "Perindopril", "Ramipril"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ hạ huyết áp nặng và / hoặc suy thận cấp, trong trường hợp hạ natri máu.",
+      "xu_ly": "Nếu điều trị lợi tiểu được tiến hành trước đó, cho ngừng thuốc lợi tiểu trong hai đến ba ngày trước khi bắt đầu điều trị bằng thuốc ức chế enzym chuyển, rồi dùng lại thuốc lợi tiểu sau đó, nếu cần. Luôn luôn bắt đầu điều trị bằng các thuốc ức chế enzym chuyển với liều thấp, rồi tăng dần liều, nếu cần thiết. Điều thận trọng này có giá trị cả trong điều trị tăng huyết áp động mạch và điều trị suy tim. Theo dõi chức năng thận trong những tuần đầu điều trị bằng các thuốc ức chế enzym chuyển."
+    },
+    {
+      "thuoc": ["Calci"],
+      "muc_do": 1,
+      "phan_tich": "Với các thiazid lợi tiểu, sự phối hợp đều đặn có thể dẫn đến tăng calci máu, do giảm đào thải calci ở nước tiểu.",
+      "xu_ly": "Lưu ý tương tác này trước khi bổ sung calci cho người bệnh. Chú ý nhất là người bệnh cao tuổi đang điều trị digitalin và polyvitamin (vitamin D)."
+    },
+    {
+      "thuoc": ["Indometacin", "Pyrazol", "Aspirin", "Ibuprofen", "Naproxen"],
+      "muc_do": 1,
+      "phan_tich": "Giảm tác dụng chống tăng huyết áp: Các thuốc chống viêm không steroid ức chế sự tổng hợp ở thận của các prostaglandin gây giãn mạch và / hoặc dẫn đến giữ muối và nước. Nguy cơ suy thận cấp ở người bị mất nước.",
+      "xu_ly": "Cần đảm bảo tiếp nước tốt cho người bệnh, theo dõi chức năng thận (độ thanh lọc creatinin), huyết áp ổn định, đặc biệt khi bắt đầu điều trị. Khuyên người bệnh theo dõi đều đặn huyết áp. Thận trọng đặc biệt khi phối hợp với indometacin và các salicylat liều cao."
+    },
+    {
+      "thuoc": ["Amitriptylin", "Imipramin", "Clomipramin"],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng hạ huyết áp của những thuốc này. Hạ huyết áp là một tác dụng không mong muốn của các thuốc chống trầm cảm ba vòng.",
+      "xu_ly": "Nếu cần phối hợp, tăng cường theo dõi huyết áp động mạch, trong và sau khi ngừng điều trị bằng một trong hai thuốc. Điều chỉnh liều lượng, nhấn mạnh kế hoạch dùng thuốc và sự tuân thủ. Đặc biệt cảnh giác ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Phenobarbital", "Pentobarbital"],
+      "muc_do": 1,
+      "phan_tich": "Dùng đồng thời các thuốc chống tăng huyết áp hoặc các thuốc có thể dẫn đến hạ huyết áp cùng với các thuốc gây mê barbituric có thể gây tụt huyết áp nặng.",
+      "xu_ly": "Khuyên người bệnh báo cho bác sĩ gây mê biết các thuốc đang dùng."
+    }
+  ]
+},
+{
+  "hoat_chat": "Lợi tiểu thẩm thấu",
+  "mo_ta": "Chất phân tử lượng thấp, có tác dụng chống phù nhanh và kéo dài.",
+  "cac_thuoc_trong_nhom": [
+    "Mannitol"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Tăng độ thẩm thấu của huyết tương có từ trước; mất nước chủ yếu trong tế bào."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Suy tim: Nguy cơ rối loạn nước điện giải. Tăng độ thẩm thấu của huyết tương, mất nước trong tế bào."
+    }
+  },
+  "tuong_tac": []
+}
+,
+{
+  "hoat_chat": "Lưu huỳnh",
+  "mo_ta": "Nguyên tố vô cơ có tác dụng chống viêm. Dùng trong bệnh thấp, bệnh mũi và bệnh ngoài da.",
+  "cac_thuoc_trong_nhom": [
+    "Lưu huỳnh",
+    "Sacnel",
+    "Sulfothiorine pantothénique",
+    "Sulfonyl Monal",
+    "Thiofon"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Các trường hợp: Không dung nạp lưu huỳnh."
+    }
+  },
+  "tuong_tac": []
+}
+,
+{
+  "hoat_chat": "Macrolid",
+  "mo_ta": "Kháng sinh có hoạt phổ giới hạn đối với vi khuẩn Gram dương. Được chỉ định điều trị nhiễm khuẩn đường hô hấp, da, mô mềm, tiết niệu, sinh dục, viêm màng não, dùng thay thế penicillin khi dị ứng.",
+  "cac_thuoc_trong_nhom": [
+    "Erythromycin",
+    "Apo-Erythro",
+    "Ery",
+    "Eryacne",
+    "Erycin",
+    "Erythrocine",
+    "Erythromycin Domesco",
+    "Stiemycin",
+    "Clarithromycin",
+    "Klacid",
+    "Clarithromycin STADA",
+    "Roxithromycin",
+    "Rulid",
+    "Spiramycin",
+    "Rovamycine",
+    "Josamycin",
+    "Josacine",
+    "Azithromycin",
+    "Zithromax"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Quá mẫn với các macrolid, dùng chiến lược điều trị bằng kháng sinh khác."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Phần lớn macrolid (josamycin, spiramycin, troleandomycin, midecamycin, roxithromycin) đều qua được sữa mẹ. Thời kỳ mang thai: Tính vô hại chưa được xác định. Suy gan: Một số dẫn chất (erythromycin estolat và nhất là triacetyloleandomycin) độc với gan và gây viêm gan ứ mật, đôi khi tăng transaminase, có thể là do phản ứng quá mẫn."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Amiodaron", "Bretylium", "Disopyramid", "Halofantrin", "Pentamidin", "Quinidin", "Sotalol", "Vincamin"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Tăng nguy cơ xuất hiện xoắn đỉnh do cộng hợp tác dụng, và chỉ được mô tả độc nhất với erythromycin tiêm tĩnh mạch. Hạ kali máu, nhịp tim chậm và khoảng QT dài từ trước (chỉ biết được trên điện tâm đồ) là những yếu tố tạo điều kiện xoắn đỉnh. Xoắn đỉnh là một dạng nhịp thất đặc biệt, có thể xuất hiện thành cơn rất ngắn (vài giây, mệt thỉu: có cảm giác ngất nhưng không mất ý thức). Trong họ macrolid, chỉ có erythromycin, đặc biệt dạng tiêm tĩnh mạch là có thể gây nên loạn nhịp tim (kéo dài khoảng QT, ngoại tâm thu thất, xoắn đỉnh, bloc nhĩ thất).",
+      "xu_ly": "Chống chỉ định phối hợp thuốc có tiềm năng gây tử vong này, và không được kê đơn. Ngay khi dùng đơn độc, erythromycin tiêm tĩnh mạch cũng có thể gây loạn nhịp tim. Do đó, khuyên không nên tiêm nhanh cả liều, mà phải tiêm truyền tĩnh mạch liên tục hay gián đoạn thời gian truyền mỗi lần tối thiểu 60 phút."
+    },
+    {
+      "thuoc": ["Sultoprid"],
+      "muc_do": 4,
+      "phan_tich": "Trong nhóm macrolid chỉ có erythromycin tiêm tĩnh mạch là có thể tạo điều kiện xuất hiện xoắn đỉnh khi phối hợp với duy nhất một chất trong nhóm benzamid là sultoprid (Barnetil).",
+      "xu_ly": "Chống chỉ định phối hợp, trừ ở đơn vị chăm sóc tăng cường về tim mạch. Nếu không, thay đổi chiến lược điều trị."
+    },
+    {
+      "thuoc": ["Bepridil"],
+      "muc_do": 4,
+      "phan_tich": "Chỉ có erythromycin dạng tiêm tĩnh mạch là có thể gây loạn nhịp tim (kéo dài đoạn QT, ngoại tâm thu thất, xoắn đỉnh, bloc nhĩ thất).",
+      "xu_ly": "Chống chỉ định phối hợp thuốc có tiềm năng gây tử vong này và không được kê đơn. Chỉ riêng erythromycin dưới dạng tiêm tĩnh mạch cũng có thể gây loạn nhịp tim. Do đó khuyên không nên tiêm thuốc này cả liều quá nhanh một lần, mà phải tiêm truyền tĩnh mạch liên tục hoặc ngắt đoạn, thời gian truyền mỗi lần ít nhất phải kéo dài 60 phút."
+    },
+    {
+      "thuoc": ["Cisaprid"],
+      "muc_do": 4,
+      "phan_tich": "Tương tác dược động học, có thể dẫn đến xuất hiện xoắn đỉnh ở người có tố bẩm. Có lẽ đó là do các macrolid nói chung, và erythromycin tiêm tĩnh mạch nói riêng đã ức chế được enzym chuyển hoá cisaprid (Prepulsid). Chỉ spiramycin (Rovamycin) là không thuộc trong trường hợp này.",
+      "xu_ly": "Hoặc tạm thời ngừng cisaprid, hoặc kê đơn một kháng sinh thuộc họ khác (thí dụ beta lactamin)."
+    },
+    {
+      "thuoc": ["Ergotamin", "Dihydroergocornin", "Dihydroergocristin", "Dihydroergotoxin"],
+      "muc_do": 4,
+      "phan_tich": "Nguy cơ tai biến thiếu máu cục bộ nặng các đầu chi, có thể dẫn tới hoại tử, do ức chế chuyển hoá ergotamin ở gan (hiện nay, chưa được mô tả với spiramycin, roxithromycin, clarithromycin).",
+      "xu_ly": "Chống chỉ định phối hợp thuốc với tất cả các macrolid, trừ spiramycin. Các dẫn chất hydrogen hoá khác của cựa loã mạch (dihydroergocornin, dihydroergocristin, dihydroergotoxin… ) không gây tương tác thuốc này."
+    },
+    {
+      "thuoc": [
+        "Simvastatin", "Atorvastatin"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Kết hợp clarithromycin hoặc erythromycin với simvastatin hoặc atorvastatin làm tăng nguy cơ mắc bệnh cơ và hội chứng tiêu cơ vân cấp do statin.",
+      "xu_ly": "Nếu cần chỉ định macrolid cho bệnh nhân đang điều trị với statin, nên cân nhắc việc tạm thời dừng statin hoặc lựa chọn kháng sinh khác."
+    },
+    {
+      "thuoc": ["Astemizol"],
+      "muc_do": 4,
+      "phan_tich": "Erythromycin tiêm tĩnh mạch, josamycin có thể tạo điều kiện xuất hiện xoắn đỉnh khi dùng cùng với astemizol (Hismanal) (giảm dị hoá các kháng histamin ở gan).",
+      "xu_ly": "Chống chỉ định phối hợp thuốc. Thay đổi chiến lược điều trị. Chọn một chất kháng sinh khác có thể tiêm được hoặc chọn một kháng H1 không an thần khác, không có những nhược điểm nói trên: cetirizin, loratadin."
+    },
+    {
+      "thuoc": ["Triazolam", "Midazolam"],
+      "muc_do": 3,
+      "phan_tich": "Tăng cường các tác dụng (chỉ của triazolam và midazolam) khi phối hợp với erythromycin, hoặc roxythromycin hoặc clarithromycin (ức chế enzym).",
+      "xu_ly": "Với midazolam phải tính đến tương tác để lựa chọn liều lượng. Với triazolam, cần tránh phối hợp thuốc do trong y văn đã mô tả những rối loạn ứng xử."
+    },
+    {
+      "thuoc": ["Buspiron"],
+      "muc_do": 3,
+      "phan_tich": "Dùng kết hợp với các kháng sinh macrolid, nồng độ buspiron trong huyết tương có thể tăng cao, làm tăng tác dụng dược lý và độc tính của thuốc. Cơ chế có thể do các kháng sinh macrolid đã ức chế CYP3A4, là enzym xúc tác cho chuyển hoá buspiron.",
+      "xu_ly": "Theo dõi chặt chẽ đáp ứng của người bệnh khi bắt đầu dùng, khi ngừng hay khi thay đổi liều của kháng sinh macrolid ở người bệnh đang dùng buspiron. Nếu người bệnh đang dùng kháng sinh macrolid, mà dùng thêm buspiron thì nên thận trọng chỉ dùng với liều thấp, và hiệu chỉnh liều nếu cần thiết. Azithromycin và dirithromycin không bị chuyển hoá qua CYP3A4, nên có thể không tương tác với buspiron."
+    },
+    {
+      "thuoc": ["Carbamazepin"],
+      "muc_do": 3,
+      "phan_tich": "Tăng nồng độ carbamazepin trong huyết thanh do ức chế enzym, có thể dẫn tới rối loạn thăng bằng, buồn nôn, nôn, ngủ gà. Tăng nồng độ này đã được mô tả với erythromycin, TAO, josamycin và clarithromycin.",
+      "xu_ly": "Chọn một kháng sinh khác hay một macrolid khác không gây tương tác (roxithromycin...), hoặc hiệu chỉnh liều lượng carbamazepin theo kết quả định lượng nồng độ trong huyết tương. Theo dõi chặt chẽ các dấu hiệu nhiễm độc có thể xuất hiện."
+    },
+    {
+      "thuoc": ["Sertralin", "Fluoxetin"],
+      "muc_do": 3,
+      "phan_tich": "Các chất ức chế tái thu nhận serotonin, cụ thể là sertralin, fluoxetin dùng kết hợp với kháng sinh macrolid sẽ bị ức chế chuyển hoá, có thể gây nên hội chứng serotonin: dễ kích động, tăng trương lực cơ, giật rung cơ, giảm ý thức.",
+      "xu_ly": "Nếu không tránh được kết hợp thuốc này, cần hiệu chỉnh liều sertralin, fluoxetin khi bắt đầu, khi ngừng dùng, khi thay đổi liều dùng kháng sinh macrolid. Theo dõi chặt chẽ trạng thái của người bệnh."
+    },
+    {
+      "thuoc": ["Cilostazol"],
+      "muc_do": 3,
+      "phan_tich": "Khi dùng cilostazol đồng thời với một số kháng sinh macrolid (cụ thể erythromycin, clarithromycin, troleandomycin) thì nồng độ của cilastazol trong huyết tương tăng lên, làm tăng tác dụng dược lý và độc tính. Cơ chế là do kháng sinh macrolid đã ức chế CYP3A4 có trách nhiệm trong chuyển hoá cilostazol.",
+      "xu_ly": "Cần phải giảm liều cilostazol nếu dùng đồng thời với các kháng sinh macrolid kể trên."
+    },
+    {
+      "thuoc": ["Ciclosporin"],
+      "muc_do": 3,
+      "phan_tich": "Tăng nồng độ ciclosporin trong huyết thanh và tăng creatinin máu do ức chế chuyển hoá ciclosporin ở gan. Tương tác này đã được mô tả với erythromycin, TAO, và clarithromycin.",
+      "xu_ly": "Nên tránh phối hợp ciclosporin với erythromycin, TAO. Đối với các macrolid khác, phải theo dõi."
+    },
+    {
+      "thuoc": ["Digoxin"],
+      "muc_do": 3,
+      "phan_tich": "Erythromycin và clarithromycin có liên quan đến sự tăng nồng độ digoxin trong huyết thanh, có thể đến mức xuất hiện dấu hiệu nhiễm độc. Cơ chế của tương tác này khá độc đáo: đối với erythromycin sinh khả dụng của digoxin tăng, có thể do erythromycin đã làm tăng tháo các chất ra khỏi dạ dày, ngoài ra, erythromycin và clarithromycin còn ức chế vi khuẩn khá kinh điển có trong ruột bình thường là Eubacterium lentum, vi khuẩn này chuyển hoá digoxin ở khoảng 10% số người bệnh, như vậy, làm giảm gián tiếp chuyển hoá của digoxin.",
+      "xu_ly": "Theo dõi lâm sàng. Cần theo dõi nồng độ digoxin trong và sau khi điều trị với erythromycin. Đối với macrolid khác, vẫn phải cảnh giác. Thông báo cho người bệnh biết những triệu chứng nhiễm độc digoxin: buồn nôn, rối loạn thị giác về màu sắc..."
+    },
+    {
+      "thuoc": ["Natri valproat"],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp hai thuốc có tiềm năng độc với gan. Erythromycin có thể là chất ức chế enzym, có khả năng ức chế chuyển hoá acid valproic và dẫn đến ngộ độc.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc phải hoãn dùng một trong hai thuốc, nếu có thể. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không điển hình: buồn nôn, sốt, vàng da... Nếu thấy đồng thời phát ban ngoài da, ngứa, và hạch to thì hướng về nguyên nhân do thuốc. Cần phân biệt rõ theo các test thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Omeprazol"],
+      "muc_do": 3,
+      "phan_tich": "Tăng pH dạ dày, nên omeprazol góp phần làm tăng tính vững bền của clarithromycin, kèm theo tăng nồng độ macrolid này và chất chuyển hoá có hoạt tính của nó trong các mô và dạ dày.",
+      "xu_ly": "Tương tác thuốc này có thể có một ý nghĩa lâm sàng tích cực, nhưng còn cần phải khẳng định tiếp."
+    },
+    {
+      "thuoc": ["Rifabutin"],
+      "muc_do": 3,
+      "phan_tich": "Tương tác được mô tả với clarithromycin, gây nguy cơ tăng các tác dụng không mong muốn của rifabutin (viêm màng mạch nho) do nồng độ của chất này và chất chuyển hoá có hoạt tính của nó tăng lên.",
+      "xu_ly": "Đảm bảo theo dõi lâm sàng đều đặn."
+    },
+    {
+      "thuoc": ["Repaglinid"],
+      "muc_do": 3,
+      "phan_tich": "Một số kháng sinh macrolid, cụ thể là clarithromycin, erythromycin có thể làm tăng nồng độ repaglinid trong huyết tương, làm tăng tác dụng dược lý và tác dụng phụ của thuốc. Cơ chế có thể là do các kháng sinh macrolid nói trên ức chế CYP3A4 xúc tác cho chuyển hoá repaglinid.",
+      "xu_ly": "Với người bệnh đang dùng repaglinid, phải theo dõi cẩn thận nồng độ glucose máu khi bắt đầu dùng và khi ngừng dùng kháng sinh macrolid. Hiệu chỉnh liều repaglinid nếu cần."
+    },
+    {
+      "thuoc": ["Ritonavir"],
+      "muc_do": 3,
+      "phan_tich": "Ritonavir có ái lực mạnh với isoenzym 3A4 của các cytochrom P450, nên có nguy cơ cao cạnh tranh giữa ritonavir với các thuốc được chuyển hoá hay nghi ngờ được chuyển hoá bởi isoenzym này. Cạnh tranh này làm giảm chuyển hoá các thuốc đó và gây nguy cơ làm tăng đáng kể nồng độ thuốc trong huyết tương. Có nguy cơ co cứng bụng kèm theo buồn nôn và nôn (đã được mô tả với erythromycin, azithromycin, clarithromycin). Tương tác dược động học về chuyển hoá.",
+      "xu_ly": "Erythromycin: Theo dõi chặt chẽ người bệnh đề phòng xuất hiện tác dụng độc, và khi cần giảm liều lượng thuốc kháng sinh. Clarithromycin: Định lượng đều đặn creatinin máu. Không hiệu chỉnh liều lượng nếu chức năng thận bình thường. Khi suy thận, hiệu chỉnh liều lượng theo độ thanh lọc creatinin. Chú ý đến người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Sparfloxacin"],
+      "muc_do": 3,
+      "phan_tich": "Tăng nguy cơ xoắn đỉnh do cộng hợp các tác dụng điện sinh lý khi phối hợp với erythromycin tiêm tĩnh mạch, nhưng với các macrolid khác thì hiện nay chưa thấy nói tới.",
+      "xu_ly": "Nên tránh phối hợp thuốc. Dùng các thuốc không gây xoắn đỉnh. Nếu cần phối hợp thuốc phải theo dõi liên tục khoảng QT và kiểm tra đều đặn kali máu. Cần chú ý các dấu hiệu lâm sàng, báo hiệu hạ kali máu như mệt mỏi, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Tacrin"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng độc tính với gan.",
+      "xu_ly": "Nếu cần, tăng cường theo dõi gan. Tránh dùng những phối hợp thuốc gây nguy cơ cho người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Tacrolimus"],
+      "muc_do": 3,
+      "phan_tich": "Tăng nồng độ tacrolimus và creatinin trong huyết thanh khi dùng erythromycin, clarithromycin, josamycin (và triacetyloleandomycin). Có thể do ức chế chuyển hoá tacrolimus ở gan và ruột. Tương tác dược động học về chuyển hoá.",
+      "xu_ly": "Cần phải giảm liều tacrolimus và theo dõi chức năng thận thông qua định lượng creatinin máu. Theo dõi nồng độ tacrolimus trong huyết tương khi dùng và khi ngừng thuốc."
+    },
+    {
+      "thuoc": ["Theophylin"],
+      "muc_do": 3,
+      "phan_tich": "Tăng nồng độ theophylin trong máu, kèm theo nguy cơ quá liều, nhất là ở trẻ em. Điều này chưa được nói tới với spiramycin, roxithromycin, clarithromycin, azithromycin, dirithromycin và midecamycin.",
+      "xu_ly": "Hiệu chỉnh lại liều lượng theo kết quả định lượng theophylin. Nếu không, thay thế bằng kháng sinh khác."
+    },
+    {
+      "thuoc": ["Thuốc lợi tiểu thải kali"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp chỉ được mô tả với erythromycin tiêm tĩnh mạch. Hạ kali máu, nhịp tim chậm và khoảng QT dài từ trước (chỉ biết được trên điện tâm đồ) là những yếu tố tạo điều kiện xuất hiện xoắn đỉnh. Những thuốc gây hạ kali máu tạo điều kiện xuất hiện xoắn đỉnh khi phối hợp với các thuốc không chống loạn nhịp. Tương tác chỉ mới được ghi nhận với sultoprid trong nhóm benzamid và erythromycin tiêm tĩnh mạch trong nhóm macrolid.",
+      "xu_ly": "Nên tránh phối hợp thuốc này. Dùng các thuốc không gây xoắn đỉnh. Nếu cần phối hợp thuốc, cần phải theo dõi liên tục khoảng QT và kiểm tra đều đặn kali máu. Cần chú ý những dấu hiệu lâm sàng báo hiệu hạ kali máu như mệt mỏi, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Penicilin"],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng kìm khuẩn của macrolid có thể đối kháng với tác dụng diệt khuẩn của penicilin. Tác dụng diệt khuẩn này thể hiện trên vi khuẩn đang trong giai đoạn phát triển theo hàm mũ. Tính đối kháng này có thể có hại trong điều trị viêm màng não, vì cần can thiệp nhanh và mạnh.",
+      "xu_ly": "Tính tới nguy cơ này theo bối cảnh sinh - bệnh lý cụ thể. Có thể thực hiện phối hợp thuốc này tuỳ theo thuốc và các chủng gây bệnh (cần chú ý đến những nồng độ ức chế tối thiểu - MIC)."
+    },
+    {
+      "thuoc": ["Pimozid"],
+      "muc_do": 3,
+      "phan_tich": "Các kháng sinh macrolid ức chế sự chuyển hoá pimozid ở gan qua xúc tác của CYP3A4, làm tăng nồng độ thuốc này trong huyết tương, có thể gây độc với tim.",
+      "xu_ly": "Tránh dùng kháng sinh macrolid cùng với pimozid."
+    },
+    {
+      "thuoc": ["Zidovudin"],
+      "muc_do": 3,
+      "phan_tich": "Clarithromycin có thể làm giảm nồng độ zidovudin trong huyết tương.",
+      "xu_ly": "Nếu đáp ứng với zidovudin giảm sau khi bắt đầu điều trị với clarithromycin, phải tăng liều zidovudin, hoặc dùng một kháng sinh khác, dựa theo kết quả kháng sinh đồ."
+    },
+    {
+      "thuoc": ["Levodopa"],
+      "muc_do": 1,
+      "phan_tich": "Spiramycin có thể ức chế hấp thu carbidopa là chất thường được dùng phối hợp với levodopa như một chất ức chế dopa - decarboxylase, do đó làm tăng nồng độ levodopa trong huyết thanh, đồng thời hạn chế levodopa vượt qua hàng rào máu - não, và làm giảm hoạt tính của thuốc.",
+      "xu_ly": "Để tránh thất bại trong điều trị, tính tới tương tác này khi xác định chiến lược điều trị. Chọn một macrolid khác nếu có thể."
+    }
+  ]
+},
+{
+  "hoat_chat": "Magnesi (muối)",
+  "mo_ta": "Các muối magnesi có thể uống hoặc tiêm tĩnh mạch.",
+  "cac_thuoc_trong_nhom": [
+    "Magnesi hydroxit",
+    "Maalox",
+    "Macgel",
+    "Magnesi trisilicat",
+    "Magnomint",
+    "Magnesi lactat",
+    "Magné B6",
+    "Magie B6",
+    "Magnesi carbonat",
+    "Topaal",
+    "Magnesi sulfat",
+    "Spasmag"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy thận: Nguy cơ tăng magnesi máu."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Pancuronium", "Vecuronium", "Rocuronium", "Atracurium", "Suxamethonium", "Pipecuronium", "Cisatracurium"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng phong bế thần kinh - cơ nặng lên và không tiên đoán được, nhất là khi dùng magnesi tiêm.",
+      "xu_ly": "Liệu pháp thường thực hiện ở bệnh viện và trước khi phẫu thuật. Phải tính đến nguy cơ này và phải chuẩn bị thật chu đáo để tránh nguy cơ này."
+    },
+    {
+      "thuoc": [
+        "Digoxin", "Digitoxin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tiêm tĩnh mạch muối calci hay magnesi đồng thời với các thuốc digitalis có thể gây tử vong. Dùng calci hay magnesi hoặc vitamin D uống phối hợp với glycosid trợ tim có thể gây loạn nhịp thất (ngoại tâm thu, nhịp tim nhanh, rung thất).",
+      "xu_ly": "Chống chỉ định dùng phối hợp muối calci tiêm tĩnh mạch với digitalis. Thay đổi chiến lược điều trị. Phối hợp calci hay magnesi uống và vitamin D với thuốc digitalis cần được theo dõi (lâm sàng, và nếu cần, làm điện tâm đồ)."
+    },
+    {
+      "thuoc": [
+        "Quinidin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Các muối magnesi (kháng acid), do tác dụng kiềm hoá nước tiểu, có thể làm tăng nồng độ quinidin trong huyết tương và kéo theo quá liều.",
+      "xu_ly": "Xem xét nguy cơ này dựa theo liều lượng của các chế phẩm. Nếu cần, nghiên cứu một chiến lược điều trị khác. Có thể theo dõi pH nước tiểu bằng các băng giấy chỉ thị."
+    },
+    {
+      "thuoc": [
+        "Tetracyclin", "Doxycyclin", "Minocyclin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tương tác hoá - lý. ở đây có sự tạo phức giữa các cation với các tetracyclin, làm giảm hấp thu tetracyclin và gây nguy cơ điều trị thất bại (Fe2+, Al3+, Ca2+).",
+      "xu_ly": "Đối với tetracyclin thế hệ I (terramycin...), nguy cơ này lớn: sự hấp thu bị ức chế tới 75%. Với các tetracyclin thế hệ II, giảm hấp thu khoảng 20% và hầu như không có ý nghĩa lâm sàng."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Medifoxamin",
+  "mo_ta": "Thuốc chống trầm cảm, không thuộc các loại ba vòng hay ức chế MAO, cùng tham gia với hệ dopaminergic, và ở mức độ ít hơn với hệ noradrenergic.",
+  "cac_thuoc_trong_nhom": [
+    "Medifoxamin",
+    "Cledial"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Phì đại tuyến tiền liệt/u tuyến tiền liệt: Nguy cơ bí tiểu tiện, do tác dụng kháng cholinergic. Các trường hợp khác: Quá mẫn với thuốc."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thức ăn/rượu: Phải tránh uống rượu trong khi điều trị. Thời kỳ cho con bú: Thuốc vào sữa ở chuột cống. Tăng nhãn áp: Tác dụng kháng cholinergic thể hiện ở giãn đồng tử có thể dẫn tới cơn tăng nhãn áp cấp tính ở người bệnh có tố bẩm góc mống mắt - giác mạc hẹp. Thời kỳ mang thai: Do không có thông tin chính xác."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Các trường hợp khác: Như phần lớn các thuốc chống trầm cảm, trong chứng hạ huyết áp có thể thấy tăng tác dụng hạ huyết áp."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 3,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần. Với một số chất, có thể thấy một số tác dụng tâm thần vận động, nhất là trong tuần lễ điều trị đầu tiên. Tương tác dược lực.",
+      "xu_ly": "Tốt nhất, không nên phối hợp hai chất này, vì thầy thuốc kê đơn không chắc chắn là người bệnh không uống rượu. Nguy cơ an thần gây buồn ngủ đặc biệt nguy hiểm với những người lái xe và người đứng máy. Khuyên người bệnh không uống rượu và các thuốc hoặc chế phẩm khác có rượu."
+    },
+    {
+      "thuoc": [
+        "Diazepam", "Clonazepam", "Alprazolam", "Chlordiazepoxide", "Nitrazepam", "Dextropropoxyphen"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần. Tương tác dược lực.",
+      "xu_ly": "Phải tính đến nguy cơ này để điều chỉnh liều lượng của hai thuốc. Phải nghĩ đến giảm tỉnh táo ở người lái xe và người đứng máy. Khuyên không nên dùng thêm rượu, không uống thuốc hoặc chế phẩm khác có rượu."
+    },
+    {
+      "thuoc": [
+        "Amineptin", "Clomipramin", "Amitriptylin", "Imipramin", "Morphin", "Fentanyl", "Oxycodon"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng các tác dụng ức chế hệ thần kinh trung ương, tác dụng ức chế hô hấp và tác dụng hạ huyết áp. Ngoài ra khi đã bị phụ thuộc thuốc, việc phối hợp hai thuốc có thể làm tăng tính phụ thuộc đó.",
+      "xu_ly": "Phải tính đến nguy cơ này để hiệu chỉnh liều lượng của hai thuốc, nếu cần phối hợp thuốc. Nghĩ đến giảm tỉnh táo ở người lái xe và người đứng máy. Khuyên người bệnh không uống rượu và không uống thêm thuốc và các chế phẩm khác có rượu."
+    },
+    {
+      "thuoc": ["Buspiron"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần. Với một số chất có thể thấy một số tác dụng tâm thần vận động, nhất là trong tuần lễ điều trị đầu tiên. Tương tác dược lực.",
+      "xu_ly": "Tốt nhất không nên phối hợp hai thuốc, vì thầy thuốc kê đơn không thể đảm bảo người bệnh không uống rượu. Nguy cơ an thần gây buồn ngủ đặc biệt nguy hiểm với người lái xe và người đứng máy. Không uống rượu và thuốc hoặc các chế phẩm khác có rượu."
+    },
+    {
+      "thuoc": ["Clonidin", "Rilmenidin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần. Tương tác dược lực. Cần chú ý rilmenidin dùng với liều bình thường không làm tăng tác dụng ức chế hệ thần kinh trung ương của các thuốc này.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải tính tới nguy cơ này để tính toán liều lượng của hai thuốc. Phải nghĩ tới giảm tính tỉnh táo ở người lái xe và người đứng máy. Khuyên không uống và không tự ý dùng các thuốc hoặc chế phẩm có chứa rượu."
+    },
+    {
+      "thuoc": ["Disopyramid"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng kháng cholinergic kiểu khô miệng, bí tiểu tiện và táo bón.",
+      "xu_ly": "Lưu ý đến những nhược điểm này. Nếu vì mục đích điều trị mà phải phối hợp thuốc, báo cho người bệnh biết những nhược điểm đó. Cần tránh dùng cho người có bệnh tuyến tiền liệt và bệnh tăng nhãn áp."
+    },
+    {
+      "thuoc": ["Gluthetimid"],
+      "muc_do": 2,
+      "phan_tich": "Gluthetimid có tính kháng cholinergic và an thần. Như vậy phối hợp thuốc làm tăng tác dụng kháng cholinergic và an thần, thể hiện ở tác dụng ức chế hệ thần kinh trung ương, và tăng nguy cơ bí tiểu tiện, khô miệng và táo bón.",
+      "xu_ly": "Lưu ý đến những nhược điểm này. Nếu vì mục đích điều trị mà phải phối hợp thuốc, báo cho người bệnh biết những nhược điểm đó. Cần tránh dùng cho người có bệnh về tuyến tiền liệt và bệnh tăng nhãn áp. Cân nhắc nguy cơ theo dạng bào chế: cần cẩn thận với thuốc nhỏ mắt. Theo dõi các thuốc người bệnh tự ý dùng. Chú ý đến người lái xe và người đứng máy."
+    },
+    {
+      "thuoc": [
+        "Promethazin", "Chlorpheniramin", "Diphenhydramin", "Ketotifen", "Oxatomid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng kháng cholinergic (nhất là với các thuốc phenothiazin kháng H1) do hiệp đồng các tác dụng không mong muốn. Các tác dụng này biểu hiện tăng nguy cơ bí tiểu tiện, khô miệng và táo bón. Chú ý ketotifen (Zaditen) và oxatomid (Tinset) có thể không có tác dụng kháng cholinergic. Như vậy tương tác không bao hàm các thuốc này.",
+      "xu_ly": "Cần lưu ý đến các nhược điểm của loại thuốc này. Nếu vì mục đích điều trị mà phải phối hợp thuốc, thông báo cho người bệnh về các nhược điểm đó. Tránh dùng cho người có bệnh về tuyến tiền liệt và người tăng nhãn áp. Cân nhắc nguy cơ cả theo dạng bào chế: Thận trọng với các thuốc nhỏ mắt. Theo dõi cả những thuốc người bệnh tự ý dùng."
+    },
+    {
+      "thuoc": [
+        "Procarbazin", "Phenelzin", "Tranylcypromin", "Isocarboxazid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời hai thuốc này có thể dẫn đến những biến động huyết áp quan trọng. Ngoài ra còn có thêm tác dụng ức chế hệ thần kinh trung ương.",
+      "xu_ly": "Thuốc ức chế MAO ít được dùng, các tương tác có nhiều. Do ít được kê đơn, nên những nhận xét về cảnh giác thuốc cũng hiếm. Tuy vậy, cần phải thận trọng đảm bảo từ 2 đến 3 tuần sau khi ngừng thuốc mới kê đơn lại thuốc ức chế MAO."
+    },
+    {
+      "thuoc": [
+        "Carbamazepin", "Baclofen", "Sulpirid", "Haloperidol", "Clopromazin", "Phenytoin", "Primidon", "Mianserin", "Phenothiazin", "Viloxazin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến làm tăng các tác dụng an thần. Tương tác dược lực.",
+      "xu_ly": "Tính đến nguy cơ này để hiệu chỉnh liều lượng của hai thuốc. Nghĩ đến giảm tính tỉnh táo ở người lái xe và người đứng máy. Không nên uống rượu; không uống thuốc hoặc chế phẩm khác có rượu."
+    },
+    {
+      "thuoc": [
+        "Enfluran", "Isofluran", "Sevofluran", "Halothan", "Thiopental", "Propofol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần. Tương tác dược lực.",
+      "xu_ly": "Khuyên người bệnh sắp phẫu thuật thông báo cho thầy thuốc gây mê các thuốc đang dùng."
+    },
+    {
+      "thuoc": [
+        "Atropin", "Scopolamin", "Ipratropium", "Tiotropium"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tính chất kháng cholinergic (nhất là với phenothiazin kháng H1) do hiệp đồng các tác dụng không mong muốn. Các tác dụng này biểu hiện ở tăng nguy cơ bí tiểu tiện, khô miệng và táo bón.",
+      "xu_ly": "Phải lưu ý đến những nhược điểm của loại thuốc này. Nếu vì mục đích điều trị mà phải phối hợp, thông báo cho người bệnh những nhược điểm đó. Tránh dùng cho người có bệnh tuyến tiền liệt và người tăng nhãn áp. Cân nhắc nguy cơ cả theo dạng bào chế: thận trọng với các thuốc nhỏ mắt. Theo dõi cả những thuốc mà người bệnh tự ý dùng."
+    },
+    {
+      "thuoc": ["Amphetamin"],
+      "muc_do": 1,
+      "phan_tich": "Tác dụng đối kháng. Có khả năng tăng tính hung hãn ở người nghiện amphetamin.",
+      "xu_ly": "Chú ý đến tương tác dược lực này để xác định mục đích chính trong điều trị. Khuyên người bệnh gặp lại thầy thuốc, nếu thấy kết quả điều trị không ổn định."
+    },
+    {
+      "thuoc": ["Phenobarbital", "Pentobarbital"],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần. Tương tác dược lực.",
+      "xu_ly": "Phải tính đến nguy cơ này để hiệu chỉnh liều lượng của hai thuốc. Phải nghĩ đến giảm tính tỉnh táo ở người lái xe và người đứng máy. Khuyên họ không uống rượu, và không tự ý dùng thêm thuốc hoặc các chế phẩm khác có chứa rượu."
+    },
+    {
+      "thuoc": ["Methadon"],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương kèm theo tác dụng an thần rất mạnh, rất nguy hiểm với người lái xe và người đứng máy.",
+      "xu_ly": "Thầy thuốc kê đơn phải chú ý tới sự tăng tác dụng an thần này để đưa ra những lời khuyên thích hợp cho người bệnh: không được lái xe hoặc đứng máy; báo cho người xung quanh biết mối nguy hiểm này."
+    },
+    {
+      "thuoc": [
+        "Thiopental", "Phenobarbital"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Nguy cơ tăng tác dụng ức chế hệ thần kinh trung ương.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải tính đến nguy cơ này khi gây mê và lựa chọn liều dùng."
+    }
+  ]
+},
+{
+  "hoat_chat": "Melphalan",
+  "mo_ta": "Thuốc chống ung thư, kìm tế bào, alkyl hoá.",
+  "cac_thuoc_trong_nhom": [
+    "Melphalan",
+    "Alkeran",
+    "Sarcolysin"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "noi_dung": "Phải là bác sĩ chuyên khoa mới kê đơn sử dụng các thuốc này cho người bệnh. Như vậy các chống chỉ định sẽ được xem xét tuỳ theo tình trạng người bệnh và do bác sĩ chuyên khoa đánh giá."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Ciclosporin"],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp hai chất ức chế miễn dịch, có thể dẫn tới phát triển u lympho giả. Có sự hiệp đồng các tác dụng không mong muốn nghiêm trọng về chức năng thận.",
+      "xu_ly": "Nên tránh phối hợp thuốc, nếu có thể, xem xét lại chiến lược điều trị. Nếu cần, phối hợp thuốc này chỉ được thực hiện tại một cơ sở chuyên khoa, có sự theo dõi đều đặn chức năng thận."
+    },
+    {
+      "thuoc": ["Vaccin sống giảm độc lực"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ phát triển nhiễm khuẩn ứng với chủng của vaccin do tác dụng ức chế miễn dịch của thuốc phối hợp.",
+      "xu_ly": "Khoảng cách giữa lúc dùng hai thứ thuốc từ ba tháng đến một năm, và tùy thuộc vào mức độ ức chế miễn dịch."
+    },
+    {
+      "thuoc": ["Alopurinol", "Colchicin"],
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời một chất kìm tế bào với một thuốc chống thống phong (gút) sẽ làm tăng nồng độ acid uric. Ngoài ra, còn có nguy cơ giảm bạch cầu, giảm tiểu cầu do cộng hợp các tác dụng không mong muốn của các thuốc.",
+      "xu_ly": "Nên tránh dùng hai thuốc này đồng thời, vì có thể thất bại trong điều trị bệnh thống phong. Nên dùng alopurinol (ức chế tổng hợp acid uric) hơn là các chất gây acid uric niệu để tránh các bệnh về thận."
+    },
+    {
+      "thuoc": ["Amphotericin B"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp amphotericin B tiêm với các chất độc với tủy khác, đòi hỏi phải rất thận trọng. Có nguy cơ thiếu máu hay các rối loạn huyết học khác.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải theo dõi chặt chẽ huyết đồ, và khi cần, giảm liều lượng."
+    },
+    {
+      "thuoc": [
+        "Azathioprin", "Carmustin", "Cisplatin", "Cyclophosphamid", "Doxorubicin", "Fluorouracil", "Ganciclovir", "Interferon alpha tái tổ hợp", "Levamisol", "Mercaptopurin", "Methotrexat", "Penicillamin", "Procarbazin", "Thiotepa", "Uracil", "Vincristin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu, do ức chế tuỷ xương, do cộng hợp các tác dụng, có thể dẫn tới mất bạch cầu hạt.",
+      "xu_ly": "Nếu có thể, nên tránh phối hợp thuốc này. Nếu cần phối hợp thuốc, phải dùng mỗi thuốc với liều thấp, và theo dõi chặt chẽ huyết đồ. Phối hợp này dành cho các thầy thuốc chuyên khoa, và các phác đồ điều trị thường đã được xác định rõ."
+    },
+    {
+      "thuoc": ["Clozapin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tủy xương, do hiệp đồng các tác dụng, có thể dẫn tới mất bạch cầu hạt. Dùng clozapin đơn độc cũng có thể làm mất bạch cầu hạt nghiêm trọng, thậm chí tử vong (độc tính miễn dịch).",
+      "xu_ly": "Nên tránh phối hợp thuốc này. Nếu cần phối hợp, với mỗi thuốc phải dùng với liều thấp. Không có gì cho phép dự báo mất bạch cầu hạt xảy ra khi dùng clozapin. Theo dõi chặt chẽ huyết đồ, thực hiện bình thường khi sử dụng một chất kìm tế bào vẫn có giá trị. Tuy vậy, người bệnh vẫn cần được cảnh báo chỉ sốt nhẹ, viêm họng và loét miệng là phải ngừng điều trị."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc có tác dụng ức chế tuỷ xương.",
+      "xu_ly": "Interleukin là thuốc chỉ được dùng tại cơ sở chuyên khoa, vì mức độ nghiêm trọng của bệnh. Khi đó, những tương tác cần được cân nhắc và tất cả các chức năng của cơ thể đều phải theo dõi liên tục. Theo dõi huyết đồ là bắt buộc."
+    },
+    {
+      "thuoc": ["Pentostatin"],
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời hai chất ức chế tuỷ xương có thể gây rối loạn huyết học nghiêm trọng tùy theo thời gian điều trị.",
+      "xu_ly": "Phối hợp thuốc đòi hỏi phải theo dõi về mặt huyết học."
+    },
+    {
+      "thuoc": ["Chloramphenicol", "Thiamphenicol"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do cộng hợp các tác dụng, có thể dẫn tới mất bạch cầu hạt. Với các phenicol, ngay khi dùng đơn độc cũng có thể mất bạch cầu hạt nghiêm trọng, thậm chí tử vong (độc tính miễn dịch).",
+      "xu_ly": "Nếu cần phối hợp, với mỗi thuốc phải dùng liều thấp. Không có gì có thể dự báo mất bạch cầu hạt do các phenicol. Theo dõi chặt chẽ huyết đồ, thực hiện bình thường khi dùng một chất kìm tế bào, vẫn có giá trị. Tuy nhiên, người bệnh cần được cảnh báo chỉ sốt nhẹ, viêm họng và loét miệng là phải ngừng dùng phenicol."
+    },
+    {
+      "thuoc": ["Zidovudin"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp zidovudin với các thuốc độc với tuỷ khác đòi hỏi phải rất thận trọng. Có nguy cơ thiếu máu hay những rối loạn huyết học khác.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải theo dõi chặt chẽ huyết đồ và nếu cần, giảm liều dùng."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Mercaptopurin",
+  "mo_ta": "Chất kìm tế bào, chống chuyển hoá, tác dụng ở khâu chuyển hoá các purin.",
+  "cac_thuoc_trong_nhom": [
+    "Mercaptopurin",
+    "Purinethol"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "noi_dung": "Phải là thầy thuốc chuyên khoa mới kê đơn dùng những thuốc này cho người bệnh. Như vậy, các chống chỉ định được xem xét theo tình trạng của người bệnh và phải được thầy thuốc chuyên khoa đánh giá."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Lovastatin", "Simvastatin", "Pravastatin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Dùng đồng thời các chất ức chế miễn dịch làm tăng nguy cơ xuất hiện tiêu cơ vân và suy thận.",
+      "xu_ly": "Mặc dầu những trường hợp được thông báo chỉ liên quan đến lovastatin, nhưng nguy cơ tiềm tàng tồn tại với simvastatin và pravastatin. Nên tránh phối hợp thuốc."
+    },
+    {
+      "thuoc": ["Olsalazin"],
+      "muc_do": 3,
+      "phan_tich": "Olsalazin làm tăng tác dụng dược lý và độc tính các thiopurin (mercaptopurin, azathioprin). Có thể có sự tích lũy các thiopurin, do olsalazin ức chế thiopurin methyltransferase trong hồng cầu.",
+      "xu_ly": "Theo dõi chức năng huyết học một cách chặt chẽ và hiệu chỉnh liều lượng thuốc nếu cần."
+    },
+    {
+      "thuoc": ["Tacrin"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng độc tính với gan.",
+      "xu_ly": "Nếu cần, tăng cường theo dõi chức năng gan. Tránh những phối hợp thuốc gây nguy cơ với người bệnh cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Pancuronium", "Vecuronium", "Rocuronium", "Atracurium"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Khi kết hợp với mercaptopurin, azathioprin, thì tác dụng dược lý của các thuốc gây thư doãi cơ không khử cực có thể bị giảm hay bị đảo ngược. Có thể là do có sự ức chế phosphodiestease ở tận cùng thần kinh vận động, tạo ra tác dụng kháng cura.",
+      "xu_ly": "Điều chủ yếu phải theo dõi liên tục chức năng hô hấp. Nếu kết hợp thuốc, phải giảm liều mercaptopurin, azathioprin."
+    },
+    {
+      "thuoc": ["Vaccin sống giảm độc lực"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ phát triển nhiễm khuẩn ứng với chủng của vaccin, do tính chất ức chế miễn dịch của thuốc phối hợp.",
+      "xu_ly": "Phải bảo đảm khoảng cách giữa lúc dùng hai thuốc này là từ ba tháng đến một năm, và phụ thuộc vào mức độ ức chế miễn dịch."
+    },
+    {
+      "thuoc": ["Alopurinol"],
+      "muc_do": 2,
+      "phan_tich": "Alopurinol ức chế chuyển hoá oxy hoá azathioprin và mercaptopurin (tác dụng như chất ức chế xanthin oxydase, là enzym xúc tác cho giáng hoá purin thành acid uric), gây nguy cơ tích luỹ các chất chống chuyển hoá gồm các base purin.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải giảm liều chất chống chuyển hoá từ 25% đến 30%."
+    },
+    {
+      "thuoc": ["Amphotericin B"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp amphotericin B tiêm với các thuốc độc với tuỷ khác đòi hỏi phải rất thận trọng. Có nguy cơ thiếu máu và các rối loạn huyết học khác.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải theo dõi chặt chẽ huyết đồ và, nếu cần, phải giảm liều lượng thuốc."
+    },
+    {
+      "thuoc": [
+        "Azathioprin", "Carmustin", "Cisplatin", "Cyclophosphamid", "Doxorubicin", "Fluorouracil", "Ganciclovir", "Interferon alpha tái tổ hợp", "Levamisol", "Methotrexat", "Penicillamin", "Procarbazin", "Thiotepa", "Vincristin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tủy xương, do cộng hợp các tác dụng, có thể dẫn tới mất bạch cầu hạt.",
+      "xu_ly": "Nếu có thể, tránh phối hợp thuốc. Nếu cần phối hợp, với mỗi thuốc phải dùng liều thấp, và theo dõi chặt chẽ huyết đồ. Phối hợp thuốc này dành cho các thầy thuốc chuyên khoa, và các phác đồ điều trị thường đã được xác định rõ."
+    },
+    {
+      "thuoc": ["Ciclosporin"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc có tính chất ức chế miễn dịch. Do tính chất ức chế miễn dịch quá mạnh, có nguy cơ phát triển các u lympho giả.",
+      "xu_ly": "Cần suy nghĩ kỹ về việc phối hợp hai thuốc ức chế miễn dịch này, phải cân nhắc tương quan giữa nguy cơ và lợi ích theo mục đích điều trị. Phối hợp thuốc này phải được thực hiện tại một cơ sở chuyên khoa, và phải theo dõi người bệnh thật chặt chẽ."
+    },
+    {
+      "thuoc": ["Clozapin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do cộng hợp các tác dụng, có thể dẫn đến mất bạch cầu hạt. Chỉ với clozapin dùng đơn độc, đã có thể mất bạch cầu hạt nghiêm trọng, thậm chí tử vong (độc tính miễn dịch).",
+      "xu_ly": "Nếu cần kết hợp, với mỗi thuốc phải dùng liều thấp. Không có gì có thể báo trước xuất hiện mất bạch cầu hạt do clozapin. Theo dõi chặt chẽ huyết đồ, thực hiện bình thường khi dùng một chất kìm tế bào, vẫn có giá trị. Tuy nhiên, người bệnh cần được cảnh báo chỉ sốt nhẹ, viêm họng và loét miệng là phải ngừng điều trị clozapin."
+    },
+    {
+      "thuoc": ["Colchicin"],
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời một thuốc kìm tế bào với một thuốc chống bệnh thống phong làm tăng nồng độ acid uric. Ngoài ra còn tăng nguy cơ giảm bạch cầu, giảm tiểu cầu do cộng hợp các tác dụng không mong muốn của các thuốc.",
+      "xu_ly": "Nên tránh dùng hai thuốc này đồng thời, vì có thể điều trị bệnh thống phong sẽ thất bại. Nên dùng alopurinol (chất ức chế tổng hợp acid uric) hơn là dùng các thuốc gây acid uric niệu, để tránh các bệnh về thận."
+    },
+    {
+      "thuoc": ["Dactinomycin", "Pentostatin"],
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời hai thuốc ức chế tuỷ xương có thể kéo theo các rối loạn huyết học nghiêm trọng tuỳ theo thời gian điều trị.",
+      "xu_ly": "Phối hợp thuốc này đòi hỏi phải theo dõi huyết học."
+    },
+    {
+      "thuoc": ["Dantrolen", "Rifampicin", "Ketoconazol", "Clotrimazol", "Itraconazol", "Fluconazol"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc có tiềm năng độc với gan (cộng hợp các tác dụng không mong muốn).",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc phải hoãn dùng một trong hai thuốc, nếu có thể. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không điển hình: buồn nôn, sốt, vàng da... Nếu thấy đồng thời phát ban ngoài da, ngứa và hạch to thì hướng về nguyên nhân do thuốc. Cần phân biệt rõ, theo các test thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Glycosid trợ tim"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp với một thuốc kìm tế bào gây giảm hấp thu khoảng 50% các thuốc họ digitalis do tổn thương niêm mạc ruột.",
+      "xu_ly": "Theo dõi chặt chẽ nồng độ thuốc digitalis huyết thanh trong suốt thời gian điều trị."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Mục đích chính là điều trị ung thư biểu mô dạng tuyến ở thận. Interleukin cũng độc với gan. Như vậy có sự phối hợp hai thuốc có tiềm năng độc với gan và ức chế tuỷ xương.",
+      "xu_ly": "Chỉ có thể tiến hành điều trị ở cơ sở chuyên khoa. Dùng interleukin đòi hỏi phải theo dõi thường xuyên. Trong hoàn cảnh đó, phải xem xét tương tác theo tình trạng chung của người bệnh. Khi phối hợp hai thuốc độc với gan và ức chế tuỷ xương, phải theo dõi chặt chẽ huyết đồ và chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc phải hoãn một trong hai thuốc, nếu có thể."
+    },
+    {
+      "thuoc": ["Natri valproat"],
+      "muc_do": 2,
+      "phan_tich": "Với sự có mặt của hai thuốc độc với gan, sẽ có nguy cơ cộng hợp các độc tính với gan. Với natri valproat, thường gặp viêm gan tiêu tế bào không hồi phục, nên rất nghiêm trọng; trái lại, với mercaptopurin, đôi khi thấy viêm gan ứ mật hồi phục được sau khi ngừng điều trị, nhưng lại có thể gây tử vong nếu không ngừng điều trị. Dấu hiệu lâm sàng báo trước, có thể là suy nhược, chán ăn, ủ rũ, ngủ gà, nôn, đau bụng (và xuất hiện lại các cơn động kinh).",
+      "xu_ly": "Theo dõi chặt chẽ chức năng gan (mỗi tuần). Các test thử kinh điển bao gồm các test phản ánh tổng hợp protein (chủ yếu test về tỷ lệ prothrombin, tỷ lệ fibrinogen, các yếu tố đông máu), bilirubin, transaminase, phosphatase kiềm. Chú ý các dấu hiệu lâm sàng phản ánh tổn thương gan: suy nhược, chán ăn, ủ rũ, ngủ gà, nôn, đau bụng (và xuất hiện lại các cơn động kinh)."
+    },
+    {
+      "thuoc": ["Niridazol"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc độc với gan. Đồng thời lại có độc tính với thần kinh của niridazol. Có nguy cơ xuất hiện co giật, loạn tâm thần và độc với gan khi phối hợp thuốc.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc phải hoãn một trong hai thuốc, nếu có thể. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không điển hình: buồn nôn, sốt, vàng da... Nếu thấy đồng thời phát ban ngoài da, ngứa và hạch to thì hướng về nguyên nhân do thuốc. Cần phân biệt rõ, theo các test thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Paracetamol"],
+      "muc_do": 2,
+      "phan_tich": "Paracetamol dùng lâu dài với liều trên 6 gam/ngày (tuỳ theo thể trọng) sẽ gây độc với gan (viêm gan kiểu tiêu tế bào). Khi phối hợp với một thuốc độc với gan khác, nguy cơ độc với gan tăng thêm.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc phải hoãn một trong hai thuốc, nếu có thể. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không điển hình: buồn nôn, sốt, vàng da... Nếu thấy đồng thời phát ban ngoài da, ngứa và hạch to thì hướng về nguyên nhân do thuốc. Cần phân biệt rõ, theo các test thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Chloramphenicol", "Thiamphenicol"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do cộng hợp các tác dụng, có thể dẫn tới mất bạch cầu hạt. Ngay với các phenicol chỉ dùng đơn độc, cũng có thể mất bạch cầu hạt nghiêm trọng, thậm chí tử vong (độc tính miễn dịch).",
+      "xu_ly": "Nếu cần phối hợp, với mỗi thuốc nên dùng liều thấp. Không có gì báo trước xuất hiện mất bạch cầu hạt do các phenicol. Theo dõi chặt chẽ huyết đồ, thực hiện bình thường khi sử dụng một chất kìm tế bào, vẫn có giá trị. Tuy nhiên, người bệnh cần được cảnh báo chỉ sốt nhẹ, viêm họng, và loét miệng là phải ngừng dùng phenicol."
+    },
+    {
+      "thuoc": ["Vàng"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc có tiềm năng độc với gan và với máu.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) và huyết đồ hoặc nếu có thể, phải hoãn một trong hai thuốc. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không điển hình: buồn nôn, sốt, vàng da... Nếu thấy đồng thời phát ban ngoài da, ngứa và hạch to thì hướng về nguyên nhân do thuốc. Cần phân biệt rõ, theo các test thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Zidovudin"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp zidovudin với các thuốc độc với tuỷ xương khác đòi hỏi phải rất thận trọng. Có nguy cơ thiếu máu hay các rối loạn huyết học khác.",
+      "xu_ly": "Khi cần phối hợp thuốc, phải theo dõi chặt chẽ huyết đồ và nếu cần, giảm liều lượng thuốc."
+    }
+  ]
+},
+{
+  "hoat_chat": "Methadon",
+  "mo_ta": "Dẫn chất của opi, dùng cho cai nghiện ma tuý.",
+  "cac_thuoc_trong_nhom": [
+    "Methadon"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Trẻ em/trẻ bú mẹ: Chống chỉ định với trẻ dưới 15 tuổi vì chưa thử nghiệm. Các trường hợp khác: Quá mẫn với thuốc."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Methadon qua được sữa mẹ. Methadon trong sữa có thể tránh cho đứa trẻ mới sinh các hậu quả cai ma tuý đột ngột. Thời kỳ mang thai: Methadon qua hàng rào nhau thai. Phải cân nhắc thật chính xác tương quan nguy cơ/lợi ích đối với mẹ và con. Nhiều khi phải dùng liều cao hơn bình thường trong thời kỳ mang thai. Cần có những biện pháp đối với trẻ mới sinh để tránh các tác dụng của cai thuốc đột ngột. Suy hô hấp: Nguy cơ tăng ức chế hô hấp. Cấm dùng khi suy hô hấp nặng."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Hen; tiểu đường; suy gan; suy thận; phì đại tuyến tiền liệt; người bệnh cao tuổi: Do các tác dụng không mong muốn của methadon. Các trường hợp khác: Suy tuyến thượng thận. Giảm năng giáp."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Morphin", "Fentanyl", "Oxycodon", "Pethidin", "Tramadol"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Tương tác dược lực. Hiệp đồng các tác dụng của hai thuốc cùng họ.",
+      "xu_ly": "Tránh dùng thêm một chất chủ vận morphin cho người bệnh đang cai nghiện ma tuý."
+    },
+    {
+      "thuoc": [
+        "Buprenorphin", "Nalbuphin", "Butorphanol"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Với các chất chủ vận đối kháng morphin (kiểu Temgesic), phải chú ý đến giảm tác dụng giảm đau do phong bế cạnh tranh các thụ thể morphin.",
+      "xu_ly": "Chọn một thuốc giảm đau khác cho người nghiện ma tuý đang cai nghiện."
+    },
+    {
+      "thuoc": ["Phenytoin"],
+      "muc_do": 3,
+      "phan_tich": "Hydantoin làm giảm tác dụng của methadon. Người bệnh dùng methadon dài hạn có thể xuất hiện triệu chứng cai thuốc. Nguyên nhân có thể do hydantoin làm tăng sự chuyển hoá và thanh lọc methadon.",
+      "xu_ly": "Phải tăng liều methadon khi điều trị cùng với hydantoin."
+    },
+    {
+      "thuoc": [
+        "Efavirenz", "Nevirapin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Các chất ức chế NNRT làm tăng chuyển hoá methadon ở gan qua xúc tác của CYP3A4, nên tác dụng của methadon bị giảm, thể hiện qua sự xuất hiện các triệu chứng cai thuốc.",
+      "xu_ly": "Khi bắt đầu dùng liệu pháp thuốc ức chế enzym phiên mã ngược không nucleosid như Efavirenz, Nevirapin, thì phải dự kiến trước việc tăng liều methadon. Theo dõi sự xuất hiện các triệu chứng cai nghiện, và khi ngừng dùng các chất ức chế NNRT, phải theo dõi các dấu hiệu quá liều methadon. Hiệu chỉnh liều methadon khi cần."
+    },
+    {
+      "thuoc": ["Ritonavir"],
+      "muc_do": 3,
+      "phan_tich": "Ritonavir có ái lực mạnh với isoenzym 3A4 của các cytochrom P450: có nguy cơ cạnh tranh mạnh giữa ritonavir với các thuốc bị hay nghi ngờ bị chuyển hoá bởi isoenzym này. Cạnh tranh này làm giảm chuyển hoá, vì vậy có nguy cơ tăng đáng kể nồng độ của chúng trong huyết tương. Có nguy cơ an thần rất mạnh và suy hô hấp nặng. Tương tác dược động học về chuyển hoá.",
+      "xu_ly": "Theo dõi chặt chẽ người bệnh về xuất hiện các tác dụng độc, và nếu cần, giảm liều methadon."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 3,
+      "phan_tich": "Tăng cường tác dụng an thần của rượu do tăng tác dụng ức chế hệ thần kinh trung ương.",
+      "xu_ly": "Tránh kê đơn các thuốc dùng rượu làm tá dược. Khuyên không nên uống rượu trong quá trình cai nghiện, nhất là với người lái xe và người đứng máy. Khuyên không nên dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Citalopram"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ methadon trong huyết tương: Có nguy cơ quá liều.",
+      "xu_ly": "Theo dõi nồng độ thuốc trong huyết tương và theo dõi xuất hiện các dấu hiệu quá liều (ngủ gà, lú lẫn...). Giảm liều khi cần."
+    },
+    {
+      "thuoc": ["Griseofulvin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng chuyển hoá ở gan do cảm ứng enzym, kéo theo giảm hoạt tính griseofulvin.",
+      "xu_ly": "Phải tính tới nguy cơ này để hiệu chỉnh liều lượng của hai thuốc, nếu cần phối hợp thuốc. Tầm quan trọng của tương tác này còn cần phải xác định thêm."
+    },
+    {
+      "thuoc": ["Rifabutin", "Rifampicin"],
+      "muc_do": 2,
+      "phan_tich": "Tương tác dược động học về chuyển hoá thuốc, gây giảm nồng độ methadon trong huyết tương và nguy cơ xuất hiện hội chứng cai nghiện.",
+      "xu_ly": "Tăng số lần dùng methadon, khoảng 2 đến 3 lần mỗi ngày, thay cho một lần mỗi ngày."
+    },
+    {
+      "thuoc": [
+        "Chlorpromazin", "Haloperidol", "Levomepromazin", "Risperidon", "Sulpirid", "Amisulprid", "Quetiapin", "Olanzapin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ ức chế hệ thần kinh trung ương.",
+      "xu_ly": "Nguy cơ an thần, gây buồn ngủ đặc biệt nguy hiểm đối với người lái xe và người đứng máy. Khuyên không dùng đồ uống, hoặc thuốc có rượu, đặc biệt với người lái xe và người đứng máy."
+    },
+    {
+      "thuoc": ["Cimetidin"],
+      "muc_do": 2,
+      "phan_tich": "Tương tác dược động học do ức chế enzym. Có nguy cơ quá liều, nguy cơ suy hô hấp. Tương tác này cần khẳng định thêm.",
+      "xu_ly": "Tương tác này đòi hỏi phải cảnh giác. Người bệnh khó thở chứng tỏ quá liều methadon: điều trị bằng naloxon nếu cần (ở cơ sở chuyên khoa)."
+    },
+    {
+      "thuoc": [
+        "Acid ascorbic", "Ammonium chloride", "Methionin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Thuốc gây acid hoá nước tiểu làm tăng sự thanh lọc methadon ở thận do tăng sự ion hoá của thuốc.",
+      "xu_ly": "Có thể tận dụng tương tác này khi dùng methadon quá liều."
+    },
+    {
+      "thuoc": ["Zidovudin"],
+      "muc_do": 2,
+      "phan_tich": "Các thuốc này làm tăng nồng độ zidovudin huyết tương, do giảm chuyển hoá zidovudin.",
+      "xu_ly": "Giảm liều zidovudin. Theo dõi các tác dụng không mong muốn của zidovudin (theo dõi huyết học và lâm sàng)."
+    },
+    {
+      "thuoc": [
+        "Amineptin", "Baclofen", "Phenobarbital", "Clonazepam", "Diazepam", "Nitrazepam", "Chlordiazepoxide", "Butyrophenon", "Carbamat", "Carbamazepin", "Clozapin", "Dextropropoxyphen", "Fluoxetin", "Fluvoxamin", "Gluthetimid", "Interferon alpha tái tổ hợp", "Medifoxamin", "Oxaflozan", "Paroxetin", "Procarbazin", "Reserpin", "Phenytoin", "Thuốc chống động kinh không barbituric", "Thuốc chống trầm cảm ba vòng", "Primidon", "Amitriptylin", "Imipramin", "Clomipramin"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương kèm theo an thần mạnh, đặc biệt có hại đối với người lái xe và người đứng máy.",
+      "xu_ly": "Bác sĩ kê đơn phải lưu ý đến tác dụng an thần mạnh này để cho người bệnh những lời khuyên thích hợp: không lái xe, không vận hành máy móc tự động đòi hỏi phải tỉnh táo theo dõi, thông báo cho người xung quanh biết nguy cơ."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Methenamin",
+  "mo_ta": "Thuốc sát khuẩn đường tiết niệu, hay dùng trong phối hợp thuốc.",
+  "cac_thuoc_trong_nhom": [
+    "Methenamin",
+    "Mictasol blue"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Methenamin qua được sữa mẹ (không thấy hậu quả rõ ràng). Thời kỳ mang thai: Methenamin qua hàng rào nhau thai (không thấy hậu quả rõ ràng)."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy thận: Nguy cơ tích luỹ trong máu (không thấy hậu quả, tuy nhiên nồng độ formol trong nước tiểu sẽ không đủ để có tác dụng)."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Sulfamethoxazol", "Sulfadiazin", "Sulfasalazin", "Furosemid", "Hydrochlorothiazid", "Indapamid", "Chlorthalidon", "Xipamid"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Trong nước tiểu acid, methenamin giáng hoá thành formol, tạo nguy cơ kết tủa với các sulfamid ít hoà tan, có thể gây tinh thể niệu và sỏi thận.",
+      "xu_ly": "Nên thay bằng các thuốc khác."
+    },
+    {
+      "thuoc": [
+        "Furosemid", "Hydrochlorothiazid", "Indapamid", "Chlorthalidon", "Xipamid"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Trong nước tiểu acid, methenamin giáng hoá thành formol, tạo nguy cơ kết tủa với sulfamid ít hoà tan (furosemid có cấu trúc sulfamid), gây nên tinh thể niệu và sỏi thận.",
+      "xu_ly": "Nên chọn thuốc khác thay thế."
+    },
+    {
+      "thuoc": [
+        "Natri bicarbonat", "Natri citrat", "Natri lactat", "Aluminium hydroxide", "Magnesium hydroxide", "Calcium hydroxide"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Hoạt tính của methenamin là do thuốc thủy phân trong nước tiểu thành formol (tác dụng sát khuẩn) và amoni hydroxyd. Phản ứng thủy phân này chỉ xảy ra khi nước tiểu có pH acid. Như vậy, nên dùng phối hợp với một chất acid hoá nước tiểu để tạo điều kiện cho phản ứng thủy phân này. Khi nước tiểu có pH > 5, thì tác dụng methenamin bị ức chế.",
+      "xu_ly": "Tránh kê đơn đồng thời một chất kiềm hoá nước tiểu và methenamin. Cũng chú ý tránh kê những thuốc kháng acid có nhôm, magnesi hay calci hydroxyd... làm tăng pH nước tiểu. Khi dùng methenamin phải hiệu chỉnh pH nước tiểu ≤ 5."
+    }
+  ]
+},
+{
+  "hoat_chat": "Methotrexat",
+  "mo_ta": "Thuốc chống ung thư, ức chế miễn dịch, đối kháng acid folic, dùng trong điều trị ung thư, viêm khớp dạng thấp, vảy nến và các bệnh tự miễn.",
+  "cac_thuoc_trong_nhom": [
+    "Methotrexat",
+    "Methotrexat Ebewe",
+    "Methotrexat Roger Bellon"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "noi_dung": "Phải là bác sĩ chuyên khoa mới kê đơn loại thuốc này. Khi đó các chống chỉ định phải được xem xét tuỳ theo tình trạng của người bệnh, và phải được bác sĩ chuyên khoa đánh giá."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Indometacin", "Salicylat", "Ketoprofen", "Ibuprofen", "Diclofenac", "Naproxen", "Piroxicam"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Tăng độc tính của methotrexat với máu do methotrexat bị đẩy ra khỏi liên kết với protein và/hoặc do giảm đào thải ở thận. Tác dụng này phụ thuộc vào liều (tác dụng với ketoprofen quan trọng hơn).",
+      "xu_ly": "Có thể gặp tương tác này ở cơ sở bệnh viện. Khi dùng methotrexat với liều cao, phải ngừng thuốc chống viêm không steroid 12 đến 24 giờ trước đó, cho đến khi nồng độ methotrexat trở về trị số không độc. Mặc dầu tương tác này chưa được mô tả với tất cả các thuốc chống viêm không steroid, nhưng nên áp dụng quy tắc này, và tránh kê đơn hai loại thuốc đó đồng thời."
+    },
+    {
+      "thuoc": ["Probenecid"],
+      "muc_do": 4,
+      "phan_tich": "Probenecid ức chế sự đào thải methotrexat qua thận. Có thể dùng phối hợp thuốc này để giảm liều methotrexat, nhưng do độc tính nội tại của methotrexat, phối hợp này trở nên nguy hiểm, nếu được thực hiện một cách vô ý.",
+      "xu_ly": "Cách dùng probenecid để làm chậm đào thải nhiều thuốc có thể và đã được áp dụng để giảm liều lượng các thuốc đó. Nhưng phải hết sức cảnh giác với những nguy cơ tiềm ẩn và với tăng độc tính của thuốc phối hợp. Phải nghiên cứu kỹ hoàn cảnh sinh bệnh lý cụ thể."
+    },
+    {
+      "thuoc": ["Pyrazol"],
+      "muc_do": 4,
+      "phan_tich": "Tăng nguy cơ mất bạch cầu hạt và tăng tác dụng độc với máu của methotrexat, do bị đẩy khỏi các liên kết với protein và/hoặc giảm đào thải qua thận.",
+      "xu_ly": "Chống chỉ định phối hợp thuốc này. Chọn một thuốc chống viêm khác, và tôn trọng các quy tắc kê đơn: Khi dùng methotrexat liều cao, phải ngừng thuốc chống viêm không steroid 12 giờ đến 24 giờ trước đó, cho đến khi nồng độ methotrexat trở về trị số không gây độc."
+    },
+    {
+      "thuoc": ["Trimethoprim", "Zidovudin"],
+      "muc_do": 4,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do cộng hợp các tác dụng trên dehydrofolat reductase, có thể dẫn tới thiếu máu nguyên hồng cầu khổng lồ.",
+      "xu_ly": "Nếu cần phối hợp thuốc, nên dùng liều thấp cho mỗi chất, và theo dõi chặt chẽ huyết đồ. Phối hợp thuốc này dành cho các bác sĩ chuyên khoa, và các phác đồ điều trị thường đã được xác định rõ ràng. Có thể bổ sung thêm acid folinic."
+    },
+    {
+      "thuoc": ["Acid folic", "Folinic acid"],
+      "muc_do": 3,
+      "phan_tich": "Các thuốc trong nhóm methotrexat này tác động như những chất đối kháng với acid folic, do ức chế dihydrofolat reductase. Tương tác càng có ý nghĩa nếu liều dùng càng cao và thời gian điều trị càng dài.",
+      "xu_ly": "Tương tác này được sử dụng khi quá liều methotrexat. Dùng acid folinic thay cho acid folic."
+    },
+    {
+      "thuoc": ["Amiodaron"],
+      "muc_do": 3,
+      "phan_tich": "Độc tính của methotrexat có thể tăng lên khi dùng kết hợp với amiodaron. Cơ chế còn chưa rõ.",
+      "xu_ly": "Khi bắt đầu dùng amiodaron, phải theo dõi chặt chẽ người bệnh về các dấu hiệu nhiễm độc methotrexat."
+    },
+    {
+      "thuoc": [
+        "Gentamicin", "Amikacin", "Streptomycin", "Tobramycin", "Netilmicin", "Foscarnet"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tăng nguy cơ độc với thận, do phối hợp hai thuốc có tiềm năng độc với thận. Cộng hợp các tác dụng không mong muốn.",
+      "xu_ly": "Loại phối hợp thuốc này có thể hay gặp, nhất là tại cơ sở bệnh viện. Cách dùng thuốc chỉ một lần trong ngày làm giảm độc tính với tai và thận, nhưng khi cần phối hợp thuốc, vẫn nên hiệu chỉnh liều lượng theo độ thanh lọc creatinin (công thức Cockroft và Gault). Đặc biệt phải chú ý khi dùng cho người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Lovastatin", "Simvastatin", "Pravastatin"],
+      "muc_do": 3,
+      "phan_tich": "Sử dụng đồng thời với các chất ức chế miễn dịch làm tăng nguy cơ xuất hiện tiêu cơ vân và suy thận.",
+      "xu_ly": "Dù cho những trường hợp đã thông báo chỉ liên quan đến lovastatin, nhưng vẫn có nguy cơ tiềm tàng với simvastatin và pravastatin. Nên tránh cách phối hợp thuốc này."
+    },
+    {
+      "thuoc": [
+        "Ampicillin", "Amoxicillin", "Penicillin G", "Penicillin V"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Nồng độ methotrexat trong huyết thanh có thể tăng, làm tăng nguy cơ độc tính. Cơ chế có thể do ức chế cạnh tranh sự bài tiết methotrexat ở ống thận.",
+      "xu_ly": "Theo dõi người bệnh về độc tính của methotrexat và đo hàm lượng methotrexat 2 lần mỗi tuần trong ít nhất 2 tuần đầu. Có thể phải tăng liều và thời gian dùng giải cứu bằng leucovorin. Nếu cần dùng một kháng sinh phổ rộng, ceftazidim có thể ít gây tương tác hơn."
+    },
+    {
+      "thuoc": ["Omeprazol"],
+      "muc_do": 3,
+      "phan_tich": "Dùng kết hợp, omeprazol có thể làm tăng nồng độ methotrexat trong huyết tương, làm tăng độc tính của thuốc. Có thể là do omeprazol đã làm giảm sự thanh lọc methotrexat qua thận.",
+      "xu_ly": "Nếu có thể, ngừng dùng omeprazol vài ngày trước khi bắt đầu dùng methotrexat. Có thể xem xét thay thế omeprazol bằng các thuốc đối kháng H2 (như cimetidin)."
+    },
+    {
+      "thuoc": ["Tacrin"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng độc tính với gan.",
+      "xu_ly": "Nếu cần, tăng cường theo dõi gan. Tránh các phối hợp thuốc gây nguy cơ với những người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Doxycyclin", "Tetracyclin", "Minocyclin"],
+      "muc_do": 3,
+      "phan_tich": "Dùng chung với các tetracyclin, nồng độ methotrexat có thể tăng lên trong huyết tương, gây nguy cơ độc (ức chế tuỷ xương). Cơ chế còn chưa rõ.",
+      "xu_ly": "Nếu không thể tránh dùng doxycyclin hay một tetracyclin nào khác cùng với methotrexat ở liều cao, cần phải theo dõi chặt chẽ nồng độ methotrexat trong huyết tương, và theo dõi những triệu chứng nhiễm độc thuốc ở người bệnh."
+    },
+    {
+      "thuoc": ["Vaccin sống giảm độc lực"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ phát triển nhiễm khuẩn ứng với chủng của vaccin, do hoạt tính ức chế miễn dịch của thuốc phối hợp.",
+      "xu_ly": "Phải tiêm chủng và dùng thuốc cách nhau từ 3 tháng đến 1 năm, tuỳ theo mức độ ức chế miễn dịch."
+    },
+    {
+      "thuoc": [
+        "Amineptin", "Dantrolen", "Estradiol", "Ethinylestradiol", "Estriol", "Estron", "Diane-35", "Marvelon", "Mercilon", "Gynera", "Evra", "Etretinat", "Fluvoxamin", "Griseofulvin", "Erythromycin", "Clarithromycin", "Roxithromycin", "Azithromycin", "Spiramycin", "Natri valproat", "Procarbid", "Rifampicin", "Ketoconazol", "Clotrimazol", "Itraconazol", "Fluconazol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp thuốc có tiềm năng độc với gan (cộng hợp các tác dụng không mong muốn).",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc phải hoãn một trong hai thuốc. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không điển hình: buồn nôn, sốt, vàng da... Nếu thấy đồng thời phát ban ngoài da, ngứa và hạch to thì hướng về nguyên nhân do thuốc. Cần phân biệt rõ, theo các test thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": [
+        "Neomycin", "Gentamicin", "Amikacin", "Streptomycin", "Tobramycin", "Netilmicin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Có thể giảm hấp thu methotrexat và giảm hệ vi khuẩn đường ruột có nhiệm vụ chuyển hoá methotrexat. Giảm đáp ứng với methotrexat.",
+      "xu_ly": "Tại cơ sở chuyên khoa, việc dùng các aminosid uống phải thận trọng, khi dùng methotrexat. Cần hết sức cảnh giác."
+    },
+    {
+      "thuoc": ["Amphotericin B"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp amphotericin B tiêm với các thuốc khác độc với tuỷ đòi hỏi phải hết sức thận trọng. Có nguy cơ thiếu máu hay các rối loạn huyết học khác.",
+      "xu_ly": "Khi cần phối hợp thuốc, phải theo dõi chặt chẽ huyết đồ, và nếu cần, giảm liều dùng."
+    },
+    {
+      "thuoc": [
+        "Azathioprin", "Carmustin", "Cisplatin", "Cyclophosphamid", "Doxorubicin", "Fluorouracil", "Ganciclovir", "Interferon alpha tái tổ hợp", "Levamisol", "Melphalan", "Mercaptopurin", "Penicillamin", "Procarbazin", "Thiotepa", "Vincristin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do cộng hợp các tác dụng, có thể dẫn tới mất bạch cầu hạt.",
+      "xu_ly": "Nếu có thể, tránh dùng phối hợp thuốc này. Nếu cần phối hợp thuốc, phải dùng liều thấp cho mỗi thuốc, và phải theo dõi chặt chẽ huyết đồ. Phối hợp thuốc này dành cho các nhà chuyên khoa, và các phác đồ điều trị thường đã được xác định rõ."
+    },
+    {
+      "thuoc": ["Ciclosporin"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc có tính chất ức chế miễn dịch. Do tác dụng ức chế miễn dịch quá lớn, có nguy cơ xuất hiện u lympho giả.",
+      "xu_ly": "Cần phải suy nghĩ kỹ khi phối hợp hai thuốc ức chế miễn dịch, và phải cân nhắc tương quan nguy cơ/lợi ích theo mục tiêu điều trị. Phối hợp thuốc chỉ được thực hiện ở cơ sở chuyên khoa, và phải theo dõi người bệnh chặt chẽ."
+    },
+    {
+      "thuoc": ["Clozapin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do cộng hợp các tác dụng, có thể dẫn tới mất bạch cầu hạt. Với clozapin, có thể mất bạch cầu hạt nghiêm trọng, thậm chí tử vong ngay khi chỉ dùng đơn độc (độc tính miễn dịch).",
+      "xu_ly": "Tránh phối hợp thuốc này. Nếu cần phối hợp thuốc, phải dùng liều thấp cho mỗi thuốc. Không có gì báo trước mất bạch cầu hạt khi dùng clozapin. Theo dõi chặt chẽ huyết đồ, thực hiện bình thường khi sử dụng một chất kìm tế bào vẫn có giá trị. Tuy nhiên, người bệnh cần được cảnh báo chỉ sốt nhẹ, viêm họng, và loét miệng là phải ngừng điều trị."
+    },
+    {
+      "thuoc": ["Colchicin"],
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời một thuốc kìm tế bào và một thuốc chống thống phong làm tăng nồng độ acid uric trong máu. Ngoài ra còn có nguy cơ giảm bạch cầu và giảm tiểu cầu do cộng hợp các tác dụng không mong muốn của các thuốc.",
+      "xu_ly": "Nên tránh dùng hai thuốc này cùng lúc, vì có thể liệu pháp chống bệnh thống phong sẽ thất bại. Nên dùng alopurinol (chất ức chế tổng hợp acid uric), thay cho việc dùng các thuốc bài acid uric đường niệu để tránh những bệnh về thận."
+    },
+    {
+      "thuoc": ["Dactinomycin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do cộng hợp các tác dụng, có thể dẫn tới mất bạch cầu hạt.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải dùng liều thấp cho mỗi thuốc. Theo dõi chặt chẽ huyết đồ."
+    },
+    {
+      "thuoc": ["Digoxin"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp với một thuốc kìm tế bào sẽ gây kém hấp thu các thuốc digitalis khoảng 50%, do tổn thương niêm mạc ruột hồi phục được.",
+      "xu_ly": "Theo dõi chặt chẽ nồng độ thuốc digitalis trong huyết thanh trong suốt thời gian điều trị."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Mục tiêu chính điều trị ung thư dạng tuyến ở thận. Interleukin cũng độc với thận và gan. Như vậy, có phối hợp hai thuốc có tiềm năng độc với gan và thận và ức chế tuỷ xương.",
+      "xu_ly": "Điều trị này chỉ có thể thực hiện tại một cơ sở chuyên khoa. Dùng interleukin đòi hỏi phải theo dõi liên tục. Khi đó, cần xem xét tất cả theo trạng thái chung của người bệnh. Khi phối hợp hai thuốc độc với gan và thận và ức chế tuỷ xương, phải theo dõi huyết đồ và các chức năng gan và thận (ASAT, ALAT, phosphatase kiềm, bilirubin, creatinin máu), hoặc, nếu có thể, hoãn một trong hai thuốc."
+    },
+    {
+      "thuoc": ["Paracetamol"],
+      "muc_do": 2,
+      "phan_tich": "Paracetamol, khi dùng lâu dài với liều trên 6 gam/ngày (tuỳ theo thể trọng) độc với gan (viêm gan kiểu tiêu tế bào). Khi phối hợp với một thuốc khác độc với gan, nguy cơ độc với gan tăng lên.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc phải hoãn một trong hai thuốc, nếu có thể. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không điển hình: buồn nôn, sốt, vàng da... Nếu thấy đồng thời phát ban ngoài da, ngứa và hạch to thì hướng về nguồn gốc do thuốc. Cần phân biệt rõ, theo các test thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Chloramphenicol", "Thiamphenicol"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do cộng hợp các tác dụng, có thể dẫn đến mất bạch cầu hạt. Với các phenicol, chỉ dùng đơn độc, cũng có thể mất bạch cầu hạt nghiêm trọng, thậm chí tử vong (độc tính miễn dịch).",
+      "xu_ly": "Nếu cần phối hợp, phải dùng mỗi thuốc với liều thấp. Không có gì báo trước được sự mất bạch cầu hạt do các phenicol. Theo dõi chặt chẽ huyết đồ, thực hiện bình thường khi sử dụng một chất kìm tế bào, vẫn có giá trị. Tuy vậy, người bệnh cần được báo trước nếu chỉ sốt nhẹ, viêm họng và loét miệng cũng phải ngừng dùng phenicol."
+    },
+    {
+      "thuoc": ["Primidon"],
+      "muc_do": 2,
+      "phan_tich": "Tăng các tác dụng không mong muốn của methotrexat, có thể là do tăng ức chế dihydrofolat reductase.",
+      "xu_ly": "Phải tính tới nguy cơ này khi điều trị methotrexat, thường thực hiện tại một cơ sở chuyên khoa."
+    },
+    {
+      "thuoc": ["Pyrimethamin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do cộng hợp các tác dụng trên dihydrofolat reductase, có thể dẫn tới thiếu máu nguyên hồng cầu khổng lồ.",
+      "xu_ly": "Nếu cần phối hợp, phải dùng liều lượng thấp cho mỗi thuốc, và phải theo dõi huyết đồ. Phối hợp thuốc này dành cho các bác sĩ chuyên khoa, và các phác đồ điều trị thường đã được xác định rõ. Có thể bổ sung thêm acid folinic."
+    },
+    {
+      "thuoc": ["Niridazol"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc độc với gan. Ngoài ra còn có độc tính với thần kinh của niridazol. Có nguy cơ xuất hiện co giật, loạn tâm thần và độc tính với gan, khi phối hợp thuốc.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc phải hoãn một trong hai thuốc, nếu có thể. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không điển hình: buồn nôn, sốt, vàng da... Nếu thấy đồng thời phát ban ngoài da, ngứa và hạch to thì hướng về nguồn gốc do thuốc. Cần phân biệt rõ, theo các test thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ xơ gan vì đây là hai chất độc với gan.",
+      "xu_ly": "Tính tới mục tiêu cuối cùng điều trị. Người bệnh thường được nằm tại bệnh viện, và không có điều kiện uống rượu thường xuyên. Nếu phải tiếp tục điều trị ngoại trú, yêu cầu người bệnh không được uống rượu."
+    },
+    {
+      "thuoc": [
+        "Sulfamethoxazol", "Sulfadiazin", "Sulfasalazin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng độc với máu của methotrexat, do đẩy chất này khỏi vị trí liên kết với protein huyết tương.",
+      "xu_ly": "Nếu cần, định lượng nồng độ methotrexat trong huyết tương. Hiệu chỉnh liều lượng trong điều trị và khi ngừng dùng sulfamid chống nhiễm khuẩn."
+    },
+    {
+      "thuoc": ["Sulfasalazin"],
+      "muc_do": 2,
+      "phan_tich": "Sulfamid đẩy thuốc này khỏi vị trí liên kết với protein huyết tương và/hoặc ức chế dị hoá thuốc này, gây tăng nửa đời nồng độ thuốc trong huyết thanh.",
+      "xu_ly": "Cần phải hiệu chỉnh liều lượng trong và sau điều trị sulfamid."
+    },
+    {
+      "thuoc": ["Natri bicarbonat"],
+      "muc_do": 2,
+      "phan_tich": "Natri bicarbonat làm tăng đào thải methotrexat qua thận.",
+      "xu_ly": "Tính chất này có thể dùng để tạo điều kiện đào thải methotrexat trong liệu pháp dùng liều cao, và để tránh kết tủa methotrexat trong các ống thận."
+    },
+    {
+      "thuoc": ["Vàng"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc có tiềm năng độc với gan và máu.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan và máu, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), và huyết đồ, hoặc, nếu có thể phải hoãn một trong hai thuốc. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không điển hình: buồn nôn, sốt, vàng da... Nếu thấy đồng thời phát ban ngoài da, ngứa và hạch to thì hướng về nguồn gốc do thuốc. Cần phân biệt rõ, theo các test thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không hồi phục với viêm gan ứ mật hồi phục được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Barbiturat", "Phenobarbital", "Pentobarbital"],
+      "muc_do": 1,
+      "phan_tich": "Tăng các tác dụng không mong muốn của methotrexat, có thể do tăng ức chế dihydrofolat reductase.",
+      "xu_ly": "Ghi nhớ nguy cơ này khi điều trị bằng methotrexat."
+    },
+    {
+      "thuoc": ["Phenytoin"],
+      "muc_do": 1,
+      "phan_tich": "Tăng các tác dụng không mong muốn của methotrexat, có thể do tăng ức chế dihydrofolat reductase.",
+      "xu_ly": "Khi cần phối hợp thuốc, phải tính tới nguy cơ tăng các tác dụng không mong muốn. Thay thế thuốc chống động kinh khi cần, nếu phối hợp thuốc phải dùng lâu dài."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Methyldopa",
+  "mo_ta": "Thuốc hạ huyết áp, ức chế giao cảm trung ương.",
+  "cac_thuoc_trong_nhom": [
+    "Methyldopa",
+    "Aldomet",
+    "Apo-Methyldopa",
+    "Dopegyt",
+    "Novo-Medopa"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Rối loạn chuyển hoá porphyrin: Tăng các cơn. Tai biến mạch máu não và động mạch vành mới xảy ra là các chống chỉ định dùng methyldopa. Nên tránh dùng chất này trong trường hợp: u tế bào ưa crom, quá mẫn đã biết với chất này."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Trầm cảm: Methyldopa tác dụng như một cơ chất cạnh tranh của dopa-decarboxylase, làm giảm nồng độ noradrenalin và serotonin trong não. Thiếu hụt monoamin này có thể là nguyên nhân các rối loạn tâm thần và nhất là các đợt trầm cảm hay xảy ra. Bệnh về máu: Nguy cơ thiếu máu tan máu khi điều trị kéo dài. Có thể 10-20% người bệnh có phản ứng dương tính với thử nghiệm Coombs sau 6 đến 12 tháng điều trị. Suy gan: Methyldopa độc với gan và là nguyên nhân hoại tử tế bào gan kèm vàng da."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Thời kỳ cho bú: Methyldopa qua được sữa mẹ."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Thời kỳ mang thai: Methyldopa không gây quái thai, và vì tác dụng khá ngắn nên ít nguy hiểm, mặc dầu thuốc qua được hàng rào nhau thai. Suy thận: Cần giảm liều lượng. Người bệnh cao tuổi: Methyldopa gây hạ huyết áp và an thần, do giảm trương lực giao cảm. Các tác dụng này đặc biệt nguy hiểm đối với người bệnh cao tuổi, do xơ cứng động mạch thường kèm theo tăng huyết áp. Phải giảm liều."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Estradiol", "Ethinylestradiol", "Estriol", "Estron", "Diane-35", "Marvelon", "Mercilon", "Gynera", "Evra"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Tăng huyết áp do các thuốc uống ngừa thai gây ra thường kháng lại liệu pháp dùng methyldopa. Cơ chế còn chưa rõ.",
+      "xu_ly": "Việc khống chế huyết áp trong trường hợp này rất khó khăn, thậm chí không thực hiện được. Thay đổi chiến lược điều trị."
+    },
+    {
+      "thuoc": [
+        "Sulpirid", "Amisulprid", "Haloperidol", "Risperidon", "Olanzapin", "Quetiapin", "Chlorpromazin", "Fluphenazin", "Thioridazin", "Droperidol"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Nói chung, với các thuốc an thần kinh, có nguy cơ làm hạ huyết áp do phong bế tái hấp thu các chất chuyển hoá của methyldopa trong các nơron adrenergic. Nguy cơ hạ huyết áp thế đứng tăng lên với tất cả các thuốc an thần kinh.",
+      "xu_ly": "Trong quá trình tìm kiếm một trạng thái cân bằng về huyết áp, bác sĩ kê đơn phải tính đến nguy cơ có những biến động về huyết áp khi dùng những thuốc an thần kinh, để chọn một liệu pháp thích hợp. Nếu cần phối hợp thuốc này, khuyên người bệnh dùng thuốc đều đặn vào giờ nhất định và tăng cường tự theo dõi. Nếu không, cần thay đổi chiến lược điều trị. Khuyên người bệnh đến khám lại nếu thấy huyết áp biến động nhiều."
+    },
+    {
+      "thuoc": ["Haloperidol"],
+      "muc_do": 3,
+      "phan_tich": "Nói chung, với các thuốc an thần kinh, có nguy cơ làm hạ huyết áp do phong bế tái hấp thu các chất chuyển hoá của methyldopa trong các nơron adrenergic. Nguy cơ hạ huyết áp thế đứng tăng lên với tất cả các thuốc an thần kinh. Ngoài ra, với haloperidol (thuộc họ butyrophenon), thấy có sa sút trí tuệ, mất phương hướng, suy giảm tư duy. Tuy vậy, tương tác này cần được khẳng định, khi có các nhận xét khác không nói tới vấn đề này.",
+      "xu_ly": "Cần thận trọng với haloperidol, và phải đánh giá đầy đủ các nguy cơ do phối hợp thuốc này. Nếu thấy rối loạn tâm thần, ngừng ngay haloperidol và chuyển ngay nhận xét đến Trung tâm cảnh giác thuốc. Nếu cần phối hợp thuốc, phải thông báo cho người bệnh, dùng thuốc đều dặn vào những giờ nhất định và tăng cường tự theo dõi. Nếu không, cần thay đổi chiến lược điều trị. Khuyên người bệnh đến khám lại nếu thấy huyết áp biến động nhiều."
+    },
+    {
+      "thuoc": ["Levodopa"],
+      "muc_do": 3,
+      "phan_tich": "Tương tác dược lực. Có khả năng cản trở tác dụng chống Parkinson của levodopa. Tăng tác dụng ức chế hệ thần kinh trung ương, kèm theo nguy cơ loạn tâm thần.",
+      "xu_ly": "Nên chọn một chiến lược điều trị khác."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 3,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần. Có thể thấy một số tác dụng tâm thần - vận động khi dùng một số thuốc, nhất là trong tuần lễ điều trị đầu tiên. Tương tác dược lực.",
+      "xu_ly": "Không nên phối hợp hai chất này, vì bác sĩ kê đơn không đảm bảo được người bệnh không uống rượu. Nguy cơ an thần, gây buồn ngủ đặc biệt nguy hiểm với người lái xe và người đứng máy. Khuyên người bệnh không dùng các chế phẩm có rượu và không nên uống rượu."
+    },
+    {
+      "thuoc": ["Amphetamin"],
+      "muc_do": 2,
+      "phan_tich": "Amphetamin là một chất cường giao cảm trực tiếp, và do đó có tác dụng làm tăng huyết áp. Sự phối hợp với các thuốc chống tăng huyết áp dẫn tới đối kháng tác dụng, và khó khăn rất lớn để đạt cân bằng huyết áp.",
+      "xu_ly": "Với người bệnh tăng huyết áp, phải tránh kê đơn các amphetamin."
+    },
+    {
+      "thuoc": ["Baclofen"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng tác dụng làm hạ huyết áp.",
+      "xu_ly": "Theo dõi huyết áp và hiệu chỉnh liều lượng thuốc chống tăng huyết áp chính trong đơn, trong khi điều trị và khi ngừng phối hợp thuốc."
+    },
+    {
+      "thuoc": [
+        "Captopril", "Enalapril", "Lisinopril", "Perindopril", "Ramipril"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Có phối hợp các thuốc chống tăng huyết áp, tăng mạnh nguy cơ tụt huyết áp tư thế đứng.",
+      "xu_ly": "Nhắc người bệnh tăng cường tự theo dõi và phân chia các lần uống thuốc đều đặn trong ngày. Chú ý đến người bệnh cao tuổi để họ hiểu cách phân chia liều."
+    },
+    {
+      "thuoc": [
+        "Enfluran", "Isofluran", "Sevofluran", "Halothan"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần. Tương tác dược lực.",
+      "xu_ly": "Khuyên người bệnh sắp qua phẫu thuật thông báo cho bác sĩ gây mê các thuốc đang dùng."
+    },
+    {
+      "thuoc": ["Carbamat"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần buồn ngủ. Tương tác dược lực.",
+      "xu_ly": "Phải tính tới nguy cơ này để hiệu chỉnh liều lượng của hai thuốc. Nghĩ tới giảm tính tỉnh táo ở người lái xe và người đứng máy. Khuyên không nên uống rượu, không dùng thuốc và chế phẩm có rượu."
+    },
+    {
+      "thuoc": [
+        "Morphin", "Fentanyl", "Oxycodon", "Pethidin", "Tramadol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng làm hạ huyết áp và tăng nguy cơ hạ huyết áp tư thế đứng.",
+      "xu_ly": "Theo dõi huyết áp trong khi phối hợp. Tuỳ theo thuốc dùng, hạ huyết áp có thể nặng hoặc nhẹ khác nhau. Nếu cần, hiệu chỉnh liều lượng của một hoặc cả hai thuốc. Lập một kế hoạch dùng thuốc đều đặn. Khuyên người bệnh gặp lại thầy thuốc để hiệu chỉnh lại liều dùng nếu thấy chóng mặt lúc mới dùng thuốc. Tăng cường theo dõi người bệnh cao tuổi (nguy cơ ngã) và khuyên họ chuyển dần dần từ tư thế nằm hoặc ngồi sang tư thế đứng."
+    },
+    {
+      "thuoc": ["Clonidin"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp các thuốc chống tăng huyết áp có thể thực hiện. Tăng nguy cơ hạ huyết áp thế đứng nghiêm trọng và tác dụng ức chế hệ thần kinh trung ương.",
+      "xu_ly": "Thông báo cho người bệnh biết các nguy cơ, và rải đều các lần uống thuốc trong ngày. Cẩn thận với người lái xe và đứng máy. Khuyên người bệnh không uống rượu, không dùng thuốc và các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Clozapin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng tác dụng làm hạ huyết áp.",
+      "xu_ly": "Theo dõi huyết áp và hiệu chỉnh liều lượng thuốc chống tăng huyết áp chính trong đơn, trong điều trị và khi ngừng dùng clozapin."
+    },
+    {
+      "thuoc": ["Dextropropoxyphen"],
+      "muc_do": 2,
+      "phan_tich": "Dextropropoxyphen có tác dụng hạ huyết áp nhẹ. Khi phối hợp với các thuốc hạ huyết áp khác sẽ tăng tác dụng hạ huyết áp và tăng nguy cơ hạ huyết áp thế đứng.",
+      "xu_ly": "Cần phải theo dõi huyết áp khi phối hợp thuốc (trong điều trị và sau khi ngừng dùng một trong hai thuốc). Tuỳ theo thuốc đã dùng, hạ huyết áp có thể nặng hay nhẹ khác nhau. Khi cần, hiệu chỉnh liều lượng một hoặc hai thuốc. Lập một kế hoạch dùng thuốc đều đặn. Khuyên người bệnh gặp lại bác sĩ để hiệu chỉnh lại liều lượng nếu thấy chóng mặt lúc bắt đầu điều trị. Tăng cường theo dõi người bệnh cao tuổi (nguy cơ ngã) và khuyên họ chuyển dần dần từ tư thế nằm hoặc ngồi để sang tư thế đứng."
+    },
+    {
+      "thuoc": ["Diazoxyd"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc có tính chất chống tăng huyết áp.",
+      "xu_ly": "Diazoxyd là một thuốc gây tăng glucose máu, vì vậy cần phải cảnh giác khi phối hợp hai thuốc theo mục đích điều trị chính và phải theo dõi đều đặn huyết áp."
+    },
+    {
+      "thuoc": ["Didanosin"],
+      "muc_do": 2,
+      "phan_tich": "Hiệp đồng các tác dụng không mong muốn: tăng các nguy cơ xuất hiện viêm tuỵ, do thuốc.",
+      "xu_ly": "Theo dõi lâm sàng và nếu cần , khi thấy đau bụng, theo dõi sinh học chức năng tuỵ (amylase máu và amylase nước tiểu)."
+    },
+    {
+      "thuoc": [
+        "Furosemid", "Hydrochlorothiazid", "Indapamid", "Chlorthalidon", "Xipamid", "Reserpin", "Metoprolol", "Propranolol", "Nifedipin", "Amlodipin", "Hydralazin", "Spironolacton"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng làm hạ huyết áp.",
+      "xu_ly": "Phải hiệu chỉnh lại liều lượng, và phải thiết lập một kế hoạch dùng thuốc. Cần nhấn mạnh người bệnh phải tuân thủ kế hoạch điều trị. Khi bắt đầu điều trị, khuyên người bệnh tự đo (hay nhờ đo) đều đặn huyết áp cho đến khi đạt cân bằng huyết áp."
+    },
+    {
+      "thuoc": ["Gluthetimid"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp các thuốc làm hạ huyết áp, tăng nguy cơ hạ huyết áp thế đứng quan trọng.",
+      "xu_ly": "Thông tin cho người bệnh và chia nhiều lần uống trong ngày."
+    },
+    {
+      "thuoc": ["Guanethidin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng làm hạ huyết áp, thường hay dùng trong điều trị và cần liều thích hợp.",
+      "xu_ly": "Tăng cường theo dõi huyết áp động mạch. Nhấn mạnh về sự tuân thủ và giờ giấc uống thuốc đều đặn, khi dùng liệu pháp hai thuốc. Cảnh giác khi dùng ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Mục tiêu chính là điều trị ung thư tuyến của thận. Interleukin cũng độc với gan. Như vậy đó là sự phối hợp hai thuốc có tiềm năng độc với gan.",
+      "xu_ly": "Cách điều trị này chỉ được tiến hành tại cơ sở chuyên khoa. Dùng interleukin đòi hỏi phải theo dõi thường xuyên. Trong trường hợp này nên cân nhắc tuỳ theo tình trạng chung của người bệnh. Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc hoãn một trong hai liệu trình, nếu có thể."
+    },
+    {
+      "thuoc": ["Lithi"],
+      "muc_do": 2,
+      "phan_tich": "Methyldopa có thể làm tăng lithi máu và dẫn đến quá liều lithi cùng với các dấu hiệu độc thần kinh.",
+      "xu_ly": "Phối hợp này cần có sự điều chỉnh liều lithi lúc bắt đầu, khi đang và cả khi ngừng điều trị bằng methyldopa. Nếu cần, nên theo dõi cẩn thận lithi máu."
+    },
+    {
+      "thuoc": ["Nicorandil"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp với bất kỳ thuốc chống tăng huyết áp nào có thể làm tăng nguy cơ hạ huyết áp, đôi khi dẫn đến sốc.",
+      "xu_ly": "Theo dõi huyết áp động mạch trong và khi ngừng một trong hai liệu trình, đặc biệt ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Niridazol"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc độc với gan. Niridazol cũng gây độc thần kinh. Nguy cơ xuất hiện co giật, rối loạn tâm thần và độc với gan, nếu phối hợp thuốc.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc hoãn nếu có thể, một trong hai liệu trình. Kiểm tra chắc chắn là người bệnh không uống rượu thường xuyên và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không đặc hiệu: buồn nôn, sốt, vàng da... Nếu thấy đồng thời ban da, ngứa và hạch to thì phải hướng về nguyên nhân do thuốc. Căn cứ kết quả xét nghiệm sinh học, phân biệt rõ nguy cơ xuất hiện viêm gan tiêu tế bào không phục hồi với viêm gan ứ mật phục hồi được sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Procarbazin", "Phenelzin", "Tranylcypromin", "Isocarboxazid"],
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời hai thuốc có thể dẫn đến thay đổi huyết áp quan trọng. Ngoài ra còn thêm các tác dụng ức chế hệ thần kinh trung ương.",
+      "xu_ly": "Các thuốc ức chế MAO ít được sử dụng, tương tác lại nhiều nên ít được kê đơn, do đó có ít nhận xét về cảnh giác thuốc. Tuy nhiên vẫn nên thận trọng giữ khoảng cách từ 2 đến 3 tuần sau khi ngừng thuốc, trước khi kê đơn lại thuốc ức chế MAO."
+    },
+    {
+      "thuoc": ["Sotalol"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc chống tăng huyết áp, một phối hợp có thể thực hiện được về mặt dược lý và điều trị. Tuy nhiên nên nhớ rằng sotalol được dùng nhiều làm thuốc chống loạn nhịp hơn là thuốc chống tăng huyết áp.",
+      "xu_ly": "Nếu cần phối hợp, tăng cường theo dõi huyết áp, trong và khi ngừng điều trị bằng một trong hai thuốc. Tiến hành điều chỉnh liều. Nhấn mạnh về kế hoạch dùng thuốc và sự tuân thủ. Đặc biệt cảnh giác khi dùng ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Rasagilin", "Selegilin"],
+      "muc_do": 2,
+      "phan_tich": "Ưc chế đặc hiệu monoamin oxydase typ B dẫn đến kéo dài tác dụng của levodopa, điều đó giải thích việc cùng kê đơn với chất này. Các tương tác cũng giống như của levodopa và nên đọc ở họ thuốc này.",
+      "xu_ly": "Cần phải điều chỉnh liều, xây dựng kế hoạch dùng thuốc và nhấn mạnh người bệnh phải tuân thủ kế hoạch dùng thuốc. Khi bắt đầu điều trị, khuyên người bệnh đo (hoặc nhờ đo) huyết áp đều đặn cho tới khi đạt cân bằng điều trị."
+    },
+    {
+      "thuoc": ["Carbamazepin", "Chlorpheniramin", "Diphenhydramin"],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần buồn ngủ. Tương tác dược lực.",
+      "xu_ly": "Lưu ý nguy cơ này để điều chỉnh liều của hai thuốc, nếu cần phối hợp. Nghĩ đến giảm tỉnh táo ở người lái xe và người vận hành máy móc. Khuyên không uống rượu, không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": [
+        "Adrenalin", "Noradrenalin", "Isoprenalin"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Methyldopa kích thích các thụ thể alpha-adrenergic, do đó làm tăng tác dụng của các thuốc cường giao cảm.",
+      "xu_ly": "Nếu dùng thêm thuốc cường giao cảm alpha1 sau methyldopa, có thể giảm tác dụng hạ huyết áp cần tìm kiếm. Nếu methyldopa được thêm vào sau, tác dụng hạ huyết áp sẽ tăng. Khi phối hợp, cần bắt đầu bằng liều thấp. Nên nhớ là các dạng tại chỗ có thể có tác dụng toàn thân tuỳ theo bối cảnh sử dụng."
+    },
+    {
+      "thuoc": ["Phenobarbital", "Pentobarbital"],
+      "muc_do": 1,
+      "phan_tich": "Dùng đồng thời các thuốc chống tăng huyết áp hoặc các thuốc có thể dẫn đến hạ huyết áp với các thuốc gây mê barbituric có thể gây tụt huyết áp nặng.",
+      "xu_ly": "Phải chú ý đến tương tác này khi gây mê. Nhắc người bệnh báo cho người gây mê biết các thuốc đã dùng."
+    },
+    {
+      "thuoc": ["Amitriptylin", "Imipramin", "Clomipramin"],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng hạ huyết áp của những thuốc này. Hạ huyết áp là một tác dụng không mong muốn của các thuốc chống trầm cảm ba vòng.",
+      "xu_ly": "Nếu cần phối hợp, tăng cường theo dõi huyết áp trong và khi ngừng điều trị bằng một trong hai thuốc. Điều chỉnh liều nếu cần, nhấn mạnh về kế hoạch dùng thuốc và sự tuân thủ kế hoạch dùng thuốc. Đặc biệt cần phải thận trọng khi dùng ở người bệnh cao tuổi."
+    }
+  ]
+},
+{
+  "hoat_chat": "Methysergid",
+  "mo_ta": "Chất đối kháng cạnh tranh serotonin thuộc nhóm alcaloid nấm cựa gà.",
+  "cac_thuoc_trong_nhom": [
+    "Methysergid",
+    "Deseril"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ mang thai: Vì lý do khả năng trợ đẻ yếu. Tăng huyết áp nghiêm trọng. Suy mạch vành. Suy gan nặng. Suy thận nặng. Rối loạn tuần hoàn ngoại vi đặc biệt ở động mạch."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Do thận trọng, các dẫn chất nấm cựa gà qua được sữa mẹ có thể gây cho trẻ sơ sinh các triệu chứng ngộ độc ergotin (nôn, tiêu chảy)."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Naratriptan", "Sumatriptan", "Rizatriptan", "Zolmitriptan"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Tăng nguy cơ phản ứng co cứng mạch. Cơ chế có thể do tác dụng hiệp đồng co cứng mạch.",
+      "xu_ly": "Chống chỉ định sử dụng các chất chủ vận chọn lọc thụ thể serotonin, tức 5–hydroxy tryptamin (5-HT1) như Naratriptan, Sumatriptan, Rizatriptan, Zolmitriptan trong vòng 24 giờ đang điều trị với thuốc chứa nấm cựa gà. Tương tự, dùng đồng thời hai chất chủ vận chọn lọc thụ thể 5–HT1 trong vòng 24 giờ là chống chỉ định."
+    },
+    {
+      "thuoc": ["Sibutramin"],
+      "muc_do": 4,
+      "phan_tich": "Có thể xảy ra hội chứng serotonin bao gồm kích thích hệ thần kinh trung ương, yếu cơ vận động, run rẩy, giật rung cơ, giảm ý thức. Cơ chế những tác dụng serotoninergic của những thuốc này có thể hiệp đồng với nhau.",
+      "xu_ly": "Không nên dùng đồng thời các thuốc trên. Nếu việc dùng đồng thời không tránh được, thì theo dõi chặt chẽ người bệnh về tác dụng phụ."
+    },
+    {
+      "thuoc": [
+        "Propranolol", "Inderal", "Metoprolol", "Betaloc", "Atenolol", "Tenormin", "Bisoprolol", "Concor", "Carvedilol", "Coreg", "Esmolol", "Brevibloc", "Labetalol", "Trandate", "Nadolol", "Corgard", "Nebivolol", "Nebilet", "Sotalol", "Sotacor", "Timolol", "Blocadren"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Thiếu máu cục bộ ngoại biên thể hiện bằng lạnh chi, có thể cả hoại thư ngoại biên khi dùng đồng thời thuốc chẹn beta với alcaloid nấm cựa gà.",
+      "xu_ly": "Theo dõi người bệnh về các dấu hiệu thiếu máu cục bộ ngoại biên. Điều chỉnh liều của alcaloid nấm cựa gà và ngừng thuốc chẹn beta nếu cần."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Mexiletin",
+  "mo_ta": "Thuốc chống loạn nhịp thuộc nhóm Ib của Vaughan - Williams, có tác dụng ổn định màng và tác dụng gây tê.",
+  "cac_thuoc_trong_nhom": [
+    "Mexiletin",
+    "Ritalmex"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Thuốc qua được sữa mẹ. Thời kỳ mang thai: Trường hợp nghi mang thai và trong 3 tháng đầu của thai kỳ. Suy tim: Chống chỉ định khi suy tim nặng. Suy gan: Do chuyển hoá thuốc ở gan. Suy thận: Nguy cơ tích luỹ. Bloc nhĩ - thất, nhịp tim chậm và loạn nhịp chậm."
+    },
+    "than_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy tim: Nguy cơ biến đổi dẫn truyền."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Sultoprid", "Dogmatyl"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Nguy cơ xuất hiện loạn nhịp thất, đặc biệt là xoắn đỉnh do hiệp đồng tác dụng điện sinh lý. Tương tác dược lực học.",
+      "xu_ly": "Không kê đơn phối hợp này. Nên thay đổi thuốc."
+    },
+    {
+      "thuoc": [
+        "Lidocain", "Xylocain"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Lidocain có dưới dạng dùng tại chỗ làm thuốc gây tê và dưới dạng tiêm dùng chủ yếu trong chuyên khoa tim. Đây là tương tác dược lực, phối hợp hai thuốc chống loạn nhịp cùng nhóm Ib Vaughan-Williams.",
+      "xu_ly": "Nên tránh phối hợp hai thuốc chống loạn nhịp cùng một lúc, trừ khi người bệnh nằm trong một cơ sở chuyên khoa có sự theo dõi thường xuyên."
+    },
+    {
+      "thuoc": ["Propafenon", "Rytmonorm"],
+      "muc_do": 3,
+      "phan_tich": "Nồng độ mexiletin huyết tương có thể tăng, làm tăng nguy cơ tác dụng phụ. Cơ chế: Propafenon có thể ức chế chuyển hoá của mexiletin.",
+      "xu_ly": "Theo dõi nồng độ của mexiletin trong huyết tương và nhận xét đáp ứng lâm sàng khi thêm hoặc ngừng propafenon. Nếu cả hai thuốc đều bắt đầu cùng lúc, dò liều dần dần của cả hai thuốc."
+    },
+    {
+      "thuoc": [
+        "Amiodaron", "Cordarone", "Quinidin", "Quinidex", "Propranolol", "Inderal", "Metoprolol", "Betaloc", "Atenolol", "Tenormin", "Bisoprolol", "Concor", "Carvedilol", "Coreg", "Esmolol", "Brevibloc", "Labetalol", "Trandate", "Nadolol", "Corgard", "Nebivolol", "Nebilet", "Sotalol", "Sotacor", "Timolol", "Blocadren"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh. Kéo dài khoảng QT ở điện tâm đồ.",
+      "xu_ly": "Phối hợp phải theo dõi đặc biệt (điện tâm đồ). Nói chung, phải tránh phối hợp các thuốc chống loạn nhịp nhóm 1 của Vaughan-Williams, do kéo dài kỳ hạn dẫn truyền tim."
+    },
+    {
+      "thuoc": [
+        "Phenobarbital", "Luminal", "Pentobarbital", "Nembutal", "Phenytoin", "Dilantin", "Primidon", "Mysoline", "Rifampicin", "Rifadin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Giảm hàm lượng mexiletin trong huyết tương do cảm ứng enzym chuyển hoá mexiletin ở gan.",
+      "xu_ly": "Điều chỉnh liều của mexiletin tuỳ theo lâm sàng và điện tâm đồ."
+    },
+    {
+      "thuoc": ["Disopyramid", "Rythmodan"],
+      "muc_do": 2,
+      "phan_tich": "Các phối hợp với những thuốc chống loạn nhịp thuộc các nhóm khác trong phân loại Vaughan-Williams cần phải tăng cường theo dõi (điện tâm đồ) nhất là với disopyramid.",
+      "xu_ly": "Phối hợp các thuốc chống loạn nhịp với nhau cần có trình độ chuyên khoa kể cả ở trong khoa tim và có phương tiện theo dõi (khoa hồi sức tim)."
+    },
+    {
+      "thuoc": [
+        "Ciprofloxacin", "Cipro", "Levofloxacin", "Tavanic", "Ofloxacin", "Tarivid", "Norfloxacin", "Noroxin", "Moxifloxacin", "Avelox"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nồng độ mexiletin trong huyết tương có thể tăng, dẫn đến tăng tác dụng và tăng phản ứng phụ. Cơ chế: Các kháng sinh quinolon có thể ức chế chuyển hoá của mexiletin ở gan (cytochrom P450 A2).",
+      "xu_ly": "Theo dõi đáp ứng lâm sàng của người bệnh với mexiletin khi bắt đầu hoặc ngừng quinolon. Điều chỉnh liều của mexiletin nếu cần."
+    },
+    {
+      "thuoc": ["Tacrin", "Cognex"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ nhịp tim chậm quá mức, do cộng hợp các tác dụng gây nhịp tim chậm.",
+      "xu_ly": "Theo dõi lâm sàng đều đặn."
+    },
+    {
+      "thuoc": ["Theophylin", "Euphylin"],
+      "muc_do": 2,
+      "phan_tich": "Nồng độ theophylin trong huyết thanh có thể tăng, dẫn đến tăng tác dụng dược lý và tăng độc tính. Cơ chế: Chuyển hoá ở gan của theophylin qua xúc tác của cytochrom P450 bị ức chế bởi mexiletin.",
+      "xu_ly": "Theo dõi nồng độ theophylin trong huyết tương và điều chỉnh liều cho phù hợp."
+    },
+    {
+      "thuoc": [
+        "Acid ascorbic", "Vitamin C", "Ammonium chloride", "Methionin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Acid hoá nước tiểu có thể làm tăng nhanh đào thải mexiletin ở thận và giảm hiệu lực của mexiletin.",
+      "xu_ly": "Nếu cần phối hợp hai thuốc, nên theo dõi các tác dụng lâm sàng và điều chỉnh liều của mexiletin."
+    },
+    {
+      "thuoc": [
+        "Natri bicarbonat", "Natri citrat", "Natri lactat", "Aluminium hydroxide", "Magnesium hydroxide", "Calcium hydroxide"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Kiềm hoá nước tiểu có thể làm giảm đào thải mexiletin ở thận. Theo tài liệu, tương tác này cho thấy có những biến đổi trong ý nghĩa lâm sàng của phối hợp.",
+      "xu_ly": "Nếu cần phối hợp hai thuốc, nên theo dõi các tác dụng lâm sàng và điều chỉnh liều của mexiletin."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Mianserin",
+  "mo_ta": "Thuốc hướng thần chống trầm cảm, không thuộc nhóm ức chế MAO, không thuộc nhóm imipramin.",
+  "cac_thuoc_trong_nhom": [
+    "Mianserin",
+    "Athymil"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Suy gan. Hưng cảm."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Do thận trọng, vì thiếu dữ liệu. Trẻ em dưới 15 tuổi, vì thiếu dữ liệu. Thời kỳ mang thai: Chưa xác định được tính không gây độc hại khi điều trị bằng mianserin cho người mang thai, nhưng chưa thấy có bằng chứng về tác dụng gây quái thai ở súc vật."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Ăn uống, rượu: Không nên dùng đồ uống có rượu trong khi điều trị. Tiểu đường: Theo dõi glucose máu ở người tiểu đường không ổn định. Động kinh: Mianserin có thể làm hạ ngưỡng gây động kinh cùng với nguy cơ co giật."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Phenelzin", "Nardil", "Tranylcypromin", "Parnate", "Isocarboxazid", "Marplan"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Các thuốc ức chế MAO chẹn sự giáng hoá của các catecholamin. Chúng có tính chất cường giao cảm và có thể gây tai biến tăng huyết áp khi chúng được phối hợp với các thuốc có tác dụng ở khâu các amin tăng huyết áp.",
+      "xu_ly": "Phối hợp chống chỉ định này đòi hỏi phải có một khoảng cách thời gian 3 ngày giữa khi ngừng dùng các thuốc ức chế MAO và khi bắt đầu điều trị bằng mianserin."
+    },
+    {
+      "thuoc": ["Clonidin", "Catapresan"],
+      "muc_do": 3,
+      "phan_tich": "Tương tác dược lực. Ngoài tăng tác dụng an thần, có đối kháng ở khâu thụ thể adrenergic, do đó giảm tác dụng chống tăng huyết áp.",
+      "xu_ly": "Tính đến nguy cơ thất bại điều trị, thay đổi chiến lược điều trị."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 3,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần. Một vài tác dụng tâm thần vận động có thể được ghi nhận với một số thuốc, nhất là trong tuần đầu điều trị. Tương tác dược lực.",
+      "xu_ly": "Tốt nhất, không nên dùng thuốc này, vì bác sĩ kê đơn không kiểm soát được người bệnh uống rượu. Nguy cơ an thần nguy hiểm nhất là với người lái xe và người vận hành máy móc. Khuyên người bệnh không uống rượu, không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Amphetamin"],
+      "muc_do": 2,
+      "phan_tich": "Đối kháng tác dụng. Có thể tăng tính hung hãn ở người nghiện amphetamin.",
+      "xu_ly": "Lưu ý tương tác dược lực này để xác định mục tiêu điều trị chính. Khuyên người bệnh gặp lại thầy thuốc nếu thấy kết quả điều trị không ổn định."
+    },
+    {
+      "thuoc": [
+        "Baclofen", "Lioresal", "Primidon", "Mysoline", "Morphin", "Morphin sulfat", "Sevredol", "MS Contin", "Morphin hydrochlorid", "Morphin chlorid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần buồn ngủ. Tương tác dược lực.",
+      "xu_ly": "Lưu ý nguy cơ này để điều chỉnh liều của hai thuốc, nếu cần phối hợp. Chú ý đến giảm tỉnh táo ở người lái xe và người vận hành máy móc. Khuyên không uống rượu, không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": [
+  "Phenobarbital", "Luminal", "Pentobarbital", "Nembutal",
+  "Diazepam", "Valium", "Seduxen",
+  "Clonazepam", "Rivotril",
+  "Alprazolam", "Xanax",
+  "Dextropropoxyphen",
+  "Fluoxetin", "Prozac",
+  "Promethazin", "Phenergan",
+  "Chlorpheniramin", "Tavegyl",
+  "Diphenhydramin", "Benadryl",
+  "Ketotifen", "Zaditen",
+  "Methyldopa", "Aldomet",
+  "Oxaflozan",
+  "Chlorpromazin", "Largactil",
+  "Levomepromazin", "Nozinan",
+  "Viloxazin", "Vivalan",
+  "Hydroxyzin", "Atarax",
+  "Alimemazin", "Theralen",
+  "Cyproheptadin", "Peritol",
+  "Mequitazin", "Primalan",
+  "Dexchlorpheniramin", "Polaramine",
+  "Trimeprazin", "Syptil",
+  "Triprolidin", "Actifed",
+  "Doxylamin", "Unisom",
+  "Meclozin", "Bonine",
+  "Clemastin", "Tavegyl",
+  "Brompheniramin", "Dimedrol",
+  "Thioridazin", "Melleril",
+  "Fluphenazin", "Modecate",
+  "Perphenazin", "Trilafon",
+  "Trifluoperazin", "Stelazine",
+  "Prochlorperazin", "Stemetil",
+  "Pipamperon", "Dipiperon",
+  "Pimozid", "Orap",
+  "Haloperidol", "Haldol",
+  "Droperidol", "Droleptan",
+  "Sulpirid", "Dogmatyl",
+  "Amisulprid", "Solian",
+  "Quetiapin", "Seroquel",
+  "Olanzapin", "Zyprexa",
+  "Risperidon", "Risperdal"
+],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần buồn ngủ. Tương tác dược lực.",
+      "xu_ly": "Phải lưu ý tương tác này để điều chỉnh liều của hai thuốc. Chú ý đến giảm tỉnh táo ở người lái xe và người vận hành máy móc. Khuyên không uống rượu, không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Fluvoxamin", "Luvox", "Medifoxamin", "Cledial", "Paroxetin", "Seroxat"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần buồn ngủ. Tương tác dược lực.",
+      "xu_ly": "Lưu ý đến tương tác này để điều chỉnh liều của hai thuốc. Chú ý đến giảm tỉnh táo ở người lái xe và người vận hành máy móc. Khuyên không uống rượu, không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Procarbazin", "Natulan"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng hiệp đồng ức chế hệ thần kinh trung ương.",
+      "xu_ly": "Phải lưu ý sự tăng an thần buồn ngủ trong và sau khi điều trị, đặc biệt ở người lái xe và người vận hành máy móc."
+    },
+    {
+      "thuoc": [
+        "Thiopental", "Pentothal", "Phenobarbital", "Luminal"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng tác dụng ức chế hệ thần kinh trung ương.",
+      "xu_ly": "Nếu cần phối hợp hai thuốc, lưu ý nguy cơ này khi gây mê và chọn liều."
+    },
+    {
+      "thuoc": [
+        "Halothan", "Fluothane", "Isofluran", "Forane", "Sevofluran", "Sevorane", "Enfluran", "Ethrane"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần. Tương tác dược lực.",
+      "xu_ly": "Khuyên người bệnh phải can thiệp ngoại khoa, thông báo cho người gây mê về thuốc mình đang dùng."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Mifepriston",
+  "mo_ta": "Thuốc chống thai nghén, kháng progestogen.",
+  "cac_thuoc_trong_nhom": [
+    "Mifepriston",
+    "Mifegyne"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Tiểu đường; suy gan; suy thận: Tính đến các tác dụng không mong muốn. Mang thai không được xác nhận bằng sinh học, mang thai hơn 50 ngày mất kinh, nghi có thai ngoài dạ con. Quá mẫn cảm với thuốc, suy thượng thận, rối loạn cầm máu, suy dinh dưỡng."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Tăng huyết áp/suy tim: Trong trường hợp phối hợp với những chất tương tự prostaglandin, những trạng thái này là chống chỉ định."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Phenobarbital", "Luminal", "Carbamazepin", "Tegretol", "Phenytoin", "Dilantin", "Primidon", "Mysoline", "Rifampicin", "Rifadin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ giảm hiệu quả của phương pháp vì lý do tăng chuyển hoá của mifepriston do cảm ứng enzym.",
+      "xu_ly": "Trước hết phải nhớ rằng cảm ứng enzym là một hiện tượng chậm xuất hiện (3 tuần) và chậm biến đi. Có thể phải tính đến việc tăng liều."
+    },
+    {
+      "thuoc": [
+        "Indometacin", "Indocid", "Pyrazol", "Salicylic", "Aspirin", "Ibuprofen", "Naproxen", "Diclofenac", "Voltaren", "Ketoprofen", "Profénid", "Piroxicam", "Feldene", "Meloxicam", "Mobic"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ giảm hiệu quả của phương pháp.",
+      "xu_ly": "Ngừng điều trị bằng thuốc chống viêm không steroid 24 giờ trước khi dùng mifepriston."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Modafinil",
+  "mo_ta": "Thuốc kích thích tâm thần adrenergic alpha 1 ở não, dùng trong cơn ngủ thoảng qua có kèm hoặc không kèm cơn đột ngột mất trương lực và chứng ngủ nhiều tự phát.",
+  "cac_thuoc_trong_nhom": [
+    "Modafinil",
+    "Modiodal"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Chú ý ở các vận động viên thể thao trình độ cao, biệt dược này chứa một hoạt chất có thể gây phản ứng dương tính với các thử nghiệm khi kiểm tra chống doping. Chứng lo âu thái quá."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Vì là thuốc mới còn thiếu các nghiên cứu chuyên biệt, nên cần tránh kê đơn thuốc này cho người cho con bú. Thời kỳ mang thai: Mặc dầu thuốc không thấy có tác dụng gây quái thai ở súc vật, cần thận trọng tránh kê đơn thuốc mới này cho người đang mang thai, nhất là ở thời kỳ đầu (trừ trường hợp tuyệt đối cần thiết)."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Tăng huyết áp: Theo dõi huyết áp động mạch khi người bệnh được biết bị tăng huyết áp."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy gan: ở người suy gan nặng, chú ý đến sự chuyển hoá của thuốc, khuyên nên chia các liều thành hai lần dùng."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Estradiol", "Estrofem", "Progynova", "Ethinylestradiol", "Microgynon", "Rigevidon", "Estriol", "Ovestin", "Estron", "Diane-35", "Marvelon", "Mercilon", "Gynera", "Evra"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Modafinil là thuốc mới, được coi có tiềm năng cảm ứng enzym. Với tiềm năng này, thuốc có thể cảm ứng chuyển hoá mạnh các thuốc ngừa thai estroprogestogen, đặc biệt loại liều thấp.",
+      "xu_ly": "Chống chỉ định phối hợp này. Thay đổi phương pháp ngừa thai, vì điều trị modafinil là một điều trị dài hạn."
+    }
+  ]
+},
+{
+  "hoat_chat": "Molsidomin",
+  "mo_ta": "Thuốc chống đau thắt ngực thuộc họ các sydnonimin, giãn mạch, chống kết tập tiểu cầu.",
+  "cac_thuoc_trong_nhom": [
+    "Molsidomin",
+    "Corvasal"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ mang thai: Do thận trọng, vì thiếu dữ liệu. Trường hợp khác: Hạ huyết áp rõ với tình trạng sốc."
+    },
+    "can_theo_doi": {
+      "muc_do": 2,
+      "noi_dung": "Suy gan: Tăng dần liều lượng."
+    }
+  },
+  "tuong_tac": []
+}
+,
+{
+  "hoat_chat": "Muromonab CD3",
+  "mo_ta": "Kháng thể đơn dòng đối với kháng nguyên T3 của lympho bào T người.",
+  "cac_thuoc_trong_nhom": [
+    "Muromonab",
+    "Orthoclone OKT"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ cho con bú - thời kỳ mang thai: Tính không độc hại chưa được chứng minh với thuốc này. Suy tim: Suy tim mất bù. Trường hợp khác: Quá mẫn với thuốc, tiền sử co giật."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Ứ đọng dịch nhày vì nguy cơ phù phổi do thuốc gây nên."
+    }
+  },
+  "tuong_tac": []
+}
+,
+{
+  "hoat_chat": "Naftidrofuryl",
+  "mo_ta": "Thuốc giãn tiểu động mạch hướng cơ.",
+  "cac_thuoc_trong_nhom": [
+    "Naftidrofuryl",
+    "Devatran",
+    "Di-Actane",
+    "Naftilux",
+    "Praxilene"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú/thời kỳ mang thai: Nên thận trọng khi dùng các thuốc giãn mạch hướng cơ này."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Bloc nhĩ - thất."
+    }
+  },
+  "tuong_tac": []
+}
+,
+{
+  "hoat_chat": "Natri valproat hoặc dẫn chất",
+  "mo_ta": "Thuốc chống động kinh không barbituric, tác dụng ở khâu các chất dẫn truyền thần kinh (GABA).",
+  "cac_thuoc_trong_nhom": [
+    "Acid valproic", "Convulex", "Depakine",
+    "Natri valproat", "Depakine chrono", "Depakine dung dịch uống", "Depakine siro", "Depakine viên nén không tan trong dạ dày",
+    "Valpromid", "Depamide"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Quá mẫn với thuốc. Viêm gan cấp hoặc mạn. Tiền sử gia đình có viêm gan."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Natri valproat qua được sữa mẹ. Tránh cho con bú. Thời kỳ mang thai: Dị tật bẩm sinh có thể tăng ở con của mẹ động kinh, khó xác định do bệnh hay do thuốc. Valproat có thể gây tật nứt đốt sống và dị tật ống thần kinh, nguy cơ này khá thấp và có thể kiểm soát khi phát hiện trước sinh. Theo dõi đông máu ở trẻ sơ sinh."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy gan: Acid valproic có thể gây tổn hại nặng đến gan, kèm theo ứ mật, giảm mạnh nồng độ fibrinogen trong máu. Suy thận: Đào thải valproat chủ yếu qua thận, cần chú ý tăng nồng độ thuốc trong huyết thanh, giảm liều khi suy thận."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Quinin", "Mefloquin", "Lariam"],
+      "muc_do": 4,
+      "phan_tich": "Giảm nửa đời valproat, kèm nguy cơ co giật đã mô tả với mefloquin.",
+      "xu_ly": "Chống chỉ định phối hợp này. Thay đổi chiến lược điều trị."
+    },
+    {
+      "thuoc": ["Carbamazepin", "Tegretol"],
+      "muc_do": 3,
+      "phan_tich": "Giảm nửa đời valproat do cảm ứng enzym của carbamazepin và tăng chất chuyển hoá có hoạt tính của carbamazepin do tác dụng ức chế enzym của natri valproat.",
+      "xu_ly": "Theo dõi nồng độ hai thuốc trong huyết tương, hiệu chỉnh liều lúc bắt đầu, trong khi điều trị và khi ngừng một trong hai thuốc. Tránh phối hợp carbamazepin với valpromid (Depamide), cần theo dõi khi phối hợp carbamazepin với valproat (Depakine)."
+    },
+    {
+      "thuoc": ["Cholestyramin"],
+      "muc_do": 3,
+      "phan_tich": "Cholestyramin làm giảm nồng độ acid valproic trong huyết thanh, giảm tác dụng điều trị do giảm hấp thu ở ống tiêu hoá.",
+      "xu_ly": "Dùng acid valproic ít nhất 3 giờ trước hoặc 3 giờ sau khi dùng cholestyramin. Theo dõi đáp ứng và hiệu chỉnh liều."
+    },
+    {
+      "thuoc": ["Lamotrigin", "Lamictal"],
+      "muc_do": 3,
+      "phan_tich": "Khi phối hợp lamotrigin với acid valproic, nồng độ acid valproic giảm, còn nồng độ lamotrigin và độc tính lại tăng (do chuyển hoá lamotrigin bị ức chế).",
+      "xu_ly": "Theo dõi cẩn thận khi phối hợp, hiệu chỉnh liều lượng khi cần."
+    },
+    {
+      "thuoc": ["Tacrin", "Cognex"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng độc tính với gan.",
+      "xu_ly": "Nếu cần, tăng cường theo dõi gan, tránh phối hợp gây nguy cơ với người bệnh cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Acid folic", "Folinic acid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp acid folic với thuốc kháng folat (ức chế dihydrofolat reductase).",
+      "xu_ly": "Kiểm tra huyết đồ, dùng acid folinic nếu cần, nhất là khi dùng liều cao kháng folat hoặc điều trị dài ngày."
+    },
+    {
+      "thuoc": [
+        "Amineptin", "Carmustin", "Citalopram", "Dantrolene", "Estradiol", "Ethinylestradiol", "Fluoro-5-uracil", "Fluoxetin", "Fluvoxamin", "Griseofulvin", "Isoniazid", "Methotrexat", "Paroxetin", "Progabid", "Rifampicin", "Ketoconazol", "Clotrimazol", "Itraconazol", "Fluconazol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp các thuốc có tiềm năng độc với gan (cộng các tác dụng phụ).",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, phải theo dõi chặt chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc hoãn một trong hai thuốc. Xác định chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus. Nếu có các triệu chứng như buồn nôn, sốt, vàng da, phát ban ngoài da, ngứa, hạch to thì nghĩ đến nguyên nhân do thuốc."
+    },
+    {
+      "thuoc": [
+        "Phenobarbital", "Luminal", "Primidon", "Mysoline"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Natri valproat và dẫn chất làm tăng nồng độ barbituric trong huyết tương (ức chế enzym, giảm dị hoá barbituric).",
+      "xu_ly": "Theo dõi lâm sàng 15 ngày điều trị đầu tiên, định lượng nồng độ barbituric khi cần, hiệu chỉnh liều khi có dấu hiệu an thần."
+    },
+    {
+      "thuoc": [
+        "Sulpirid", "Dogmatyl", "Amisulprid", "Solian", "Haloperidol", "Haldol", "Risperidon", "Risperdal", "Olanzapin", "Zyprexa", "Quetiapin", "Seroquel", "Chlorpromazin", "Largactil", "Levomepromazin", "Nozinan", "Thioridazin", "Melleril", "Fluphenazin", "Modecate", "Perphenazin", "Trilafon", "Trifluoperazin", "Stelazine", "Prochlorperazin", "Stemetil", "Pipamperon", "Dipiperon", "Pimozid", "Orap", "Droperidol", "Droleptan"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Natri valproat và dẫn chất làm tăng nồng độ các thuốc an thần kinh trên trong huyết tương (ức chế enzym, giảm dị hoá).",
+      "xu_ly": "Nếu cần phối hợp, hiệu chỉnh liều các chất trên theo hướng giảm liều. Cần chú ý tới giảm tỉnh táo ở người lái xe và người đứng máy. Khuyên không uống rượu và không tự dùng thuốc hoặc chế phẩm chứa rượu."
+    },
+    {
+      "thuoc": ["Ciclosporin", "Sandimmun"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ ciclosporin trong huyết thanh do valproat ức chế một số isoenzym cytochrom P450.",
+      "xu_ly": "Theo dõi chặt nồng độ ciclosporin trong huyết thanh, hiệu chỉnh liều khi bắt đầu và kết thúc điều trị bằng natri valproat."
+    },
+    {
+      "thuoc": ["Didanosin", "Videx"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ viêm tuỵ do thuốc.",
+      "xu_ly": "Theo dõi lâm sàng, nếu đau bụng thì kiểm tra chức năng tuỵ (amylase máu và nước tiểu)."
+    },
+    {
+      "thuoc": ["Diltiazem", "Cardizem"],
+      "muc_do": 2,
+      "phan_tich": "Diltiazem ức chế một số isoenzym cytochrom P450, có thể làm tăng nồng độ valproat và tăng độc tính.",
+      "xu_ly": "Theo dõi sát nồng độ thuốc, đặc biệt với thuốc có phạm vi điều trị hẹp."
+    },
+    {
+      "thuoc": ["Heparin"],
+      "muc_do": 2,
+      "phan_tich": "Natri valproat có thể gây giảm tiểu cầu, hạ prothrombin máu, giảm kết tập tiểu cầu, có thể gây chảy máu ở người dùng heparin hoặc thuốc tan huyết khối.",
+      "xu_ly": "Khi phối hợp, tăng cường theo dõi số lượng tiểu cầu, test đông máu toàn phần, thời gian Howell, thời gian chảy máu."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Interleukin cũng độc với gan, phối hợp với valproat tăng nguy cơ độc gan.",
+      "xu_ly": "Liệu pháp này chỉ thực hiện ở cơ sở chuyên khoa, phải theo dõi liên tục chức năng gan."
+    },
+    {
+      "thuoc": [
+        "Erythromycin", "Clarithromycin", "Roxithromycin", "Azithromycin", "Spiramycin", "Josamycin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Macrolid phối hợp với valproat tăng nguy cơ độc với gan.",
+      "xu_ly": "Theo dõi chức năng gan chặt chẽ, hoặc hoãn dùng một trong hai thuốc nếu có thể. Kiểm tra chắc chắn người bệnh không thường xuyên uống rượu và không có tiền sử viêm gan virus."
+    },
+    {
+      "thuoc": ["Mercaptopurin", "Purinethol"],
+      "muc_do": 2,
+      "phan_tich": "Hai thuốc đều độc với gan, nguy cơ hiệp đồng độc tính. Valproat thường gây viêm gan tiêu tế bào không hồi phục, mercaptopurin đôi khi gây viêm gan ứ mật hồi phục được sau khi ngừng, nhưng có thể gây tử vong nếu không ngừng điều trị.",
+      "xu_ly": "Theo dõi chặt chức năng gan hàng tuần. Xét nghiệm tổng hợp protein, tỷ lệ prothrombin, fibrinogen, các yếu tố đông máu, bilirubin, transaminase, phosphatase kiềm."
+    },
+    {
+      "thuoc": ["Phenytoin", "Dilantin"],
+      "muc_do": 2,
+      "phan_tich": "Có thể xảy ra nhiều hiện tượng: nguy cơ quá liều phenytoin do valproat đẩy phenytoin khỏi liên kết protein huyết tương; giảm nồng độ valproat do phenytoin cảm ứng enzym; giảm thanh lọc phenytoin bởi valproat. Đây là phối hợp hai chất kháng folat.",
+      "xu_ly": "Theo dõi lâm sàng và huyết học, hiệu chỉnh liều lượng phenytoin theo nồng độ huyết tương, chú ý ở trẻ em động kinh."
+    },
+    {
+      "thuoc": ["Pyrimethamin", "Trimethoprim", "Zidovudin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tủy xương do hiệp đồng tác dụng trên dihydrofolat reductase.",
+      "xu_ly": "Nếu cần phối hợp, dùng liều thấp hơn và theo dõi chặt huyết đồ. Có thể bổ sung thêm acid folinic."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 2,
+      "phan_tich": "Tăng ức chế hệ thần kinh trung ương, tăng tác dụng an thần.",
+      "xu_ly": "Hiệu chỉnh liều lượng, chú ý giảm tỉnh táo ở người lái xe/vận hành máy. Khuyên không uống rượu và không dùng chế phẩm có rượu."
+    },
+    {
+      "thuoc": [
+        "Aspirin", "Salicylic", "Ibuprofen", "Naproxen", "Diclofenac", "Voltaren", "Ketoprofen", "Profénid", "Piroxicam", "Feldene", "Meloxicam", "Mobic"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ chảy máu, các salicylat đẩy valproat khỏi liên kết protein huyết tương, tăng dạng tự do, nguy cơ quá liều.",
+      "xu_ly": "Theo dõi nồng độ valproat huyết tương, hiệu chỉnh liều lượng, khuyên người bệnh không tự ý dùng salicylat."
+    },
+    {
+      "thuoc": [
+        "Carbamazepin", "Tegretol", "Oxcarbazepin", "Trileptal", "Lamotrigin", "Lamictal", "Gabapentin", "Neurontin", "Pregabalin", "Lyrica", "Topiramat", "Topamax", "Levetiracetam", "Keppra", "Tiagabin", "Gabitril", "Vigabatrin", "Sabril", "Zonisamid", "Zonegran"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, tăng các tác dụng an thần. Có thể có biến động nồng độ huyết tương.",
+      "xu_ly": "Hiệu chỉnh liều lượng hai thuốc nếu phối hợp, chú ý giảm tỉnh táo ở người lái xe/vận hành máy. Theo dõi nồng độ thuốc chống động kinh trong huyết thanh khi cần."
+    },
+    {
+      "thuoc": [
+        "Amitriptylin", "Imipramin", "Clomipramin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Thuốc chống trầm cảm ba vòng hạ thấp ngưỡng gây động kinh, tăng nguy cơ co giật ở người dùng valproat.",
+      "xu_ly": "Lưu ý nguy cơ này, hiệu chỉnh liều lượng khi cần."
+    },
+    {
+      "thuoc": [
+        "Aluminium hydroxide", "Magnesium hydroxide", "Maalox", "Gastropulgite", "Phosphalugel", "Than hoạt"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Thuốc kháng acid hoặc than hoạt làm giảm hấp thu qua đường tiêu hoá, giảm tác dụng của thuốc phối hợp.",
+      "xu_ly": "Uống cách nhau 1-2 giờ."
+    },
+    {
+      "thuoc": ["Alteplase", "Tenecteplase", "Reteplase", "Heparin", "Warfarin"],
+      "muc_do": 2,
+      "phan_tich": "Valproat có thể gây giảm tiểu cầu, giảm prothrombin máu, giảm kết tập tiểu cầu, tăng nguy cơ chảy máu khi phối hợp thuốc chống đông máu, heparin hoặc thuốc tan huyết khối.",
+      "xu_ly": "Tăng cường theo dõi số lượng tiểu cầu, test đông máu toàn phần, thời gian Howell, thời gian chảy máu, tỷ lệ prothrombin, INR."
+    },
+    {
+      "thuoc": ["Verapamil", "Isoptin"],
+      "muc_do": 2,
+      "phan_tich": "Verapamil ức chế một số cytochrom P450, có thể tăng nồng độ thuốc phối hợp, tăng nguy cơ nhiễm độc.",
+      "xu_ly": "Theo dõi chặt nồng độ thuốc có phạm vi điều trị hẹp."
+    },
+    {
+      "thuoc": ["Amphetamin"],
+      "muc_do": 1,
+      "phan_tich": "Đối kháng tác dụng. Tăng tính hung hãn ở người nghiện amphetamin.",
+      "xu_ly": "Lưu ý tương tác dược lực này khi xác định mục tiêu điều trị. Khuyên người bệnh đến gặp bác sĩ nếu điều trị không ổn định."
+    },
+    {
+      "thuoc": ["Oxaflozan"],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, tăng an thần.",
+      "xu_ly": "Hiệu chỉnh liều lượng hai thuốc, chú ý giảm tỉnh táo ở người lái xe/vận hành máy. Khuyên không uống rượu và không dùng chế phẩm có rượu."
+    },
+    {
+      "thuoc": [
+        "Halothan", "Fluothane", "Isofluran", "Forane", "Sevofluran", "Sevorane", "Enfluran", "Ethrane"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, tăng an thần.",
+      "xu_ly": "Khuyên người bệnh sắp phẫu thuật thông báo cho bác sĩ gây mê các thuốc đang dùng."
+    }
+  ]
+},
+{
+  "hoat_chat": "Nelfinavir",
+  "mo_ta": "Kháng protease dùng trong điều trị AIDS.",
+  "cac_thuoc_trong_nhom": [
+    "Nelfinavir",
+    "Viracept"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Vì là thuốc mới, cần theo dõi các diễn biến trong khi sử dụng để phát hiện các chống chỉ định nếu có. Quá mẫn với thuốc."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Amiodaron", "Cordarone"],
+      "muc_do": 4,
+      "phan_tich": "Nồng độ amiodaron trong huyết thanh có thể tăng, làm tăng nguy cơ độc tính của thuốc này. Cơ chế do nelfinavir (và có thể cả các chất ức chế protease khác như ritonavir, indinavir...) ức chế chuyển hoá của amiodaron (không qua isoenzym 3A4 của cytochrom P450).",
+      "xu_ly": "Chống chỉ định nelfinavir cho bệnh nhân đang dùng amiodaron. Nghĩ đến thay thế thuốc."
+    },
+    {
+      "thuoc": [
+        "Ergotamin", "Dihydroergotamin", "Methysergid", "Deseril"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Nguy cơ ngộ độc alcaloid nấm cựa gà có thể tăng (thí dụ co thắt mạch ngoại vi, thiếu máu cục bộ các đầu chi). Cơ chế do nelfinavir (và một số chất ức chế protease) có thể ảnh hưởng đến chuyển hoá của alcaloid nấm cựa gà ở gan (CYP3A4).",
+      "xu_ly": "Chống chỉ định dùng đồng thời nelfinavir và alcaloid nấm cựa gà."
+    },
+    {
+      "thuoc": [
+        "Midazolam", "Dormicum", "Triazolam", "Halcion"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Nelfinavir có ái lực mạnh với isoenzym 3A4 của cytochrom P450. Do đó làm giảm chuyển hoá các thuốc được chuyển hoá chủ yếu bởi isoenzym này (hiện tượng cạnh tranh) và làm tăng nồng độ của chúng trong huyết tương và tăng độc tính của chúng. Nguy cơ an thần kéo dài và ức chế hô hấp sâu (được mô tả với midazolam, triazolam). Tương tác dược động học về chuyển hoá thuốc.",
+      "xu_ly": "Không kê đơn phối hợp này. Cần phải thay thế thuốc."
+    },
+    {
+      "thuoc": [
+        "Cisaprid", "Prepulsid", "Loratadin", "Clarityne", "Fexofenadin", "Telfast"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Nelfinavir có ái lực mạnh với isoenzym 3A4 của cytochrom P450. Do đó làm giảm chuyển hoá các thuốc được chuyển hoá chủ yếu bởi isoenzym này (hiện tượng cạnh tranh) và làm tăng nồng độ của chúng trong huyết tương và tăng độc tính của chúng. Tăng độc tính tim, kèm với khoảng QT kéo dài, và có thể xuất hiện xoắn đỉnh. Tương tác dược động học về chuyển hoá thuốc.",
+      "xu_ly": "Không kê đơn phối hợp này. Cần phải thay thuốc khác."
+    },
+    {
+      "thuoc": ["Fentanyl", "Durogesic"],
+      "muc_do": 4,
+      "phan_tich": "Nồng độ fentanyl trong huyết tương có thể tăng và nửa đời của thuốc kéo dài, làm tăng nguy cơ tác dụng phụ (thí dụ ức chế hô hấp). Cơ chế do chuyển hoá của fentanyl qua xúc tác của (CYP3A4) bị ức chế ở thành ruột và gan.",
+      "xu_ly": "Theo dõi chặt chẽ chức năng hô hấp trong khi dùng fentanyl và một thời gian dài hơn bình thường sau khi ngừng fentanyl ở người bệnh đang dùng nelfinavir hoặc một chất ức chế protease khác."
+    },
+    {
+      "thuoc": ["Sildenafil", "Viagra"],
+      "muc_do": 4,
+      "phan_tich": "Nồng độ sildenafil trong huyết tương có thể tăng, dẫn đến hạ huyết áp nghiêm trọng có tiềm năng gây tử vong. Cơ chế do chuyển hoá của sildenafil qua xúc tác của (CYP3A4) bị ức chế.",
+      "xu_ly": "Dùng sildenafil rất thận trọng và giảm liều ở bệnh nhân đang dùng các thuốc ức chế protease."
+    },
+    {
+      "thuoc": [
+        "Ketoconazol", "Nizoral", "Itraconazol", "Sporanox", "Fluconazol", "Diflucan", "Clotrimazol", "Lotrimin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nồng độ các chất ức chế protease như nelfinavir, ritonavir v.v... trong huyết tương có thể tăng, làm tăng nguy cơ độc tính. Cơ chế do các thuốc chống nấm imidazol ức chế chuyển hoá của các chất ức chế protease. Một số cơ chế khác cũng có thể tham gia.",
+      "xu_ly": "Cần xem xét giảm liều của nelfinavir hoặc chất ức chế protease khác. Theo dõi người bệnh về độc tính của chất ức chế protease và điều chỉnh liều của thuốc này nếu cần thiết."
+    },
+    {
+      "thuoc": [
+        "Ethinylestradiol", "Microgynon", "Rigevidon", "Estradiol", "Estrofem", "Progynova", "Estriol", "Ovestin", "Estron", "Diane-35", "Marvelon", "Mercilon", "Gynera", "Evra"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Giảm diện tích dưới đường cong (AUC) của thuốc estroprogestogen, cơ chế chưa rõ. Nguy cơ mang thai.",
+      "xu_ly": "Đề xuất một phương pháp ngừa thai khác."
+    },
+    {
+      "thuoc": ["Methadon", "Dolophine"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng dược lý của methadon có thể giảm. Người bệnh đang điều trị duy trì bằng methadon có thể có các triệu chứng cai opiat. Cơ chế do chuyển hoá của methadon ở gan có thể tăng.",
+      "xu_ly": "Theo dõi chặt chẽ người bệnh đang dùng methadon về các triệu chứng cai khi bắt đầu dùng các chất ức chế protease. Nếu cần, nên tăng liều của methadon. Khi ngừng thuốc ức chế protease, nồng độ methadon có thể tăng, nên cần phải giảm liều của methadon."
+    },
+    {
+      "thuoc": ["Rifabutin", "Mycobutin"],
+      "muc_do": 2,
+      "phan_tich": "Rifabutin, một chất cảm ứng enzym CYP3A4 ở gan, làm tăng chuyển hoá của nelfinavir, do đó làm giảm nồng độ của dạng có hoạt tính của nelfinavir trong huyết tương. Song song, có sự tăng diện tích dưới đường cong (AUC) của rifabutin, và tăng nồng độ đỉnh của thuốc này, dẫn đến giảm hiệu quả điều trị của nelfinavir và tăng tác dụng độc của rifabutin (đau cơ, đau khớp, giảm bạch cầu trung tính).",
+      "xu_ly": "Giảm liều của rifabutin xuống một nửa."
+    },
+    {
+      "thuoc": [
+        "Levonorgestrel", "Postinor", "Plan B", "Norlevo", "Thuốc ngừa thai phối hợp"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Hiệu lực của thuốc ngừa thai uống có thể bị mất, dẫn đến thụ thai ngoài ý muốn. Có thể do tăng chuyển hoá của thuốc ngừa thai ở gan.",
+      "xu_ly": "Người phụ nữ cần được thông tin về sự tăng nguy cơ thất bại của thuốc ngừa thai uống. Nên dùng một phương pháp ngừa thai không có hormon. Indinavir có thể dùng thay thế cho nelfinavir."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Nicorandil",
+  "mo_ta": "Tác nhân giãn mạch, hoạt hoá mở kênh kali, dùng trong điều trị dự phòng cơn đau thắt ngực.",
+  "cac_thuoc_trong_nhom": [
+    "Nicorandil",
+    "Adancor"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ mang thai: Do thận trọng, vì thiếu dữ liệu trong y văn về một thuốc mới. Suy tim: Trường hợp suy thất trái, với áp lực làm đầy yếu. Trường hợp khác: Hạ huyết áp, sốc do tim và đặc ứng với thuốc này."
+    },
+    "can_theo_doi": {
+      "muc_do": 2,
+      "noi_dung": "Thời kỳ cho con bú: Do thận trọng, vì thiếu dữ liệu trong y văn về một thuốc mới."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Diltiazem", "Cardizem"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng hạ huyết áp và tăng nguy cơ hạ huyết áp thế đứng.",
+      "xu_ly": "Theo dõi huyết áp trong khi phối hợp. Tuỳ theo thuốc, huyết áp có thể hạ nhiều hay ít. Điều chỉnh liều của một trong hai thuốc nếu cần. Xây dựng kế hoạch dùng thuốc đều đặn. Tăng cường theo dõi ở người bệnh cao tuổi (nguy cơ ngã), và khuyên chuyển dần dần từ tư thế nằm hoặc ngồi sang tư thế đứng. Khuyên người bệnh gặp lại bác sĩ để điều chỉnh lại liều, nếu thấy chóng mặt khi mới dùng thuốc."
+    },
+    {
+      "thuoc": [
+        "Bepridil", "Clonidin", "Methyldopa", "Nitroglycerin", "Nitromint", "Isosorbid dinitrat", "Isoket", "Nifedipin", "Adalat", "Amlodipin", "Norvasc", "Felodipin", "Plendil", "Lacidipin", "Motens", "Furosemid", "Lasix", "Spironolacton", "Verospiron", "Hydrochlorothiazid", "Hypothiazid", "Indapamid", "Fludex", "Chlortalidon", "Hygroton", "Guanethidin", "Ismelin", "Reserpin", "Aldomet", "Enalapril", "Renitec", "Perindopril", "Coversyl", "Lisinopril", "Zestril", "Ramipril", "Tritace", "Verapamil", "Isoptin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp với mọi thuốc có tính chất chống tăng huyết áp có thể làm tăng nguy cơ hạ huyết áp đôi khi dẫn tới sốc.",
+      "xu_ly": "Theo dõi huyết áp trong khi điều trị và khi ngừng một trong hai liệu trình, đặc biệt chú ý ở người bệnh cao tuổi."
+    }
+  ]
+},
+{
+  "hoat_chat": "Nicotin",
+  "mo_ta": "Các thuốc dùng để bỏ thói quen nghiện hút thuốc lá.",
+  "cac_thuoc_trong_nhom": [
+    "Nicotin",
+    "Nicotinell"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ cho con bú: Nicotin qua được sữa mẹ. Thời kỳ mang thai: Nicotin dẫn đến nhiễm acid, giảm oxy huyết và tăng khí carbonic trong máu ở quý ba của thai kỳ. Cần có biện pháp ngừa thai đi kèm với điều trị. Quá mẫn với thuốc, nhồi máu cơ tim ở giai đoạn cấp, đau thắt ngực không ổn định, loạn nhịp tim nặng và tai biến mạch máu não mới mắc, bệnh da có thể cản trở việc sử dụng các thuốc dán ngoài da."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Trẻ em: Trẻ em đặc biệt nhạy cảm với các tác dụng không mong muốn của nicotin, ngay cả với liều thấp. Suy tim: Do giải phóng catecholamin từ vùng tủy tuyến thượng thận."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Tiểu đường; tăng huyết áp; cường tuyến giáp: Do giải phóng catecholamin từ tủy thượng thận. Suy thận; suy gan: Tăng tác dụng không mong muốn. Loét dạ dày tiến triển là một chống chỉ định. Đau thắt ngực ổn định, suy mạch não, các bệnh động mạch ngoại vi tắc nghẽn."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Cafein", "Dextropropoxyphen", "Theophylin", "Euphylin"],
+      "muc_do": 2,
+      "phan_tich": "Nicotin gây cảm ứng enzym; do đó, nicotin có thể làm tăng chuyển hoá của một số thuốc và dẫn đến giảm tác dụng điều trị.",
+      "xu_ly": "Nên cảnh giác với những thuốc có phạm vi điều trị hẹp trong khi điều trị thay thế nicotin và xem lại liều lượng trong và sau khi điều trị. Nên nhớ rằng cảm ứng enzym là một hiện tượng chỉ xuất hiện sau khoảng vài ngày, như vậy, ngược với sự ức chế enzym là một hiện tượng tức thì."
+    },
+    {
+      "thuoc": [
+        "Propranolol", "Avlocardyl", "Hemipralon", "Ratiopharm"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nicotin gây cảm ứng enzym, do đó, nicotin có thể làm tăng chuyển hoá của một số thuốc và dẫn đến giảm tác dụng điều trị.",
+      "xu_ly": "Nên cảnh giác với các thuốc có phạm vi điều trị hẹp trong khi điều trị thay thế nicotin và xem lại liều lượng trong và sau điều trị; ở đây hiện tượng chỉ được ghi nhận với propranolol. Nên nhớ rằng cảm ứng enzym là một hiện tượng chỉ xuất hiện sau khoảng vài ngày, như vậy ngược với sự ức chế enzym là một hiện tượng tức thì."
+    },
+    {
+      "thuoc": [
+        "Pentazocin", "Fortal"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nicotin gây cảm ứng enzym, do đó nicotin có thể làm tăng chuyển hoá của một số thuốc và dẫn đến giảm tác dụng điều trị.",
+      "xu_ly": "Nên cảnh giác với những thuốc có phạm vi điều trị hẹp trong khi điều trị thay thế nicotin và nên xem lại liều lượng trong và sau điều trị; ở đây, hiện tượng được ghi nhận với pentazocin. Nên nhớ rằng cảm ứng enzym là một hiện tượng chỉ xuất hiện sau khoảng vài ngày, như vậy ngược với sự ức chế là một hiện tượng tức thì."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Nilutamid",
+  "mo_ta": "Thuốc kháng androgen không steroid không có tác dụng hormon hoặc kháng hormon, dùng trong điều trị ung thư tuyến tiền liệt.",
+  "cac_thuoc_trong_nhom": [
+    "Nilutamid",
+    "Anandron"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Suy gan: Do chuyển hoá mạnh ở gan, nên chống chỉ định dùng thuốc này khi suy gan nặng: nguy cơ xuất hiện viêm gan tiêu tế bào hoặc hỗn hợp."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy hô hấp - hen: Bất cứ khó thở nào mà nặng lên, phải lo xuất hiện bệnh viêm phổi kẽ, cần phải ngừng điều trị. Nilutamid ức chế hệ thần kinh trung ương. Chú ý đến người lái xe và người vận hành máy và khi phối hợp với các thuốc ức chế hệ thần kinh trung ương khác."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Diazepam", "Valium", "Alprazolam", "Xanax", "Clorazepat", "Tranxene", "Noctran", "Flurazepam", "Nitrazepam", "Mogadon", "Triazolam", "Halcion", "Chlordiazepoxid", "Librax"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Có thể do nilutamid ức chế enzym chuyển hoá thuốc ở gan nên có nguy cơ kéo dài và tăng tác dụng và độc tính của một số benzodiazepin.",
+      "xu_ly": "Nguy cơ tăng ngủ gà đã được mô tả với một số benzodiazepin như diazepam, alprazolam, clorazepat, flurazepam, nitrazepam, triazolam hoặc chlordiazepoxid. Nên chọn một benzodiazepin không chuyển hoá bởi các enzym ở gan hoặc điều chỉnh liều của các benzodiazepin khi bắt đầu, lúc đang và khi ngừng điều trị nilutamid. Cảnh báo cho người bệnh về nguy cơ tăng tác dụng."
+    },
+    {
+      "thuoc": ["Phenytoin", "Dilantin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng nồng độ phenytoin trong máu, có lẽ do các tính chất ức chế enzym của nilutamid.",
+      "xu_ly": "Tăng cường theo dõi lâm sàng và sinh học, điều chỉnh liều của phenytoin tuỳ theo các kết quả."
+    },
+    {
+      "thuoc": [
+        "Acebutolol", "Sectral", "Alprenolol", "Betaxolol", "Kerlone", "Labetalol", "Trandate", "Metoprolol", "Lopressor", "Seloken", "Logroton", "Oxprenolol", "Trasicor", "Trasipressol", "Trasitensine", "Propranolol", "Avlocardyl", "Hemipralon", "Timolol", "Timacor", "Moducren"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Có lẽ do tính chất ức chế enzym của nilutamid với một số thuốc chẹn beta, có nguy cơ tăng tác dụng của thuốc chẹn beta.",
+      "xu_ly": "Một số trường hợp nhịp tim chậm và hạ huyết áp đã được mô tả với một số thuốc chẹn beta như acebutolol, alprenolol, betaxolol, labetalol, metoprolol, oxprenolol, propranolol, timolol... Thay đổi chiến lược điều trị, hoặc điều chỉnh liều của thuốc chẹn beta lúc bắt đầu, khi đang và sau điều trị bằng nilutamid. Các điều này cần được sự xác nhận khi mà tương tác này không có ý nghĩa nhiều trong lâm sàng. Nên nhớ rằng các thuốc chẹn beta nhỏ mắt cũng có tác dụng toàn thân."
+    },
+    {
+      "thuoc": [
+        "Theophylin", "Euphylin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ quá liều theophylin, có lẽ do nilutamid có tính chất ức chế enzym chuyển hoá thuốc.",
+      "xu_ly": "Theo dõi lâm sàng và sinh học (định lượng các nồng độ theophylin trong huyết thanh). Điều chỉnh liều tuỳ theo các kết quả lâm sàng và/hoặc sinh học. Các dấu hiệu lâm sàng về ngộ độc theophylin chủ yếu là buồn nôn, nhịp tim nhanh, nhức đầu, nôn và nguy cơ co giật."
+    },
+    {
+      "thuoc": [
+        "Warfarin", "Coumadin", "Acenocoumarol", "Sintrom", "Phenprocoumon", "Marcumar"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng của các kháng vitamin K có lẽ do giảm chuyển hoá của chúng.",
+      "xu_ly": "Điều chỉnh liều lượng tùy theo kết quả INR (tỷ lệ chuẩn quốc tế) và TP (tỷ lệ prothrombin) lúc bắt đầu, khi đang và khi ngừng điều trị bằng nilutamid. Nhắc người bệnh không được ngừng điều trị đột ngột."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Niridazol",
+  "mo_ta": "Thuốc tổng hợp chống bệnh sán máng.",
+  "cac_thuoc_trong_nhom": [
+    "Niridazol",
+    "Ambilhar"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Suy gan: Suy gan làm chậm dị hoá niridazol, gây tăng nồng độ trong máu, tạo thuận lợi cho xuất hiện các rối loạn thần kinh tâm thần (kích động, hoang tưởng, ảo giác, kích thích tâm thần, co giật dạng động kinh)."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ mang thai: Vì độc tính toàn thân, niridazol được coi có tiềm năng gây nguy hiểm cho phôi. Tăng áp lực tĩnh mạch cửa, kể cả ở người bệnh sán máng, trầm cảm, lú lẫn, co giật."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Thiếu hụt G6DP: Xuất hiện thiếu máu tan máu ở người thiếu hụt G6DP."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Tacrin", "Cognex"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng độc tính với gan.",
+      "xu_ly": "Nếu cần, tăng cường theo dõi gan. Tránh các phối hợp có nguy cơ ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Azathioprin", "Imuran", "Carmustin", "BiCNU", "Dantrolen", "Dantrium", "Doxorubicin", "Adriamycin", "Griseofulvin", "Grisovin", "Isoniazid", "Rimifon", "Mercaptopurin", "Purinethol", "Methotrexat", "Methotrexat Ebewe", "Methyldopa", "Aldomet", "Progabid", "Sabril", "Rifampicin", "Rifadin", "Ketoconazol", "Nizoral", "Clotrimazol", "Lotrimin", "Itraconazol", "Sporanox", "Fluconazol", "Diflucan", "Vàng", "Gold"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc cùng có độc tính với gan. Cũng có cả độc thần kinh của niridazol. Nguy cơ xuất hiện co giật, rối loạn tâm thần và độc với gan khi phối hợp thuốc.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc hoãn một trong hai liệu pháp. Xác minh là người bệnh không uống rượu thường xuyên và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không đặc hiệu: buồn nôn, sốt, vàng da... Nếu thấy đồng thời ban da, ngứa và hạch to thì hướng về bệnh căn do thuốc. Căn cứ kết quả các xét nghiệm sinh học, phân biệt rõ nguy cơ xuất hiện viêm gan tiêu tế bào có tính không phục hồi với viêm gan ứ mật hồi phục được khi ngừng điều trị."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Interleukin cũng độc với gan. Như vậy là phối hợp hai thuốc có tiềm năng độc với gan.",
+      "xu_ly": "Điều trị này chỉ có thể tiến hành ở cơ sở chuyên khoa. Dùng interleukin cần phải theo dõi thường xuyên. Trường hợp này nên cân nhắc tuỳ theo tình trạng chung của người bệnh. Khi phối hợp hai thuốc độc với gan, theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc hoãn một trong hai liệu pháp nếu có thể."
+    },
+    {
+      "thuoc": ["Paracetamol", "Efferalgan", "Panadol"],
+      "muc_do": 2,
+      "phan_tich": "Paracetamol dùng dài ngày với liều cao trên 6g/ngày (theo cân nặng) có thể độc với gan (viêm gan tiêu tế bào). Khi phối hợp với một thuốc khác độc với gan, nguy cơ độc với gan tăng lên.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc hoãn một trong hai liệu pháp, nếu có thể. Xác minh là người bệnh không uống rượu thường xuyên, và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không đặc hiệu: buồn nôn, sốt, vàng da. Nếu thấy đồng thời ban da, ngứa, và hạch to thì hướng về bệnh căn do thuốc. Căn cứ kết quả các thử nghiệm sinh học, phân biệt rõ nguy cơ xuất hiện viêm gan tiêu tế bào có tính không phục hồi và viêm gan ứ mật hồi phục được khi ngừng điều trị."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Nitrofuran",
+  "mo_ta": "Thuốc sát khuẩn đường tiết niệu và ruột.",
+  "cac_thuoc_trong_nhom": [
+    "Nitrofurantoin", "Novo furan",
+    "Nifuroxazid", "Ercefuryl", "Entero-Caps",
+    "Nifurzid", "Ricridene"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Suy thận: Nitrofuran được đào thải dưới dạng còn hoạt tính do lọc qua cầu thận và bài tiết ở ống thận. ở người suy thận, hàm lượng nitrofuran trong huyết thanh tăng, dẫn đến tăng nguy cơ độc tính thần kinh gây viêm nhiều dây thần kinh có thể dẫn đến tử vong, nếu không ngừng điều trị."
+    },
+    "can_theo_doi": {
+      "muc_do": 2,
+      "noi_dung": "Ăn uống - Rượu: Furazolidon và nifuratel ức chế enzym alcol dehydrogenase, nên khi uống rượu dẫn đến tích tụ acetaldehyd, gây tác dụng antabuse (giãn mạch, nôn, ra mồ hôi)."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Probenecid", "Benemid"],
+      "muc_do": 4,
+      "phan_tich": "Probenecid ức chế đào thải nitrofuran ở thận, dẫn đến tăng các nồng độ trong huyết thanh, kéo dài nửa đời đào thải và giảm các nồng độ trong nước tiểu, do đó tăng hiệu quả của nitrofuran.",
+      "xu_ly": "Sử dụng probenecid để làm chậm đào thải của nhiều thuốc có thể và đã được dùng để làm giảm một số liều lượng. Cần rất cảnh giác về những nguy cơ tiềm ẩn và tăng độc tính của thuốc phối hợp. ở đây, giảm nồng độ trong nước tiểu có thể dẫn đến thất bại điều trị."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng antabuse (kiểu disulfiram) cộng thêm với nguy cơ độc với gan: nồng độ bất thường acetaldehyd tích tụ trong các mô (ức chế enzym), dẫn đến một số dấu hiệu lâm sàng như: cơn bừng vận mạch, giãn mạch nhiều, nhịp tim nhanh, sốt cao, buồn nôn, nôn, ban da, đôi khi hạ huyết áp và truỵ mạch. Những triệu chứng này nặng hay nhẹ tuỳ theo lượng rượu đã uống.",
+      "xu_ly": "Trong khi điều trị với thuốc, nên tránh uống rượu do tác dụng antabuse. Khuyên không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Didanosin", "Videx"],
+      "muc_do": 2,
+      "phan_tich": "Hiệp đồng các tác dụng không mong muốn: tăng nguy cơ xuất hiện viêm tuỵ do thuốc gây nên.",
+      "xu_ly": "Theo dõi lâm sàng và nếu cần, khi có dấu hiệu đau bụng, theo dõi sinh học chức năng tuỵ (amylase máu, amylase nước tiểu)."
+    },
+    {
+      "thuoc": [
+        "Aluminium hydroxide", "Magnesium hydroxide", "Maalox", "Gastropulgite", "Phosphalugel", "Than hoạt"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Thuốc kháng acid làm giảm hấp thu ở đường tiêu hoá và làm giảm tác dụng của thuốc phối hợp.",
+      "xu_ly": "Cần uống hai thuốc cách nhau từ 1 đến 2 giờ. Cần nhắc lại là các thuốc kháng acid thường được uống 1 giờ 30 phút sau bữa ăn vì ăn uống là nguồn gốc tăng tiết dịch vị."
+    }
+  ]
+},
+{
+  "hoat_chat": "Nitroimidazol hoặc dẫn chất",
+  "mo_ta": "Kháng sinh tổng hợp chống vi khuẩn kỵ khí, chống ký sinh trùng.",
+  "cac_thuoc_trong_nhom": [
+    "Metronidazol", "Flagyl", "Klion", "Irizele", "Gynalfin", "Megyna", "Neo-Tergynan", "Daphazyl", "Dorogyne", "Gylmycin", "Hadozyl", "Naphacogyl", "Novogyl", "Pologyl", "Razogyl", "Rodogyl", "Rovazol", "Rodazol", "Rotaforte", "Sansvigyl", "Vidorygyl", "Vinphazin",
+    "Ornidazol", "Avrazor", "Tiberal",
+    "Secnidazol", "Flagentyl", "Seczol", "Tagera", "Fas-3 Kit", "Gynekit",
+    "Tinidazol", "Fasigyne", "Meko-Tigyl", "Midazol", "Tinida", "Tinifil", "Sindazol", "Dorokit", "Pylobact", "Pylokit"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Ăn uống - rượu: Nguy cơ tác dụng antabuse khi uống rượu. Thời kỳ cho con bú: Các nitroimidazol qua được sữa mẹ. Thời kỳ mang thai: Tránh dùng vì thiếu dữ liệu, trừ trường hợp cần thiết. Loạn tạo máu, dị thường công thức máu, mất điều hoà hoặc bệnh viêm dây thần kinh ngoại biên là những chống chỉ định của loại thuốc này. Cần tránh khi quá mẫn với thuốc."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng antabuse được mô tả với các nitroimidazol như metronidazol (Flagyl), secnidazol (Flagentyl), ornidazol (Tiberal), tinidazol (Fasigyne). Antabuse (disulfiram) ảnh hưởng đến cơ chế của rượu: tích tụ acetaldehyd trong mô (ức chế enzym), gây cơn bừng vận mạch, giãn mạch, nhịp tim nhanh, sốt cao, buồn nôn, nôn, ban da, đôi khi hạ huyết áp và truỵ mạch.",
+      "xu_ly": "Trong khi điều trị, nên tránh uống rượu vì tác dụng antabuse. Khuyên không dùng các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Disulfiram"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tình trạng lú lẫn, có thể do ức chế enzym aldehyd dehydrogenase hoặc các enzym khác (tương tự tác dụng antabuse).",
+      "xu_ly": "Vì mức độ nặng của các tác dụng không mong muốn, chọn liệu pháp khác."
+    },
+    {
+      "thuoc": [
+        "Phenobarbital", "Luminal", "Pentobarbital", "Nembutal"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Barbituric gây cảm ứng chuyển hoá metronidazol, làm giảm nồng độ huyết tương và đào thải nhanh metronidazol.",
+      "xu_ly": "Theo dõi hiệu quả điều trị metronidazol ở người bệnh dùng barbituric đồng thời. Nếu cần, tăng liều metronidazol hoặc dùng liều ban đầu cao hơn."
+    },
+    {
+      "thuoc": ["Carbamazepin", "Tegretol"],
+      "muc_do": 2,
+      "phan_tich": "Nồng độ carbamazepin trong huyết thanh có thể tăng, làm tăng tác dụng dược lý và độc tính. Có thể do ức chế chuyển hoá carbamazepin.",
+      "xu_ly": "Theo dõi đáp ứng lâm sàng khi bắt đầu hoặc ngừng metronidazol. Giám sát nồng độ huyết thanh carbamazepin, điều chỉnh liều nếu cần."
+    },
+    {
+      "thuoc": ["Phenytoin", "Dilantin"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng dược lý của hydantoin ở gan có thể bị metronidazol ức chế.",
+      "xu_ly": "Giám sát nồng độ trong huyết tương của hydantoin và điều chỉnh liều cho phù hợp."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Interleukin cũng độc với gan. Phối hợp hai thuốc có tiềm năng độc với gan.",
+      "xu_ly": "Điều trị chỉ ở cơ sở chuyên khoa, theo dõi thường xuyên. Khi phối hợp hai thuốc độc với gan, cần theo dõi chặt chức năng gan hoặc hoãn một trong hai liệu pháp nếu có thể."
+    },
+    {
+      "thuoc": ["Cimetidin", "Tagamet"],
+      "muc_do": 2,
+      "phan_tich": "Cimetidin ức chế enzym oxydase gan (cytochrom P450), làm tăng nồng độ một số thuốc trong huyết tương (nguy cơ quá liều), có thể ức chế chuyển hoá nitroimidazol, tăng nguy cơ quá liều.",
+      "xu_ly": "Cân nhắc tương tác này tuỳ dạng bào chế. Đường uống: điều chỉnh liều metronidazol hoặc chọn thuốc kháng H2 khác ít ức chế enzym hơn."
+    },
+    {
+      "thuoc": [
+        "Warfarin", "Coumadin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng của các kháng vitamin K do ức chế enzym. Nitroimidazol ức chế chuyển hoá kháng vitamin K.",
+      "xu_ly": "Nếu cần phối hợp, theo dõi tỷ lệ prothrombin và/hoặc INR lúc bắt đầu, trong và sau khi điều trị bằng nitroimidazol. Điều chỉnh liều."
+    },
+    {
+      "thuoc": [
+        "Fluorouracil", "5-FU", "Adrucil"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng độc tính của fluoro-5-uracil do giảm thanh lọc.",
+      "xu_ly": "Phối hợp dùng trong bệnh viện, tăng cường theo dõi lâm sàng và huyết học đối với nguy cơ nhiễm độc do fluoro-5-uracil."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Nitroxolin",
+  "mo_ta": "Thuốc sát khuẩn đường tiết niệu, dẫn chất oxyquinolein có tác dụng kìm khuẩn trên các vi khuẩn Gram dương, Gram âm và các Candida.",
+  "cac_thuoc_trong_nhom": [
+    "Nitroxolin", "Nibiol"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy gan: Giảm liều tuỳ theo mức độ tổn thương gan. Suy thận: Giảm liều tuỳ theo độ thanh lọc creatinin."
+    }
+  },
+  "tuong_tac": []
+}
+,
+{
+  "hoat_chat": "Octreotid hoặc thuốc tương tự",
+  "mo_ta": "Octapeptid tổng hợp có tác dụng giống somatostatin tự nhiên.",
+  "cac_thuoc_trong_nhom": [
+    "Octreotid", "Sandostatin", "Sandostatin LAR", "Somatostatin", "Modustatine"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Quá mẫn với thuốc."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú - thời kỳ mang thai: Do thận trọng, vì thiếu dữ liệu. Trẻ em - trẻ còn bú: Chưa có nghiên cứu."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Tiểu đường: Giảm nhu cầu insulin. Suy gan - suy thận: Kiểm tra chức năng các cơ quan này để điều chỉnh liều. Khối u: Chú ý đến người quá mẫn với thuốc này."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Metformin", "Glucophage", "Stagid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "U tiết glucagon được điều trị bằng octreotid. Dùng các thuốc chống tiểu đường trong khi đang điều trị bằng octreotid có thể tạo thuận lợi cho giảm hoặc tăng glucose máu.",
+      "xu_ly": "Lưu ý đến cách sử dụng octreotid và các chỉ định, việc điều trị thường tiến hành ở cơ sở chuyên khoa, bắt buộc phải theo dõi sinh học đều đặn và có mục tiêu."
+    },
+    {
+      "thuoc": ["Ciclosporin", "Sandimmun"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tụt nồng độ ciclosporin trong huyết thanh dẫn đến đáp ứng ức chế miễn dịch không đầy đủ và nguy cơ thất bại điều trị. Cơ chế chưa rõ ràng, có lẽ là sandostatin có thể làm giảm sự hấp thu ciclosporin ở ruột.",
+      "xu_ly": "Nếu cần phối hợp, phải theo dõi chặt chẽ ciclosporin máu và điều chỉnh liều lúc bắt đầu, khi đang và sau khi ngừng điều trị bằng octreotid."
+    },
+    {
+      "thuoc": [
+        "Glucagon", "GlucaGen", "Glypressin",
+        "Gliclazid", "Diamicron", "Glibenclamid", "Daonil", "Tolbutamid", "Rastinon", "Chlorpropamid", "Diabinese", "Glibornurid", "Glutril"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Sử dụng glucagon hoặc thuốc chống tiểu đường trong khi điều trị bằng octreotid có thể tạo thuận lợi cho giảm hoặc tăng glucose máu.",
+      "xu_ly": "Việc điều trị thường tiến hành ở cơ sở chuyên khoa. Ở người tiểu đường đang điều trị, phải theo dõi cẩn thận glucose máu và điều chỉnh liều."
+    },
+    {
+      "thuoc": ["Insulin", "Actrapid", "Mixtard", "Insulatard", "Lantus", "Levemir", "Humalog", "Novorapid"],
+      "muc_do": 2,
+      "phan_tich": "Ở người tiểu đường phụ thuộc insulin, nhu cầu về insulin có thể giảm từ 30 đến 50%.",
+      "xu_ly": "Lưu ý đến hậu quả của tương tác để xác định liều. Báo cho người bệnh để tăng cường tự theo dõi và tự điều chỉnh nhu cầu insulin. Ở người không có tiểu đường, theo dõi glucose máu."
+    }
+  ]
+},
+{
+  "hoat_chat": "Omeprazol",
+  "mo_ta": "Thuốc chống loét, ức chế đặc hiệu bơm proton, tác dụng ở tế bào thành dạ dày. Omeprazol là một dẫn chất của benzimidazol và có thể ức chế hoạt động của cytochrom P450.",
+  "cac_thuoc_trong_nhom": [
+    "Omeprazol", "Belifax", "Lokit", "Lomac", "Losec", "Losec Mups", "Meprasac", "Mepraz", "Ocid", "Odasol", "Olit 20", "Ome 20", "Omeral", "Omenat", "Omepar", "Omeprazole", "Omez", "Omicap", "Omizac", "OMP", "Omzol", "Probitor", "Protoloc 20", "Pylobact", "Romesec", "Stomex", "Zerocid"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Vì thiếu các nghiên cứu về sự bài tiết qua sữa mẹ. Thời kỳ mang thai: Do thận trọng, vì thiếu dữ liệu."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Trẻ em: Vì thiếu dữ liệu."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy gan: Lưu ý đến các dữ liệu dược động học, nên theo dõi chức năng gan trong điều trị dài ngày."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Pentagastrin"],
+      "muc_do": 3,
+      "phan_tich": "Các chất ức chế bơm proton có thể đối kháng tác dụng dược lý của pentagastrin.",
+      "xu_ly": "Dùng pentagastrin và dùng thuốc ức chế bơm proton phải cách xa nhau 96 giờ."
+    },
+    {
+      "thuoc": [
+        "Chlordiazepoxid", "Librium", "Diazepam", "Valium", "Seduxen", "Flurazepam", "Dalmane", "Triazolam", "Halcion"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Omeprazol ức chế một số cytochrom P450, nên làm chậm chuyển hoá một số benzodiazepin, làm tăng nồng độ của chúng trong huyết thanh và trong trường hợp này dễ gây tác dụng không mong muốn do quá liều.",
+      "xu_ly": "Tương tác chỉ có thể xảy ra với các benzodiazepin được chuyển hoá qua cytochrom P450 (loại chlordiazepoxid, diazepam, flurazepam, triazolam...) bằng cách ức chế chuyển hoá của chúng, làm cho các tác dụng giải lo và an thần tăng lên. Cần giảm liều hoặc thay đổi chất ức chế bơm proton ở các người bệnh này."
+    },
+    {
+      "thuoc": [
+        "Clarithromycin", "Klacid", "Clarithromycin STADA", "Roxithromycin", "Rulid", "Azithromycin", "Zithromax", "Erythromycin", "Apo-Erythro", "Ery", "Eryacne", "Erycin", "Erythrocine", "Erythromycin Domesco", "Stiemycin", "Spiramycin", "Rovamycine", "Josamycin", "Josacine"
+      ],
+      "muc_do": 2,
+      "phan_tich": "pH dạ dày tăng do omeprazol góp phần cải thiện tính bền vững của clarithromycin, làm tăng nồng độ trong mô và dạ dày của macrolid này và chất chuyển hoá có hoạt tính của nó. Tương tác dược động học.",
+      "xu_ly": "Tương tác có thể có ý nghĩa lâm sàng tốt, nhưng còn cần phải xác nhận thêm."
+    },
+    {
+      "thuoc": ["Phenytoin", "Dilantin"],
+      "muc_do": 2,
+      "phan_tich": "Omeprazol ức chế một số cytochrom P450, nên làm chậm chuyển hoá phenytoin, làm tăng nồng độ của chúng trong huyết thanh và dễ có nguy cơ nhiễm độc phenytoin do quá liều.",
+      "xu_ly": "Cảnh giác về lâm sàng và nếu cần, thì nên theo dõi nồng độ phenytoin trong máu và điều chỉnh liều lúc bắt đầu, lúc đang và sau khi điều trị với omeprazol (việc điều trị thường kéo dài từ 4 đến 6 tuần) hoặc thay đổi thuốc ức chế bơm proton ở những người bệnh này."
+    },
+    {
+      "thuoc": ["Tacrolimus", "Prograf", "Advagraf"],
+      "muc_do": 2,
+      "phan_tich": "Omeprazol ức chế một số cytochrom P450, nên ức chế chuyển hoá của tacrolimus và làm tăng nồng độ trong huyết tương.",
+      "xu_ly": "Nên giảm liều tacrolimus và theo dõi chức năng thận qua việc đo creatinin máu. Việc theo dõi nồng độ tacrolimus trong huyết tương được thực hiện trong khi điều trị và sau khi ngừng dùng tacrolimus."
+    },
+    {
+      "thuoc": [
+        "Aluminium hydroxide", "Magnesium hydroxide", "Maalox", "Gastropulgite", "Phosphalugel", "Than hoạt"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Omeprazol bị giảm hấp thu ở đường tiêu hoá bởi thuốc kháng acid, dẫn đến giảm tác dụng dược lý của omeprazol.",
+      "xu_ly": "Cần uống hai thuốc cách nhau ít nhất từ 1 đến 2 giờ. Nên nhớ rằng các chất kháng acid thường được uống 1 giờ 30 phút sau bữa ăn, vì ăn uống là nguồn gốc tăng tiết dịch vị."
+    },
+    {
+      "thuoc": [
+        "Warfarin", "Coumadin", "Acenocoumarol", "Sintrom", "Phenprocoumon", "Marcumar"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Omeprazol ức chế một số cytochrom P450 có thể dẫn đến chậm chuyển hoá thuốc uống chống đông máu, gây tăng nồng độ trong huyết thanh và trong trường hợp này, dễ có nguy cơ chảy máu do quá liều.",
+      "xu_ly": "Theo dõi tỷ lệ prothrombin hoặc tỷ lệ chuẩn quốc tế (INR) và điều chỉnh liều lúc bắt đầu, khi đang và sau khi điều trị bằng omeprazol (điều trị thường kéo dài từ 4 đến 6 tuần) hoặc thay đổi thuốc ức chế bơm proton ở những người bệnh này."
+    }
+  ]
+},
+{
+  "hoat_chat": "Oxaflozan",
+  "mo_ta": "Chống trầm cảm, giải lo, tác dụng serotoninergic.",
+  "cac_thuoc_trong_nhom": [
+    "Oxaflozan",
+    "Conflictan"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Tránh dùng oxaflozan trong thời kỳ cho con bú. Thời kỳ mang thai: Tránh dùng oxaflozan khi mang thai. Suy thận: Chống chỉ định dùng oxaflozan khi suy thận."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Không nên dùng đồ uống có rượu. Cẩn thận tác dụng giống disulfiram với chế phẩm chứa rượu."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Phenelzin", "Nardil", "Tranylcypromin", "Parnate", "Isocarboxazid", "Marplan"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Nguy cơ hội chứng serotonin (kích động, lú lẫn, run rẩy, cứng đơ, mạch nhanh).",
+      "xu_ly": "Chống chỉ định. Chờ 15 ngày sau khi ngừng IMAO."
+    },
+    {
+      "thuoc": [
+        "Guanethidin", "Ismelin", "Bethanidin", "Debrisoquin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Giảm tác dụng chống tăng huyết áp.",
+      "xu_ly": "Tránh phối hợp. Chọn thuốc khác."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 3,
+      "phan_tich": "Tăng tác dụng an thần, nguy cơ buồn ngủ.",
+      "xu_ly": "Không uống rượu. Cảnh báo người lái xe/vận hành máy."
+    },
+    {
+      "thuoc": [
+        "Amineptin", "Survector", "Clozapin", "Leponex", "Paroxetin", "Seroxat", "Procarbazin", "Natulan"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng an thần.",
+      "xu_ly": "Hiệu chỉnh liều. Khuyên không uống rượu."
+    },
+    {
+      "thuoc": ["Disulfiram", "Antabuse"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng disulfiram do rượu trong chế phẩm.",
+      "xu_ly": "Tránh rượu. Không phối hợp với disulfiram."
+    },
+    {
+      "thuoc": [
+        "Halothan", "Fluothane", "Isofluran", "Forane", "Sevofluran", "Sevorane", "Enfluran", "Ethrane"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng an thần.",
+      "xu_ly": "Báo cho bác sĩ gây mê biết thuốc đang dùng."
+    },
+    {
+      "thuoc": ["Amphetamin"],
+      "muc_do": 1,
+      "phan_tich": "Đối kháng tác dụng. Tăng tính hung hãn.",
+      "xu_ly": "Theo dõi và điều chỉnh liệu pháp."
+    },
+    {
+      "thuoc": [
+        "Baclofen", "Lioresal", "Carbamazepin", "Tegretol", "Dextropropoxyphen", "Natri valproat", "Depakine", 
+        "Phenytoin", "Dilantin", "Primidon", "Mysoline", "Reserpin", "Serpasil", "Haloperidol", "Haldol", 
+        "Risperidon", "Risperdal", "Olanzapin", "Zyprexa", "Quetiapin", "Seroquel", "Amitriptylin", "Tryptanol", 
+        "Imipramin", "Tofranil", "Clomipramin", "Anafranil", "Promethazin", "Phenergan", "Diphenhydramin", "Benadryl"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng an thần.",
+      "xu_ly": "Hiệu chỉnh liều. Cảnh báo nguy cơ giảm tỉnh táo."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Oxitriptan",
+  "mo_ta": "Tiền chất của serotonin, dùng trong giật rung cơ sau thiếu oxy mô.",
+  "cac_thuoc_trong_nhom": [
+    "Oxitriptan",
+    "Levotonine"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "U carcinoid ruột non."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Suy thận: Đánh giá độ thanh lọc creatinin."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Thận trọng khi cho con bú/mang thai. Suy tim."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Amitriptylin", "Tryptanol", "Imipramin", "Tofranil", "Clomipramin", "Anafranil"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Nguy cơ rối loạn huyết áp trầm trọng.",
+      "xu_ly": "Tránh phối hợp. Thay đổi chiến lược điều trị."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Oxytocin",
+  "mo_ta": "Chất tổng hợp tương tự oxytocin tự nhiên, dùng trong sản khoa.",
+  "cac_thuoc_trong_nhom": [
+    "Oxytocin",
+    "Pitocin"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Tăng trương lực tử cung, nhau tiền đạo, nhiễm độc thai nghén."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Misoprostol", "Cytotec", "Dinoprostone", "Prostin E2", "Carboprost", "Hemabate"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng của oxytocin do prostaglandin và ngược lại, cùng với sự tăng mạnh tần số và cường độ co tử cung",
+      "xu_ly": "Theo dõi lâm sàng chặt chẽ. Điều chỉnh liều phù hợp."
+    }
+  ]
+},
+{
+  "hoat_chat": "Papaverin hoặc dẫn chất",
+  "mo_ta": "Giãn mạch ngoại vi, loại chống co thắt.",
+  "cac_thuoc_trong_nhom": [
+    "Papaverin", "Paverid",
+    "Alverin", "Bi-Spas", "Dospamin", "Eftispasmin", "Non-Spas", "Spasdipyrin", "Spasma", "Spasmavérine", "Spasmebi", "Spasmapyrin", "Spasmapharin", "Spasverin", "Spasvina", "Traverin", "Vacoverin",
+    "Drotaverin", "Nospa", "Nos-Bra"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Tăng áp suất nội sọ và rối loạn dẫn truyền trong tim."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ mang thai: Thiếu dữ liệu. Parkinson: Lưu ý các tác dụng không mong muốn của các chế phẩm."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy gan: Một vài trường hợp viêm gan hồi phục được khi ngừng thuốc đã được mô tả khi điều trị dài ngày bằng papaverin."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Levodopa", "Madopar", "Sinemet"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Papaverin có thể chẹn các thụ thể dopamin, do đó ức chế tác dụng chống Parkinson của levodopa (tiền chất của dopamin).",
+      "xu_ly": "Cần tránh phối hợp, chọn cách điều trị khác."
+    },
+    {
+      "thuoc": [
+        "Selegilin", "Eldepryl", "Rasagilin", "Azilect"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Ức chế đặc hiệu monoamin oxydase typ B dẫn đến kéo dài tác dụng của levodopa, giải thích cho việc kê đơn cùng với thuốc này. Các tương tác như vậy cũng giống như của levodopa và xin xem ở họ này. Papaverin có thể chẹn các thụ thể dopamin, do đó ức chế tác dụng chống Parkinson của levodopa (tiền chất của dopamin).",
+      "xu_ly": "Cần tránh phối hợp; chọn cách điều trị khác."
+    },
+    {
+      "thuoc": [
+        "Nitroglycerin", "Nitrostat", "Isosorbid dinitrat", "Isoket", "Isosorbid mononitrat", "Mononit", "Amlodipin", "Norvasc", "Nifedipin", "Adalat", "Felodipin", "Plendil", "Lacidipin", "Motens", "Furosemid", "Lasix", "Spironolacton", "Verospiron", "Hydrochlorothiazid", "Hypothiazid", "Indapamid", "Fludex", "Chlortalidon", "Hygroton", "Guanethidin", "Ismelin", "Reserpin", "Aldomet", "Enalapril", "Renitec", "Perindopril", "Coversyl", "Lisinopril", "Zestril", "Ramipril", "Tritace", "Verapamil", "Isoptin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp với mọi thuốc có tính chất chống tăng huyết áp có thể làm tăng nguy cơ hạ huyết áp, có thể dẫn tới sốc.",
+      "xu_ly": "Theo dõi huyết áp trong điều trị và khi ngừng một trong hai thuốc. Lưu ý đặc biệt ở người bệnh cao tuổi."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Paracetamol",
+  "mo_ta": "Giảm đau, hạ sốt.",
+  "cac_thuoc_trong_nhom": [
+    "Paracetamol", "Acetaminophen", "Acetaphen", "Actadol", "Anadol", "Biogesic", "Dafalgan", "Decolgen Ace", "Dolodon", "Dopalgan", "Efferalgan", "Mexcold", "Panadol", "Pro-dafalgan", "Perfalgan", "Tatanol", "Tydol"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Suy gan: Paracetamol có thể dẫn đến hoại tử trung tâm tiểu thùy gan do độc tính của một trong các chất chuyển hoá của nó tạo thành ở gan và bình thường bị khử hoạt tính do cộng hợp với glutathion. Trong trường hợp suy gan, khả năng khử hoạt tính có thể kém hiệu lực."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Viêm gan virus. Tránh sử dụng khi đã biết quá mẫn với chế phẩm này."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy thận: Cần theo dõi chức năng thận nếu điều trị kéo dài, mặc dù chưa chứng minh được độc tính với thận trong điều kiện sử dụng bình thường."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Tacrin", "Cognex"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng độc với gan.",
+      "xu_ly": "Nếu cần, tăng cường theo dõi gan (transaminase); tránh các phối hợp có nguy cơ ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Zidovudin", "Retrovir"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ giảm bạch cầu và độc với gan.",
+      "xu_ly": "Xử lý thay thế bằng aspirin và/ hay ibuprofen. Nếu cần phối hợp, phải theo dõi công thức máu và chỉ số gan đều đặn."
+    },
+    {
+      "thuoc": [
+        "Phenobarbital", "Luminal", "Pentobarbital", "Nembutal"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Ở người bệnh dùng barbituric đều đặn, có thể tăng chuyển hoá của paracetamol ở gan do cảm ứng enzym, có thể kéo theo giảm hoạt tính. Như vậy, cũng có thể tăng độc tính với gan ở người nghiện rượu hay ở người bệnh điều trị đều đặn bằng barbituric.",
+      "xu_ly": "Theo dõi lâm sàng ở các người bệnh có nguy cơ này. Nếu cần, theo dõi sinh học ở các người bệnh buồn nôn."
+    },
+    {
+      "thuoc": [
+        "Carmustin", "BiCNU", "Doxorubicin", "Adriamycin", "Isoniazid", "Rimifon", "Mercaptopurin", "Purinethol", "Methotrexat", "Methotrexat Ebewe", "Niridazol", "Ambilhar", "Rifampicin", "Rifadin", "Ketoconazol", "Nizoral", "Clotrimazol", "Lotrimin", "Itraconazol", "Sporanox", "Fluconazol", "Diflucan", "Vàng", "Gold"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Paracetamol uống dài ngày với liều trên 6g/ngày (theo thể trọng) sẽ gây độc với gan (viêm gan thể tiêu tế bào). Khi phối hợp với một thuốc độc với gan khác, nguy cơ độc với gan tăng hơn.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, cần phải theo dõi cẩn thận chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc hoãn nếu có thể, một trong hai thuốc đó. Xác minh người bệnh không dùng rượu thường xuyên và không có tiền sử viêm gan virus. Các triệu chứng lâm sàng chính không đặc hiệu: buồn nôn, sốt, vàng da... Nếu có phối hợp ban da, ngứa và hạch to, có nhiều khả năng là do thuốc. Phân biệt rõ, căn cứ vào các kết quả thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không phục hồi với viêm gan ứ mật phục hồi được khi ngừng thuốc."
+    },
+    {
+      "thuoc": ["Dantrolen", "Dantrium"],
+      "muc_do": 2,
+      "phan_tich": "Đây là phối hợp giữa hai thuốc có khả năng độc với gan, nhất là khi paracetamol được dùng kéo dài và trên 4 - 5g/ngày.",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, hoặc phải theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin), hoặc hoãn nếu có thể, một trong hai thuốc. Xác minh là người bệnh không uống rượu thường xuyên và không có tiền sử viêm gan do virus. Các dấu hiệu lâm sàng chính không đặc hiệu: buồn nôn, sốt, vàng da... Nếu có phối hợp ban da, ngứa và hạch to, có nhiều khả năng là do thuốc. Phân biệt rõ, căn cứ theo các kết quả thử sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không phục hồi với viêm gan ứ mật phục hồi được khi ngừng thuốc."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Mục tiêu chính là điều trị bệnh ung thư biểu mô thận dạng tuyến. Interleukin cũng độc với gan. Như vậy, đó là phối hợp của hai thuốc có khả năng độc với gan.",
+      "xu_ly": "Đây là một trị liệu chỉ có thể tiến hành trong một cơ sở chuyên khoa. Interleukin cần sự theo dõi liên tục. Trong trường hợp này, cần cân nhắc theo tình trạng chung của người bệnh. Khi phối hợp hai thuốc độc với gan, hoặc là phải theo dõi chặt chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc hoãn nếu có thể, một trong hai thuốc."
+    },
+    {
+      "thuoc": ["Phenytoin", "Dilantin"],
+      "muc_do": 2,
+      "phan_tich": "Tiềm năng gây độc với gan của paracetamol có thể tăng khi dùng đồng thời với hydantoin lâu dài. Tác dụng điều trị của paracetamol có thể bị giảm khi phối hợp với hydantoin. Tương tác xảy ra chậm. Cơ chế do hydantoin có thể gây cảm ứng cytochrom P450 ở gan làm tăng chuyển hoá paracetamol thành các chất chuyển hoá độc cho gan.",
+      "xu_ly": "Nguy cơ nhiễm độc gan lớn nhất khi paracetamol dùng kéo dài hoặc quá liều, kèm theo dùng hydantoin đều đặn. Khi dùng liều điều trị thông thường, paracetamol và hydantoin không cần phải điều chỉnh liều hoặc giám sát đặc biệt."
+    },
+    {
+      "thuoc": ["Lamotrigin", "Lamictal"],
+      "muc_do": 2,
+      "phan_tich": "Nồng độ trong huyết thanh của lamotrigin có thể bị giảm, làm giảm tác dụng điều trị. Tương tác xảy ra chậm. Cơ chế chưa rõ.",
+      "xu_ly": "Tương tác ít có khả năng xảy ra nếu chỉ dùng một hoặc vài liều paracetamol. Nhưng nếu dùng kéo dài, và khi nghi ngờ có tương tác, cần phải điều chỉnh liều lamotrigin. Quan sát đáp ứng lâm sàng của người bệnh và điều chỉnh liều lamotrigin theo đó."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tạo các chất chuyển hoá độc với gan của paracetamol vì cảm ứng enzym cytochrom P450 do rượu, nếu người bệnh nghiện rượu.",
+      "xu_ly": "Tránh kéo dài điều trị bằng paracetamol cho người bệnh nghiện rượu. Giảm các liều thuốc giảm đau và nếu cần, dùng một thuốc giảm đau khác."
+    },
+    {
+      "thuoc": [
+        "Warfarin", "Coumadin", "Acenocoumarol", "Sintrom", "Phenprocoumon", "Marcumar"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Paracetamol có thể làm tăng tác dụng chống huyết khối của thuốc uống chống đông máu, phụ thuộc vào liều dùng. Nếu dùng liều thấp (<6 viên loại 325 mg/tuần), thì không có ảnh hưởng về lâm sàng. Tương tác xảy ra chậm. Cơ chế chưa rõ.",
+      "xu_ly": "Hạn chế dùng paracetamol và giám sát các thông số đông máu nhiều lần hơn (thí dụ 1-2 lần/tuần) khi bắt đầu hoặc ngừng paracetamol, đặc biệt khi dùng paracetamol > 2275 mg/tuần. Điều chỉnh liều thuốc uống chống đông máu khi cần."
+    }
+  ]
+},
+{
+  "hoat_chat": "Paroxetin",
+  "mo_ta": "Thuốc chống trầm cảm, ức chế tái thu hồi serotonin.",
+  "cac_thuoc_trong_nhom": [
+    "Paroxetin", "Deroxat"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Trẻ dưới 15 tuổi (thiếu nghiên cứu). Quá mẫn với thuốc."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú/mang thai: Chưa có cứ liệu."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy gan: Lưu ý nguy cơ tăng enzym gan."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Sibutramin"],
+      "muc_do": 4,
+      "phan_tich": "Việc kết hợp sibutramin với các thuốc ức chế tái thu hồi serotonin (như paroxetin) làm tăng nguy cơ xuất hiện hội chứng serotonin, bao gồm các triệu chứng về kích thích hệ thần kinh trung ương, yếu đuối trong vận động, rung giật cơ, ý thức suy giảm. Cơ chế là do tác dụng serotoninergic của hai thuốc hiệp đồng với nhau.",
+      "xu_ly": "Tránh dùng kết hợp thuốc này. Nếu không thể tránh được, theo dõi sự xuất hiện các dấu hiệu tác dụng phụ ở bệnh nhân, đặc biệt sự xuất hiện hội chứng serotonin."
+    },
+    {
+      "thuoc": ["Sumatriptan", "Imitrex"],
+      "muc_do": 4,
+      "phan_tich": "Tương tác dược lực do hiệp đồng các tác dụng serotoninergic, có thể dẫn đến tăng huyết áp và co thắt động mạch vành.",
+      "xu_ly": "Tránh phối hợp. Nếu cần phối hợp, tôn trọng thời hạn 1 tuần từ lúc ngừng thuốc chống trầm cảm đến khi dùng sumatriptan."
+    },
+    {
+      "thuoc": [
+        "Adrenalin", "Epinephrin", "Noradrenalin", "Norepinephrin", "Dopamin", "Dobutamin", "Phenylephrin", "Midodrin"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Khi kết hợp với các thuốc ức chế tái thu hồi serotonin (như paroxetin), tính nhạy cảm với các thuốc cường giao cảm tăng, làm tăng nguy cơ xuất hiện hội chứng serotonin. Cơ chế chưa rõ.",
+      "xu_ly": "Nếu hai thuốc này bắt buộc phải dùng đồng thời, theo dõi sự xuất hiện những dấu hiệu và triệu chứng về thần kinh trung ương. Hiệu chỉnh liều nếu cần."
+    },
+    {
+      "thuoc": [
+        "Phenelzin", "Nardil", "Tranylcypromin", "Parnate", "Isocarboxazid", "Marplan"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Tăng tái thu nhận serotonin, có thể cải thiện đáp ứng điều trị, nhưng sau đó, cũng tăng mạnh độc tính (hạ nhiệt, co giật...).",
+      "xu_ly": "Tôn trọng thời hạn ít nhất 2 tuần kể từ lúc ngừng thuốc ức chế monoamin oxydase đến khi dùng thuốc chống trầm cảm serotoninergic. Khi ngừng điều trị bằng thuốc chống trầm cảm serotoninergic, chờ 1 tuần lễ (với fluoxetin, cần thời hạn 5 tuần) mới dùng thuốc ức chế monoamin oxydase."
+    },
+    {
+      "thuoc": [
+        "Selegilin", "Eldepryl", "Rasagilin", "Azilect"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Xảy ra hội chứng serotonin khi phối hợp một hoạt chất serotoninergic và một thuốc ức chế monoamin oxydase. Bằng ngoại suy, phối hợp một thuốc chống trầm cảm tác động thông qua serotonin thuần tuý với một thuốc ức chế monoamin oxydase, kể cả đặc hiệu, có nguy cơ dẫn đến lú lẫn, kích động, sốt cao, co giật, co mạch ngoại vi và tăng huyết áp nặng.",
+      "xu_ly": "Chờ 2 tuần kể từ lúc ngừng dùng thuốc ức chế monoamin oxydase B đến khi bắt đầu điều trị bằng thuốc chống trầm cảm serotoninergic và ít nhất 1 tuần, từ lúc ngừng thuốc chống trầm cảm đến lúc bắt đầu dùng thuốc ức chế monoamin oxydase."
+    },
+    {
+      "thuoc": [
+        "Clorgyline", "Moclobemid"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Quá liều serotonin, do hiệp đồng các tác dụng dược lý của các thuốc. Có thể xuất hiện hội chứng serotonin, mức độ nặng nhẹ khác nhau, nhưng có thể dẫn tới tử vong.",
+      "xu_ly": "Hội chứng serotonin có các biểu hiện khác nhau với các triệu chứng về tâm thần (lú lẫn, kích động, thậm chí hôn mê...), về vận động (giật rung cơ, run rẩy, tăng hoạt động, cứng đơ...), về thần kinh thực vật (hạ hay tăng huyết áp, nhịp tim nhanh, rét run, đổ mồ hôi...), về tiêu hoá (tiêu chảy...). Cần tránh phối hợp."
+    },
+    {
+      "thuoc": [
+        "Diazepam", "Valium", "Seduxen", "Chlordiazepoxid", "Librium", "Clonazepam", "Rivotril", "Alprazolam", "Xanax", "Lorazepam", "Ativan", "Nitrazepam", "Mogadon", "Flurazepam", "Dalmane", "Triazolam", "Halcion"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần buồn ngủ. Tương tác dược lực.",
+      "xu_ly": "Lưu ý nguy cơ này để điều chỉnh liều của hai thuốc. Chú ý đến giảm tỉnh táo ở người lái xe và người vận hành máy. Khuyên không uống rượu và không tự ý dùng thuốc hoặc chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Cyproheptadin", "Peritol"],
+      "muc_do": 3,
+      "phan_tich": "Ciproheptadin làm giảm tác dụng dược lý của paroxetin nói riêng và các thuốc ức chế tái nhập serotonin nói chung khi dùng kết hợp. Cơ chế là paroxetin có hoạt tính serotoninergic, còn ciproheptadin lại là chất đối kháng với serotonin. Tương tác thể hiện ở thụ thể.",
+      "xu_ly": "Nếu hiệu quả chống trầm cảm giảm đi, xét việc ngừng dùng ciproheptadin."
+    },
+    {
+      "thuoc": ["Cyclosporin", "Sandimmun"],
+      "muc_do": 3,
+      "phan_tich": "Paroxetin nói riêng và các thuốc ức chế tái thu nhận serotonin nói chung làm tăng nồng độ cyclosporin trong máu, kèm theo tăng độc tính của nó. Cơ chế có thể do có ức chế sự chuyển hoá cyclosporin thông qua cytochrom P450 3A4.",
+      "xu_ly": "Theo dõi nồng độ cyclosporin trong máu toàn phần khi bắt đầu dùng và khi ngừng dùng thuốc ức chế tái thu nhận serotonin. Hiệu chỉnh liều cyclosporin nếu cần."
+    },
+    {
+      "thuoc": [
+        "Baclofen", "Lioresal", "Phenobarbital", "Luminal", "Pentobarbital", "Nembutal", "Sulpirid", "Dogmatyl", "Amisulprid", "Solian", "Haloperidol", "Haldol", "Risperidon", "Risperdal", "Olanzapin", "Zyprexa", "Quetiapin", "Seroquel", "Promethazin", "Phenergan", "Chlorpheniramin", "Tavegyl", "Diphenhydramin", "Benadryl", "Carbamazepin", "Tegretol", "Mianserin", "Tolvon", "Oxaflozan", "Conflictan", "Primidon", "Mysoline", "Amitriptylin", "Tryptanol", "Imipramin", "Tofranil", "Clomipramin", "Anafranil"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần buồn ngủ. Tương tác dược lực.",
+      "xu_ly": "Lưu ý nguy cơ này để điều chỉnh liều của hai thuốc. Chú ý đến giảm tỉnh táo ở người lái xe và người vận hành máy. Khuyên không uống rượu và không tự ý dùng thuốc hoặc các chế phẩm có rượu."
+    },
+    {
+      "thuoc": [
+        "Clonidin", "Catapresan", "Rilmenidin", "Albarel"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng hiệp đồng trong ức chế hệ thần kinh trung ương. Chú ý, khi chữa ngoại trú, ở người lái xe và người vận hành máy. Nên nhớ là rilmenidin, ở liều thông dụng, không làm tăng các tác dụng ức chế hệ thần kinh trung ương của các thuốc đó.",
+      "xu_ly": "Lưu ý nguy cơ này để hiệu chỉnh liều của hai thuốc, nếu cần phối hợp. Chú ý đến giảm tỉnh táo ở người lái xe và người vận hành máy. Khuyên không uống rượu và không tự ý dùng thuốc hoặc các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Lithi", "Eskalith", "Lithobid"],
+      "muc_do": 2,
+      "phan_tich": "Hiệp đồng các tác dụng không mong muốn: tăng độc tính với thần kinh của các muối lithi, kèm với nguy cơ xuất hiện hội chứng serotonin (kích động, run rẩy, cứng đơ, hạ hay tăng huyết áp, nhịp tim nhanh, đổ mồ hôi, rùng mình,...).",
+      "xu_ly": "Theo dõi lâm sàng đều đặn, nếu cần phối hợp. Nếu cần, hiệu chỉnh liều dùng trong khi và sau khi điều trị bằng thuốc chống trầm cảm và theo dõi tỷ lệ lithi trong huyết thanh."
+    },
+    {
+      "thuoc": ["Natri valproat", "Depakine", "Acid valproic", "Valpromid", "Depamide"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp các thuốc có thể độc với gan (cộng hợp các tác dụng không mong muốn).",
+      "xu_ly": "Khi phối hợp hai thuốc độc với gan, hoặc theo dõi chặt chẽ chức năng gan (ASAT, ALAT, phosphatase kiềm, bilirubin) hoặc hoãn, nếu có thể, một trong hai cách trị liệu. Xác minh là người bệnh không uống rượu đều đặn và không có tiền sử viêm gan do virus. Các triệu chứng lâm sàng chính không đặc hiệu: buồn nôn, sốt, vàng da,... Nếu có sự phối hợp ban da, ngứa và hạch to, báo hiệu khả năng bệnh do thuốc. Phân biệt rõ, theo các kết quả thử nghiệm sinh học, nguy cơ xuất hiện viêm gan tiêu tế bào không phục hồi với viêm gan ứ mật phục hồi được khi ngừng dùng thuốc."
+    },
+    {
+      "thuoc": ["Phenytoin", "Dilantin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần buồn ngủ. Ngoài ra, giảm tỷ lệ paroxetin trong huyết tương có thể làm thay đổi đáp ứng điều trị.",
+      "xu_ly": "Lưu ý các nguy cơ này để hiệu chỉnh liều dùng hai thuốc, nếu cần phối hợp. Chú ý đến giảm tỉnh táo ở người lái xe và người vận hành máy. Khuyên không uống rượu và không tự ý dùng thuốc hoặc các chế phẩm có rượu."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 2,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, kéo theo tăng tác dụng an thần buồn ngủ. Tương tác dược lực.",
+      "xu_ly": "Chú ý đến giảm tỉnh táo ở người lái xe và người vận hành máy. Khuyên không uống thêm rượu và không tự ý dùng thuốc hoặc chế phẩm chứa rượu."
+    },
+    {
+      "thuoc": [
+        "Warfarin", "Coumadin", "Acenocoumarol", "Sintrom", "Phenprocoumon", "Marcumar"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Do liên kết mạnh với protein huyết tương, thuốc phối hợp có thể thế chỗ các kháng vitamin K, đặc biệt là acenocoumarol (Sintrom). Nguy cơ chảy máu.",
+      "xu_ly": "Theo dõi tỷ lệ prothrombin hay tỷ lệ chuẩn hóa quốc tế -INR và hiệu chỉnh liều thuốc uống chống đông máu khi bắt đầu, khi đang điều trị và trong 8 ngày sau khi ngừng paroxetin."
+    },
+    {
+      "thuoc": [
+        "Dextropropoxyphen", "Interferon alpha tái tổ hợp", "Methadon", "Dolophine", "Morphin", "Morphin sulfat", "Sevredol", "MS Contin", "Morphin hydrochlorid", "Morphin chlorid", "Promethazin", "Phenergan", "Diphenhydramin", "Benadryl"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng tác dụng ức chế hệ thần kinh trung ương, dẫn đến tăng tác dụng an thần buồn ngủ. Tương tác dược lực.",
+      "xu_ly": "Lưu ý nguy cơ này để hiệu chỉnh liều hai thuốc. Chú ý đến giảm tỉnh táo ở người lái xe và người vận hành máy. Khuyên không uống rượu và không tự ý dùng thuốc hoặc chế phẩm có rượu."
+    }
+  ]
+},
+{
+  "hoat_chat": "Penicilamin hoặc thuốc tương tự",
+  "mo_ta": "Tác nhân tạo phức với các cation hoá trị hai, cũng được dùng trong điều trị viêm đa khớp dạng thấp và có một nhóm thiol trong cấu trúc.",
+  "cac_thuoc_trong_nhom": [
+    "Penicillamin", "Cuprenil", "Trolovol"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ cho con bú: Thiếu dữ liệu. Thời kỳ mang thai: Nguy cơ dị dạng xương (cân nhắc kỹ ở bệnh Wilson). Lupus ban đỏ, các bệnh viêm da nặng, quá mẫn với thành phần, tiền sử tai biến nặng với các thiol."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Các bệnh máu: Nguy cơ giảm bạch cầu, giảm tiểu cầu, mất bạch cầu hạt. Suy thận: Nguy cơ tổn thương thận nặng thêm. Nhược cơ: Tăng triệu chứng nhược cơ."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Gentamicin", "Garamycin", "Amikacin", "Amikin", "Tobramycin", "Nebcin", "Netilmicin", "Netromicin", "Kanamycin", "Foscarnet", "Foscavir"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tăng nguy cơ độc với thận, do phối hợp hai thuốc có tiềm năng độc với thận. Cộng hợp tác dụng không mong muốn.",
+      "xu_ly": "Nên hiệu chỉnh liều aminosid theo độ thanh lọc creatinin, theo dõi đặc biệt ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Vàng", "Gold"],
+      "muc_do": 3,
+      "phan_tich": "Tăng các nguy cơ độc với thận, các rối loạn về huyết học và ban da.",
+      "xu_ly": "Cân nhắc kỹ lợi ích/nguy cơ, theo dõi phối hợp ở cơ sở chuyên khoa nếu không tránh được."
+    },
+    {
+      "thuoc": ["Amphotericin B"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp amphotericin B tiêm với các chất độc với tủy đòi hỏi phải rất thận trọng. Nguy cơ thiếu máu và các rối loạn khác về huyết học.",
+      "xu_ly": "Nếu cần phối hợp, nên theo dõi cẩn thận công thức máu và, nếu cần, thì tiến hành giảm liều."
+    },
+    {
+      "thuoc": [
+        "Azathioprin", "Imuran", "Cisplatin", "Platinex", "Cyclophosphamid", "Endoxan", "Doxorubicin", "Adriamycin", "Fluorouracil", "5-FU", "Melphalan", "Alkeran", "Mercaptopurin", "Purinethol", "Methotrexat", "Methotrexat Ebewe", "Vincristin", "Oncovin", "Dactinomycin", "Cosmegen"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu, do ức chế tuỷ xương, do các tác dụng cộng hợp, có thể dẫn đến mất bạch cầu hạt.",
+      "xu_ly": "Nếu có thể, tránh phối hợp. Nếu cần phối hợp, nên dùng các liều thấp cho mỗi thuốc và theo dõi cẩn thận công thức máu. Phối hợp này do các chuyên gia thực hiện và thường các phác đồ điều trị đã được thiết lập tốt."
+    },
+    {
+      "thuoc": [
+        "Carmustin", "BiCNU"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu, do ức chế tuỷ xương, do các tác dụng cộng hợp, có thể dẫn đến bất sản tuỷ.",
+      "xu_ly": "Nếu cần phối hợp, nên dùng liều thấp cho mỗi thuốc và theo dõi cẩn thận công thức máu."
+    },
+    {
+      "thuoc": ["Clozapin", "Leponex"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu, do ức chế tuỷ xương, do các tác dụng hiệp đồng, có thể dẫn đến mất bạch cầu hạt. Chỉ dùng đơn độc clozapin cũng có thể mất bạch cầu hạt nặng, thậm chí tử vong (độc tính miễn dịch).",
+      "xu_ly": "Nếu cần phối hợp, nên dùng các liều thấp cho mỗi thuốc. Không thể dự đoán sự xuất hiện mất bạch cầu hạt khi dùng clozapin. Việc theo dõi cẩn thận huyết đồ, thường làm khi dùng một thuốc kìm tế bào, vẫn có giá trị. Tuy vậy, người bệnh phải được thông báo nếu thấy hơi sốt, viêm họng và loét miệng thì phải ngừng điều trị bằng clozapin."
+    },
+    {
+      "thuoc": [
+        "Dactinomycin", "Cosmegen", "Pyrazol", "Pentostatin", "Nipent", "Trimethoprim", "Vincristin", "Oncovin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Dùng đồng thời hai thuốc ức chế tuỷ xương có thể dẫn đến các rối loạn huyết học nặng, tuỳ theo độ dài thời gian trị liệu. Cũng cần theo dõi chức năng thận.",
+      "xu_ly": "Phối hợp này cần theo dõi đều đặn về huyết học và thận."
+    },
+    {
+      "thuoc": [
+        "Chloramphenicol", "Levomicetin", "Thiamphenicol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ độc với máu, do ức chế tuỷ xương, do tác dụng cộng hợp, có thể dẫn đến bất sản tuỷ. Chỉ dùng đơn độc dẫn chất phenicol cũng có thể bị mất bạch cầu hạt nặng, thậm chí tử vong (độc tính miễn dịch).",
+      "xu_ly": "Nếu cần phối hợp, nên dùng những liều thấp cho mỗi thuốc. Không thể dự đoán sự xuất hiện mất bạch cầu hạt khi dùng các dẫn chất phenicol. Việc theo dõi cẩn thận huyết đồ, thường làm với việc dùng một thuốc kìm tế bào, vẫn có giá trị. Tuy vậy, người bệnh phải được thông báo là nếu thấy hơi sốt, đau họng và loét trong miệng thì phải ngừng điều trị bằng thuốc phenicol."
+    },
+    {
+      "thuoc": ["Digoxin", "Lanoxin"],
+      "muc_do": 2,
+      "phan_tich": "Penicilamin làm giảm nồng độ digoxin trong huyết thanh, nên có thể làm giảm tác dụng dược lý của nó. Cơ chế chưa rõ.",
+      "xu_ly": "Theo dõi nồng độ digoxin trong huyết thanh. Nếu thấy đáp ứng lâm sàng giảm, cần nâng cao liều digoxin lên."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Interleukin chỉ được dùng ở cơ sở chuyên khoa. Nguy cơ cộng hợp các tác dụng độc với thận và ức chế tuỷ xương của hai thuốc.",
+      "xu_ly": "Trị liệu bằng interleukin chỉ được tiến hành trong cơ sở chuyên khoa, do mức nghiêm trọng của chỉ định. Cân nhắc các tương tác tương đối theo tình trạng chung của người bệnh. Nếu không thể hoãn một trong hai loại thuốc, theo dõi cẩn thận và thường xuyên ion đồ, độ thanh lọc creatinin và công thức máu."
+    },
+    {
+      "thuoc": [
+        "Aluminium hydroxide", "Magnesium hydroxide", "Maalox", "Gastropulgite", "Phosphalugel", "Than hoạt"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Giảm hấp thu penicilamin bởi các kháng acid (tới 66%).",
+      "xu_ly": "Cần uống hai thuốc cách nhau ít nhất 2 giờ. Thuốc kháng acid thường phải cho uống sau khi ăn 1 giờ 30 phút, vì thức ăn là nguồn gốc tăng tiết dịch vị."
+    },
+    {
+      "thuoc": ["Pyridoxin", "Vitamin B6"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ thiếu máu hay viêm thần kinh ngoại biên khi dùng penicilin kéo dài do đối kháng hay do tăng đào thải pyridoxin.",
+      "xu_ly": "Khi điều trị penicilin kéo dài, có thể cần dùng pyridoxin trong quá trình điều trị tuỳ theo sự xuất hiện các triệu chứng."
+    },
+    {
+      "thuoc": ["Sắt", "Ferrous sulfate", "Sideral", "Tardyferon"],
+      "muc_do": 2,
+      "phan_tich": "Giảm hấp thu penicilamin do sắt (tới 35%).",
+      "xu_ly": "Khuyên người bệnh uống hai thuốc cách xa nhau ít nhất 2 giờ."
+    }
+  ]
+},
+{
+  "hoat_chat": "Pentagastrin",
+  "mo_ta": "Chất tương tự gastrin về cấu trúc, dùng làm thuốc chẩn đoán trong thăm dò chức năng tiết dịch vị.",
+  "cac_thuoc_trong_nhom": [
+    "Pentagastrin", "Peptavlon"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú/mang thai: Vì thận trọng, do không có các dữ liệu trong y văn về thuốc này. Loét dạ dày - tá tràng - viêm dạ dày: Ngoại trừ các hoàn cảnh rất đặc biệt và ở cơ sở bệnh viện, chống chỉ định nghiêm ngặt thuốc này trong các loét thủng hay chảy máu dạ dày - tá tràng mới xảy ra. Quá mẫn cảm với thuốc."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Lansoprazol", "Omeprazol", "Belifax", "Lokit", "Lomac", "Losec", "Losec Mups", "Meprasac", "Mepraz", "Ocid", "Odasol", "Olit 20", "Ome 20", "Omeral", "Omenat", "Omepar", "Omeprazole", "Omez", "Omicap", "Omizac", "OMP", "Omzol", "Probitor", "Protoloc 20", "Pylobact", "Romesec", "Stomex", "Zerocid"],
+      "muc_do": 3,
+      "phan_tich": "Các chất ức chế bơm proton có thể đối kháng với tác dụng dược lý của pentagastrin.",
+      "xu_ly": "Sau khi dùng pentagastrin ít nhất 96 giờ mới được dùng thuốc ức chế bơm proton."
+    },
+    {
+      "thuoc": ["Cimetidin", "Tagamet", "Ranitidin", "Zantac"],
+      "muc_do": 3,
+      "phan_tich": "Khả năng đối kháng giữa tác dụng dược lý của pentagastrin và của thuốc kháng H2.",
+      "xu_ly": "Khuyên người bệnh uống sau khi dùng pentagastrin ít nhất 24 giờ mới được dùng thuốc kháng H2."
+    },
+    {
+      "thuoc": ["Aluminium hydroxide", "Magnesium hydroxide", "Maalox", "Gastropulgite", "Phosphalugel", "Than hoạt"],
+      "muc_do": 3,
+      "phan_tich": "Khả năng giảm hấp thu pentagastrin và giảm tác dụng của thuốc.",
+      "xu_ly": "Khuyên người bệnh uống 2 thuốc cách nhau ít nhất 4 giờ."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Pentamidin",
+  "mo_ta": "Thuốc diệt trypanosom ngoại trừ Trypanosoma cruzi, cũng tác dụng với Leishmania, Blastomyces dermatis và Pneumocystis carinii (bệnh phổi ở người bệnh suy giảm miễn dịch).",
+  "cac_thuoc_trong_nhom": [
+    "Pentamidin", "Pentacarinat"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ mang thai: Cần tránh do thận trọng, không có cứ liệu ở phụ nữ và do thấy chậm cốt hoá ở thỏ. Suy hô hấp; hen: Nguy cơ co thắt phế quản với dạng thuốc khí dung. Ở người hen, xem xét việc dùng trước một thuốc giãn phế quản."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Tiểu đường: Tăng cường theo dõi khi tiểu đường. Tăng huyết áp: Tăng cường theo dõi khi rối loạn huyết áp. Suy gan: Tăng cường theo dõi khi suy gan. Suy thận: Cần theo dõi chức năng thận."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Sultoprid", "Dogmatyl"],
+      "muc_do": 4,
+      "phan_tich": "Trong nhóm benzamid, chỉ có sultoprid (Barnetil ®) có thể có nguy cơ. Mọi thuốc giảm lực co cơ (gây nhịp tim chậm) có thể dẫn đến gia tăng nguy cơ rối loạn nhịp thất, nhất là các cơn xoắn đỉnh, do các tính chất điện - sinh lý của sultoprid thêm vào.",
+      "xu_ly": "Chống chỉ định và phải cấm phối hợp này."
+    },
+    {
+      "thuoc": ["Bretylium", "Vincamin"],
+      "muc_do": 4,
+      "phan_tich": "Gia tăng nguy cơ xoắn đỉnh do cộng hợp tác dụng điện - sinh lý học. Giảm kali máu, nhịp tim chậm và khoảng QT dài đã có sẵn (chỉ nhìn thấy trên điện tâm đồ) là các yếu tố thuận lợi cho xuất hiện xoắn đỉnh. Xoắn đỉnh là một dạng nhịp thất đặc biệt, có thể xuất hiện từng cơn rất ngắn (vài giây, mệt thỉu: cảm giác ngất nhưng không mất tri giác).",
+      "xu_ly": "Chống chỉ định và không được kê đơn phối hợp có nguy cơ chết người này."
+    },
+    {
+      "thuoc": [
+        "Erythromycin", "Apo-Erythro", "Ery", "Eryacne", "Erycin", "Erythrocine", "Erythromycin Domesco", "Stiemycin"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Tăng nguy cơ xoắn đỉnh bởi tác dụng cộng hợp chỉ được mô tả với erythromycin tiêm tĩnh mạch. Hạ kali máu, nhịp tim chậm và khoảng QT dài (trên điện tâm đồ) là các yếu tố thuận lợi cho xuất hiện xoắn đỉnh. Xoắn đỉnh là một dạng nhịp thất đặc biệt, có thể xuất hiện từng cơn rất ngắn (vài giây, mệt thỉu: cảm giác ngất nhưng không mất tri giác). Trong họ macrolid, chỉ có erythromycin, đặc biệt là dạng tiêm tĩnh mạch, có thể dẫn đến các rối loạn nhịp tim (kéo dài khoảng QT, ngoại tâm thu thất, xoắn đỉnh, blốc nhĩ thất).",
+      "xu_ly": "Chống chỉ định và không được kê đơn phối hợp này, vì có khả năng gây tử vong. Ngay cả khi dùng một mình, erythromycin tiêm tĩnh mạch cũng có thể dẫn đến rối loạn nhịp tim. Không nên tiêm cả liều ngay một lúc, mà nên truyền tĩnh mạch liên tục hay ngắt đoạn, thời gian của mỗi lần truyền ít nhất phải 60 phút."
+    },
+    {
+      "thuoc": ["Sparfloxacin"],
+      "muc_do": 4,
+      "phan_tich": "Gia tăng nguy cơ xoắn đỉnh. Xoắn đỉnh là một dạng nhịp thất đặc biệt, có thể xuất hiện từng cơn rất ngắn (vài giây, mệt thỉu: cảm giác ngất nhưng không mất tri giác), đôi khi, tiến triển thành rung thất chết người.",
+      "xu_ly": "Nên tránh phối hợp thuốc. Nên chọn một fluoroquinolon khác hoặc một thuốc khác phối hợp tùy theo mục tiêu điều trị. Nếu phối hợp này tuyệt đối cần, bắt buộc phải theo dõi lâm sàng và điện tâm đồ."
+    },
+    {
+      "thuoc": ["Astemizol", "Hismanal"],
+      "muc_do": 4,
+      "phan_tich": "Tương tác chỉ được mô tả với astemizol (Hismanal ®), một thuốc kháng histamin H1 được coi là không an thần: tăng nguy cơ xuất hiện xoắn đỉnh. Xoắn đỉnh là một dạng nhịp thất đặc biệt, có thể xuất hiện từng cơn rất ngắn (vài giây, mệt thỉu: cảm giác ngất mà không mất tri giác), đôi khi, tiến triển thành rung thất, chết người.",
+      "xu_ly": "Chống chỉ định phối hợp này. Nên chọn một kháng histamin không an thần khác không tạo xoắn đỉnh (cetirizin, loratadin)."
+    },
+    {
+      "thuoc": [
+        "Amiodaron", "Cordarone", "Bepridil", "Corticoid khoáng", "Furosemid", "Lasix", "Glucocorticoid", "Halofantrin", "Tetracosactid", "Thuốc nhuận tràng kích thích"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp thuốc. Hạ kali máu, nhịp tim chậm và khoảng QT dài (trên điện tâm đồ) là các yếu tố thuận lợi cho xuất hiện xoắn đỉnh. Xoắn đỉnh là một nhịp thất đặc biệt, có thể xuất hiện thành từng cơn rất ngắn (vài giây, mệt thỉu: cảm giác ngất nhưng không mất tri giác), đôi khi tiến triển thành rung thất.",
+      "xu_ly": "Cần tránh phối hợp này. Dùng các thuốc không dẫn đến xoắn đỉnh. Nếu cần phối hợp, nên theo dõi liên tục (monitoring) khoảng QT và tiến hành theo dõi kali máu. Chú ý các dấu hiệu lâm sàng có thể báo trước hạ kali máu như: mệt mỏi, yếu cơ, co cứng cơ."
+    },
+    {
+      "thuoc": ["Amphotericin B"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp với amphotericin B bằng đường tiêm. Hạ kali máu, nhịp tim chậm và khoảng QT dài có sẵn (chỉ thấy trên điện tâm đồ) là các yếu tố thuận lợi cho sự xuất hiện xoắn đỉnh. Xoắn đỉnh là một dạng nhịp thất đặc biệt, có thể xuất hiện cơn rất ngắn (vài giây, mệt thỉu: cảm giác ngất nhưng không mất tri giác). Phối hợp amphotericin B tiêm với các chất độc với tuỷ khác đòi hỏi phải rất thận trọng. Nguy cơ thiếu máu hay các rối loạn khác về huyết học.",
+      "xu_ly": "Cần tránh phối hợp. Dùng các thuốc không dẫn đến xoắn đỉnh. Nếu cần phối hợp, nên bố trí theo dõi liên tục (monitoring) khoảng QT và tiến hành theo dõi kali máu. Chú ý các dấu hiệu lâm sàng có thể báo trước hạ kali máu như mệt mỏi, yếu cơ, co cứng cơ."
+    },
+    {
+      "thuoc": ["Disopyramid", "Rythmodan", "Quinidin", "Quinidex"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp thuốc, do hiệp đồng tác dụng điện - sinh lý. Hạ kali máu, nhịp tim chậm, khoảng QT dài (trên điện tâm đồ) là các yếu tố thuận lợi cho xuất hiện xoắn đỉnh. Xoắn đỉnh là một loại nhịp thất đặc biệt, có thể xuất hiện từng cơn rất ngắn (vài giây, mệt thỉu: cảm giác ngất nhưng không mất tri giác).",
+      "xu_ly": "Cần tránh phối hợp. Dùng các thuốc không dẫn đến xoắn đỉnh. Nếu cần phối hợp, nên bố trí theo dõi liên tục (monitoring) khoảng QT và tiến hành theo dõi đều đặn kali máu. Chú ý các dấu hiệu lâm sàng có thể báo trước hạ kali máu, như mệt mỏi, yếu cơ, co cứng cơ."
+    },
+    {
+      "thuoc": ["Sotalol", "Sotacor"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp hai thuốc, được tạo thuận lợi bởi hạ kali máu. Hạ kali máu, nhịp tim chậm, một khoảng QT dài (trên điện tâm đồ) là các yếu tố tạo dễ dàng cho xuất hiện xoắn đỉnh. Xoắn đỉnh là một loại nhịp thất đặc biệt, có thể xuất hiện từng cơn rất ngắn (vài giây, mệt thỉu: cảm giác ngất nhưng không mất tri giác).",
+      "xu_ly": "Cần tránh phối hợp. Dùng các thuốc không dẫn đến xoắn đỉnh. Nếu cần phối hợp, nên bố trí theo dõi liên tục (monitoring) khoảng QT và tiến hành theo dõi đều đặn kali máu. Chú ý các dấu hiệu lâm sàng có thể báo trước hạ kali máu như mệt mỏi, yếu cơ, co cứng cơ."
+    },
+    {
+      "thuoc": [
+        "Furosemid", "Lasix", "Hydrochlorothiazid", "Hypothiazid", "Indapamid", "Fludex", "Chlortalidon", "Hygroton", "Xipamid", "Diurex", "Zipix"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp hai thuốc. Hạ kali máu, nhịp tim chậm, khoảng QT dài (trên điện tâm đồ) là các yếu tố thuận lợi cho xuất hiện xoắn đỉnh. Xoắn đỉnh là một loại nhịp thất đặc biệt, có thể xuất hiện từng cơn rất ngắn (vài giây, mệt thỉu: cảm giác ngất nhưng không mất tri giác), tiến triển đôi khi thành rung thất chết người.",
+      "xu_ly": "Cần tránh phối hợp. Dùng các thuốc không dẫn đến xoắn đỉnh. Nếu cần phối hợp, nên bố trí theo dõi liên tục (monitoring) khoảng QT và tiến hành theo dõi đều đặn kali máu. Chú ý các triệu chứng lâm sàng có thể báo trước hạ kali máu như: mệt mỏi, yếu cơ, co cứng cơ."
+    },
+    {
+      "thuoc": ["Zalcitabin", "Hivid"],
+      "muc_do": 3,
+      "phan_tich": "Đã thấy một trường hợp tử vong, do viêm gan tối cấp, với pentamidin tiêm tĩnh mạch khi đang dùng zalcitabin.",
+      "xu_ly": "Nếu điều trị viêm phổi do Pneumocystis carinii bằng pentamidin tiêm tĩnh mạch, phải ngừng điều trị bằng zalcitabin."
+    },
+    {
+      "thuoc": ["Didanosin", "Videx"],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ xuất hiện viêm tụy do hiệp đồng tác dụng không mong muốn. Tương tác dược lực học.",
+      "xu_ly": "Cần theo dõi lâm sàng đều đặn và định lượng amylase máu (amylase là enzym có nguồn gốc từ tụy hay nước bọt, xúc tác phân giải tinh bột thành maltose)."
+    },
+    {
+      "thuoc": ["Foscarnet", "Foscavir"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ hạ calci máu nặng.",
+      "xu_ly": "Theo dõi cẩn thận ion đồ và độ thanh lọc creatinin. Không dùng foscarnet với pentamidin tiêm tĩnh mạch. Theo dõi calci máu và bổ sung calci theo nhu cầu."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Interleukin chỉ có thể được dùng ở cơ sở chuyên khoa. Nguy cơ hiệp đồng tác dụng độc với thận của hai thuốc.",
+      "xu_ly": "Việc điều trị bằng interleukin chỉ có thể tiến hành ở cơ sở chuyên khoa, do tính chất quan trọng của chỉ định. Tương tác cần được cân nhắc theo thể trạng chung của người bệnh. Nếu không thể hoãn một trong hai thuốc, theo dõi cẩn thận ion đồ và độ thanh lọc creatinin."
+    },
+    {
+      "thuoc": ["Zidovudin", "Retrovir"],
+      "muc_do": 2,
+      "phan_tich": "Gia tăng nồng độ zidovudin trong huyết tương do giảm chuyển hoá chất này.",
+      "xu_ly": "Giảm liều zidovudin. Theo dõi tác dụng không mong muốn liên quan đến zidovudin (theo dõi huyết học và lâm sàng)."
+    }
+  ]
+},
+{
+  "hoat_chat": "Pentostatin",
+  "mo_ta": "Chất ức chế adenosin desaminase (ADA), enzym chuyển hoá các purin. Được dùng trong bệnh bạch cầu tế bào tóc ở người lớn.",
+  "cac_thuoc_trong_nhom": [
+    "Pentostatin", "Nipent"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ cho con bú: Chống chỉ định do nguy cơ tác dụng không mong muốn tiềm ẩn. Thời kỳ mang thai: Có tác dụng sinh quái thai ở chuột cống và chuột nhắt, cần tránh dùng. Quá mẫn với chế phẩm."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Trẻ em: Không có cứ liệu. Suy thận: Có thể gây độc thận, tăng creatinin máu. Nhiễm khuẩn đang tiến triển."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy gan: Đã mô tả tác dụng không mong muốn trên gan."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Vaccin sống giảm độc lực"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ phát triển nhiễm khuẩn tương ứng với vaccin do pentostatin gây suy giảm miễn dịch.",
+      "xu_ly": "Dùng hai thuốc cách nhau từ 3 tháng tới 1 năm và tuỳ theo mức độ suy giảm miễn dịch."
+    },
+    {
+      "thuoc": ["Alopurinol", "Zyloric", "Colchicin", "Probenecid"],
+      "muc_do": 2,
+      "phan_tich": "Pentostatin có thể làm tăng acid uric máu. Cần phải hiệu chỉnh liều của thuốc chữa thống phong để kiểm soát tăng acid uric máu.",
+      "xu_ly": "Nên dùng alopurinol (ức chế tổng hợp acid uric) hơn là các thuốc đào thải acid uric do nguy cơ acid uric có thể gây bệnh thận."
+    },
+    {
+      "thuoc": [
+        "Azathioprin", "Imuran", "Carmustin", "BiCNU", "Cisplatin", "Platinex", "Clozapin", "Leponex", "Dactinomycin", "Cosmegen", "Fluorouracil", "5-FU", "Interferon alpha tái tổ hợp", "Melphalan", "Alkeran", "Mercaptopurin", "Purinethol", "Procarbazin", "Natulan"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Dùng cùng lúc hai thuốc ức chế tuỷ xương có thể dẫn đến các rối loạn huyết học nặng tuỳ theo thời gian điều trị.",
+      "xu_ly": "Phối hợp cần được theo dõi đều đặn về huyết học."
+    },
+    {
+      "thuoc": [
+        "Cyclophosphamid", "Endoxan", "Doxorubicin", "Adriamycin", "Levamisol", "Thiotepa", "Vincristin", "Oncovin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu, do ức chế tuỷ xương, do tác dụng hiệp đồng, có thể dẫn đến mất bạch cầu hạt.",
+      "xu_ly": "Tránh phối hợp nếu có thể. Nếu cần phối hợp, nên dùng liều thấp cho mỗi thuốc và theo dõi cẩn thận công thức máu. Sự phối hợp này liên quan đến các chuyên gia và các phác đồ điều trị thường đã được xác lập sẵn."
+    },
+    {
+      "thuoc": ["Interleukin 2 tái tổ hợp"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc gây ức chế tuỷ xương.",
+      "xu_ly": "Interleukin chỉ được dùng trong cơ sở chuyên khoa, do mức độ trầm trọng về bệnh lý. Tương tác phải cân nhắc vì mọi chức năng của cơ thể phải được theo dõi liên tục. Dù sao, việc theo dõi huyết đồ là bắt buộc."
+    },
+    {
+      "thuoc": ["Penicilamin", "Cuprenil", "Trolovol"],
+      "muc_do": 2,
+      "phan_tich": "Dùng cùng lúc hai thuốc gây ức chế tuỷ xương có thể dẫn đến các rối loạn huyết học nặng theo thời gian điều trị. Cũng cần theo dõi chức năng thận.",
+      "xu_ly": "Phối hợp cần được theo dõi đều đặn về huyết học và về thận."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Pentoxyfyllin",
+  "mo_ta": "Dẫn chất của xanthin. Thuốc giãn mạch chống thiếu máu cục bộ, được dùng trong chứng tập tễnh cách hồi.",
+  "cac_thuoc_trong_nhom": [
+    "Pentoxyfyllin", "Torental"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ mang thai: Do thận trọng, không nên dùng. Quá mẫn."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy mạch vành: Không nên dùng dạng tiêm ở giai đoạn nhồi máu cơ tim cấp."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Thời kỳ cho con bú: Thiếu dữ liệu. Suy thận: Giảm liều khi suy thận nặng. Huyết áp thấp."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Phenylbutazon", "Butazolidin", "Aminopyrin", "Antipyrin", "Aspirin", "Acetylsalicylic acid", "Ibuprofen", "Nurofen", "Naproxen", "Aleve", "Diclofenac", "Voltaren", "Ketoprofen", "Profénid", "Piroxicam", "Feldene", "Meloxicam", "Mobic"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Do pentoxyphilin có khả năng gây chảy máu, nên phối hợp với mọi thuốc có tính chất chống kết tập tiểu cầu hay chống đông máu đều làm tăng nguy cơ chảy máu. Nguy cơ này tăng lên do tác dụng xâm hại của các thuốc chống viêm không steroid lên niêm mạc dạ dày (xuất huyết đường tiêu hoá).",
+      "xu_ly": "Nếu cần phối hợp, phải theo dõi bằng các thử nghiệm đông máu thích hợp (thời gian Howell và thời gian cephalin kaolin) trong và sau trị liệu. Nếu có thể, tìm một giải pháp điều trị khác ở các người bệnh có tiền sử loét dạ dày."
+    },
+    {
+      "thuoc": [
+        "Alteplase", "Actilyse", "Tenecteplase", "Metalyse", "Reteplase", "Retavase"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp với mọi thuốc có tính chất chống kết tập tiểu cầu hay chống đông làm tăng nguy cơ chảy máu.",
+      "xu_ly": "Thuốc tan huyết khối thường do thầy thuốc chuyên khoa chỉ định. Nếu không tránh được phối hợp này, cần theo dõi các xét nghiệm đông máu thích hợp (thời gian Howell và thời gian cephalin kaolin). Nếu có thể, nên tìm một giải pháp điều trị khác."
+    },
+    {
+      "thuoc": ["Ticlopidin", "Ticlid"],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp với mọi thuốc có tính chất chống kết tập tiểu cầu hoặc chống đông máu đều làm tăng nguy cơ chảy máu.",
+      "xu_ly": "Nếu cần thực hiện phối hợp thuốc này, phải theo dõi thông qua các thử nghiệm về đông máu thích hợp (thời gian Howell, thời gian cephalin kaolin) trong và sau khi điều trị bằng ticlopidin. Nếu có thể, nên tìm một giải pháp điều trị khác."
+    },
+    {
+      "thuoc": [
+        "Indometacin", "Indocid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ chảy máu.",
+      "xu_ly": "Theo dõi chủ yếu thời gian chảy máu nếu sự phối hợp này phải kéo dài. Hỏi người bệnh về các tiền sử loét dạ dày. Chú ý ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Warfarin", "Coumadin", "Acenocoumarol", "Sintrom", "Phenprocoumon", "Marcumar"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nguy cơ chảy máu (chưa rõ cơ chế).",
+      "xu_ly": "Tăng cường theo dõi đều đặn thời gian Quick và/ hoặc tỷ lệ chuẩn quốc tế, đặc biệt là vào lúc đầu, trong khi hay lúc ngừng sự phối hợp này. Hiệu chỉnh liều theo các kết quả sinh học."
+    },
+    {
+      "thuoc": ["Dextran"],
+      "muc_do": 1,
+      "phan_tich": "Dextran là chất ức chế tiểu cầu. Với các thuốc có các tính chất chống đông máu và chống kết tập tiểu cầu, nguy cơ chảy máu phải được tránh hay được kiểm soát chặt chẽ.",
+      "xu_ly": "Nên tránh phối hợp các thuốc này với nhau do khó khăn về theo dõi việc giảm đông máu như mong muốn và nguy cơ chảy máu tiềm ẩn."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Phenazon",
+  "mo_ta": "Thuốc giảm đau hạ sốt, còn gọi là antipyrin.",
+  "cac_thuoc_trong_nhom": [
+    "Phenazon", "Otipax"
+  ],
+  "chu_y_khi_chi_dinh": {},
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Warfarin", "Coumadin", "Acenocoumarol", "Sintrom", "Phenprocoumon", "Marcumar"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng của kháng vitamin K bị giảm vì antipyrin là một chất cảm ứng enzym tiềm năng làm tăng chuyển hoá và độ thanh lọc, đặc biệt với warfarin, như vậy giảm tác dụng của thuốc chống đông máu.",
+      "xu_ly": "Antipyrin (phenazon) có mặt trong một số biệt dược được kê đơn hay tự dùng và luôn luôn dưới dạng thuốc phối hợp để giảm đau và hạ sốt. Khi dùng phối hợp với thuốc uống chống đông máu, phải giám sát tỷ lệ chuẩn quốc tế (INR) hoặc tỷ lệ protrombin và nếu cần điều chỉnh liều lúc bắt đầu, trong khi và sau khi điều trị bằng thuốc có chứa antipyrin. Khuyên người bệnh uống thuốc chống đông máu (nhất là warfarin), không dùng chế phẩm có antipyrin."
+    }
+  ]
+}
+,
+{
+  "hoat_chat": "Phenicol",
+  "mo_ta": "Kháng sinh diệt khuẩn, đầu bảng là cloramphenicol.",
+  "cac_thuoc_trong_nhom": [
+    "Cloramphenicol", "Cloraxin", "Chlorocid", "Leucomycine", "Lykacetin-S", "Cloromycetin", "Tifocin", "Thiampenicol", "Thiophenicol"
+  ],
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Tiền sử suy tuỷ, quá mẫn với chế phẩm."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Nguy cơ hội chứng xám cho trẻ bú mẹ. Trẻ em/ mang thai: Nguy cơ ngộ độc với cloramphenicol cuối thai kỳ và ở trẻ sơ sinh dưới 6 tháng. Bệnh máu: Do tác dụng ức chế tủy xương. Suy thận: Nguy cơ dễ bị suy tuỷ, chống chỉ định khi suy thận nặng."
+    },
+    "thuoc_trong": {
+      "muc_do": 2,
+      "noi_dung": "Suy gan: Do chuyển hoá ở gan."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Gentamicin", "Garamycin", "Amikacin", "Amikin", "Tobramycin", "Nebcin", "Netilmicin", "Netromicin", "Kanamycin", "Penicillin", "Amoxicillin", "Ampicillin", "Oxacillin", "Lincosamid", "Clindamycin", "Lincomycin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng kìm khuẩn của các phenicol có thể đối kháng với tác dụng diệt khuẩn của thuốc phối hợp. Tác dụng diệt khuẩn thể hiện trên các vi khuẩn ở giai đoạn phát triển theo hàm số mũ. Sự đối kháng này có thể tác hại trong điều trị viêm màng não mà ta cần can thiệp nhanh và mạnh.",
+      "xu_ly": "Phải chú ý đến nguy cơ này trong bối cảnh sinh lý bệnh học, sự phối hợp có thể thực hiện tuỳ theo các thuốc và các mầm gây bệnh (tính đến các nồng độ tối thiểu ức chế- MIC)."
+    },
+    {
+      "thuoc": ["Phenytoin", "Dilantin"],
+      "muc_do": 3,
+      "phan_tich": "ức chế chuyển hoá phenytoin ở gan bởi cloramphenicol. Thêm nữa, chuyển hoá cloramphenicol sẽ tăng lên do phenytoin, dẫn đến giảm hoạt lực của nó.",
+      "xu_ly": "Nồng độ phenytoin tăng đáng kể (2 đến 4 lần nồng độ ban đầu) vài ngày sau khi cho dùng cloramphenicol. Nên tránh phối hợp."
+    },
+    {
+      "thuoc": ["Rượu"],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng giống disulfiram cộng thêm nguy cơ độc với gan: một tỷ lệ bất thường acetaldehyd tích tụ trong các mô (ức chế enzym), kéo theo một số dấu hiệu lâm sàng như: cơn bừng vận mạch, giãn mạch quan trọng, nhịp tim nhanh, sốt cao, buồn nôn, nôn, ban da, đôi khi hạ huyết áp và truỵ mạch. Các triệu chứng này ít nhiều quan trọng tuỳ theo lượng rượu uống vào.",
+      "xu_ly": "Trong khi điều trị với thuốc, nên tránh uống rượu và các chế phẩm hoặc thuốc có chứa rượu, do tác dụng giống disulfiram."
+    },
+    {
+      "thuoc": ["Sắt", "Ferrous sulfate", "Sideral", "Tardyferon"],
+      "muc_do": 3,
+      "phan_tich": "Giảm đáp ứng về huyết học (thất bại điều trị dùng phối hợp sắt và/hay vitamin B12) với các muối sắt do tác động của các phenicol trong tạo hồng cầu. Cần nhắc lại tác dụng ức chế tuỷ xương của cloramphenicol.",
+      "xu_ly": "Thay hay ngừng kháng sinh trong khi điều trị thiếu máu với muối sắt."
+    },
+    {
+      "thuoc": ["Synergistin"],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng kìm khuẩn của synergistin có thể đối kháng với tác dụng diệt khuẩn của các thuốc phenicol. Tác dụng diệt khuẩn biểu hiện trên các vi khuẩn ở giai đoạn phát triển theo hàm số mũ. Sự đối kháng này có thể có hại trong điều trị viêm màng não mà ta cần phải can thiệp nhanh và mạnh.",
+      "xu_ly": "Lưu ý đến nguy cơ này trong bối cảnh sinh lý bệnh học, sự phối hợp có thể thực hiện tuỳ theo các thuốc và các mầm bệnh liên quan (tính đến các nồng độ tối thiểu ức chế -MIC)."
+    },
+    {
+      "thuoc": [
+        "Warfarin", "Coumadin", "Acenocoumarol", "Sintrom", "Phenprocoumon", "Marcumar"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tương tác được mô tả với dicoumarol, acenocoumarol, và tác dụng chống đông máu tăng lên có thể là do ức chế enzym.",
+      "xu_ly": "Theo dõi tỷ lệ chuẩn hóa quốc tế -INR và tỷ lệ prothrombin và nếu cần hiệu chỉnh liều dùng lúc bắt đầu, đang dùng và sau trị liệu bằng cloramphenicol."
+    },
+    {
+      "thuoc": ["Zalcitabin", "Hivid"],
+      "muc_do": 3,
+      "phan_tich": "Có thể xuất hiện bệnh lý thần kinh ngoại vi.",
+      "xu_ly": "Theo dõi lâm sàng qua sự xuất hiện dị cảm."
+    },
+    {
+      "thuoc": ["Amphotericin B"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp amphotericin B tiêm với các thuốc độc với tuỷ khác đòi hỏi phải rất thận trọng. Nguy cơ thiếu máu hay các rối loạn khác về huyết học.",
+      "xu_ly": "Khi cần phối hợp, nên theo dõi cẩn thận huyết đồ và nếu cần thì tiến hành giảm liều."
+    },
+    {
+      "thuoc": [
+        "Azathioprin", "Imuran", "Carmustin", "BiCNU", "Cisplatin", "Platinex", "Cyclophosphamid", "Endoxan", "Dactinomycin", "Cosmegen", "Doxorubicin", "Adriamycin", "Fluorouracil", "5-FU", "Ganciclovir", "Cytovene", "Interferon alpha tái tổ hợp", "Levamisol", "Melphalan", "Alkeran", "Mercaptopurin", "Purinethol", "Methotrexat", "Methotrexat Ebewe", "Penicilamin", "Cuprenil", "Trolovol", "Procarbazin", "Natulan", "Thiotepa", "Vincristin", "Oncovin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu do ức chế tuỷ xương, do tác dụng cộng hợp, có thể dẫn đến mất bạch cầu hạt. Chỉ dùng đơn độc các thuốc phenicol cũng có thể bị mất bạch cầu hạt nặng, thậm chí tử vong (độc tính miễn dịch).",
+      "xu_ly": "Nếu cần phối hợp, nên dùng các liều thấp cho mỗi thuốc. Không thể dự đoán sự xuất hiện mất bạch cầu hạt khi dùng các thuốc phenicol. Việc theo dõi cẩn thận huyết đồ, được thực hiện bình thường khi sử dụng một chất kìm tế bào, vẫn có giá trị. Tuy nhiên, người bệnh phải được báo trước là hơi sốt, viêm họng và loét miệng thì phải ngừng trị liệu bằng các thuốc phenicol."
+    },
+    {
+      "thuoc": [
+        "Phenobarbital", "Luminal", "Pentobarbital", "Nembutal"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng của cloramphenicol có thể bị giảm (nồng độ huyết thanh giảm). Trong khi đó, tác dụng barbiturat có thể tăng. Tác dụng kéo dài vài ngày sau khi ngừng barbiturat. Tương tác xảy ra chậm. Cơ chế: chuyển hoá cloramphenicol tăng và chuyển hoá barbiturat giảm.",
+      "xu_ly": "Có thể phải tăng liều cloramphenicol. Giám sát nồng độ kháng sinh trong huyết tương và điều chỉnh liều. Nếu có biểu hiện nhiễm độc barbiturat, phải giảm liều thuốc này."
+    },
+    {
+      "thuoc": ["Clozapin", "Leponex"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng độc tính với máu, do ức chế tuỷ xương, do tác dụng cộng hợp, có thể dẫn đến mất bạch cầu hạt. Chỉ dùng đơn độc clozapin cũng có thể bị mất bạch cầu hạt nặng, thậm chí tử vong (độc tính miễn dịch).",
+      "xu_ly": "Tránh phối hợp. Nếu cần phối hợp, nên dùng các liều thấp cho mỗi thuốc. Không thể dự đoán sự xuất hiện mất bạch cầu hạt khi dùng clozapin. Việc theo dõi cẩn thận huyết đồ, thực hiện bình thường khi sử dụng một chất kìm tế bào, vẫn còn giá trị. Tuy nhiên, người bệnh phải được báo trước là nếu hơi sốt, viêm họng và loét miệng thì phải ngừng thuốc ngay."
+    },
+    {
+      "thuoc": ["Didanosin", "Videx"],
+      "muc_do": 2,
+      "phan_tich": "Viên nén didanosin có chứa một kháng acid: nguy cơ giảm hấp thu thuốc phenicol qua đường tiêu hoá tuỳ theo việc tăng pH dạ dày.",
+      "xu_ly": "Khuyên người bệnh uống hai thuốc cách nhau ít nhất 2 giờ."
+    },
+    {
+      "thuoc": ["Quinin", "Quinidin", "Mefloquin"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ làm nặng thêm những biến đổi các dòng tế bào máu (suy tuỷ).",
+      "xu_ly": "Khi phối hợp, cần theo dõi huyết đồ ở người bệnh có nguy cơ."
+    },
+    {
+      "thuoc": ["Rifampicin", "Rifadin"],
+      "muc_do": 2,
+      "phan_tich": "Nồng độ trong huyết thanh của cloramphenicol giảm dần, làm giảm tác dụng kháng khuẩn. Các tác dụng này có thể kéo dài vài ngày sau khi ngừng rifampin. Tương tác xảy ra chậm. Cơ chế: chuyển hoá cloramphenicol tăng do rifampin gây cảm ứng các enzym ở gan.",
+      "xu_ly": "Có thể phải tăng liều cloramphenicol trong khi phối hợp với rifampin, nếu chưa đạt được kết quả điều trị mong muốn."
+    },
+    {
+      "thuoc": [
+        "Tolbutamid", "Rastinon", "Chlorpropamid", "Diabinese"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tương tác đã được xác lập rõ ràng với tolbutamid và clorpropamid. Tác dụng chống tiểu đường tăng lên, có lẽ do cloramphenicol ức chế chuyển hoá ở gan. Người bệnh ít nhiều nhạy cảm với sự phối hợp này và các hệ quả đều ít nhiều quan trọng.",
+      "xu_ly": "Có nguy cơ hạ glucose máu và có những khác biệt giữa các cá nhân, nên người kê đơn phải theo dõi glucose máu. Báo cho người bệnh tăng cường tự theo dõi."
+    },
+    {
+      "thuoc": ["Zidovudin", "Retrovir"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp zidovudin với các thuốc độc với tuỷ khác đòi hỏi phải rất thận trọng. Nguy cơ thiếu máu hay các rối loạn khác về huyết học.",
+      "xu_ly": "Khi cần phối hợp, nên theo dõi cẩn thận huyết đồ và nếu cần thì phải giảm liều."
+    }
+  ]
 }
 
 
@@ -14055,7 +18509,13 @@ window.tuongTacData = [
 
 
 
-    
+
+	
+
+
+
+
+
 
 
 
