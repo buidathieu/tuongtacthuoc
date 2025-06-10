@@ -24175,6 +24175,339 @@ window.tuongTacData = [
       "xu_ly": "Do nguy cơ dược lý, không nên phối hợp các thuốc này và phải đợi ít nhất 24 giờ, kể từ lúc ngừng dùng thuốc ức chế MAO đến lúc dùng sumatriptan."
     }
   ]
+},
+{
+  "hoat_chat": "Synergistin",
+  "cac_thuoc_trong_nhom": [
+    "Pristinamycin",
+    "Pyostacine",
+    "Virginiamycin",
+    "Staphylomycine"
+  ],
+  "mo_ta": "Kháng sinh kìm khuẩn nhóm streptogramin, gồm các hợp chất như pristinamycin và virginiamycin, có tác dụng chủ yếu trên vi khuẩn Gram dương, đặc biệt tụ cầu và liên cầu. Cơ chế tác dụng là ức chế tổng hợp protein vi khuẩn bằng cách gắn vào tiểu đơn vị 50S ribosom, thường dùng phối hợp hai thành phần để tăng hiệu lực diệt khuẩn nhờ hiệu ứng hiệp đồng[1][2][5].",
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Các trường hợp khác: Quá mẫn với các synergistin."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Thời kỳ cho con bú: Khi nhiễm khuẩn ở vú với những dạng thuốc dùng tại chỗ, do trẻ bú có thể có nguy cơ đứa bé hấp thu chất này. Ngoài ra thuốc dùng toàn thân còn qua được sữa mẹ."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Cefotetan", "Cefamandol", "Cefoperazon", "Cefmetazol", "Cefmenoxin",
+        "Penicillin G", "Amoxicillin", "Ampicillin",
+        "Chloramphenicol", "Thiamphenicol"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng kìm khuẩn của các synergistin có thể đối kháng tác dụng diệt khuẩn của các thuốc này. Tác dụng diệt khuẩn này thể hiện ở vi khuẩn giai đoạn tạo thành vách tế bào vi khuẩn phát triển theo hàm mũ. Sự đối kháng này có thể có hại trong điều trị viêm màng não, cần can thiệp nhanh và mạnh.",
+      "xu_ly": "Tính tới nguy cơ này theo tình hình sinh lý bệnh cụ thể. Sự phối hợp thuốc có thể thực hiện tuỳ theo thuốc dùng và vi khuẩn gây bệnh (nồng độ tối thiểu ức chế-MIC)."
+    },
+    {
+      "thuoc": [
+        "Ciclosporin", "Sandimmun", "Neoral"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tương tác này được mô tả với pristinamycin. Tăng nồng độ ciclosporin trong huyết thanh, có thể do ức chế dị hoá ciclosporin ở gan.",
+      "xu_ly": "Theo dõi chức năng thận qua độ thanh lọc creatinin. Hiệu chỉnh liều lượng cho thích hợp trong và sau khi điều trị pristinamycin."
+    }
+  ]
+},
+{
+  "hoat_chat": "Tacrine",
+  "cac_thuoc_trong_nhom": [
+    "Tacrine",
+    "Cognex"
+  ],
+  "mo_ta": "Thuốc ức chế cholinesterase trung ương, dùng điều trị triệu chứng Alzheimer từ nhẹ đến trung bình. Tăng acetylcholine ở vỏ não bằng cách ức chế enzyme phân hủy ACh, cải thiện nhận thức nhưng không ngăn tiến triển bệnh. Thời gian đáp ứng: 1-4 tuần, hiệu quả giảm dần do mất tế bào thần kinh cholinergic.",
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Mang thai (cần ngừa thai). Quá mẫn. Tiền sử bệnh gan nặng. Hội chứng Parkinson. Tăng huyết áp không kiểm soát. Đau thắt ngực Prinzmetal."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Suy gan (tăng transaminase). Loét dạ dày-tá tràng chưa điều trị. Rối loạn dẫn truyền tim. Động kinh. Bệnh phổi tắc nghẽn."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Xét nghiệm chức năng gan 2 tuần/lần trong 18 tháng đầu. Triệu chứng hạ huyết áp, chóng mặt, rối loạn tiêu hóa."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Azathioprin", "Imuran",
+        "Carmustin", "BCNU",
+        "Dantrolen", "Dantrium",
+        "Estradiol", "Estrofem", "Estroprogestogen", "Marvelon", "Microgynon",
+        "Furosemid", "Lasix",
+        "Griseofulvin", "Grisovin",
+        "Isoniazid", "Rimifon",
+        "Clarithromycin", "Erythromycin", "Roxithromycin", "Azithromycin",
+        "Mercaptopurin", "Puri-Nethol",
+        "Methotrexat", "Trexall",
+        "Natri valproat", "Depakine",
+        "Niridazol",
+        "Noramidopyrin",
+        "Paracetamol", "Efferalgan", "Panadol",
+        "Rượu",
+        "Phenytoin", "Carbamazepin", "Valproat", "Lamotrigin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Có nguy cơ tăng độc tính với gan.",
+      "xu_ly": "Nếu cần, tăng cường theo dõi gan. Tránh các phối hợp thuốc có nguy hại cho người bệnh cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Fluvoxamin", "Luvox"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Dùng kết hợp với fluvoxamin, nồng độ tacrin trong huyết tương tăng, do đó tác dụng dược lý cùng với các tác dụng phụ cũng tăng. Cơ chế có thể do fluvoxamin ức chế chuyển hoá tacrin thông qua cytochrom P450 1A2.",
+      "xu_ly": "Nếu không thể tránh được phối hợp thuốc này, cần phải theo dõi chặt chẽ sự xuất hiện các tác dụng phụ, trong đó có độc tính với gan, khi người bệnh đang dùng tacrin bắt đầu dùng thêm fluvoxamin, hoặc khi bắt đầu dùng đồng thời cả hai thuốc. Chất ức chế chọn lọc tái nhập serotonin khác là fluoxetin không bị cytochrom P450 1A2 chuyển hoá có thể dùng thay thế trong trường hợp này."
+    },
+    {
+      "thuoc": [
+        "Atropin", "Scopolamin", "Biperiden", "Trihexyphenidyl"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng đối kháng dược lý.",
+      "xu_ly": "Nếu có thể, hoãn kê đơn thuốc kháng cholinergic phối hợp với tacrin. Nguy cơ điều trị thất bại hoàn toàn."
+    },
+    {
+      "thuoc": [
+        "Propranolol", "Inderal", "Sotalol", "Darob", "Metoprolol", "Lopressor"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng làm chậm nhịp tim của tacrin có thể cộng thêm với tác dụng này của các chất chẹn beta.",
+      "xu_ly": "Theo dõi điện tâm đồ và lâm sàng đều đặn nếu cần phối hợp thuốc."
+    },
+    {
+      "thuoc": [
+        "Mexiletin", "Mexitil", "Propafenon", "Rythmol", "Quinidin", "Quinidurule"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ nhịp tim chậm quá sức, do hiệp đồng các tác dụng làm chậm nhịp tim.",
+      "xu_ly": "Theo dõi lâm sàng đều đặn."
+    },
+    {
+      "thuoc": [
+        "Neostigmin", "Pyridostigmin", "Donepezil", "Rivastigmin", "Galantamin"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tương tác dược lực. Có hiệp đồng tác dụng cholinergic.",
+      "xu_ly": "Tăng các tác dụng không mong muốn, và nếu có thể hoãn kê đơn chất cholinergic phối hợp với tacrin."
+    },
+    {
+      "thuoc": [
+        "Theophylin", "Aminophyllin"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tương tác dược lý, giảm độ thanh lọc theophylin huyết tương, kéo theo nguy cơ quá liều.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải theo dõi nồng độ theophylin trong máu và giảm liều lượng chất này; theo dõi lâm sàng."
+    },
+    {
+      "thuoc": [
+        "Cimetidin", "Tagamet"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng nồng độ tacrin trong huyết tương, có thể do ức chế chuyển hoá của nó.",
+      "xu_ly": "Chọn một thuốc kháng H2 khác."
+    }
+  ]
+},
+{
+  "hoat_chat": "Tacrolimus",
+  "cac_thuoc_trong_nhom": [
+    "Tacrolimus",
+    "Prograf"
+  ],
+  "mo_ta": "Chất ức chế miễn dịch mạnh, dùng sau ghép cơ quan.",
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ cho con bú: Do không có thông tin. Thời kỳ mang thai: Gây quái thai ở súc vật. Các trường hợp khác: Quá mẫn với các macrolid hay với thuốc này."
+    },
+    "can_theo_doi": {
+      "muc_do": 2,
+      "noi_dung": "Suy tim/ suy gan/ suy thận: Vì các tác dụng phụ."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Ciclosporin", "Sandimmun", "Neoral"],
+      "muc_do": 4,
+      "phan_tich": "Theo một số công trình nghiên cứu, có tăng nồng độ ciclosporin hay tacrolimus trong huyết tương do ức chế chuyển hoá của chúng ở ruột hay ở gan. Có thể thuốc nọ làm chậm chuyển hoá thuốc kia. Ngoài ra có tác dụng hiệp đồng độc với thận của hai thuốc.",
+      "xu_ly": "Cấm phối hợp hai thuốc này, nếu không sẽ xuất hiện những dấu hiệu quan trọng độc với thận. Khuyến nghị nên đợi ít nhất 24 giờ sau liều ciclosporin cuối cùng mới dùng liều tacrolimus đầu tiên."
+    },
+    {
+      "thuoc": [
+        "Erythromycin", "Clarithromycin", "Josamycin", "Triacetyloleandomycin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Tăng nồng độ tacrolimus và creatinin trong huyết thanh khi phối hợp tacrolimus với erythromycin, clarithromycin, josamycin (và triacetyloleandomycin), có thể do ức chế chuyển hoá tacrolimus ở gan và ruột. Tương tác dược động học về chuyển hoá thuốc.",
+      "xu_ly": "Nên giảm liều lượng của tacrolimus và theo dõi chức năng thận qua định lượng creatinin trong máu. Theo dõi nồng độ tacrolimus trong huyết tương trong khi điều trị và sau khi ngừng thuốc."
+    },
+    {
+      "thuoc": ["Mycophenolat mofetil", "Cellcept"],
+      "muc_do": 3,
+      "phan_tich": "Dùng cùng với tacrolimus, nồng độ mycophenolat trong huyết tương tăng, làm tăng nguy cơ xuất hiện các tác dụng phụ. Cơ chế chưa rõ.",
+      "xu_ly": "Theo dõi nồng độ mycophenolat trong huyết tương, hiệu chỉnh liều dùng thuốc này nếu cần."
+    },
+    {
+      "thuoc": ["Ritonavir", "Norvir"],
+      "muc_do": 3,
+      "phan_tich": "Ritonavir có ái lực mạnh với isoenzym 3A4 của cytochrom P450, nên có nguy cơ cạnh tranh quan trọng giữa ritonavir với các thuốc bị isoenzym này chuyển hoá. Sự cạnh tranh này làm các thuốc đó giảm chuyển hoá, và tăng nồng độ trong huyết tương một cách đáng kể. Có nguy cơ tăng độc tính với thận của hai thuốc này. Có nguy cơ ức chế miễn dịch quá mức, dẫn đến nhiễm khuẩn nghiêm trọng. Có nguy cơ thiếu máu, giảm tiểu cầu do tacrolimus. Tương tác dược động học về chuyển hoá thuốc.",
+      "xu_ly": "Theo dõi điều trị thông qua định lượng thuốc ức chế miễn dịch, có khi phải giảm liều lượng thuốc ức chế miễn dịch tùy theo nồng độ của nó trong huyết tương."
+    },
+    {
+      "thuoc": [
+        "Nhôm hydroxyd", "Magnesi hydroxyd", "Calci carbonat", "Than hoạt"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Có thể làm giảm nồng độ tacrolimus, do tính không bền vững của tacrolimus trong môi trường kiềm hoặc do hiện tượng hấp phụ, và điều này xảy ra trong vòng hai giờ. Tương tác dược động học về hấp thu thuốc, được mô tả với thuốc có muối nhôm (hydroxyd hay oxyd). Sự kiềm hoá cũng xảy ra khi dùng thuốc có muối calci và magnesi.",
+      "xu_ly": "Nên tránh phối hợp thuốc này."
+    },
+    {
+      "thuoc": [
+        "Spironolacton", "Verospiron", "Eplerenon", "Inspra", "Amilorid", "Midamor", "Triamteren", "Kali clorid"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ tăng kali máu có thể gây tử vong, do hiệp đồng các tác dụng tăng kali máu của hai thuốc (đặc biệt trong trường hợp suy thận. Cần cẩn thận với người bệnh cao tuổi). Tương tác dược lực.",
+      "xu_ly": "Nếu không thể tránh được phối hợp thuốc này, phải theo dõi đều đặn kali máu."
+    },
+    {
+      "thuoc": [
+        "Vaccin sống giảm độc lực"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ phát triển nhiễm khuẩn tương ứng với vaccin do tacrolimus ức chế miễn dịch.",
+      "xu_ly": "Hai thuốc phải dùng cách nhau từ 3 tháng đến một năm; khoảng cách này dài ngắn tuỳ thuộc vào mức độ ức chế miễn dịch."
+    },
+    {
+      "thuoc": [
+        "Pentobarbital", "Barbituric"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Kéo dài tác dụng của thuốc, chỉ thấy với pentobarbital, khi điều trị dài ngày với tacrolimus, do cơ chế còn chưa rõ. Có thể do tacrolimus ức chế chuyển hoá pentobarbital.",
+      "xu_ly": "Cần giảm liều lượng của tacrolimus và theo dõi chức năng thận thông qua định lượng creatinin máu. Theo dõi nồng độ tacrolimus trong huyết tương trong và sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": [
+        "Midazolam", "Hypnovel", "Diazepam", "Valium"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ tacrolimus trong huyết tương, thấy riêng với midazolam (Hypnovel*) in vitro. Tương tác dược động học về chuyển hoá thuốc.",
+      "xu_ly": "Nên giảm liều lượng tacrolimus và theo dõi chức năng thận thông qua định lượng creatinin máu. Theo dõi nồng độ tacrolimus trong huyết tương trong và sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": [
+        "Danazol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ tacrolimus trong huyết thanh, kèm theo run và tăng nồng độ creatinin trong huyết thanh; có thể do ức chế chuyển hoá tacrolimus. Tương tác dược động về chuyển hoá thuốc.",
+      "xu_ly": "Cần giảm liều tacrolimus và theo dõi chức năng thận thông qua định lượng creatinin máu. Theo dõi nồng độ tacrolimus trong huyết tương trong và sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": [
+        "Nicardipin", "Nifedipin", "Amlodipin", "Felodipin", "Lercanidipin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Có khả năng ức chế chuyển hoá tacrolimus ở gan làm nồng độ thuốc trong huyết tương tăng (tương tác dược động về chuyển hoá thuốc). Tương tác này đã được mô tả với nicardipin và nifedipin, tuy nhiên cũng vẫn phải quan tâm xét đến khi dùng các dihydropyridin khác.",
+      "xu_ly": "Cần giảm liều tacrolimus và theo dõi chức năng thận thông qua định lượng creatinin máu. Theo dõi nồng độ tacrolimus trong huyết tương trong và sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": [
+        "Diltiazem", "Verapamil"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Có khả năng ức chế chuyển hoá tacrolimus ở gan (tương tác dược động học về chuyển hoá thuốc).",
+      "xu_ly": "Cần giảm liều tacrolimus và theo dõi chức năng thận thông qua định lượng creatinin máu. Theo dõi nồng độ tacrolimus trong huyết tương trong và sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": [
+        "Doxorubicin", "Vincristin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ thuốc chống ung thư trong nội bào và tăng tác dụng của nó, do ức chế glycoprotein G. Glycoprotein G lúc thường làm cho tế bào có khả năng kháng lại điều trị, có tác dụng như một bơm, phụ thuộc ATP, có thể loại thuốc ra ngoài tế bào. Tác dụng này đã được quan sát in vitro, và chưa được khai thác trên lâm sàng.",
+      "xu_ly": "Tương tác này hình như chưa mang lại lợi ích trước mắt trên lâm sàng, nhưng cần phải tính tới khi kháng thuốc."
+    },
+    {
+      "thuoc": [
+        "Griseofulvin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Giảm nồng độ tacrolimus trong huyết thanh do kích thích dị hoá bằng enzym.",
+      "xu_ly": "Nếu cần phối hợp, phải theo dõi chặt chẽ nồng độ tacrolimus trong huyết thanh, và hiệu chỉnh liều lượng cho thích hợp lúc bắt đầu và sau khi ngừng điều trị với griseofulvin."
+    },
+    {
+      "thuoc": [
+        "Omeprazol", "Esomeprazol", "Lansoprazol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Có thể nồng độ tacrolimus trong huyết tương tăng, do ức chế chuyển hoá thông qua các cytochrom P450. Tương tác dược động học về chuyển hoá thuốc.",
+      "xu_ly": "Cần giảm liều tacrolimus và theo dõi chức năng thận thông qua định lượng creatinin máu. Theo dõi nồng độ tacrolimus trong huyết tương trong và sau khi ngừng điều trị."
+    },
+    {
+      "thuoc": [
+        "Phenytoin", "Dilantin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ phenytoin trong huyết tương, do đẩy phenytoin khỏi vị trí liên kết với albumin huyết tương. Tương tác dược động về phân bố thuốc.",
+      "xu_ly": "Cần theo dõi nồng độ phenytoin trong huyết tương trong thời gian điều trị với tacrolimus và khi ngừng dùng thuốc này."
+    },
+    {
+      "thuoc": [
+        "Primidon", "Mysoline"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Giảm nồng độ tacrolimus trong huyết thanh do kích thích dị hoá bằng enzym.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải theo dõi nồng độ tacrolimus trong huyết thanh, và hiệu chỉnh liều lượng cho thích hợp lúc bắt đầu điều trị và sau khi ngừng điều trị với primidon hay dẫn chất."
+    },
+    {
+      "thuoc": [
+        "Rifampicin", "Rifadin"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Giảm nồng độ tacrolimus trong huyết tương, do cảm ứng enzym trên cytochrom P450. Tương tác dược động về chuyển hoá thuốc.",
+      "xu_ly": "Cần tăng liều tacrolimus. Theo dõi nồng độ tacrolimus trong huyết tương trong khi điều trị và sau khi ngừng thuốc."
+    },
+    {
+      "thuoc": [
+        "Clotrimazol", "Fluconazol", "Miconazol", "Ketoconazol"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng nồng độ tacrolimus trong huyết tương do ức chế chuyển hoá tacrolimus ở gan và/ hoặc ở ruột. Tương tác này đã được mô tả với clotrimazol, fluconazol, miconazol và ketoconazol. Với chuyển hoá ở ruột, sinh khả dụng của tacrolimus tăng, nhưng loại tương tác này sẽ không xảy ra khi chất chống nấm được dùng theo đường tĩnh mạch. Ngoài ra, đối với fluconazol tương tác này phụ thuộc liều lượng.",
+      "xu_ly": "Cần giảm liều tacrolimus và theo dõi chức năng thận thông qua định lượng creatinin trong máu. Theo dõi nồng độ tacrolimus trong huyết tương trong khi điều trị và sau khi ngừng thuốc."
+    },
+    {
+      "thuoc": [
+        "Gentamicin", "Amikacin", "Tobramycin"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng nguy cơ độc với thận khi phối hợp hai chất có độc tính tiềm tàng với thận. Hiệp đồng các tác dụng không mong muốn.",
+      "xu_ly": "Loại phối hợp này thường gặp ở bệnh viện; mặc dầu cách dùng một lần độc nhất trong ngày sẽ hạn chế độc tính với tai và với thận, nhưng khi cần phối hợp thuốc, vẫn nên hiệu chỉnh liều lượng cho thích hợp theo độ thanh lọc creatinin (công thức Cockroft và Gault). Theo dõi đặc biệt ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": [
+        "Amphotericin B"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Tăng creatinin niệu. Hiệp đồng các tác dụng độc với thận.",
+      "xu_ly": "Phải lưu ý tương tác này, khi cần phối hợp hai thuốc. Phải theo dõi chặt chẽ độ thanh lọc creatinin và ion đồ."
+    },
+    {
+      "thuoc": [
+        "Globulin miễn dịch kháng lympho bào"
+      ],
+      "muc_do": 1,
+      "phan_tich": "Phối hợp hai chất ức chế miễn dịch, có thể dẫn tới phát triển u limpho bào giả. Dùng liều cao, có nguy cơ độc với thận.",
+      "xu_ly": "Phải tính tới nguy cơ này trong trạng thái sinh lý bệnh của người bệnh."
+    }
+  ]
 }
   
 
