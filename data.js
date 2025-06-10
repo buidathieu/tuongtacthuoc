@@ -26877,7 +26877,8 @@ window.tuongTacData = [
         "muc_do": 1,
         "noi_dung": "Theo dõi kích ứng tại chỗ, teo da khi dùng corticoid phối hợp (Betnovate-S). Tránh bôi trên diện rộng (>20% da)."
       }
-    }
+    },
+    "tuong_tac": []
   },
   {
     "hoat_chat": "4-Aminoquinoline (Chống sốt rét)",
