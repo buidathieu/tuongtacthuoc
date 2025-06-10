@@ -24053,6 +24053,128 @@ window.tuongTacData = [
       "xu_ly": "Tăng cường theo dõi người bệnh về huyết học, và xem xét tình hình sinh lý bệnh học cụ thể."
     }
   ]
+},
+{
+  "hoat_chat": "Sulfasalazin",
+  "cac_thuoc_trong_nhom": [
+    "Sulfasalazin",
+    "Salazopyrine"
+  ],
+  "mo_ta": "Sulfamid đường ruột, khi thuỷ phân giải phóng acid 5-aminosalicylic và sulfapyridin. Dùng trong các bệnh viêm đường tiêu hoá, đặc biệt viêm loét đại tràng, bệnh Crohn, viêm khớp dạng thấp. Sulfasalazin là tiền dược, vào ruột bị vi khuẩn phân cắt thành các chất chuyển hóa có tác dụng kháng khuẩn và chống viêm tại chỗ[2][6][8][9][10].",
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Sulfapyridin qua được sữa mẹ với lượng thấp, chỉ gây những phiền phức nếu trẻ mới sinh bị thiếu hụt G6PD. Thiếu hụt G6PD: Nguy cơ tan máu. Trẻ em, trẻ còn bú: Chỉ với trẻ dưới 2 tuổi, do chưa trưởng thành về mặt enzym, có nguy cơ vàng da nhân não. Thời kỳ mang thai: Giảm liều lượng, nhưng không ngừng điều trị, do nguy cơ có những cơn viêm đại-trực tràng. Các trường hợp khác: Quá mẫn với các sulfamid và với các salicylat."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy gan: Do chuyển hoá thuốc ở gan (đã mô tả các trường hợp viêm gan). Suy thận: Nguy cơ giảm đào thải thuốc."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Probenecid"],
+      "muc_do": 4,
+      "phan_tich": "Probenecid ức chế bài tiết sulfamid qua thận. Có thể dùng tương tác này để giảm liều lượng sulfamid, nhưng do độc tính của sulfamid nên phối hợp thuốc sẽ trở thành nguy hiểm, nếu vô ý dùng.",
+      "xu_ly": "Dùng probenecid để làm chậm đào thải nhiều thuốc có thể và đã được thực hiện để giảm bớt liều lượng. Nhưng phải rất cảnh giác với những nguy cơ tiềm tàng do độc tính của phối hợp thuốc. Phải nghiên cứu tình hình sinh lý bệnh cụ thể của mỗi trường hợp."
+    },
+    {
+      "thuoc": ["Methenamin"],
+      "muc_do": 3,
+      "phan_tich": "Trong nước tiểu có tính acid, methenamin giáng hoá thành formol, gây nguy cơ tạo tủa với sulfamid ít hoà tan, dẫn đến tinh thể niệu và sỏi thận.",
+      "xu_ly": "Tốt hơn là nên thay thế thuốc."
+    },
+    {
+      "thuoc": ["Acid folic", "Acid folinic"],
+      "muc_do": 2,
+      "phan_tich": "Salazosulfapyridin làm giảm hấp thu acid folic (khoảng một phần ba). Đã mô tả các dấu hiệu thiếu hụt folat, như tỉ lệ folat thấp trong huyết thanh, thiếu máu nguyên hồng cầu khổng lồ và chứng đại hồng cầu và chứng tăng hồng cầu lưới. Cơ chế có thể do ức chế hấp thu folat ở ruột.",
+      "xu_ly": "Nếu thấy thiếu hụt folat, về mặt lâm sàng hay sinh học, cần bổ sung cho người bệnh acid folic hay acid folinic."
+    },
+    {
+      "thuoc": ["Digoxin", "Lanoxin"],
+      "muc_do": 2,
+      "phan_tich": "Tương tác dược động học chỉ riêng với chất digoxin. Salazosulfapyridin làm giảm hấp thu digoxin, kéo theo giảm nồng độ chất này trong huyết thanh, có thể tới 50%.",
+      "xu_ly": "Nếu cần phối hợp, điều quan trọng là phải hiệu chỉnh liều lượng theo nồng độ digoxin trong máu khi điều trị và khi ngừng sulfasalazin."
+    },
+    {
+      "thuoc": ["Methotrexat", "Phenytoin"],
+      "muc_do": 2,
+      "phan_tich": "Sulfamid đẩy các thuốc này khỏi các liên kết với protein huyết tương và/ hoặc ức chế dị hoá, làm tăng nửa đời và nồng độ các thuốc đó trong huyết thanh.",
+      "xu_ly": "Cần phải hiệu chỉnh liều lượng trong và sau khi điều trị bằng sulfasalazin."
+    },
+    {
+      "thuoc": [
+        "Clorpropamid", "Glibenclamid", "Gliclazid", "Glipizid", "Tolbutamid"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Dùng sulfajalazin đồng thời với sulfonylurea có thể làm tăng nửa đời của sulfonylurea và hạ glucose máu có thể xảy ra. Cơ chế do sulfasalazin có thể cản trở chuyển hoá của sulfonylurea ở gan hoặc đẩy chúng ra khỏi liên kết với protein huyết tương.",
+      "xu_ly": "Theo dõi glucose máu. Có thể phải giảm liều của sulfonylurea. Glyburid có thể là thuốc thay thế không bị ảnh hưởng của tương tác."
+    },
+    {
+      "thuoc": ["Warfarin", "Coumadin", "Acenocoumarol", "Sintrom"],
+      "muc_do": 2,
+      "phan_tich": "Do liên kết mạnh với protein huyết tương, thuốc phối hợp có thể đẩy các chất kháng vitamin K, đặc biệt là acenocoumarol (Sintrom) ra khỏi liên kết với protein huyết tương. Có nguy cơ chảy máu.",
+      "xu_ly": "Theo dõi tỉ lệ prothrombin hay tỉ lệ chuẩn hóa quốc tế- (INR) và hiệu chỉnh liều cho thích hợp lúc bắt đầu, trong khi điều trị và trong vòng tám ngày sau khi điều trị."
+    }
+  ]
+},
+{
+  "hoat_chat": "Sumatriptan",
+  "cac_thuoc_trong_nhom": [
+    "Sumatriptan",
+    "Imigrane",
+    "Imitrex",
+    "Onzetra Xsail",
+    "Zembrace SymTouch",
+    "Tosymra"
+  ],
+  "mo_ta": "Thuốc co mạch, chủ vận đặc hiệu và chọn lọc của các thụ thể 5HT1 với serotonin, dùng trong điều trị cấp cơn đau nửa đầu hoặc cơn đau do mạch ở mặt. Có tác dụng làm giảm nhanh các triệu chứng đau đầu do co mạch máu não[1][2][7][8].",
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Trẻ em; người bệnh cao tuổi (do không có thông tin). Tăng huyết áp không kiểm soát được. Suy tim; tiền sử nhồi máu cơ tim. Suy mạch vành; đau thắt ngực do gắng sức và/hoặc lúc nghỉ (kiểu Prinzmetal). Quá mẫn với thuốc hoặc với sulfamid (dị ứng chéo). Hội chứng hay bệnh Raynaud. Tiền sử nhồi máu não. Bệnh động mạch ngoại biên, bệnh mạch máu não, loạn nhịp thất, hội chứng Wolff-Parkinson-White, suy gan nặng, dùng đồng thời hoặc trong vòng 24 giờ với ergotamin hoặc các dẫn chất ergot, hoặc với các thuốc chủ vận 5-HT1 khác[4][7][8]."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Thuốc qua được sữa ở động vật mẹ, nhưng chỉ một lượng nhỏ vào sữa người, thường an toàn nếu ngừng cho bú 12 giờ sau khi dùng thuốc[6]. Thời kỳ mang thai: Chưa đủ dữ liệu an toàn, chỉ dùng khi thật cần thiết và đã cân nhắc nguy cơ/lợi ích[5][6]."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Citalopram", "Paroxetin"],
+      "muc_do": 4,
+      "phan_tich": "Tương tác dược lực do hiệp đồng các tác dụng serotoninergic có thể gây tăng huyết áp và co động mạch vành.",
+      "xu_ly": "Tránh phối hợp thuốc này. Nếu cần phối hợp, phải đảm bảo một khoảng cách 7 ngày từ lúc ngừng dùng thuốc chống trầm cảm đến khi dùng sumatriptan."
+    },
+    {
+      "thuoc": ["Ergotamin", "Dihydroergotamin", "Methylergonovin", "Methysergid"],
+      "muc_do": 4,
+      "phan_tich": "Hai thuốc này có thể kê đơn riêng rẽ khi đau nửa đầu dai dẳng. Người bệnh đau nửa đầu có thể vô tình dùng hai thuốc này trộn với nhau và gây tương tác dược lý vì đây là phối hợp hai thuốc co mạch mạnh, nhất là khi sumatriptan lại dùng theo đường tiêm.",
+      "xu_ly": "Cấm phối hợp hai thuốc này, do nguy cơ co động mạch vành (đau ngực) và/hoặc động mạch phổi. Thay đổi chiến lược điều trị. Nhắc người bệnh không được tự ý phối hợp thuốc."
+    },
+    {
+      "thuoc": ["Fluoxetin", "Fluvoxamin"],
+      "muc_do": 4,
+      "phan_tich": "Nguy cơ tăng huyết áp và co thắt mạch vành.",
+      "xu_ly": "Đảm bảo một khoảng cách 5 tuần lễ kể từ lúc ngừng dùng fluoxetin hay fluvoxamin đến lúc dùng sumatriptan."
+    },
+    {
+      "thuoc": [
+        "Phenelzin", "Tranylcypromin", "Isocarboxazid", "Moclobemid", "Selegilin", "Rasagilin"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Tương tác dược lực do hiệp đồng các tác dụng serotoninergic với nguy cơ xuất hiện lú lẫn, kích động, nhiệt độ cao, co giật, co thắt mạch và tăng huyết áp nặng.",
+      "xu_ly": "Do nguy cơ dược lý, không nên phối hợp hai thuốc này và phải đợi ít nhất 2 tuần lễ, từ lúc ngừng dùng thuốc ức chế MAO không chọn lọc đến lúc dùng sumatriptan."
+    },
+    {
+      "thuoc": [
+        "Moclobemid", "Selegilin", "Rasagilin"
+      ],
+      "muc_do": 4,
+      "phan_tich": "Tương tác dược lực do hiệp đồng các tác dụng serotoninergic với nguy cơ xuất hiện lú lẫn, kích động, nhiệt độ cao, co giật, co thắt mạch và tăng huyết áp nặng.",
+      "xu_ly": "Do nguy cơ dược lý, không nên phối hợp các thuốc này và phải đợi ít nhất 24 giờ, kể từ lúc ngừng dùng thuốc ức chế MAO đến lúc dùng sumatriptan."
+    }
+  ]
 }
   
 
