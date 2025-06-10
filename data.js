@@ -24508,6 +24508,130 @@ window.tuongTacData = [
       "xu_ly": "Phải tính tới nguy cơ này trong trạng thái sinh lý bệnh của người bệnh."
     }
   ]
+},
+{
+  "hoat_chat": "Tamoxifen",
+  "cac_thuoc_trong_nhom": [
+    "Tamoxifen",
+    "Nolvadex",
+    "Nolvadex D",
+    "Tamofen",
+    "Tamoxifen Ebewe",
+    "Tamoxifen Citrate",
+    "Tamoxifen Sandoz",
+    "Tamoxifen Teva",
+    "Tamoxifene EG",
+    "Tamoxifene Mylan",
+    "Tamoxifene Ratiopharm",
+    "Tamoxifene Arrow",
+    "Tamoxifene Biogaran",
+    "Tamoxifene Aurobindo",
+    "Tamoxifene Dexo",
+    "Tamoxifene Tad",
+    "Tamoxifene Zydus",
+    "Tamoxifen-Egis",
+    "Tamoxifeno Biotenk",
+    "Tamoxifeno Cinfa",
+    "Tamoxifeno Farmoz",
+    "Tamoxifeno Funk",
+    "Tamoxifeno Gador",
+    "Tamoxifeno Generis",
+    "Tamoxifeno R",
+    "Tamoxifeno Sandoz",
+    "Tamoxifeno Tora",
+    "Tamoxifeno Vir",
+    "Tamoxifen-ratiopharm",
+    "Tamoxifen-Teva",
+    "Tamoxin",
+    "Tamoxistad",
+    "Taxfeno",
+    "Taxofen",
+    "Terry White Chemists Tamoxifen",
+    "Teva-Tamoxifen",
+    "Trimetrox",
+    "Xifen",
+    "Zitazonium",
+    "Zymoplex"
+  ],
+  "mo_ta": "Thuốc kháng estrogen không steroid, thuộc nhóm SERM (Selective Estrogen Receptor Modulator), dùng chủ yếu trong điều trị ung thư biểu mô vú. Tamoxifen đối kháng estrogen ở mô vú, nhưng có thể có tác dụng giống estrogen ở xương, tử cung và các mô khác[1][4][6][7].",
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ cho con bú: Do ung thư vú, không được cho bú. Thời kỳ mang thai: Phải loại trừ khả năng mang thai trước khi kê đơn thuốc và đến 2 tháng sau khi điều trị. Quá mẫn với tamoxifen hoặc các thành phần của thuốc. Tiền sử huyết khối tĩnh mạch sâu, thuyên tắc phổi, hoặc đang dùng phối hợp với các thuốc chống đông coumarin[4]."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy gan: Theo dõi chức năng gan. Theo dõi dấu hiệu huyết khối, rối loạn thị giác, chảy máu âm đạo bất thường, nguy cơ tăng triglycerid máu và các biến chứng chuyển hóa[4][5]."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": [
+        "Estradiol", "Ethinylestradiol", "Levonorgestrel", "Marvelon", "Microgynon"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Đối kháng dược lý giữa một liệu pháp kháng estrogen với một estrogen.",
+      "xu_ly": "Tamoxifen thường được dùng ở một cơ sở chuyên khoa. Về điều trị, phối hợp này không hợp lý."
+    },
+    {
+      "thuoc": [
+        "Rifampicin", "Rifabutin"
+      ],
+      "muc_do": 3,
+      "phan_tich": "Các rifamycin như rifabutin, rifampicin khi dùng đồng thời với tamoxifen, làm giảm nồng độ tamoxifen trong huyết tương, làm giảm tác dụng kháng estrogen của thuốc. Cơ chế do rifamycin gây cảm ứng CYP3A4, làm tăng cường chuyển hoá tamoxifen.",
+      "xu_ly": "Theo dõi đáp ứng lâm sàng của người bệnh. Có thể phải tăng liều tamoxifen khi dùng đồng thời với rifamycin. Tránh phối hợp nếu có thể, do nguy cơ giảm hiệu quả điều trị[3]."
+    },
+    {
+      "thuoc": [
+        "Warfarin", "Coumadin", "Acenocoumarol", "Sintrom"
+      ],
+      "muc_do": 2,
+      "phan_tich": "Tăng đáng kể nguy cơ chảy máu.",
+      "xu_ly": "Theo dõi đều đặn thời gian Quick và/ hoặc tỉ lệ chuẩn hóa quốc tế- (INR), đặc biệt lúc bắt đầu, trong khi và lúc ngừng phối hợp thuốc này. Hiệu chỉnh liều lượng theo các kết quả thử sinh học."
+    }
+  ]
+},
+{
+  "hoat_chat": "Teicoplanin",
+  "cac_thuoc_trong_nhom": [
+    "Teicoplanin",
+    "Targocid",
+    "Ticocin",
+    "Aspen Teicoplanin",
+    "Coplanin",
+    "Planitec",
+    "Tapocin",
+    "Teicoplanina",
+    "Teicoplanin Sandoz",
+    "Teicoplanin Accord",
+    "Teicoplanin Northia",
+    "Teicoplanin Richet",
+    "Teicoplanin Sala",
+    "Teicoplanine Hikma",
+    "Teicoplanin-TF",
+    "Teicox",
+    "Teiplamil",
+    "Teiplan",
+    "Teiyu",
+    "Tekosit",
+    "Teoplan",
+    "Terbiox",
+    "Tergocin",
+    "T-Planin",
+    "Zicoplanin"
+  ],
+  "mo_ta": "Kháng sinh glycopeptid có phổ tác dụng mạnh trên các vi khuẩn Gram dương, bao gồm cả tụ cầu kháng methicillin (MRSA), liên cầu, enterococci và nhiều vi khuẩn kỵ khí Gram dương. Cơ chế tác dụng là ức chế tổng hợp peptidoglycan thành tế bào vi khuẩn. Teicoplanin có thời gian bán thải dài, dùng tiêm tĩnh mạch hoặc tiêm bắp, thường là 1 lần/ngày. Được sử dụng điều trị nhiễm khuẩn nặng như nhiễm trùng máu, viêm nội tâm mạc, viêm mô mềm, viêm xương khớp, đặc biệt ở bệnh nhân dị ứng hoặc không dung nạp vancomycin[1][2][6][7][8][10].",
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Tránh dùng thuốc này cho phụ nữ đang thời kỳ cho con bú. Trẻ em: Do thận trọng, vì chưa có thông tin. Thời kỳ mang thai: Đã thấy phôi chết khi nghiên cứu trên động vật. Ở người hiện chưa đủ tư liệu. Các trường hợp khác: Quá mẫn với teicoplanin hoặc với các glycopeptid khác (có thể dị ứng chéo với vancomycin)[3][4][5][7][8]."
+    },
+    "can_theo_doi": {
+      "muc_do": 2,
+      "noi_dung": "Suy thận, người bệnh cao tuổi: Cần hiệu chỉnh liều cho thích hợp. Theo dõi chức năng thận, xét nghiệm công thức máu và điện giải hàng tuần trong quá trình điều trị kéo dài. Theo dõi dấu hiệu dị ứng, độc tính trên thận và thính giác[4][5][7][8]."
+    }
+  },
+  "tuong_tac": []
 }
   
 
