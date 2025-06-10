@@ -20418,7 +20418,7 @@ window.tuongTacData = [
         "noi_dung": "Không kê đơn cho trẻ em dưới 15 tuổi do thiếu nghiên cứu."
       }
     },
-    "tuong_tac": [ ]
+    "tuong_tac": []
   },
   {
     "hoat_chat": "Prostaglandin trong phụ khoa",
@@ -24630,7 +24630,8 @@ window.tuongTacData = [
       "muc_do": 2,
       "noi_dung": "Suy thận, người bệnh cao tuổi: Cần hiệu chỉnh liều cho thích hợp. Theo dõi chức năng thận, xét nghiệm công thức máu và điện giải hàng tuần trong quá trình điều trị kéo dài. Theo dõi dấu hiệu dị ứng, độc tính trên thận và thính giác[4][5][7][8]."
     }
-  }
+  },
+  "tương_tac": []
 },
 {
   "hoat_chat": "Terbinafin",
