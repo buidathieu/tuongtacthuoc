@@ -24632,6 +24632,375 @@ window.tuongTacData = [
     }
   },
   "tuong_tac": []
+},
+{
+  "hoat_chat": "Terbinafin",
+  "cac_thuoc_trong_nhom": [
+    "Terbinafin",
+    "Exifine",
+    "Lamisil"
+  ],
+  "mo_ta": "Thuốc chống nấm phổ rộng, thuộc nhóm allylamin, dùng điều trị các bệnh nấm ngoài da và nấm móng chân tay. Cơ chế tác dụng là ức chế enzyme squalen epoxidase, làm giảm tổng hợp ergosterol, phá vỡ màng tế bào nấm. Hiệu quả với các chủng nấm da (dermatophyte), nấm men và một số nấm mốc.",
+  "chu_y_khi_chi_dinh": {
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Thuốc qua được sữa mẹ. Thời kỳ mang thai: Do thận trọng vì thiếu thông tin. Suy gan: Bắt đầu điều trị với liều thấp hơn. Suy thận: Bắt đầu điều trị với liều thấp hơn. Tránh dùng khi suy thận nặng, do thuốc đào thải chậm hơn. Các trường hợp khác: Quá mẫn với thuốc."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Trẻ em: Do thận trọng vì thiếu thông tin."
+    }
+  },
+  "tuong_tac": []
+},
+{
+  "hoat_chat": "Tetracosactid",
+  "cac_thuoc_trong_nhom": [
+    "Tetracosactid",
+    "Synacthene",
+    "Synacthene retard"
+  ],
+  "mo_ta": "Tetracosactid là một peptid tổng hợp, tương tự ACTH, kích thích vỏ thượng thận tiết corticosteroid. Dùng chủ yếu trong chẩn đoán và điều trị một số bệnh lý tuyến thượng thận, viêm đa rễ thần kinh, viêm khớp dạng thấp, viêm đa cơ, lupus ban đỏ hệ thống, hen phế quản nặng và các bệnh tự miễn khác.",
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ mang thai: Do tác dụng của các glucocorticoid. Suy tim: Do các tác dụng không mong muốn. Suy hô hấp-hen: Hen phế quản. Loét dạ dày-tá tràng; viêm dạ dày: Các corticoid có tác dụng gây loét. Các trường hợp khác: Quá mẫn với ACTH, bệnh nhiễm khuẩn, bệnh Cushing, hội chứng thượng thận - sinh dục, suy vỏ tuyến thượng thận, loạn tâm thần cấp."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Thời kỳ cho con bú: Tránh cho con bú trong thời gian điều trị (nguy cơ chậm phát triển). Tiểu đường: Các glucocorticoid tăng tân tạo glucose ở gan. Tăng huyết áp: Giữ nước và natri do tác dụng corticoid - khoáng của các glucocorticoid làm nặng thêm bệnh tăng huyết áp sẵn có."
+    }
+  },
+  "can_theo_doi": {
+    "muc_do": 2,
+    "noi_dung": "Suy thận, người bệnh cao tuổi: Cần hiệu chỉnh liều cho thích hợp."
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Sultoprid", "Barnetil"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp thuốc này. Chú ý là tương tác mới chỉ được mô tả với sultoprid (Barnetil), trong nhóm các benzamid. Hạ kali máu, nhịp tim chậm và khoảng QT dài có từ trước (chỉ nhận thấy trên điện tâm đồ) là những yếu tố tạo điều kiện xuất hiện xoắn đỉnh. Các thuốc gây hạ kali máu tạo điều kiện xuất hiện xoắn đỉnh khi dùng cùng các thuốc không chống loạn nhịp tim.",
+      "xu_ly": "Cần tránh phối hợp. Dùng các thuốc không gây xoắn đỉnh. Nếu cần phối hợp thuốc này, phải theo dõi liên tục khoảng QT và kiểm tra đều đặn kali máu. Khuyên người bệnh gặp lại bác sĩ khi thấy mỏi mệt, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Bepridil", "Vascor", "Pentamidin", "Pentacarinat"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xoắn đỉnh khi phối hợp thuốc. Hạ kali máu, nhịp tim chậm và khoảng QT dài có từ trước (chỉ nhận thấy trên điện tâm đồ) là những yếu tố tạo điều kiện xuất hiện xoắn đỉnh, có thể phát triển thành rung thất.",
+      "xu_ly": "Cần tránh phối hợp thuốc. Dùng các thuốc không gây xoắn đỉnh. Nếu cần phối hợp, phải theo dõi liên tục khoảng QT và kiểm tra đều đặn kali máu. Khuyên người bệnh gặp lại bác sĩ khi thấy mỏi mệt, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Metformin", "Glucophage", "Metformin Stada"],
+      "muc_do": 3,
+      "phan_tich": "Giảm tác dụng của biguanid do tác dụng tăng glucose máu gián tiếp của thuốc. Giảm tính dung nạp với glucid do corticoid và nguy cơ nhiễm ceton.",
+      "xu_ly": "Phải lưu ý đến tác dụng của corticoid khi điều trị bằng các thuốc chống tiểu đường. Cần cân bằng glucose máu khi bắt đầu, trong và sau khi điều trị bằng corticoid. Thông báo cho người bệnh nguy cơ biến động glucose máu, và lập một kế hoạch dùng thuốc."
+    },
+    {
+      "thuoc": ["Halofantrin", "Halfan"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp thuốc, nhất là khi hạ kali máu. Hạ kali máu, nhịp tim chậm và khoảng QT dài có từ trước (chỉ nhận thấy được trên điện tâm đồ) là những yếu tố thuận lợi cho sự xuất hiện xoắn đỉnh.",
+      "xu_ly": "Cần tránh phối hợp thuốc này. Dùng các thuốc không gây xoắn đỉnh. Nếu cần phối hợp thuốc, phải theo dõi liên tục khoảng QT và kiểm tra đều đặn kali máu. Khuyên người bệnh gặp lại bác sĩ khi thấy mỏi mệt, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Heparin", "Heparin Rotexmedica", "Heparin Leo"],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp một corticoid có tính gây loét với một thuốc chống đông máu hay một thuốc chống kết tập tiểu cầu làm tăng nguy cơ chảy máu đường tiêu hoá.",
+      "xu_ly": "Hỏi người bệnh về tiền sử loét dạ dày. Nếu có, phải tránh phối hợp thuốc. Nếu có thể phối hợp thuốc phải theo dõi bằng những xét nghiệm đông máu thích hợp (thời gian Howell và thời gian cephalin-kaolin). Tuy nhiên, nên chọn một liệu pháp khác thay thế."
+    },
+    {
+      "thuoc": ["Insulin", "Mixtard", "Actrapid", "Insulatard", "Clorpropamid", "Diabinese", "Glibenclamid", "Daonil", "Glibenclamide Stada", "Gliclazid", "Diamicron", "Diamicron MR", "Glipizid", "Minidiab", "Tolbutamid", "Tolbutamide"],
+      "muc_do": 3,
+      "phan_tich": "Giảm tác dụng của insulin do tác dụng tăng glucose máu gián tiếp của các corticoid. Giảm tính dung nạp glucid do corticoid, và nguy cơ nhiễm ceton.",
+      "xu_ly": "Phải tính đến các tác dụng của corticoid khi điều trị bằng các thuốc hạ glucose máu. Phải cân bằng glucose máu lúc bắt đầu, trong và sau khi điều trị với corticoid. Thông báo cho người bệnh biết những biến động về glucose máu và lập một kế hoạch sử dụng thuốc."
+    },
+    {
+      "thuoc": ["Astemizol", "Hismanal"],
+      "muc_do": 3,
+      "phan_tich": "Tương tác chỉ được ghi nhận với một thuốc kháng histamin không an thần là astemisol (Hismanal). Hạ kali máu (và cả tiêu chảy kéo dài có thể gây mất nước và điện giải) là yếu tố thuận lợi cho xoắn đỉnh. Nguy cơ tăng khi các thuốc hạ kali máu được phối hợp với các thuốc khác có thể gây xoắn đỉnh.",
+      "xu_ly": "Nên tránh phối hợp. Cần thay đổi chiến lược điều trị và chọn các thuốc không gây xoắn đỉnh. Nếu cần phối hợp thuốc này, phải theo dõi kali máu, và bổ sung kali."
+    },
+    {
+      "thuoc": ["Erythromycin", "Erythrocin", "Erythromycin Stada"],
+      "muc_do": 3,
+      "phan_tich": "Tăng nguy cơ xoắn đỉnh do hiệp đồng các tác dụng. Tương tác mới chỉ được mô tả với erythromycin tiêm tĩnh mạch. Hạ kali máu, nhịp tim chậm và khoảng QT dài có từ trước (chỉ nhận biết được trên điện tâm đồ) là những yếu tố tạo thuận lợi xuất hiện xoắn đỉnh. Trong nhóm macrolid, chỉ có erythromycin, đặc biệt dạng tiêm tĩnh mạch có thể gây loạn nhịp tim (kéo dài khoảng QT, ngoại tâm thu thất, xoắn đỉnh, bloc nhĩ-thất).",
+      "xu_ly": "Phối hợp thuốc có tiềm năng gây tử vong này là chống chỉ định và không được kê đơn. Ngay cả khi dùng đơn độc, erythromycin tiêm tĩnh mạch có thể gây loạn nhịp tim. Thuốc này không được tiêm cả liều một lúc, mà phải tiêm truyền tĩnh mạch liên tục hoặc gián đoạn, với thời gian truyền mỗi lần ít nhất là 60 phút."
+    },
+    {
+      "thuoc": ["Sparfloxacin", "Flospar", "Genspar", "Omniflox", "Sparbact", "Spardac", "Spartin"],
+      "muc_do": 3,
+      "phan_tich": "Chỉ thấy tương tác khi phối hợp với một fluoroquinolon là sparfloxacin (Zagam*). Tăng nguy cơ xuất hiện xoắn đỉnh khi phối hợp thuốc. Hạ kali máu, nhịp tim chậm và khoảng QT dài đã có từ trước (chỉ nhận thấy được trên điện tâm đồ) là những yếu tố tạo thuận lợi cho xuất hiện xoắn đỉnh.",
+      "xu_ly": "Cần tránh phối hợp thuốc này. Dùng các thuốc không gây xoắn đỉnh. Nếu cần phối hợp thuốc, phải theo dõi liên tục khoảng QT và kiểm tra đều đặn kali máu. Khuyên người bệnh gặp lại bác sĩ khi thấy mệt mỏi, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Vaccin sống giảm độc lực"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ phát triển nhiễm khuẩn do chủng của vaccin vì tác dụng ức chế miễn dịch của thuốc phối hợp.",
+      "xu_ly": "Dùng hai thuốc cách nhau từ 3 tháng đến một năm, khoảng cách này dài ngắn tuỳ thuộc vào mức độ ức chế miễn dịch."
+    },
+    {
+      "thuoc": ["Vincamin", "Oxybral"],
+      "muc_do": 3,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi dùng phối hợp các thuốc này. Hạ kali máu, nhịp tim chậm và khoảng QT dài đã có từ trước (chỉ nhận biết được trên điện tâm đồ) là những yếu tố thuận lợi xuất hiện xoắn đỉnh. Có thể phát triển thành rung thất gây tử vong.",
+      "xu_ly": "Cần tránh phối hợp thuốc này. Dùng các thuốc không gây xoắn đỉnh. Nếu cần phối hợp thuốc, phải theo dõi liên tục khoảng QT và kiểm tra thường xuyên kali máu. Khuyên người bệnh gặp lại bác sĩ khi thấy mỏi mệt, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Amiodaron", "Cordarone"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ xoắn đỉnh dễ xảy ra khi hạ kali máu. Hạ kali máu, nhịp tim chậm và khoảng QT dài đã có từ trước (chỉ nhận biết được trên điện tâm đồ) là những yếu tố thuận lợi cho xuất hiện xoắn đỉnh.",
+      "xu_ly": "Nếu cần phối hợp các thuốc có thể gây hạ kali máu với amiodaron, phải dự phòng hạ kali máu bằng cách tăng cường theo dõi chặt chẽ và kiểm tra điện tâm đồ. Trong trường hợp xuất hiện xoắn đỉnh, không dùng thuốc chống loạn nhịp. Khuyên người bệnh gặp lại bác sĩ khi thấy mỏi mệt, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Amphotericin B", "Fungizone"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng hạ kali máu tăng khi dùng dạng tiêm. Amphotericin B rất ít được hấp thu khi dùng theo đường uống hay dùng tại chỗ, trong điều kiện bình thường.",
+      "xu_ly": "Theo dõi kali máu. Phải đánh giá những nguy cơ tương tác thuốc theo đường dùng amphotericin B."
+    },
+    {
+      "thuoc": ["Asparaginase", "Leunase"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng tăng glucose máu gia tăng và có nguy cơ bệnh thần kinh và rối loạn tạo hồng cầu.",
+      "xu_ly": "Chỉ bác sĩ chuyên khoa mới thực hiện phối hợp thuốc này và tại bệnh viện. Độc tính sẽ giảm nếu dùng asparaginase sau corticoid, so với dùng trước hay dùng cùng."
+    },
+    {
+      "thuoc": ["Phenobarbital", "Gardenal", "Carbamazepin", "Tegretol", "Phenytoin", "Dilantin", "Rifampicin", "Rifadin"],
+      "muc_do": 2,
+      "phan_tich": "Tăng dị hoá adrenocorticoid do các thuốc cảm ứng enzym (barbituric). Cảm ứng enzym chỉ biểu hiện sau nhiều ngày, kể từ lúc bắt đầu điều trị.",
+      "xu_ly": "Cảm ứng enzym không phải là một hiện tượng tức thì. Khi điều trị với một thuốc cảm ứng enzym dài hạn hay trung hạn phải tính tới nguy cơ giảm tác dụng điều trị. Hiệu chỉnh liều lượng trong khi điều trị và sau khi ngừng chất cảm ứng enzym."
+    },
+    {
+      "thuoc": ["Pancuronium", "Vecuronium", "Atracurium", "Rocuronium"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng phong bế thần kinh-cơ do giảm kali máu, nhất là với các thuốc curar không khử cực.",
+      "xu_ly": "Có thể cần phải định lượng kali trước khi dùng một thuốc curar không khử cực."
+    },
+    {
+      "thuoc": ["Clonidin", "Catapresan"],
+      "muc_do": 2,
+      "phan_tich": "Hiệu quả của thuốc chống tăng huyết áp bị giảm, có thể do tác dụng giữ natri của steroid.",
+      "xu_ly": "Nếu cần phối hợp thuốc, phải tăng cường theo dõi huyết áp trong điều trị và khi ngừng dùng một trong hai thuốc. Có khi phải hiệu chỉnh liều lượng. Nhấn mạnh kế hoạch dùng thuốc, và yêu cầu tuân thủ trong điều trị. Cần đặc biệt cảnh giác khi dùng ở người bệnh cao tuổi."
+    },
+    {
+      "thuoc": ["Fludrocortison", "Florinef", "Furosemid", "Lasix", "Prednisolon", "Solupred", "Methylprednisolon", "Medrol", "Dexamethason", "Dexasone", "Spironolacton", "Aldacton"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc thải kali, gây tăng nguy cơ hạ kali máu và xuất hiện xoắn đỉnh.",
+      "xu_ly": "Theo dõi kali máu và khi cần điều chỉnh bằng bổ sung muối kali. Hạ kali máu được biểu hiện trên lâm sàng qua mệt mỏi, thậm chí chuột rút, và đôi khi loạn nhịp tim. Cần chú ý đến hiện tượng mất nước quá mức (khi gắng sức, hoặc quá nóng hoặc tiêu chảy dai dẳng), làm tăng thêm mất kali."
+    },
+    {
+      "thuoc": ["Disopyramid", "Rythmodan"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ xoắn đỉnh khi phối hợp hai thuốc này. Hạ kali máu, nhịp tim chậm và khoảng QT dài có từ trước (chỉ nhận biết được trên điện tâm đồ) là những yếu tố thuận lợi cho xoắn đỉnh.",
+      "xu_ly": "Khi cần phối hợp thuốc, phải dự phòng hạ kali máu bằng tăng cường theo dõi và kiểm tra điện tâm đồ. Trong trường hợp xoắn đỉnh, không dùng thuốc chống loạn nhịp. Khuyên người bệnh gặp lại bác sĩ khi thấy mỏi mệt, yếu cơ, thậm chí chuột rút."
+    },
+    {
+      "thuoc": ["Estradiol", "Progynova", "Ethinylestradiol", "Marvelon", "Microgynon"],
+      "muc_do": 2,
+      "phan_tich": "Estrogen có thể làm rối loạn sự chuyển hoá và sự liên kết với protein huyết tương của các glucocorticoid, gây tăng thời gian bán thải và tăng tác dụng điều trị cùng tác dụng độc của các glucocorticoid.",
+      "xu_ly": "Còn phải khẳng định tương tác dược động học này bằng những quan sát trên lâm sàng. Bác sĩ kê đơn phải cảnh giác về liều lượng các glucocorticoid và đánh giá nguy cơ theo liều lượng estrogen đã dùng."
+    },
+    {
+      "thuoc": ["Digoxin", "Lanoxin"],
+      "muc_do": 2,
+      "phan_tich": "Tetracosatid gây hạ kali máu, kéo theo yếu cơ có thể làm tăng tác dụng của các chất cura không khử cực (là những chất phong bế chỗ nối thần kinh - cơ) và làm tăng độc tính thuốc digitalis. Các glycosid trợ tim ức chế Na+/ K+ ATPase, enzym này tham gia vào vận chuyển các ion Na+ và K+ qua màng tế bào cơ tim. Cơ chế chính xác vẫn chưa được rõ hoàn toàn, chưa có những công trình trong y văn nhằm khẳng định giả thuyết dược lý này.",
+      "xu_ly": "Trước khi bắt đầu điều trị đồng thời các thuốc này, cần phải định lượng nồng độ kali trong huyết thanh, phải điều trị hạ kali máu nếu có, và phải theo dõi kali máu thường xuyên. Tương tác này dựa vào những chứng cứ dược lý học. Khi thực hiện phối hợp thuốc, người kê đơn và người cấp thuốc cần tập trung theo dõi, để khi có hoàn cảnh, thu thập những nhận xét lâm sàng cho phép khẳng định giả thuyết này. Cần chú ý là về lâm sàng, hạ kali máu có thể bắt đầu bằng yếu cơ, chuột rút và dẫn đến những triệu chứng nghiêm trọng hơn như loạn nhịp tim và liệt hô hấp. Cần dè chừng hạ kali máu do ra quá nhiều mồ hôi và tiêu chảy dai dẳng, khó chữa."
+    },
+    {
+      "thuoc": ["Indometacin", "Indocid", "Phenylbutazon", "Butazolidin", "Aspirin", "Aspirin pH8", "Diclofenac", "Voltaren", "Ibuprofen", "Brufen"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ gây loét chảy máu tăng. Nhưng trong một số dạng viêm khớp, phối hợp thuốc có thể có lợi.",
+      "xu_ly": "Cân nhắc nguy cơ/ lợi ích, trước khi kê đơn phối hợp thuốc. Thông báo cho người bệnh biết nguy cơ và theo dõi lâm sàng."
+    },
+    {
+      "thuoc": ["Isoniazid", "Rimifon"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng chuyển hoá isoniazid ở gan, làm giảm tác dụng của nó. Cũng giảm tác dụng của corticoid.",
+      "xu_ly": "Nguy cơ thất bại trong điều trị với isoniazid, nếu điều trị với tetracosatid kéo dài. Trong trường hợp này, phải tính tới hậu quả trong điều trị do tương tác gây ra để tiếp tục phối hợp thuốc hay ngừng lại. Với các corticoid khác, vẫn cần phải cảnh giác."
+    },
+    {
+      "thuoc": ["Primidon", "Mysoline"],
+      "muc_do": 2,
+      "phan_tich": "Tăng dị hoá thuốc phối hợp do primidon gây cảm ứng enzym. Cảm ứng enzym chỉ thể hiện sau 10 đến 12 ngày, kể từ lúc bắt đầu điều trị.",
+      "xu_ly": "Cảm ứng enzym không phải là một hiện tượng tức thì. Việc điều trị với một thuốc cảm ứng enzym dài hạn hay trung hạn đòi hỏi phải tính đến nguy cơ giảm hiệu quả của thuốc phối hợp. Hiệu chỉnh liều lượng trong khi điều trị và sau khi ngừng chất cảm ứng enzym."
+    },
+    {
+      "thuoc": ["Quinidin", "Quinidurule"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp một thuốc hạ kali máu với một thuốc chống loạn nhịp thuộc nhóm I của Vaughan - Williams. Hạ kali máu, nhịp tim chậm và khoảng QT dài đã có từ trước (chỉ nhận biết được trên điện tâm đồ) là những yếu tố thuận lợi cho xoắn đỉnh.",
+      "xu_ly": "Nếu cần phối hợp corticoid với thuốc này, phải dự phòng hạ kali máu bằng cách bổ sung một lượng kali đã được tính toán, và nếu cần thì làm điện tâm đồ. Khi có xoắn đỉnh, không dùng thuốc chống loạn nhịp. Khuyên người bệnh gặp lại bác sĩ khi thấy mỏi mệt, yếu cơ, thậm chí chuột rút."
+    },
+    {
+      "thuoc": ["Sotalol", "Darob"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ xuất hiện xoắn đỉnh khi phối hợp hai thuốc này. Hạ kali máu, nhịp tim chậm và khoảng QT dài đã có từ trước (chỉ nhận biết được trên điện tâm đồ) là những yếu tố thuận lợi cho xoắn đỉnh.",
+      "xu_ly": "Nếu phối hợp tetracosactid với thuốc này, phải dự phòng hạ kali máu bằng tăng cường theo dõi và kiểm tra điện tâm đồ. Trong trường hợp xuất hiện xoắn đỉnh, không được dùng thuốc chống loạn nhịp. Khuyên người bệnh gặp lại bác sĩ khi thấy mỏi mệt, yếu cơ, chuột rút."
+    },
+    {
+      "thuoc": ["Mesterolon", "Provironum", "Nandrolon", "Durabolin", "Testosteron", "Androgel"],
+      "muc_do": 2,
+      "phan_tich": "Sử dụng đồng thời hai thuốc có thể làm tăng nguy cơ phù nề. Tương tác dược lực.",
+      "xu_ly": "Cân nhắc xem có cần phải kê đơn hai thuốc không, và nếu cần, hiệu chỉnh liều lượng và theo dõi ion đồ. Cần phải chú ý đến việc sử dụng dấu diếm các thuốc đồng hoá steroid (vận động viên thể thao) và cho người bệnh biết nguy cơ xảy ra nếu dùng hai thuốc đồng thời."
+    },
+    {
+      "thuoc": ["Nhôm hydroxyd", "Phosgel", "Magnesi hydroxyd", "Calci carbonat", "Than hoạt"],
+      "muc_do": 2,
+      "phan_tich": "Thuốc kháng acid làm giảm hấp thu ở đường tiêu hoá, nên làm giảm tác dụng của thuốc phối hợp.",
+      "xu_ly": "Phải uống hai thuốc cách nhau 1 đến 2 giờ. Nhớ là các thuốc kháng acid thường được dùng sau bữa ăn 1 giờ 30 phút, và ăn là nguyên nhân tăng tiết dịch vị."
+    },
+    {
+      "thuoc": ["Bisacodyl", "Dulcolax"],
+      "muc_do": 2,
+      "phan_tich": "Phối hợp hai thuốc hạ kali máu làm tăng thêm nguy cơ hạ kali máu, nhất là khi thuốc nhuận tràng dùng lâu dài.",
+      "xu_ly": "Theo dõi kali máu, và nếu cần điều chỉnh bằng bổ sung muối kali. Hạ kali máu thể hiện trên lâm sàng qua mệt mỏi, thậm chí chuột rút và đôi khi loạn nhịp tim. Cần chú ý đến mất nước nhiều (khi gắng sức, hoặc quá nóng hoặc tiêu chảy dai dẳng), làm mất kali nặng thêm."
+    },
+    {
+      "thuoc": ["Warfarin", "Coumadin", "Acenocoumarol", "Sintrom"],
+      "muc_do": 2,
+      "phan_tich": "Tác dụng gây loét của corticoid làm tăng nguy cơ loét chảy máu, nhất là ở người bệnh cao tuổi.",
+      "xu_ly": "Hỏi người bệnh về tiền sử loét dạ dày, và tăng cường theo dõi lâm sàng và sinh học nếu phối hợp thuốc."
+    },
+    {
+      "thuoc": ["Amlodipin", "Nifedipin", "Felodipin", "Lercanidipin"],
+      "muc_do": 1,
+      "phan_tich": "Giảm tác dụng chống tăng huyết áp. Các thuốc chống viêm ức chế tổng hợp ở thận các prostaglandin gây giãn mạch và / hoặc kéo theo giữ nước và natri. Nguy cơ suy thận cấp ở người bệnh bị mất nước.",
+      "xu_ly": "Phải đảm bảo người bệnh được cung cấp nước tốt. Theo dõi chức năng thận (độ thanh lọc creatinin). Kiểm tra tính ổn định của huyết áp, đặc biệt lúc bắt đầu điều trị. Khuyên người bệnh theo dõi đều đặn huyết áp."
+    },
+    {
+      "thuoc": ["Guanethidin", "Ismelin", "Bethanidin", "Debrisoquin", "Captopril", "Enalapril", "Lisinopril", "Perindopril", "Ramipril"],
+      "muc_do": 1,
+      "phan_tich": "Tác dụng chống tăng huyết áp có thể bị giảm do các glucocorticoid gây giữ nước và natri.",
+      "xu_ly": "Hiệu chỉnh liều lượng trong và sau khi điều trị bằng các corticoid. Lập một kế hoạch dùng thuốc đều đặn và yêu cầu tuân thủ. Khuyên người bệnh tăng cường tự theo dõi trong quá trình điều trị với corticoid và nếu có những biến động quan trọng về huyết áp, khuyên người bệnh gặp lại bác sĩ điều trị."
+    },
+    {
+      "thuoc": ["Interferon alpha tái tổ hợp"],
+      "muc_do": 1,
+      "phan_tich": "Nguy cơ ức chế tác dụng sinh học của interferon, được mô tả với prednison, và cũng có giá trị với các corticoid khác. Cơ chế chưa rõ.",
+      "xu_ly": "Cần phải tính tới sự giảm tác dụng này trước khi kê đơn phối hợp thuốc. Cân nhắc nguy cơ / lợi ích và giá thành / hiệu quả."
+    },
+    {
+      "thuoc": ["Methyldopa", "Aldomet"],
+      "muc_do": 1,
+      "phan_tich": "Tác dụng chống tăng huyết áp có thể bị giảm do các glucocorticoid gây giữ nước và natri.",
+      "xu_ly": "Điều chỉnh liều lượng trong và sau khi điều trị bằng corticoid. Thông tin cho người bệnh để tăng cường tự theo dõi trong thời gian điều trị corticoid. Lập một kế hoạch dùng thuốc đều đặn và yêu cầu tuân thủ trong khi điều trị. Nếu có biến động quan trọng về huyết áp, khuyên người bệnh gặp lại bác sĩ điều trị."
+    }
+  ]
+},
+{
+  "hoat_chat": "Tetracyclin",
+  "cac_thuoc_trong_nhom": [
+    "Doxycyclin",
+    "Apo-Doxy",
+    "Doxat",
+    "Doxi",
+    "Doxycyclin Domesco",
+    "Lyka Lydox",
+    "Medomycin",
+    "Unidox",
+    "Tetracyclin",
+    "Polycyclin"
+  ],
+  "mo_ta": "Các kháng sinh kìm khuẩn hoạt phổ rộng, nhóm tetracyclin, ức chế tổng hợp protein vi khuẩn bằng cách gắn vào tiểu đơn vị 30S ribosom. Hiệu quả trên nhiều chủng vi khuẩn Gram dương, Gram âm, vi khuẩn nội bào, xoắn khuẩn và một số ký sinh trùng. Doxycyclin và tetracyclin là hai hoạt chất phổ biến nhất nhóm này.",
+  "chu_y_khi_chi_dinh": {
+    "chong_chi_dinh": {
+      "muc_do": 4,
+      "noi_dung": "Thời kỳ cho con bú: Các tetracyclin rất ưa lipid, qua được sữa mẹ, nên cần tránh dùng, ngay cả khi chúng tạo với calci trong sữa các phức chất ít được hấp thu. Trẻ em dưới 9 tuổi: Có thể làm vàng răng vĩnh viễn, chậm phát triển xương. Thời kỳ mang thai: Làm vàng răng, chậm cốt hóa tạm thời ở thai nhi nếu dùng cho mẹ mang thai."
+    },
+    "can_nhac_nguy_co_loi_ich": {
+      "muc_do": 3,
+      "noi_dung": "Quá mẫn với các cyclin. Tránh ánh nắng và tia tử ngoại."
+    },
+    "can_theo_doi": {
+      "muc_do": 1,
+      "noi_dung": "Suy gan: Nguy cơ tích lũy và gây thoái hóa mỡ gan. Suy thận: Tetracyclin đào thải qua thận, trừ doxycyclin chủ yếu qua mật. Loạn chức năng thận làm tăng nguy cơ biến chứng gan."
+    },
+    "than_trong": {
+      "muc_do": 2,
+      "noi_dung": "Cường tuyến giáp: Tránh điều trị lâu dài. Nhược cơ: Nguy cơ làm nặng thêm triệu chứng."
+    }
+  },
+  "tuong_tac": [
+    {
+      "thuoc": ["Digoxin", "Lanoxin"],
+      "muc_do": 4,
+      "phan_tich": "Việc sử dụng đồng thời tetracyclin với digoxin có thể gây tăng nồng độ digoxin trong máu ở một số ít người bệnh (khoảng 10%). Tác dụng độc có thể xảy ra và kéo dài nhiều tháng sau khi ngừng tetracyclin. Cơ chế: ở khoảng 10% số người bệnh, một lượng lớn digoxin được vi khuẩn ruột chuyển hoá thành sản phẩm khử không có hoạt tính. Tetracyclin tác động trên vi khuẩn ruột nên ngăn cản sự chuyển hoá này, làm cho có nhiều digoxin được hấp thu hơn và nồng độ digoxin trong huyết thanh tăng.",
+      "xu_ly": "Theo dõi người bệnh về sự tăng nồng độ digoxin và những dấu hiệu độc tính. Có thể cần phải giảm liều digoxin, hoặc dùng chế phẩm nang có tác dụng giảm thiểu sự tạo thành sản phẩm khử do làm tăng sinh khả dụng."
+    },
+    {
+      "thuoc": ["Etretinat", "Neotigason"],
+      "muc_do": 4,
+      "phan_tich": "Phối hợp hai thuốc có thể làm xuất hiện nhức đầu, chóng mặt, rối loạn thị giác do tăng áp lực nội sọ (hiệp đồng tác dụng tăng áp lực nội sọ của mỗi thuốc).",
+      "xu_ly": "Chống chỉ định phối hợp thuốc này, và phải tìm một liệu pháp dùng kháng sinh khác."
+    },
+    {
+      "thuoc": ["Methoxyfluran"],
+      "muc_do": 4,
+      "phan_tich": "Dùng cùng với tetracyclin, thì độc tính với thận tăng lên. Cơ chế: có thể do tetracyclin kích thích sự biến đổi sinh học methoxyfluran thành các chất chuyển hoá độc và ức chế sự bài tiết các chất chuyển hoá đó qua thận.",
+      "xu_ly": "Không phối hợp hai thuốc này và chọn các thuốc thay thế."
+    },
+    {
+      "thuoc": ["Cefotetan", "Cefamandol", "Cefoperazon", "Cefmetazol", "Cefmenoxin", "Penicillin G", "Amoxicillin", "Ampicillin"],
+      "muc_do": 3,
+      "phan_tich": "Tác dụng kìm khuẩn của các tetracyclin có thể đối kháng với tác dụng diệt khuẩn của các cephalosporin và các penicilin. Tác dụng diệt khuẩn này thể hiện trên những vi khuẩn ở giai đoạn phát triển theo hàm mũ. Tương tác này có thể có hại trong điều trị viêm màng não mà ta cần can thiệp nhanh và mạnh.",
+      "xu_ly": "Phải tính tới nguy cơ này trong tình hình sinh lý bệnh học cụ thể. Phối hợp này có thể thực hiện tùy theo thuốc dùng và mầm gây bệnh (chú ý tới nồng độ tối thiểu ức chế-MIC)."
+    },
+    {
+      "thuoc": ["Natri bicarbonat", "Kali citrat", "Natri citrat"],
+      "muc_do": 3,
+      "phan_tich": "Phối hợp tetracyclin với các thuốc kiềm hoá nước tiểu làm tăng sự đào thải tetracyclin và hạ thấp nồng độ thuốc trong huyết thanh. Do đó hiệu quả điều trị có thể giảm. Một số báo cáo khác lại mâu thuẫn.",
+      "xu_ly": "Dùng hai loại thuốc trên cách nhau 3 đến 4 giờ. Tuy nhiên, nếu pH nước tiểu tăng cao do các thuốc kiềm hoá nước tiểu thì sẽ không có hiệu quả để giảm thiểu tương tác. Có thể cần phải tăng liều tetracyclin."
+    },
+    {
+      "thuoc": ["Vitamin A"],
+      "muc_do": 3,
+      "phan_tich": "Tăng nguy cơ tăng áp lực nội sọ lành tính (nhức đầu, giảm thị lực) giống nguy cơ chính khi tương tác với các retinoid.",
+      "xu_ly": "Chưa thấy có thống kê về nguy cơ đối với vitamin A, nhưng do giống nhau về mặt dược lý, cần phải rất thận trọng."
+    },
+    {
+      "thuoc": ["Phenobarbital", "Gardenal", "Carbamazepin", "Tegretol", "Gluthetimid", "Phenytoin", "Dilantin", "Primidon", "Mysoline"],
+      "muc_do": 2,
+      "phan_tich": "Tăng dị hoá doxycyclin ở gan do cảm ứng enzym. Mặc dầu hiện tượng này chưa được xác lập với các tetracyclin không đào thải qua nước tiểu, nhưng vẫn cần thận trọng.",
+      "xu_ly": "Tương tác này đòi hỏi phải điều trị nhiều ngày mới có thể có được cảm ứng enzym. Nguy cơ thất bại trong điều trị sẽ xảy ra nếu nồng độ tối thiểu ức chế của kháng sinh không đủ đối với vi khuẩn đang xét. Cần chú ý đến nguy cơ này và khi cần, chọn một phác đồ dùng kháng sinh khác."
+    },
+    {
+      "thuoc": ["Calci carbonat", "Calci corbiere", "Sắt sulfat", "Ferrovit", "Magnesi hydroxyd", "Kẽm sulfat", "ZinC"],
+      "muc_do": 2,
+      "phan_tich": "Tạo phức giữa các cation với các tetracyclin, kéo theo giảm hấp thu tetracyclin và có nguy cơ thất bại trong điều trị (Fe, Al, Ca, Zn).",
+      "xu_ly": "Nguy cơ này lớn hơn với các tetracyclin thế hệ 1 (terramycin...), giảm hấp thu tới 75%. Với các tetracyclin thế hệ 2 giảm hấp thu khoảng 20% và có thể không có ý nghĩa lâm sàng."
+    },
+    {
+      "thuoc": ["Cholestyramin", "Questran"],
+      "muc_do": 2,
+      "phan_tich": "Giảm hấp thu các tetracyclin theo đường tiêu hoá.",
+      "xu_ly": "Nếu hai thuốc này được kê đơn, khuyên nên dùng tetracyclin hai giờ trước, hoặc bốn giờ sau khi dùng cholestyramin."
+    },
+    {
+      "thuoc": ["Didanosin", "Videx"],
+      "muc_do": 2,
+      "phan_tich": "Citrat trong thành phần tá dược của thuốc didanosin dạng uống, làm giảm hấp thu thuốc phối hợp, làm giảm hiệu quả của chúng.",
+      "xu_ly": "Dùng thuốc phối hợp hai giờ trước khi dùng didanosin hoặc sáu giờ sau."
+    },
+    {
+      "thuoc": ["Estradiol", "Ethinylestradiol", "Levonorgestrel", "Marvelon", "Microgynon"],
+      "muc_do": 2,
+      "phan_tich": "Liệu pháp kháng sinh làm giảm hệ vi khuẩn đường ruột (giả thuyết), nên có thể làm giảm tái hấp thu các steroid ở chu trình gan - ruột. Có nguy cơ không thường xuyên về giảm tác dụng của estroprogestogen. Chưa có thể đưa ra những điều dự báo.",
+      "xu_ly": "Nguy cơ này tuỳ thuộc thời gian điều trị và mức độ tổn hại đến hệ vi khuẩn đường ruột. Điều quan trọng là phải xem người phụ nữ dùng các estroprogestogen có bị tiêu chảy không."
+    },
+    {
+      "thuoc": ["Furosemid", "Lasix", "Spironolacton", "Aldacton", "Hydrochlorothiazid", "Hypothiazid"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ tăng ure máu ở người suy thận, do một cơ chế còn chưa rõ. Chỉ riêng tetracyclin cũng có thể gây tăng ure máu. Ý nghĩa lâm sàng của tương tác này không lớn.",
+      "xu_ly": "Tăng ure có thể do một thuốc, hoặc cả hai thuốc."
+    },
+    {
+      "thuoc": ["Nhôm hydroxyd", "Phosgel", "Magnesi hydroxyd", "Calci carbonat", "Than hoạt"],
+      "muc_do": 2,
+      "phan_tich": "Thuốc kháng acid làm giảm hấp thu ở đường tiêu hoá nên làm giảm tác dụng của thuốc phối hợp.",
+      "xu_ly": "Thuốc kháng acid và thuốc phối hợp phải uống cách nhau ít nhất 1 đến 2 giờ. Nhớ rằng các thuốc kháng acid thường được uống sau bữa ăn 1 giờ 30 phút, và ăn là nguyên nhân tăng tiết dịch vị."
+    },
+    {
+      "thuoc": ["Warfarin", "Coumadin", "Acenocoumarol", "Sintrom"],
+      "muc_do": 2,
+      "phan_tich": "Nguy cơ chảy máu theo một cơ chế chưa rõ. Tương tác này được nói rất ít trong y văn.",
+      "xu_ly": "Theo dõi thời gian prothrombin và tỉ lệ chuẩn hóa quốc tế (INR), và hiệu chỉnh liều lượng lúc bắt đầu, trong khi điều trị và trong vòng tám ngày kể từ khi ngừng điều trị."
+    }
+  ]
 }
   
 
