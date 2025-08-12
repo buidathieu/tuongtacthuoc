@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giới thiệu Tuongtacthuoc.vn | Tra cứu tương tác thuốc chuẩn xác</title>
+    <meta name="description" content="Giới thiệu Tuongtacthuoc.vn - nền tảng tra cứu tương tác thuốc miễn phí, hỗ trợ bác sĩ, dược sĩ và người dùng đảm bảo an toàn kê đơn.">
+    <meta name="keywords" content="giới thiệu tuongtacthuoc.vn, tra cứu tương tác thuốc, an toàn kê đơn, bác sĩ, dược sĩ, thuốc, hoạt chất">
+    <link rel="canonical" href="https://tuongtacthuoc.vn/gioi-thieu.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="main-menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu-list">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/gioi-thieu.html" class="active">Giới thiệu</a></li>
+            <li><a href="#faq-section">FAQ</a></li>
+            <li><a href="#lienhe">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-section">
+        <h1>Giới thiệu Tuongtacthuoc.vn</h1>
+        <p><strong>Tuongtacthuoc.vn</strong> là nền tảng <em>tra cứu tương tác thuốc</em> trực tuyến, miễn phí, giúp bác sĩ, dược sĩ và người dân chủ động kiểm tra tính an toàn khi kê đơn hoặc sử dụng thuốc.</p>
+
+        <h2>Sứ mệnh</h2>
+        <p>Chúng tôi mong muốn giảm thiểu các trường hợp tai biến hoặc giảm hiệu quả điều trị do tương tác thuốc, từ đó góp phần nâng cao an toàn y tế tại Việt Nam.</p>
+
+        <h2>Tính năng nổi bật</h2>
+        <ul>
+            <li>Tra cứu nhanh tương tác giữa nhiều loại thuốc cùng lúc</li>
+            <li>Thông tin được tổng hợp từ nguồn y khoa đáng tin cậy</li>
+            <li>Giao diện đơn giản, dễ sử dụng trên mọi thiết bị</li>
+        </ul>
+
+        <h2>Đối tượng sử dụng</h2>
+        <p>Nền tảng được xây dựng phục vụ cho:</p>
+        <ol>
+            <li>Bác sĩ, dược sĩ trong quá trình kê đơn</li>
+            <li>Sinh viên ngành Y – Dược</li>
+            <li>Người dân muốn tìm hiểu thông tin an toàn thuốc</li>
+        </ol>
+
+        <h2>Mục tiêu phát triển</h2>
+        <p>Tuongtacthuoc.vn không ngừng cập nhật cơ sở dữ liệu và cải tiến trải nghiệm người dùng để trở thành công cụ tra cứu y dược hàng đầu tại Việt Nam.</p>
+    </main>
+
+    <!-- FAQ -->
+    <div id="faq-section">
+        <h2 class="faq-title">Câu hỏi thường gặp</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">
+                    Dữ liệu trên Tuongtacthuoc.vn có đáng tin không?
+                    <span class="icon">+</span>
+                </button>
+                <div class="faq-answer" style="display:none;">
+                    Thông tin được tham khảo từ các cơ quan y tế uy tín như FDA và được kiểm chứng bởi các chuyên gia.
+                </div>
+            </div>
+            <!-- Thêm các FAQ khác nếu muốn -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-title">Tra cứu tương tác thuốc</span>
+            </div>
+            <div class="footer-links">
+                <a href="/gioi-thieu.html">Giới thiệu</a>
+                <a href="#lienhe">Liên hệ</a>
+                <a href="mailto:tuongtacthuoc.vn@gmail.com">Email</a>
+            </div>
+            <div class="footer-meta">
+                <span>© 2025 Tuongtacthuoc.vn</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle menu
+        document.getElementById('menu-toggle').onclick = function() {
+            document.getElementById('menu-list').classList.toggle('active');
+        };
+        // Toggle FAQ
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach((btn) => {
+            btn.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('.icon');
+                questions.forEach(q => {
+                    if (q !== this) {
+                        q.nextElementSibling.style.display = 'none';
+                        q.querySelector('.icon').textContent = '+';
+                    }
+                });
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    answer.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
