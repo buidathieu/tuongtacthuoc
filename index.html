@@ -79,9 +79,19 @@
         </div>
         <!-- Cột phải: Kết quả tương tác -->
         <div class="results-column">
-            <h2>Kết quả tương tác</h2>
-            <div id="results"></div>
-        </div>
+  <h2>
+    Kết quả tương tác
+    <span id="icon-preview-pdf" title="Xem trước PDF" style="cursor:pointer;font-size:1.2em; margin-left:8px;">&#128424;</span>
+  </h2>
+  <div id="results"></div>
+  <!-- Có thể thêm modal preview ở cuối trang -->
+  <div id="pdf-preview-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);z-index:9999;align-items:center;justify-content:center;">
+    <div style="background:#fff;padding:16px;border-radius:8px;max-width:90vw;max-height:90vh;overflow:auto;position:relative;">
+      <button id="close-preview" style="position:absolute;top:8px;right:8px;font-size:1.2em;cursor:pointer;">&times;</button>
+      <iframe id="pdf-iframe" style="width:70vw;height:75vh;border:none;"></iframe>
+    </div>
+  </div>
+</div>
     </div>
     
     <!-- FAQ Section: Đặt ngay trên footer hoặc cuối trang -->
@@ -244,6 +254,38 @@ if (isDarkMode) {
           }
         });
       });
-    </script>     
+    </script>   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+document.getElementById('icon-preview-pdf').onclick = async function() {
+  const { jsPDF } = window.jspdf;
+  const resultsDiv = document.getElementById('results');
+  
+  // Lấy ảnh từ div kết quả
+  const canvas = await html2canvas(resultsDiv);
+  const imgData = canvas.toDataURL('image/png');
+  const pdf = new jsPDF('p', 'mm', 'a4');
+  const pageWidth = pdf.internal.pageSize.getWidth();
+  const imgProps = pdf.getImageProperties(imgData);
+  const pdfWidth = pageWidth * 0.95;
+  const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+  pdf.addImage(imgData, 'PNG', (pageWidth-pdfWidth)/2, 20, pdfWidth, pdfHeight);
+
+  // Tạo blob và hiển thị trong iframe (preview)
+  const blob = pdf.output('blob');
+  const url = URL.createObjectURL(blob);
+  document.getElementById('pdf-iframe').src = url;
+  document.getElementById('pdf-preview-modal').style.display = 'flex';
+};
+
+// Nút đóng modal
+document.getElementById('close-preview').onclick = function() {
+  document.getElementById('pdf-preview-modal').style.display = 'none';
+  document.getElementById('pdf-iframe').src = '';
+};
+</script>
+
 </body>
 </html>
