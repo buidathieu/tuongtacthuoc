@@ -68,32 +68,50 @@
 </nav>
 
     <h1>Tra cứu tương tác thuốc</h1>
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Nhập tên hoạt chất hoặc thuốc...">
-        <div class="suggestions" id="suggestions"></div>
-    </div>
-    <div class="two-column-layout">
-        <!-- Cột trái: Danh sách đã chọn -->
-        <div class="selected-column">
-            <h2>Danh sách đã chọn (<span id="selected-count">0</span>)</h2>
-            <div class="selected-list" id="selected-drugs"></div>
+    <div class="container">
+    <header class="app-header">
+      <h1 class="header-title">Tuongtacthuoc.vn</h1>
+      <p class="header-desc">Tra cứu tương tác đa thuốc và cảnh báo kê đơn từ cơ sở dữ liệu cục bộ</p>
+    </header>
+
+    <main class="main-layout">
+      <aside class="left-column">
+        <div class="search-container">
+          <label class="search-label" for="searchInput">Thêm hoạt chất hoặc đối tượng đặc biệt</label>
+          <input type="text" id="searchInput" placeholder="Ví dụ: Panadol, Acetaminophen, Augmentin, Warfarin..." autocomplete="off">
+          <div class="suggestions" id="suggestions" role="listbox"></div>
+          <p class="helper-text">Hoạt chất dùng một tên chuẩn duy nhất. Có thể nhập không dấu, ví dụ: acyclovir, warfarin, suy than.</p>
         </div>
-        <!-- Cột phải: Kết quả tương tác -->
-        <div class="results-column">
-  <h2>
-    Kết quả tương tác
-    <span id="icon-preview-pdf" title="Xem trước PDF" style="cursor:pointer;font-size:1em; margin-left:8px;">🖨️</span>
-  </h2>
-  <div id="results"></div>
-  <!-- Có thể thêm modal preview ở cuối trang -->
-  <div id="pdf-preview-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);z-index:9999;align-items:center;justify-content:center;">
-    <div style="background:#fff;padding:16px;border-radius:8px;max-width:90vw;max-height:90vh;overflow:auto;position:relative;">
-      <button id="close-preview" style="position:absolute;top:8px;right:8px;font-size:1.2em;cursor:pointer;">&times;</button>
-      <iframe id="pdf-iframe" style="width:70vw;height:75vh;border:none;"></iframe>
-    </div>
+
+        <div class="selected-area" id="selectedArea">
+          <div class="selected-title">Toa thuốc đang kiểm tra (<span id="selectedCount">0</span>)</div>
+          <div class="selected-list" id="selectedList"></div>
+        </div>
+      </aside>
+
+      <section class="right-column">
+        <h2 class="right-header">
+          <span>Kết quả phân tích</span>
+          <span class="summary-chip" id="summaryChip">Chưa có toa</span>
+        </h2>
+        <details class="level-legend-panel">
+          <summary>Phân loại mức độ</summary>
+          <div class="level-legend" aria-label="Phân loại mức độ tương tác">
+          <div class="level-item lvl-4"><strong>Mức 4: Phối hợp nguy hiểm</strong><span>Chống chỉ định, cần thay thế.</span></div>
+          <div class="level-item lvl-3"><strong>Mức 3: Cân nhắc nguy cơ/lợi ích</strong><span>Chỉ phối hợp khi lợi ích vượt trội.</span></div>
+          <div class="level-item lvl-2"><strong>Mức 2: Tương tác cần thận trọng</strong><span>Quản lý bằng liều, thời điểm hoặc theo dõi.</span></div>
+          <div class="level-item lvl-1"><strong>Mức 1: Tương tác cần theo dõi</strong><span>Rủi ro thấp, theo dõi sức khỏe chung.</span></div>
+          </div>
+        </details>
+        <div id="resultsArea">
+          <div class="empty-msg">
+            Thêm ít nhất 2 mục vào toa để bắt đầu tra cứu tương tác.
+            <span>Dữ liệu được đọc từ file buidathieu.normalized.data.js trong cùng thư mục.</span>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
-</div>
-    </div>
     
     <!-- FAQ Section: Đặt ngay trên footer hoặc cuối trang -->
     <div id="faq-section">
