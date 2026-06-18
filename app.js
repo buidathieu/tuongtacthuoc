@@ -1,263 +1,2250 @@
 // © 2025 Bùi Đạt Hiếu - Bản quyền thuộc về tác giả. Mọi quyền được bảo lưu.
 // Liên hệ: dathieu102@email.com
 
-document.addEventListener("DOMContentLoaded", function() {
-    const data = window.tuongTacData;
-    const allDrugs = new Set(); // Lưu tên thuốc đúng chuẩn (không bắt buộc lowercase)
-    const allDrugsLower = new Set(); // Lưu tên thuốc dạng lowercase để so sánh
+    document.addEventListener("DOMContentLoaded", () => {
+      const database = Array.isArray(window.tuongTacData) ? window.tuongTacData : [];
+      const input = document.getElementById("searchInput");
+      const suggestions = document.getElementById("suggestions");
+      const selectedList = document.getElementById("selectedList");
+      const selectedArea = document.getElementById("selectedArea");
+      const selectedCount = document.getElementById("selectedCount");
+      const resultsArea = document.getElementById("resultsArea");
+      const summaryChip = document.getElementById("summaryChip");
 
-    // Tạo danh sách tất cả thuốc trong nhóm và thuốc tương tác (KHÔNG thêm hoat_chat)
-    data.forEach(item => {
-        // Thêm cac_thuoc_trong_nhom
-        if (item.cac_thuoc_trong_nhom) {
-            const drugs = Array.isArray(item.cac_thuoc_trong_nhom) 
-                ? item.cac_thuoc_trong_nhom 
-                : [item.cac_thuoc_trong_nhom];
-            drugs.forEach(d => {
-                if (d) {
-                    allDrugs.add(String(d));
-                    allDrugsLower.add(String(d).toLowerCase());
-                }
+      const selected = new Map();
+      const activeCatalog = buildActiveCatalog(database);
+      const activeAliasMap = buildActiveAliasMap(activeCatalog);
+      const medicineAliases = buildMedicineAliases();
+      const searchIndex = buildSearchIndex(database);
+
+      if (database.length === 0) {
+        resultsArea.innerHTML = '<div class="error-msg">Không tìm thấy dữ liệu trong window.tuongTacData. Kiểm tra lại file buidathieu.normalized.data.js.</div>';
+        summaryChip.textContent = "Lỗi dữ liệu";
+        return;
+      }
+
+      input.addEventListener("input", debounce(renderSuggestions, 140));
+      input.addEventListener("keydown", handleInputKeydown);
+
+      document.addEventListener("click", (event) => {
+        if (!event.target.closest(".search-container")) hideSuggestions();
+      });
+
+      function buildActiveCatalog(items) {
+        const catalog = new Map();
+
+        items.forEach((item) => {
+          addActiveCatalogTerm(catalog, item.hoat_chat, item.hoat_chat);
+          splitCompoundName(item.hoat_chat).forEach((term) => addActiveCatalogTerm(catalog, term, term));
+          (item.cac_thuoc_cung_nhom || []).forEach((term) => addActiveCatalogTerm(catalog, term, term));
+          (item.tuong_tac || []).forEach((interaction) => {
+            if (isExcludedInteraction(interaction) || isSpecialPopulationInteraction(interaction)) return;
+            (interaction.hoat_chat || interaction.thuoc || []).forEach((term) => {
+              splitCompoundName(term).forEach((part) => addActiveCatalogTerm(catalog, part, part));
             });
-        }
-        // Thêm các thuốc tương tác
-        item.tuong_tac.forEach(t => {
-            if (t.thuoc) {
-                if (Array.isArray(t.thuoc)) {
-                    t.thuoc.forEach(th => {
-                        if (th) {
-                            allDrugs.add(String(th));
-                            allDrugsLower.add(String(th).toLowerCase());
-                        }
-                    });
-                } else {
-                    allDrugs.add(String(t.thuoc));
-                    allDrugsLower.add(String(t.thuoc).toLowerCase());
-                }
-            }
+          });
         });
-    });
 
-    const input = document.getElementById('search-input');
-    const suggestions = document.getElementById('suggestions');
-    const results = document.getElementById('results');
-    const selectedContainer = document.getElementById('selected-drugs');
-    const selectedCount = document.getElementById('selected-count');
-    const selectedDrugs = new Set();
-    const selectedDrugsLower = new Set(); // Lưu tên thuốc đã chọn dạng lowercase
+        return catalog;
+      }
 
-    // Autocomplete & chọn hoạt chất
-    input.addEventListener('input', debounce(function(e) {
-        const query = e.target.value.trim().toLowerCase();
-        suggestions.innerHTML = '';
-        if (!query) {
-            suggestions.style.display = 'none';
+      function addActiveCatalogTerm(catalog, rawValue, canonicalValue) {
+        if (!rawValue || typeof rawValue !== "string") return;
+        const label = rawValue.trim();
+        const key = normalizeText(label);
+        if (!key || key.length < 2 || isLikelySpecialPopulationLabel(label)) return;
+        if (!catalog.has(key)) catalog.set(key, { label: canonicalValue || label, key });
+      }
+
+      function buildActiveAliasMap(catalog) {
+        const aliasMap = new Map();
+
+        catalog.forEach((entry, key) => {
+          aliasMap.set(key, entry.label);
+        });
+
+        getGenericNameAliases().forEach(([alias, active]) => {
+          const canonical = resolveCatalogLabel(catalog, active) || active;
+          aliasMap.set(normalizeText(alias), canonical);
+        });
+
+        return aliasMap;
+      }
+
+      function buildSearchIndex(items) {
+        const index = new Map();
+
+        items.forEach((item) => {
+          const isPlaceholder = isAtcSupportPlaceholderItem(item);
+          addSearchEntry(index, item.hoat_chat, "Hoạt chất chính", [item.hoat_chat], { isPlaceholder });
+          splitCompoundName(item.hoat_chat).forEach((term) => {
+            if (normalizeText(term) !== normalizeText(item.hoat_chat)) {
+              addSearchEntry(index, term, "Thành phần hoạt chất", [term], { isPlaceholder });
+            }
+          });
+          (item.cac_thuoc_cung_nhom || []).forEach((term) => {
+            addSearchEntry(index, term, "Tên hoạt chất tương đương", [term], { isPlaceholder });
+          });
+          (item.biet_duoc || []).forEach((term) => {
+            addSearchEntry(index, term, "Biệt dược", [item.hoat_chat], { isPlaceholder });
+          });
+          if (!isPlaceholder) {
+            (item.tuong_tac || []).forEach((interaction) => {
+              collectInteractionTerms(interaction).forEach(({ value, kind, activeValues }) => addSearchEntry(index, value, kind, activeValues || [value]));
+            });
+          }
+        });
+
+        getGenericNameAliases().forEach(([alias, active]) => {
+          addSearchEntry(index, alias, "Tên generic/tên quốc tế tương đương", [active]);
+        });
+
+        medicineAliases.forEach((alias) => {
+          addSearchEntry(index, alias.name, alias.kind || "Biệt dược/thuốc phối hợp", alias.activeIngredients);
+        });
+
+        return Array.from(index.values()).sort((a, b) => a.label.localeCompare(b.label, "vi"));
+      }
+
+      function addSearchEntry(index, rawValue, kind, activeValues, options = {}) {
+        if (!rawValue || typeof rawValue !== "string") return;
+        const label = rawValue.trim();
+        const key = normalizeText(label);
+        if (!key || key.length < 2) return;
+
+        const activeIngredients = resolveActiveIngredients(activeValues && activeValues.length ? activeValues : [label]);
+        if (activeIngredients.length === 0) return;
+
+        const entry = {
+          label,
+          key,
+          kind,
+          activeIngredients,
+          ingredientKey: buildIngredientKey(activeIngredients),
+          matchKeys: buildSearchMatchKeys(label),
+          isPlaceholder: Boolean(options.isPlaceholder)
+        };
+
+        const existing = index.get(key);
+        if (!existing || scoreSearchEntry(entry) > scoreSearchEntry(existing)) {
+          index.set(key, entry);
+        }
+      }
+
+      function scoreSearchEntry(entry) {
+        const kind = normalizeText(entry.kind);
+        const activeCount = (entry.activeIngredients || []).length;
+        const placeholderPenalty = entry.isPlaceholder ? -2500 : 0;
+        return placeholderPenalty +
+          (kind.includes("hoat chat chinh") ? 1000 : 0) +
+          (kind.includes("generic") ? 800 : 0) +
+          (kind.includes("biet duoc") || kind.includes("phoi hop") ? 700 : 0) +
+          Math.max(0, 100 - activeCount);
+      }
+
+      function isAtcSupportPlaceholderItem(item) {
+        return (item.tuong_tac || []).some((interaction) => {
+          const text = normalizeText([
+            interaction.loai_tuong_tac,
+            interaction.phan_tich,
+            interaction.xu_ly
+          ].filter(Boolean).join(" "));
+          return text.includes("canh bao du lieu") ||
+            text.includes("danh muc atc de tranh bo sot") ||
+            text.includes("chua hoan tat ra soat tuong tac chi tiet");
+        });
+      }
+
+      function collectInteractionTerms(interaction) {
+        if (isExcludedInteraction(interaction)) return [];
+        const terms = [];
+        const isFood = isFoodInteraction(interaction);
+        const kind = isSpecialPopulationInteraction(interaction)
+          ? "Đối tượng đặc biệt"
+          : isFood
+            ? "Thực phẩm/đồ uống"
+            : "Hoạt chất tương tác";
+        const targetValues = interaction.hoat_chat || interaction.thuoc || [];
+        const values = isFood ? targetValues.filter((value) => isFoodLikeLabel(value)) : targetValues;
+        values.forEach((value) => {
+          if (!isFood) {
+            terms.push({ value, kind });
             return;
-        }
+          }
 
-        // Lọc các thuốc có chứa query (không phân biệt hoa/thường)
-        const filtered = Array.from(allDrugs)
-            .filter(d => typeof d === 'string')
-            .filter(d => String(d).toLowerCase().includes(query) && !selectedDrugsLower.has(d.toLowerCase()));
-
-        if (filtered.length > 0) {
-            filtered.forEach(drug => {
-                const div = document.createElement('div');
-                div.className = 'suggestion-item';
-                div.textContent = drug;
-                div.onclick = () => {
-                    const drugLower = drug.toLowerCase();
-                    if (!selectedDrugsLower.has(drugLower)) {
-                        selectedDrugs.add(drug);
-                        selectedDrugsLower.add(drugLower);
-                        updateSelectedDrugs();
-                        findInteractions();
-                    }
-                    input.value = '';
-                    suggestions.style.display = 'none';
-                };
-                suggestions.appendChild(div);
-            });
-            suggestions.style.display = 'block';
-        } else {
-            suggestions.style.display = 'none';
-        }
-    }, 250));
-
-    // Ẩn gợi ý khi click ngoài
-    document.addEventListener("click", (e) => {
-        if (!e.target.closest(".search-container")) {
-            suggestions.style.display = "none";
-        }
-    });
-
-    // Xử lý Enter để thêm hoạt chất
-    input.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter') {
-            const value = input.value.trim();
-            if (value) {
-                // Tìm thuốc trùng khớp (không phân biệt hoa/thường)
-                const found = Array.from(allDrugs).find(d => 
-                    String(d).toLowerCase() === value.toLowerCase()
-                );
-                if (found && !selectedDrugsLower.has(value.toLowerCase())) {
-                    selectedDrugs.add(found);
-                    selectedDrugsLower.add(found.toLowerCase());
-                    updateSelectedDrugs();
-                    findInteractions();
-                }
-            }
-            input.value = '';
-            suggestions.style.display = 'none';
-        }
-    });
-
-    // Hiển thị danh sách đã chọn
-    function updateSelectedDrugs() {
-        selectedContainer.innerHTML = '';
-        let index = 1;
-        selectedDrugs.forEach(drug => {
-            const div = document.createElement('div');
-            div.className = 'selected-item';
-            div.innerHTML = `
-                <div class="selected-item-number">${index++}</div>
-                <div class="selected-item-content">${drug}</div>
-                <button class="remove-btn" data-drug="${drug}" title="Xóa">&times;</button>
-            `;
-            div.querySelector('.remove-btn').addEventListener('click', () => {
-                selectedDrugs.delete(drug);
-                selectedDrugsLower.delete(drug.toLowerCase());
-                updateSelectedDrugs();
-                findInteractions();
-            });
-            selectedContainer.appendChild(div);
+          const localizedValue = localizeFoodLabel(value);
+          terms.push({ value: localizedValue, kind, activeValues: [localizedValue] });
+          if (normalizeText(localizedValue) !== normalizeText(value)) {
+            terms.push({ value, kind, activeValues: [localizedValue] });
+          }
         });
+        return terms;
+      }
 
-        selectedCount.textContent = selectedDrugs.size;
-
-        if (selectedDrugs.size > 0) {
-            const clearBtn = document.createElement('button');
-            clearBtn.className = 'clear-all';
-            clearBtn.textContent = 'Xóa tất cả';
-            clearBtn.addEventListener('click', () => {
-                selectedDrugs.clear();
-                selectedDrugsLower.clear();
-                updateSelectedDrugs();
-                results.innerHTML = '';
-            });
-            selectedContainer.appendChild(clearBtn);
-        }
-    }
-
-    // Hàm xóa trùng lặp kết quả (chỉ kiểm tra cặp thuốc)
-    function removeDuplicates(interactions) {
+      function resolveActiveIngredients(values) {
+        const resolved = [];
         const seen = new Set();
-        return interactions.filter(({ groupDrugs, interaction }) => {
-            const drugs = [...groupDrugs, interaction.thuoc].map(d => String(d).toLowerCase()).sort();
-            const key = drugs.join("-");
-            return seen.has(key) ? false : seen.add(key);
-        });
-    }
 
-    // Hàm tìm tương tác giữa các thuốc trong nhóm và thuốc tương tác
-    function findInteractions() {
-        results.innerHTML = '';
-        if (selectedDrugs.size < 2) return;
+        (values || []).forEach((value) => {
+          if (!value || typeof value !== "string") return;
 
-        const drugsArray = Array.from(selectedDrugs);
-        const foundInteractions = [];
-        const processedPairs = new Set();
+          const parts = splitCompoundName(value);
+          const sourceParts = parts.length > 1 ? parts : [value];
 
-        drugsArray.forEach((drug1, i) => {
-            drugsArray.slice(i + 1).forEach(drug2 => {
-                // Tránh kiểm tra trùng lặp cặp thuốc (không phân biệt hoa/thường)
-                const pairKey = [drug1.toLowerCase(), drug2.toLowerCase()].sort().join("-");
-                if (processedPairs.has(pairKey)) return;
-                processedPairs.add(pairKey);
+          sourceParts.forEach((part) => {
+            const cleanPart = part.trim();
+            const partKey = normalizeText(cleanPart);
+            if (!partKey || partKey.length < 2) return;
 
-                // Kiểm tra tương tác từng cặp thuốc
-                data.forEach(item => {
-                    // Lấy danh sách thuốc trong nhóm (cac_thuoc_trong_nhom)
-                    const groupDrugs = item.cac_thuoc_trong_nhom 
-                        ? (Array.isArray(item.cac_thuoc_trong_nhom) 
-                            ? item.cac_thuoc_trong_nhom 
-                            : [item.cac_thuoc_trong_nhom])
-                        : [];
-                    
-                    // Kiểm tra drug1 và drug2 có trong nhóm hoặc là thuốc tương tác (không phân biệt hoa/thường)
-                    const groupDrugsLower = groupDrugs.map(d => String(d).toLowerCase());
-                    const drug1Lower = drug1.toLowerCase();
-                    const drug2Lower = drug2.toLowerCase();
+            const canonicalLabel = activeAliasMap.get(partKey) || resolveCatalogLabel(activeCatalog, cleanPart) || cleanPart;
+            const canonicalKey = normalizeText(canonicalLabel);
+            if (!canonicalKey || seen.has(canonicalKey)) return;
 
-                    item.tuong_tac.forEach(t => {
-                        const interactingDrugs = Array.isArray(t.thuoc) ? t.thuoc : [t.thuoc];
-                        const interactingDrugsLower = interactingDrugs.map(d => String(d).toLowerCase());
-
-                        // Nếu drug1 thuộc nhóm và drug2 là thuốc tương tác
-                        if (groupDrugsLower.includes(drug1Lower) && interactingDrugsLower.includes(drug2Lower)) {
-                            foundInteractions.push({
-                                groupDrugs: groupDrugs.filter(d => selectedDrugsLower.has(String(d).toLowerCase())),
-                                interaction: { ...t, thuoc: drug2 }
-                            });
-                        }
-                        // Nếu drug2 thuộc nhóm và drug1 là thuốc tương tác
-                        if (groupDrugsLower.includes(drug2Lower) && interactingDrugsLower.includes(drug1Lower)) {
-                            foundInteractions.push({
-                                groupDrugs: groupDrugs.filter(d => selectedDrugsLower.has(String(d).toLowerCase())),
-                                interaction: { ...t, thuoc: drug1 }
-                            });
-                        }
-                    });
-                });
-            });
+            seen.add(canonicalKey);
+            resolved.push({ label: canonicalLabel, key: canonicalKey });
+          });
         });
 
-        // Loại bỏ trùng lặp trước khi hiển thị
-        const uniqueInteractions = removeDuplicates(foundInteractions);
+        return resolved;
+      }
 
-        if (uniqueInteractions.length > 0) {
-            uniqueInteractions.forEach(({ groupDrugs, interaction }) => {
-                results.appendChild(createResultCard(groupDrugs, interaction));
-            });
-        } else {
-            results.innerHTML = `<div class="result-card">Không tìm thấy tương tác nào giữa các hoạt chất đã chọn.</div>`;
+      function resolveCatalogLabel(catalog, value) {
+        const key = normalizeText(value);
+        const direct = catalog.get(key);
+        if (direct) return direct.label;
+        return "";
+      }
+
+      function buildIngredientKey(activeIngredients) {
+        return (activeIngredients || [])
+          .map((ingredient) => ingredient.key)
+          .filter(Boolean)
+          .sort()
+          .join("+");
+      }
+
+      function splitCompoundName(name) {
+        const cleaned = String(name || "")
+          .replace(/\((.*?)\)/g, " $1 ")
+          .replace(/\bplus\b/gi, "+")
+          .replace(/\band\b/gi, "+");
+
+        return cleaned
+          .split(/[\/,;+&]/)
+          .map((part) => part.trim())
+          .filter(Boolean);
+      }
+
+      function isLikelySpecialPopulationLabel(label) {
+        const key = normalizeText(label);
+        return containsAny(` ${key} `, [
+          " phu nu ",
+          " nguoi ",
+          " tre em ",
+          " suy than ",
+          " suy gan ",
+          " benh than ",
+          " benh gan ",
+          " mang thai ",
+          " cho con bu ",
+          " loc mau ",
+          " tram cam ",
+          " y nghi tu sat "
+        ]);
+      }
+
+      function buildLegacySearchIndex(items) {
+        const index = new Map();
+
+        items.forEach((item) => {
+          addTerm(index, item.hoat_chat, "Hoạt chất chính");
+          (item.cac_thuoc_cung_nhom || []).forEach((term) => {
+            addTerm(index, term, "Tên hoạt chất tương đương");
+          });
+          (item.biet_duoc || []).forEach((term) => {
+            addTerm(index, term, "Biệt dược");
+          });
+          (item.tuong_tac || []).forEach((interaction) => {
+            collectInteractionTerms(interaction).forEach(({ value, kind }) => addTerm(index, value, kind));
+          });
+        });
+
+        return Array.from(index.values()).sort((a, b) => a.label.localeCompare(b.label, "vi"));
+      }
+
+      function addLegacyTerm(index, rawValue, kind) {
+        if (!rawValue || typeof rawValue !== "string") return;
+        const label = rawValue.trim();
+        const key = normalizeText(label);
+        if (!key || key.length < 2) return;
+
+        if (!index.has(key)) {
+          index.set(key, { label, key, kind });
         }
-    }
+      }
 
-    // Hàm tạo thẻ kết quả
-    function createResultCard(groupDrugs, interaction) {
-        const card = document.createElement('div');
-        card.className = `result-card mucdo-${interaction.muc_do}`;
-        // Hiển thị các thuốc trong nhóm đã chọn (nếu có nhiều)
-        const groupDisplay = groupDrugs.length > 1 ? groupDrugs.join(", ") : groupDrugs[0] || '';
+      function collectLegacyInteractionTerms(interaction) {
+        if (isExcludedInteraction(interaction)) return [];
+        const terms = [];
+        const kind = isSpecialPopulationInteraction(interaction)
+          ? "Đối tượng đặc biệt"
+          : isFoodInteraction(interaction)
+            ? "Thực phẩm/đồ uống"
+            : "Hoạt chất tương tác";
+        const isFood = isFoodInteraction(interaction);
+        const targetValues = interaction.hoat_chat || interaction.thuoc || [];
+        const values = isFood ? targetValues.filter((value) => isFoodLikeLabel(value)) : targetValues;
+        values.forEach((value) => terms.push({ value: isFood ? localizeFoodLabel(value) : value, kind }));
+        return terms;
+      }
 
-        card.innerHTML = `
-            <h3>${groupDisplay} ↔ ${interaction.thuoc}</h3>
-            <div class="severity mucdo-${interaction.muc_do}">
-                Mức độ ${interaction.muc_do}: ${getSeverityText(interaction.muc_do)}
+      function splitLegacyCompoundName(name) {
+        const cleaned = name.replace(/\((.*?)\)/g, " $1 ");
+        return cleaned
+          .split(/[\/,;+]/)
+          .map((part) => part.trim())
+          .filter(Boolean);
+      }
+
+      function getGenericNameAliases() {
+        return [
+          ["Acetaminophen", "Paracetamol"],
+          ["Aciclovir", "Acyclovir"],
+          ["Acyclovir", "Acyclovir"],
+          ["Valaciclovir", "Valacyclovir"],
+          ["Valacyclovir", "Valacyclovir"],
+          ["Amiodaron", "Amiodarone"],
+          ["Amiodarone", "Amiodarone"],
+          ["Theophylin", "Theophylline"],
+          ["Theophyllin", "Theophylline"],
+          ["Theophyline", "Theophylline"],
+          ["Theophylline", "Theophylline"],
+          ["Aminophylin", "Aminophylline"],
+          ["Aminophyllin", "Aminophylline"],
+          ["Aminophylline", "Aminophylline"],
+          ["Acid valproic", "Valproic acid"],
+          ["Valproate", "Valproic acid"],
+          ["Valproat natri", "Valproic acid"],
+          ["Sodium valproate", "Valproic acid"],
+          ["Acetylsalicylic acid", "Salicylates"],
+          ["Aspirin", "Salicylates"],
+          ["ASA", "Salicylates"],
+          ["Furosemid", "Furosemide"],
+          ["Hydrochlorothiazid", "Hydrochlorothiazide"],
+          ["Spironolacton", "Spironolactone"],
+          ["Glibenclamid", "Glibenclamide"],
+          ["Glyburide", "Glibenclamide"],
+          ["Metformin hydrochloride", "Metformin"],
+          ["Adrenalin", "Epinephrine"],
+          ["Noradrenalin", "Norepinephrine"],
+          ["Isoprenalin", "Isoproterenol"],
+          ["Diclofenac sodium", "Diclofenac"],
+          ["Diclofenac potassium", "Diclofenac"],
+          ["Ibuprofen lysine", "Ibuprofen"],
+          ["Co-trimoxazole", "Trimethoprim/Sulfamethoxazole"],
+          ["Cotrimoxazole", "Trimethoprim/Sulfamethoxazole"],
+          ["TMP-SMX", "Trimethoprim/Sulfamethoxazole"],
+          ["Trimethoprim sulfamethoxazole", "Trimethoprim/Sulfamethoxazole"],
+          ["Amoxicillin clavulanate", "Amoxicillin/Clavulanic acid"],
+          ["Amoxicillin clavulanic acid", "Amoxicillin/Clavulanic acid"],
+          ["Co-amoxiclav", "Amoxicillin/Clavulanic acid"],
+          ["Levodopa carbidopa", "Carbidopa/Levodopa"],
+          ["Carbidopa levodopa entacapone", "Carbidopa/Levodopa/Entacapone"],
+          ["Vitamin C", "Ascorbic acid"],
+          ["Sodium ascorbate", "Ascorbic acid"],
+          ["Ascorbate", "Ascorbic acid"],
+          ["Acid ascorbic", "Ascorbic acid"],
+          ["Ursodiol", "Ursodeoxycholic acid"],
+          ["Acid ursodeoxycholic", "Ursodeoxycholic acid"],
+          ["Chenodiol", "Chenodeoxycholic acid"],
+          ["Acid chenodeoxycholic", "Chenodeoxycholic acid"],
+          ["Cromoglicate", "Cromoglicic acid"],
+          ["Sodium cromoglicate", "Cromolyn sodium"],
+          ["Folate", "Folic acid"],
+          ["Acid folic", "Folic acid"],
+          ["Actinomycin D", "Dactinomycin"],
+          ["Gentamycin", "Gentamicin"],
+          ["Amphotericin B liposomal", "Amphotericin B"],
+          ["Liposomal amphotericin B", "Amphotericin B"],
+          ["Sofosbuvir ledipasvir", "Ledipasvir/Sofosbuvir"],
+          ["Ledipasvir sofosbuvir", "Ledipasvir/Sofosbuvir"],
+          ["Sofosbuvir velpatasvir", "Sofosbuvir/Velpatasvir"]
+        ];
+      }
+
+      function buildMedicineAliases() {
+        // Seed aliases focus on brands commonly seen in Vietnam plus major global brands.
+        // Interactions remain stored and matched by active ingredient.
+        const brand = "Biệt dược";
+        const combo = "Biệt dược/thuốc phối hợp";
+        return [
+          { name: "Panadol", activeIngredients: ["Paracetamol"], kind: brand },
+          { name: "Panadol Extra", activeIngredients: ["Paracetamol", "Caffeine"], kind: combo },
+          { name: "Hapacol", activeIngredients: ["Paracetamol"], kind: brand },
+          { name: "Efferalgan", activeIngredients: ["Paracetamol"], kind: brand },
+          { name: "Efferalgan Codeine", activeIngredients: ["Paracetamol", "Codeine"], kind: combo },
+          { name: "Tylenol", activeIngredients: ["Paracetamol"], kind: brand },
+          { name: "Paracetamol Stella", activeIngredients: ["Paracetamol"], kind: brand },
+          { name: "Paracetamol Domesco", activeIngredients: ["Paracetamol"], kind: brand },
+          { name: "Alaxan", activeIngredients: ["Paracetamol", "Ibuprofen"], kind: combo },
+          { name: "Fervex", activeIngredients: ["Paracetamol", "Ascorbic acid", "Pheniramine"], kind: combo },
+          { name: "Theraflu", activeIngredients: ["Paracetamol", "Phenylephrine", "Pheniramine"], kind: combo },
+          { name: "Decolgen", activeIngredients: ["Paracetamol", "Phenylephrine", "Chlorpheniramine"], kind: combo },
+          { name: "Tiffy", activeIngredients: ["Paracetamol", "Pseudoephedrine", "Chlorpheniramine"], kind: combo },
+          { name: "Redoxon", activeIngredients: ["Ascorbic acid"], kind: brand },
+          { name: "Cebion", activeIngredients: ["Ascorbic acid"], kind: brand },
+          { name: "Ceelin", activeIngredients: ["Ascorbic acid"], kind: brand },
+          { name: "Campral", activeIngredients: ["Acamprosate"], kind: brand },
+          { name: "Aotal", activeIngredients: ["Acamprosate"], kind: brand },
+          { name: "Hidrasec", activeIngredients: ["Racecadotril"], kind: brand },
+          { name: "Tiorfan", activeIngredients: ["Racecadotril"], kind: brand },
+          { name: "Zovirax", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Acyclovir Denk", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Avircrem", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Cyclovax", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Cyclovir", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Hacyclor", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Herperax", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Herpevir", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Herpex", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Lovir", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Mediclovir", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Medovir", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Napharax", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Sudo Acyclovir", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Vacrax", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Virucid", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Zoraxin", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Acyclovir Stada", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Acyclovir Stella", activeIngredients: ["Acyclovir"], kind: brand },
+          { name: "Ursofalk", activeIngredients: ["Ursodeoxycholic acid"], kind: brand },
+          { name: "Ursobil", activeIngredients: ["Ursodeoxycholic acid"], kind: brand },
+          { name: "Actigall", activeIngredients: ["Ursodeoxycholic acid"], kind: brand },
+          { name: "Urso", activeIngredients: ["Ursodeoxycholic acid"], kind: brand },
+          { name: "Chenodal", activeIngredients: ["Chenodeoxycholic acid"], kind: brand },
+          { name: "Intal", activeIngredients: ["Cromolyn sodium"], kind: brand },
+          { name: "Gastrocrom", activeIngredients: ["Cromolyn sodium"], kind: brand },
+          { name: "Nasalcrom", activeIngredients: ["Cromolyn sodium"], kind: brand },
+          { name: "Folvite", activeIngredients: ["Folic acid"], kind: brand },
+          { name: "Folacin", activeIngredients: ["Folic acid"], kind: brand },
+          { name: "Folacid", activeIngredients: ["Folic acid"], kind: brand },
+          { name: "Folic Acid Mekophar", activeIngredients: ["Folic acid"], kind: brand },
+          { name: "Folic Acid Domesco", activeIngredients: ["Folic acid"], kind: brand },
+          { name: "Fucidin", activeIngredients: ["Fusidic acid"], kind: brand },
+          { name: "Fucithalmic", activeIngredients: ["Fusidic acid"], kind: brand },
+          { name: "Cosmegen", activeIngredients: ["Dactinomycin"], kind: brand },
+          { name: "Zyloric", activeIngredients: ["Allopurinol"], kind: brand },
+          { name: "Zyloprim", activeIngredients: ["Allopurinol"], kind: brand },
+          { name: "Lopurin", activeIngredients: ["Allopurinol"], kind: brand },
+          { name: "Milurit", activeIngredients: ["Allopurinol"], kind: brand },
+          { name: "Allopurinol Domesco", activeIngredients: ["Allopurinol"], kind: brand },
+          { name: "Allopurinol Stella", activeIngredients: ["Allopurinol"], kind: brand },
+          { name: "Caverject", activeIngredients: ["Alprostadil"], kind: brand },
+          { name: "Muse", activeIngredients: ["Alprostadil"], kind: brand },
+          { name: "Prostin VR", activeIngredients: ["Alprostadil"], kind: brand },
+          { name: "Symmetrel", activeIngredients: ["Amantadine"], kind: brand },
+          { name: "Gocovri", activeIngredients: ["Amantadine"], kind: brand },
+          { name: "Osmolex ER", activeIngredients: ["Amantadine"], kind: brand },
+          { name: "Zinnat", activeIngredients: ["Cefuroxime"], kind: brand },
+          { name: "Augmentin", activeIngredients: ["Amoxicillin", "Clavulanic acid"], kind: combo },
+          { name: "Curam", activeIngredients: ["Amoxicillin", "Clavulanic acid"], kind: combo },
+          { name: "Klamentin", activeIngredients: ["Amoxicillin", "Clavulanic acid"], kind: combo },
+          { name: "Bactrim", activeIngredients: ["Trimethoprim", "Sulfamethoxazole"], kind: combo },
+          { name: "Biseptol", activeIngredients: ["Trimethoprim", "Sulfamethoxazole"], kind: combo },
+          { name: "Co-trimoxazole", activeIngredients: ["Trimethoprim", "Sulfamethoxazole"], kind: combo },
+          { name: "Depakine", activeIngredients: ["Valproic acid"], kind: brand },
+          { name: "Depakote", activeIngredients: ["Valproic acid"], kind: brand },
+          { name: "Epilim", activeIngredients: ["Valproic acid"], kind: brand },
+          { name: "Dilantin", activeIngredients: ["Phenytoin"], kind: brand },
+          { name: "Epanutin", activeIngredients: ["Phenytoin"], kind: brand },
+          { name: "Coumadin", activeIngredients: ["Warfarin"], kind: brand },
+          { name: "Marevan", activeIngredients: ["Warfarin"], kind: brand },
+          { name: "Plavix", activeIngredients: ["Clopidogrel"], kind: brand },
+          { name: "Ticlid", activeIngredients: ["Ticlopidine"], kind: brand },
+          { name: "Cordarone", activeIngredients: ["Amiodarone"], kind: brand },
+          { name: "Pacerone", activeIngredients: ["Amiodarone"], kind: brand },
+          { name: "Sedacoron", activeIngredients: ["Amiodarone"], kind: brand },
+          { name: "Amiodarone Stada", activeIngredients: ["Amiodarone"], kind: brand },
+          { name: "Amiodarone Domesco", activeIngredients: ["Amiodarone"], kind: brand },
+          { name: "Garamycin", activeIngredients: ["Gentamicin"], kind: brand },
+          { name: "Gentamicin HDPharma", activeIngredients: ["Gentamicin"], kind: brand },
+          { name: "Gentamicin Kabi", activeIngredients: ["Gentamicin"], kind: brand },
+          { name: "Gentamicin 80mg", activeIngredients: ["Gentamicin"], kind: brand },
+          { name: "Amikin", activeIngredients: ["Amikacin"], kind: brand },
+          { name: "Nebcin", activeIngredients: ["Tobramycin"], kind: brand },
+          { name: "Tobrex", activeIngredients: ["Tobramycin"], kind: brand },
+          { name: "Neocin", activeIngredients: ["Neomycin"], kind: brand },
+          { name: "Mycifradin", activeIngredients: ["Neomycin"], kind: brand },
+          { name: "Neo-Fradin", activeIngredients: ["Neomycin"], kind: brand },
+          { name: "Adderall", activeIngredients: ["Amphetamine", "Dextroamphetamine"], kind: combo },
+          { name: "Dexedrine", activeIngredients: ["Dextroamphetamine"], kind: brand },
+          { name: "Vyvanse", activeIngredients: ["Lisdexamfetamine"], kind: brand },
+          { name: "Fungizone", activeIngredients: ["Amphotericin B"], kind: brand },
+          { name: "Ambisome", activeIngredients: ["Amphotericin B"], kind: brand },
+          { name: "Abelcet", activeIngredients: ["Amphotericin B"], kind: brand },
+          { name: "Amphotec", activeIngredients: ["Amphotericin B"], kind: brand },
+          { name: "Glucantime", activeIngredients: ["Meglumine antimoniate"], kind: brand },
+          { name: "Apokyn", activeIngredients: ["Apomorphine"], kind: brand },
+          { name: "Kynmobi", activeIngredients: ["Apomorphine"], kind: brand },
+          { name: "Kidrolase", activeIngredients: ["Asparaginase"], kind: brand },
+          { name: "Elspar", activeIngredients: ["Asparaginase"], kind: brand },
+          { name: "Oncaspar", activeIngredients: ["Asparaginase"], kind: brand },
+          { name: "Rylaze", activeIngredients: ["Asparaginase"], kind: brand },
+          { name: "Imuran", activeIngredients: ["Azathioprine"], kind: brand },
+          { name: "Azasan", activeIngredients: ["Azathioprine"], kind: brand },
+          { name: "Imurel", activeIngredients: ["Azathioprine"], kind: brand },
+          { name: "Lioresal", activeIngredients: ["Baclofen"], kind: brand },
+          { name: "Baclosal", activeIngredients: ["Baclofen"], kind: brand },
+          { name: "Gablofen", activeIngredients: ["Baclofen"], kind: brand },
+          { name: "Gardenal", activeIngredients: ["Phenobarbital"], kind: brand },
+          { name: "Luminal", activeIngredients: ["Phenobarbital"], kind: brand },
+          { name: "Primperan", activeIngredients: ["Metoclopramide"], kind: brand },
+          { name: "Reglan", activeIngredients: ["Metoclopramide"], kind: brand },
+          { name: "Maxolon", activeIngredients: ["Metoclopramide"], kind: brand },
+          { name: "Fluvermal", activeIngredients: ["Flubendazole"], kind: brand },
+          { name: "Lexomil", activeIngredients: ["Bromazepam"], kind: brand },
+          { name: "Lexotan", activeIngredients: ["Bromazepam"], kind: brand },
+          { name: "Lexotanil", activeIngredients: ["Bromazepam"], kind: brand },
+          { name: "Seduxen", activeIngredients: ["Diazepam"], kind: brand },
+          { name: "Valium", activeIngredients: ["Diazepam"], kind: brand },
+          { name: "Stesolid", activeIngredients: ["Diazepam"], kind: brand },
+          { name: "Diazepam Desitin", activeIngredients: ["Diazepam"], kind: brand },
+          { name: "Diazemuls", activeIngredients: ["Diazepam"], kind: brand },
+          { name: "Diastat", activeIngredients: ["Diazepam"], kind: brand },
+          { name: "Diazepam Stada", activeIngredients: ["Diazepam"], kind: brand },
+          { name: "Desuric", activeIngredients: ["Benzbromarone"], kind: brand },
+          { name: "Benzac", activeIngredients: ["Benzoyl peroxide"], kind: brand },
+          { name: "Benzac AC", activeIngredients: ["Benzoyl peroxide"], kind: brand },
+          { name: "PanOxyl", activeIngredients: ["Benzoyl peroxide"], kind: brand },
+          { name: "Ascabiol", activeIngredients: ["Benzyl benzoate"], kind: brand },
+          { name: "Vascor", activeIngredients: ["Bepridil"], kind: brand },
+          { name: "Betaserc", activeIngredients: ["Betahistine"], kind: brand },
+          { name: "Serc", activeIngredients: ["Betahistine"], kind: brand },
+          { name: "Vertin", activeIngredients: ["Betahistine"], kind: brand },
+          { name: "Fosamax", activeIngredients: ["Bisphosphonates"], kind: brand },
+          { name: "Actonel", activeIngredients: ["Bisphosphonates"], kind: brand },
+          { name: "Bonviva", activeIngredients: ["Bisphosphonates"], kind: brand },
+          { name: "Boniva", activeIngredients: ["Bisphosphonates"], kind: brand },
+          { name: "Aclasta", activeIngredients: ["Bisphosphonates"], kind: brand },
+          { name: "Reclast", activeIngredients: ["Bisphosphonates"], kind: brand },
+          { name: "Parlodel", activeIngredients: ["Bromocriptine"], kind: brand },
+          { name: "Buspar", activeIngredients: ["Buspirone"], kind: brand },
+          { name: "Inapsine", activeIngredients: ["Droperidol"], kind: brand },
+          { name: "Tracrium", activeIngredients: ["Atracurium"], kind: brand },
+          { name: "Cafcit", activeIngredients: ["Caffeine"], kind: brand },
+          { name: "Excedrin", activeIngredients: ["Paracetamol", "Aspirin", "Caffeine"], kind: combo },
+          { name: "Cafergot", activeIngredients: ["Ergotamine", "Caffeine"], kind: combo },
+          { name: "Caltrate", activeIngredients: ["Calcium salts"], kind: brand },
+          { name: "Calcium Sandoz", activeIngredients: ["Calcium salts"], kind: brand },
+          { name: "Calcium Corbiere", activeIngredients: ["Calcium salts"], kind: brand },
+          { name: "Miacalcic", activeIngredients: ["Calcitonin"], kind: brand },
+          { name: "Fortical", activeIngredients: ["Calcitonin"], kind: brand },
+          { name: "Soma", activeIngredients: ["Carisoprodol / Meprobamate"], kind: brand },
+          { name: "Carisoma", activeIngredients: ["Carisoprodol / Meprobamate"], kind: brand },
+          { name: "Miltown", activeIngredients: ["Carisoprodol / Meprobamate"], kind: brand },
+          { name: "Equanil", activeIngredients: ["Carisoprodol / Meprobamate"], kind: brand },
+          { name: "Tegretol", activeIngredients: ["Carbamazepine"], kind: brand },
+          { name: "Tegretol CR", activeIngredients: ["Carbamazepine"], kind: brand },
+          { name: "Carbatrol", activeIngredients: ["Carbamazepine"], kind: brand },
+          { name: "Epitol", activeIngredients: ["Carbamazepine"], kind: brand },
+          { name: "Equetro", activeIngredients: ["Carbamazepine"], kind: brand },
+          { name: "Carbamazepine Stada", activeIngredients: ["Carbamazepine"], kind: brand },
+          { name: "BiCNU", activeIngredients: ["Carmustine"], kind: brand },
+          { name: "Gliadel", activeIngredients: ["Carmustine"], kind: brand },
+          { name: "Rocephin", activeIngredients: ["Ceftriaxone"], kind: brand },
+          { name: "Claforan", activeIngredients: ["Cefotaxime"], kind: brand },
+          { name: "Keflex", activeIngredients: ["Cephalexin"], kind: brand },
+          { name: "Ceclor", activeIngredients: ["Cefaclor"], kind: brand },
+          { name: "Suprax", activeIngredients: ["Cefixime"], kind: brand },
+          { name: "Fortum", activeIngredients: ["Ceftazidime"], kind: brand },
+          { name: "Maxipime", activeIngredients: ["Cefepime"], kind: brand },
+          { name: "Mandol", activeIngredients: ["Cefamandole"], kind: brand },
+          { name: "Questran", activeIngredients: ["Cholestyramine"], kind: brand },
+          { name: "Questran Light", activeIngredients: ["Cholestyramine"], kind: brand },
+          { name: "Prevalite", activeIngredients: ["Cholestyramine"], kind: brand },
+          { name: "Urecholine", activeIngredients: ["Cholinergic agents"], kind: brand },
+          { name: "Mestinon", activeIngredients: ["Cholinergic agents"], kind: brand },
+          { name: "Prostigmin", activeIngredients: ["Cholinergic agents"], kind: brand },
+          { name: "Pilocar", activeIngredients: ["Cholinergic agents"], kind: brand },
+          { name: "Sandimmun", activeIngredients: ["Cyclosporine"], kind: brand },
+          { name: "Sandimmune", activeIngredients: ["Cyclosporine"], kind: brand },
+          { name: "Neoral", activeIngredients: ["Cyclosporine"], kind: brand },
+          { name: "Gengraf", activeIngredients: ["Cyclosporine"], kind: brand },
+          { name: "Cyclosporine Sandoz", activeIngredients: ["Cyclosporine"], kind: brand },
+          { name: "Prepulsid", activeIngredients: ["Cisapride"], kind: brand },
+          { name: "Propulsid", activeIngredients: ["Cisapride"], kind: brand },
+          { name: "Platinol", activeIngredients: ["Cisplatin"], kind: brand },
+          { name: "Platinol-AQ", activeIngredients: ["Cisplatin"], kind: brand },
+          { name: "Cisplatin Ebewe", activeIngredients: ["Cisplatin"], kind: brand },
+          { name: "Cisplatin Kabi", activeIngredients: ["Cisplatin"], kind: brand },
+          { name: "Celexa", activeIngredients: ["Citalopram"], kind: brand },
+          { name: "Cipramil", activeIngredients: ["Citalopram"], kind: brand },
+          { name: "Citalopram Stada", activeIngredients: ["Citalopram"], kind: brand },
+          { name: "Catapres", activeIngredients: ["Clonidine"], kind: brand },
+          { name: "Kapvay", activeIngredients: ["Clonidine"], kind: brand },
+          { name: "Dixarit", activeIngredients: ["Clonidine"], kind: brand },
+          { name: "Hibiscrub", activeIngredients: ["Chlorhexidine"], kind: brand },
+          { name: "Hibitane", activeIngredients: ["Chlorhexidine"], kind: brand },
+          { name: "Corsodyl", activeIngredients: ["Chlorhexidine"], kind: brand },
+          { name: "Peridex", activeIngredients: ["Chlorhexidine"], kind: brand },
+          { name: "Periogard", activeIngredients: ["Chlorhexidine"], kind: brand },
+          { name: "Clozaril", activeIngredients: ["Clozapine"], kind: brand },
+          { name: "Leponex", activeIngredients: ["Clozapine"], kind: brand },
+          { name: "Versacloz", activeIngredients: ["Clozapine"], kind: brand },
+          { name: "Fazaclo", activeIngredients: ["Clozapine"], kind: brand },
+          { name: "Colcrys", activeIngredients: ["Colchicine"], kind: brand },
+          { name: "Mitigare", activeIngredients: ["Colchicine"], kind: brand },
+          { name: "Goutnil", activeIngredients: ["Colchicine"], kind: brand },
+          { name: "Endoxan", activeIngredients: ["Cyclophosphamide"], kind: brand },
+          { name: "Cytoxan", activeIngredients: ["Cyclophosphamide"], kind: brand },
+          { name: "Neosar", activeIngredients: ["Cyclophosphamide"], kind: brand },
+          { name: "Seromycin", activeIngredients: ["Cycloserine"], kind: brand },
+          { name: "Danocrine", activeIngredients: ["Danazol"], kind: brand },
+          { name: "Danol", activeIngredients: ["Danazol"], kind: brand },
+          { name: "Cyclomen", activeIngredients: ["Danazol"], kind: brand },
+          { name: "Dantrium", activeIngredients: ["Dantrolene"], kind: brand },
+          { name: "Ryanodex", activeIngredients: ["Dantrolene"], kind: brand },
+          { name: "Revonto", activeIngredients: ["Dantrolene"], kind: brand },
+          { name: "Aczone", activeIngredients: ["Dapsone"], kind: brand },
+          { name: "Avlosulfon", activeIngredients: ["Dapsone"], kind: brand },
+          { name: "Disulone", activeIngredients: ["Dapsone"], kind: brand },
+          { name: "Desferal", activeIngredients: ["Deferoxamine"], kind: brand },
+          { name: "Minirin", activeIngredients: ["Desmopressin"], kind: brand },
+          { name: "DDAVP", activeIngredients: ["Desmopressin"], kind: brand },
+          { name: "Nocdurna", activeIngredients: ["Desmopressin"], kind: brand },
+          { name: "Stimate", activeIngredients: ["Desmopressin"], kind: brand },
+          { name: "Macrodex", activeIngredients: ["Dextran"], kind: brand },
+          { name: "Rheomacrodex", activeIngredients: ["Dextran"], kind: brand },
+          { name: "Darvon", activeIngredients: ["Dextropropoxyphene"], kind: brand },
+          { name: "Darvocet", activeIngredients: ["Dextropropoxyphene", "Paracetamol"], kind: combo },
+          { name: "Diacerein Stada", activeIngredients: ["Diacerein"], kind: brand },
+          { name: "Art 50", activeIngredients: ["Diacerein"], kind: brand },
+          { name: "Zondar", activeIngredients: ["Diacerein"], kind: brand },
+          { name: "Proglycem", activeIngredients: ["Diazoxide"], kind: brand },
+          { name: "Hyperstat", activeIngredients: ["Diazoxide"], kind: brand },
+          { name: "Vykat XR", activeIngredients: ["Diazoxide"], kind: brand },
+          { name: "Amlor", activeIngredients: ["Amlodipine"], kind: brand },
+          { name: "Amlodipine Stada", activeIngredients: ["Amlodipine"], kind: brand },
+          { name: "Cardizem", activeIngredients: ["Diltiazem"], kind: brand },
+          { name: "Tildiem", activeIngredients: ["Diltiazem"], kind: brand },
+          { name: "Herbesser", activeIngredients: ["Diltiazem"], kind: brand },
+          { name: "Norpace", activeIngredients: ["Disopyramide"], kind: brand },
+          { name: "Rythmodan", activeIngredients: ["Disopyramide"], kind: brand },
+          { name: "Antabuse", activeIngredients: ["Disulfiram"], kind: brand },
+          { name: "Esperal", activeIngredients: ["Disulfiram"], kind: brand },
+          { name: "Dopram", activeIngredients: ["Doxapram"], kind: brand },
+          { name: "Adriamycin", activeIngredients: ["Doxorubicin"], kind: brand },
+          { name: "Doxil", activeIngredients: ["Doxorubicin"], kind: brand },
+          { name: "Caelyx", activeIngredients: ["Doxorubicin"], kind: brand },
+          { name: "Myocet", activeIngredients: ["Doxorubicin"], kind: brand },
+          { name: "Botox", activeIngredients: ["Botulinum toxin"], kind: brand },
+          { name: "Dysport", activeIngredients: ["Botulinum toxin"], kind: brand },
+          { name: "Xeomin", activeIngredients: ["Botulinum toxin"], kind: brand },
+          { name: "Myobloc", activeIngredients: ["Botulinum toxin"], kind: brand },
+          { name: "Mirena", activeIngredients: ["Intrauterine device"], kind: brand },
+          { name: "Kyleena", activeIngredients: ["Intrauterine device"], kind: brand },
+          { name: "Jaydess", activeIngredients: ["Intrauterine device"], kind: brand },
+          { name: "Skyla", activeIngredients: ["Intrauterine device"], kind: brand },
+          { name: "Paragard", activeIngredients: ["Intrauterine device"], kind: brand },
+          { name: "Copper T", activeIngredients: ["Intrauterine device"], kind: brand },
+          { name: "Ergomar", activeIngredients: ["Ergotamine"], kind: brand },
+          { name: "Migergot", activeIngredients: ["Ergotamine", "Caffeine"], kind: combo },
+          { name: "Harvoni", activeIngredients: ["Ledipasvir", "Sofosbuvir"], kind: combo },
+          { name: "Sovaldi", activeIngredients: ["Sofosbuvir"], kind: brand },
+          { name: "Epclusa", activeIngredients: ["Sofosbuvir", "Velpatasvir"], kind: combo },
+          { name: "Vosevi", activeIngredients: ["Sofosbuvir", "Velpatasvir", "Voxilaprevir"], kind: combo },
+          { name: "Lipitor", activeIngredients: ["Atorvastatin"], kind: brand },
+          { name: "Zocor", activeIngredients: ["Simvastatin"], kind: brand },
+          { name: "Crestor", activeIngredients: ["Rosuvastatin"], kind: brand },
+          { name: "Norvasc", activeIngredients: ["Amlodipine"], kind: brand },
+          { name: "Adalat", activeIngredients: ["Nifedipine"], kind: brand },
+          { name: "Lasix", activeIngredients: ["Furosemide"], kind: brand },
+          { name: "Aldactone", activeIngredients: ["Spironolactone"], kind: brand },
+          { name: "Zestril", activeIngredients: ["Lisinopril"], kind: brand },
+          { name: "Renitec", activeIngredients: ["Enalapril"], kind: brand },
+          { name: "Coveram", activeIngredients: ["Perindopril", "Amlodipine"], kind: combo },
+          { name: "Exforge", activeIngredients: ["Valsartan", "Amlodipine"], kind: combo },
+          { name: "Entresto", activeIngredients: ["Sacubitril", "Valsartan"], kind: combo },
+          { name: "Glucophage", activeIngredients: ["Metformin"], kind: brand },
+          { name: "Diamicron", activeIngredients: ["Gliclazide"], kind: brand },
+          { name: "Daonil", activeIngredients: ["Glibenclamide"], kind: brand },
+          { name: "Nexium", activeIngredients: ["Esomeprazole"], kind: brand },
+          { name: "Losec", activeIngredients: ["Omeprazole"], kind: brand },
+          { name: "Zantac", activeIngredients: ["Ranitidine"], kind: brand },
+          { name: "Pepcid", activeIngredients: ["Famotidine"], kind: brand },
+          { name: "Tagamet", activeIngredients: ["Cimetidine"], kind: brand },
+          { name: "Marvelon", activeIngredients: ["Ethinyl estradiol", "Desogestrel"], kind: combo },
+          { name: "Mercilon", activeIngredients: ["Ethinyl estradiol", "Desogestrel"], kind: combo },
+          { name: "Regulon", activeIngredients: ["Ethinyl estradiol", "Desogestrel"], kind: combo },
+          { name: "Rigevidon", activeIngredients: ["Ethinyl estradiol", "Levonorgestrel"], kind: combo },
+          { name: "Microgynon", activeIngredients: ["Ethinyl estradiol", "Levonorgestrel"], kind: combo },
+          { name: "Nordette", activeIngredients: ["Ethinyl estradiol", "Levonorgestrel"], kind: combo },
+          { name: "Yasmin", activeIngredients: ["Ethinyl estradiol", "Drospirenone"], kind: combo },
+          { name: "Yaz", activeIngredients: ["Ethinyl estradiol", "Drospirenone"], kind: combo },
+          { name: "Diane-35", activeIngredients: ["Ethinyl estradiol", "Cyproterone acetate"], kind: combo },
+          { name: "Diane 35", activeIngredients: ["Ethinyl estradiol", "Cyproterone acetate"], kind: combo },
+          { name: "NuvaRing", activeIngredients: ["Ethinyl estradiol", "Etonogestrel"], kind: combo },
+          { name: "Evra", activeIngredients: ["Ethinyl estradiol", "Norelgestromin"], kind: combo },
+          { name: "Lamictal", activeIngredients: ["Lamotrigine"], kind: brand },
+          { name: "Lysteda", activeIngredients: ["Tranexamic acid"], kind: brand },
+          { name: "Cyclokapron", activeIngredients: ["Tranexamic acid"], kind: brand },
+          { name: "Transamin", activeIngredients: ["Tranexamic acid"], kind: brand },
+          { name: "Myambutol", activeIngredients: ["Ethambutol"], kind: brand },
+          { name: "Zarontin", activeIngredients: ["Ethosuximide"], kind: brand },
+          { name: "Soriatane", activeIngredients: ["Acitretin"], kind: brand },
+          { name: "Neotigason", activeIngredients: ["Acitretin"], kind: brand },
+          { name: "Accutane", activeIngredients: ["Isotretinoin"], kind: brand },
+          { name: "Roaccutane", activeIngredients: ["Isotretinoin"], kind: brand },
+          { name: "Acnotin", activeIngredients: ["Isotretinoin"], kind: brand },
+          { name: "Isotina", activeIngredients: ["Isotretinoin"], kind: brand },
+          { name: "Toctino", activeIngredients: ["Alitretinoin"], kind: brand },
+          { name: "Eugica", activeIngredients: ["Eucalyptol"], kind: brand },
+          { name: "Lopid", activeIngredients: ["Gemfibrozil"], kind: brand },
+          { name: "Lipanthyl", activeIngredients: ["Fenofibrate"], kind: brand },
+          { name: "Tricor", activeIngredients: ["Fenofibrate"], kind: brand },
+          { name: "Fenogal", activeIngredients: ["Fenofibrate"], kind: brand },
+          { name: "Fenofibrate Stada", activeIngredients: ["Fenofibrate"], kind: brand },
+          { name: "Proscar", activeIngredients: ["Finasteride"], kind: brand },
+          { name: "Propecia", activeIngredients: ["Finasteride"], kind: brand },
+          { name: "Fincar", activeIngredients: ["Finasteride"], kind: brand },
+          { name: "Finpecia", activeIngredients: ["Finasteride"], kind: brand },
+          { name: "Urispas", activeIngredients: ["Flavoxate"], kind: brand },
+          { name: "Tambocor", activeIngredients: ["Flecainide"], kind: brand },
+          { name: "Idarac", activeIngredients: ["Floctafenine"], kind: brand },
+          { name: "Ancobon", activeIngredients: ["Flucytosine"], kind: brand },
+          { name: "Ancotil", activeIngredients: ["Flucytosine"], kind: brand },
+          { name: "Anexate", activeIngredients: ["Flumazenil"], kind: brand },
+          { name: "Romazicon", activeIngredients: ["Flumazenil"], kind: brand },
+          { name: "Zymafluor", activeIngredients: ["Sodium fluoride"], kind: brand },
+          { name: "Adrucil", activeIngredients: ["Fluorouracil"], kind: brand },
+          { name: "Efudex", activeIngredients: ["Fluorouracil"], kind: brand },
+          { name: "Carac", activeIngredients: ["Fluorouracil"], kind: brand },
+          { name: "5-FU", activeIngredients: ["Fluorouracil"], kind: brand },
+          { name: "Prozac", activeIngredients: ["Fluoxetine"], kind: brand },
+          { name: "Sarafem", activeIngredients: ["Fluoxetine"], kind: brand },
+          { name: "Fluoxetine Stada", activeIngredients: ["Fluoxetine"], kind: brand },
+          { name: "Luvox", activeIngredients: ["Fluvoxamine"], kind: brand },
+          { name: "Faverin", activeIngredients: ["Fluvoxamine"], kind: brand },
+          { name: "Foscavir", activeIngredients: ["Foscarnet"], kind: brand },
+          { name: "Monurol", activeIngredients: ["Fosfomycin"], kind: brand },
+          { name: "Monuril", activeIngredients: ["Fosfomycin"], kind: brand },
+          { name: "Bumex", activeIngredients: ["Bumetanide"], kind: brand },
+          { name: "Burinex", activeIngredients: ["Bumetanide"], kind: brand },
+          { name: "Demadex", activeIngredients: ["Torsemide"], kind: brand },
+          { name: "Torem", activeIngredients: ["Torasemide"], kind: brand },
+          { name: "Edecrin", activeIngredients: ["Ethacrynic acid"], kind: brand },
+          { name: "Cytovene", activeIngredients: ["Ganciclovir"], kind: brand },
+          { name: "Cymevene", activeIngredients: ["Ganciclovir"], kind: brand },
+          { name: "Zirgan", activeIngredients: ["Ganciclovir"], kind: brand },
+          { name: "Valcyte", activeIngredients: ["Valganciclovir"], kind: brand },
+          { name: "GlucaGen", activeIngredients: ["Glucagon"], kind: brand },
+          { name: "Baqsimi", activeIngredients: ["Glucagon"], kind: brand },
+          { name: "Gvoke", activeIngredients: ["Glucagon"], kind: brand },
+          { name: "Prednicort", activeIngredients: ["Prednisolone"], kind: brand },
+          { name: "Medrol", activeIngredients: ["Methylprednisolone"], kind: brand },
+          { name: "Solu-Medrol", activeIngredients: ["Methylprednisolone"], kind: brand },
+          { name: "Solu-Cortef", activeIngredients: ["Hydrocortisone"], kind: brand },
+          { name: "Cortef", activeIngredients: ["Hydrocortisone"], kind: brand },
+          { name: "Decadron", activeIngredients: ["Dexamethasone"], kind: brand },
+          { name: "Lanoxin", activeIngredients: ["Digoxin"], kind: brand },
+          { name: "Digoxin Richter", activeIngredients: ["Digoxin"], kind: brand },
+          { name: "Gris-PEG", activeIngredients: ["Griseofulvin"], kind: brand },
+          { name: "Grifulvin V", activeIngredients: ["Griseofulvin"], kind: brand },
+          { name: "Fulcin", activeIngredients: ["Griseofulvin"], kind: brand },
+          { name: "Ismelin", activeIngredients: ["Guanethidine"], kind: brand },
+          { name: "Halfan", activeIngredients: ["Halofantrine"], kind: brand },
+          { name: "Lovenox", activeIngredients: ["Enoxaparin"], kind: brand },
+          { name: "Clexane", activeIngredients: ["Enoxaparin"], kind: brand },
+          { name: "Fraxiparine", activeIngredients: ["Nadroparin"], kind: brand },
+          { name: "Fragmin", activeIngredients: ["Dalteparin"], kind: brand },
+          { name: "Innohep", activeIngredients: ["Tinzaparin"], kind: brand },
+          { name: "Arixtra", activeIngredients: ["Fondaparinux"], kind: brand },
+          { name: "Hept-A-Myl", activeIngredients: ["Heptaminol"], kind: brand },
+          { name: "Terlivaz", activeIngredients: ["Terlipressin"], kind: brand },
+          { name: "Glypressin", activeIngredients: ["Terlipressin"], kind: brand },
+          { name: "Synthroid", activeIngredients: ["Levothyroxine"], kind: brand },
+          { name: "Euthyrox", activeIngredients: ["Levothyroxine"], kind: brand },
+          { name: "Eltroxin", activeIngredients: ["Levothyroxine"], kind: brand },
+          { name: "Levothyrox", activeIngredients: ["Levothyroxine"], kind: brand },
+          { name: "Cytomel", activeIngredients: ["Liothyronine"], kind: brand },
+          { name: "Genotropin", activeIngredients: ["Somatropin"], kind: brand },
+          { name: "Norditropin", activeIngredients: ["Somatropin"], kind: brand },
+          { name: "Humatrope", activeIngredients: ["Somatropin"], kind: brand },
+          { name: "Saizen", activeIngredients: ["Somatropin"], kind: brand },
+          { name: "Omnitrope", activeIngredients: ["Somatropin"], kind: brand },
+          { name: "Thymoglobulin", activeIngredients: ["Antithymocyte/antilymphocyte immunoglobulins"], kind: brand },
+          { name: "ATGAM", activeIngredients: ["Antithymocyte/antilymphocyte immunoglobulins"], kind: brand },
+          { name: "Crixivan", activeIngredients: ["Indinavir"], kind: brand },
+          { name: "Indocin", activeIngredients: ["Indomethacin"], kind: brand },
+          { name: "Indocid", activeIngredients: ["Indomethacin"], kind: brand },
+          { name: "Confortid", activeIngredients: ["Indomethacin"], kind: brand },
+          { name: "Lantus", activeIngredients: ["Insulin glargine"], kind: brand },
+          { name: "Toujeo", activeIngredients: ["Insulin glargine"], kind: brand },
+          { name: "Levemir", activeIngredients: ["Insulin detemir"], kind: brand },
+          { name: "Tresiba", activeIngredients: ["Insulin degludec"], kind: brand },
+          { name: "Ryzodeg", activeIngredients: ["Insulin degludec", "Insulin aspart"], kind: combo },
+          { name: "NovoRapid", activeIngredients: ["Insulin aspart"], kind: brand },
+          { name: "Novorapid", activeIngredients: ["Insulin aspart"], kind: brand },
+          { name: "Fiasp", activeIngredients: ["Insulin aspart"], kind: brand },
+          { name: "Humalog", activeIngredients: ["Insulin lispro"], kind: brand },
+          { name: "Apidra", activeIngredients: ["Insulin glulisine"], kind: brand },
+          { name: "Humulin R", activeIngredients: ["Insulin regular"], kind: brand },
+          { name: "Humulin N", activeIngredients: ["Insulin NPH"], kind: brand },
+          { name: "Mixtard", activeIngredients: ["Insulin human"], kind: brand },
+          { name: "NovoMix", activeIngredients: ["Insulin aspart protamine", "Insulin aspart"], kind: combo },
+          { name: "Novomix", activeIngredients: ["Insulin aspart protamine", "Insulin aspart"], kind: combo },
+          { name: "Roferon-A", activeIngredients: ["Interferon alfa-2a"], kind: brand },
+          { name: "Intron A", activeIngredients: ["Interferon alfa-2b"], kind: brand },
+          { name: "Proleukin", activeIngredients: ["Aldesleukin"], kind: brand },
+          { name: "Rimifon", activeIngredients: ["Isoniazid"], kind: brand },
+          { name: "Nydrazid", activeIngredients: ["Isoniazid"], kind: brand },
+          { name: "INH", activeIngredients: ["Isoniazid"], kind: brand },
+          { name: "Ventolin", activeIngredients: ["Salbutamol"], kind: brand },
+          { name: "Berodual", activeIngredients: ["Fenoterol", "Ipratropium"], kind: combo },
+          { name: "Symbicort", activeIngredients: ["Budesonide", "Formoterol"], kind: combo },
+          { name: "Seretide", activeIngredients: ["Fluticasone", "Salmeterol"], kind: combo },
+          { name: "Sinemet", activeIngredients: ["Carbidopa", "Levodopa"], kind: combo },
+          { name: "Stalevo", activeIngredients: ["Carbidopa", "Levodopa", "Entacapone"], kind: combo },
+          { name: "Madopar", activeIngredients: ["Benserazide", "Levodopa"], kind: combo },
+          { name: "Duodopa", activeIngredients: ["Carbidopa", "Levodopa"], kind: combo },
+          { name: "Rytary", activeIngredients: ["Carbidopa", "Levodopa"], kind: combo },
+          { name: "Klor-Con", activeIngredients: ["Potassium chloride"], kind: brand },
+          { name: "K-Dur", activeIngredients: ["Potassium chloride"], kind: brand },
+          { name: "Slow-K", activeIngredients: ["Potassium chloride"], kind: brand },
+          { name: "Kaleorid", activeIngredients: ["Potassium chloride"], kind: brand },
+          { name: "Coly-Mycin M", activeIngredients: ["Colistimethate sodium"], kind: brand },
+          { name: "Colymycin", activeIngredients: ["Colistimethate sodium"], kind: brand },
+          { name: "Polysporin", activeIngredients: ["Polymyxin B", "Bacitracin"], kind: combo },
+          { name: "Epivir", activeIngredients: ["Lamivudine"], kind: brand },
+          { name: "Zeffix", activeIngredients: ["Lamivudine"], kind: brand },
+          { name: "Combivir", activeIngredients: ["Lamivudine", "Zidovudine"], kind: combo },
+          { name: "Kivexa", activeIngredients: ["Abacavir", "Lamivudine"], kind: combo },
+          { name: "Triumeq", activeIngredients: ["Dolutegravir", "Abacavir", "Lamivudine"], kind: combo },
+          { name: "Prevacid", activeIngredients: ["Lansoprazole"], kind: brand },
+          { name: "Lanzor", activeIngredients: ["Lansoprazole"], kind: brand },
+          { name: "Ogast", activeIngredients: ["Lansoprazole"], kind: brand },
+          { name: "Lansoprazole Stada", activeIngredients: ["Lansoprazole"], kind: brand },
+          { name: "Xylocaine", activeIngredients: ["Lidocaine"], kind: brand },
+          { name: "Xylocard", activeIngredients: ["Lidocaine"], kind: brand },
+          { name: "Lidoderm", activeIngredients: ["Lidocaine"], kind: brand },
+          { name: "Versatis", activeIngredients: ["Lidocaine"], kind: brand },
+          { name: "Mexitil", activeIngredients: ["Mexiletine"], kind: brand },
+          { name: "Dalacin C", activeIngredients: ["Clindamycin"], kind: brand },
+          { name: "Dalacin T", activeIngredients: ["Clindamycin"], kind: brand },
+          { name: "Cleocin", activeIngredients: ["Clindamycin"], kind: brand },
+          { name: "Clindamycin Stada", activeIngredients: ["Clindamycin"], kind: brand },
+          { name: "Intralipid", activeIngredients: ["Intravenous lipid emulsion"], kind: brand },
+          { name: "SMOFlipid", activeIngredients: ["Intravenous lipid emulsion"], kind: brand },
+          { name: "Lipofundin", activeIngredients: ["Intravenous lipid emulsion"], kind: brand },
+          { name: "ClinOleic", activeIngredients: ["Intravenous lipid emulsion"], kind: brand },
+          { name: "Omegaven", activeIngredients: ["Intravenous lipid emulsion"], kind: brand },
+          { name: "Eskalith", activeIngredients: ["Lithium"], kind: brand },
+          { name: "Lithobid", activeIngredients: ["Lithium"], kind: brand },
+          { name: "Priadel", activeIngredients: ["Lithium"], kind: brand },
+          { name: "Quilonum", activeIngredients: ["Lithium"], kind: brand },
+          { name: "Imodium", activeIngredients: ["Loperamide"], kind: brand },
+          { name: "Lopedium", activeIngredients: ["Loperamide"], kind: brand },
+          { name: "Lopradium", activeIngredients: ["Loperamide"], kind: brand },
+          { name: "Loperamide Stada", activeIngredients: ["Loperamide"], kind: brand },
+          { name: "Inspra", activeIngredients: ["Eplerenone"], kind: brand },
+          { name: "Midamor", activeIngredients: ["Amiloride"], kind: brand },
+          { name: "Dyrenium", activeIngredients: ["Triamterene"], kind: brand },
+          { name: "Osmitrol", activeIngredients: ["Mannitol"], kind: brand },
+          { name: "Magne B6", activeIngredients: ["Magnesium salts", "Pyridoxine"], kind: combo },
+          { name: "Magnesi B6", activeIngredients: ["Magnesium salts", "Pyridoxine"], kind: combo },
+          { name: "Epsom salt", activeIngredients: ["Magnesium sulfate"], kind: brand },
+          { name: "Klacid", activeIngredients: ["Clarithromycin"], kind: brand },
+          { name: "Biaxin", activeIngredients: ["Clarithromycin"], kind: brand },
+          { name: "Zithromax", activeIngredients: ["Azithromycin"], kind: brand },
+          { name: "Azithromycin Stada", activeIngredients: ["Azithromycin"], kind: brand },
+          { name: "Erythrocin", activeIngredients: ["Erythromycin"], kind: brand },
+          { name: "Rovamycin", activeIngredients: ["Spiramycin"], kind: brand },
+          { name: "Rulid", activeIngredients: ["Roxithromycin"], kind: brand },
+          { name: "Ketek", activeIngredients: ["Telithromycin"], kind: brand },
+          { name: "Alkeran", activeIngredients: ["Melphalan"], kind: brand },
+          { name: "Purinethol", activeIngredients: ["Mercaptopurine"], kind: brand },
+          { name: "Puri-Nethol", activeIngredients: ["Mercaptopurine"], kind: brand },
+          { name: "Purixan", activeIngredients: ["Mercaptopurine"], kind: brand },
+          { name: "Dolophine", activeIngredients: ["Methadone"], kind: brand },
+          { name: "Methadose", activeIngredients: ["Methadone"], kind: brand }
+        ];
+      }
+
+      function renderSuggestions() {
+        const query = normalizeText(input.value);
+        suggestions.innerHTML = "";
+
+        if (!query) {
+          hideSuggestions();
+          return;
+        }
+
+        const selectedKeys = new Set(selected.keys());
+        const selectedIngredientKeys = new Set(Array.from(selected.values()).map((entry) => entry.ingredientKey));
+        const selectedActiveKeys = getSelectedActiveKeys();
+        const matches = searchIndex
+          .map((entry) => ({ entry, score: getSearchMatchScore(entry, query) }))
+          .filter(({ entry, score }) => score > 0 && !selectedKeys.has(entry.key) && !selectedIngredientKeys.has(entry.ingredientKey) && !isEntryFullyCovered(entry, selectedActiveKeys))
+          .sort((a, b) => b.score - a.score || a.entry.label.localeCompare(b.entry.label, "vi"))
+          .map(({ entry }) => entry)
+          .slice(0, 10);
+
+        if (matches.length === 0) {
+          hideSuggestions();
+          return;
+        }
+
+        matches.forEach((entry) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "suggestion-item";
+          button.setAttribute("role", "option");
+          button.innerHTML = `
+            <span class="suggestion-name">${highlight(entry.label, input.value)}</span>
+            <span class="suggestion-kind">${escapeHtml(formatSuggestionKind(entry))}</span>
+          `;
+          button.addEventListener("click", () => addEntry(entry));
+          suggestions.appendChild(button);
+        });
+
+        suggestions.style.display = "block";
+      }
+
+      function handleInputKeydown(event) {
+        if (event.key !== "Enter") return;
+        event.preventDefault();
+
+        const rawValue = input.value.trim();
+        if (!rawValue) return;
+
+        const query = normalizeText(rawValue);
+        const exactMatch = findBestSearchMatch(query, { exactOnly: true });
+        const partialMatch = findBestSearchMatch(query);
+        const inferredMatch = inferEntryFromFreeText(rawValue);
+        const match = exactMatch || partialMatch || inferredMatch;
+        if (match) addEntry(match);
+      }
+
+      function findBestSearchMatch(query, options = {}) {
+        const exactOnly = Boolean(options.exactOnly);
+        return searchIndex
+          .map((entry) => ({ entry, score: getSearchMatchScore(entry, query, { exactOnly }) }))
+          .filter(({ score }) => score > 0)
+          .sort((a, b) => b.score - a.score || a.entry.label.localeCompare(b.entry.label, "vi"))[0]?.entry || null;
+      }
+
+      function getSearchMatchScore(entry, query, options = {}) {
+        if (!entry || !query) return 0;
+        const exactOnly = Boolean(options.exactOnly);
+        let best = 0;
+        getEntryMatchKeys(entry).forEach((key) => {
+          if (!key) return;
+          if (key === query) {
+            best = Math.max(best, key === entry.key ? 4000 : 3600);
+            return;
+          }
+          if (exactOnly) return;
+          if (key.startsWith(query)) {
+            best = Math.max(best, key === entry.key ? 3000 : 2800);
+            return;
+          }
+          if (query.length >= 3 && key.includes(query)) {
+            best = Math.max(best, key === entry.key ? 2000 : 1800);
+          }
+        });
+        return best ? best + scoreSearchEntry(entry) : 0;
+      }
+
+      function getEntryMatchKeys(entry) {
+        return entry.matchKeys && entry.matchKeys.length ? entry.matchKeys : [entry.key];
+      }
+
+      function addEntry(entry) {
+        const normalizedEntry = normalizeSearchEntry(entry);
+        if (!normalizedEntry || selected.has(normalizedEntry.key)) return;
+        if (Array.from(selected.values()).some((item) => item.ingredientKey === normalizedEntry.ingredientKey)) return;
+        if (isEntryFullyCovered(normalizedEntry, getSelectedActiveKeys())) return;
+
+        selected.set(normalizedEntry.key, normalizedEntry);
+        input.value = "";
+        hideSuggestions();
+        renderSelected();
+        crossCheck();
+        input.focus();
+      }
+
+      function normalizeSearchEntry(entry) {
+        if (!entry || !entry.label) return null;
+        const activeIngredients = resolveActiveIngredients(entry.activeIngredients && entry.activeIngredients.length ? entry.activeIngredients.map((item) => item.label || item) : [entry.label]);
+        const key = entry.key || normalizeText(entry.label);
+        if (!key || activeIngredients.length === 0) return null;
+        return {
+          label: entry.label.trim(),
+          key,
+          kind: entry.kind || "Từ nhập thủ công",
+          activeIngredients,
+          ingredientKey: buildIngredientKey(activeIngredients)
+        };
+      }
+
+      function getSelectedActiveKeys() {
+        const keys = new Set();
+        selected.forEach((entry) => {
+          (entry.activeIngredients || []).forEach((ingredient) => {
+            if (ingredient.key) keys.add(ingredient.key);
+          });
+        });
+        return keys;
+      }
+
+      function isEntryFullyCovered(entry, selectedActiveKeys) {
+        const ingredients = entry.activeIngredients || [];
+        return ingredients.length > 0 && ingredients.every((ingredient) => selectedActiveKeys.has(ingredient.key));
+      }
+
+      function inferEntryFromFreeText(rawValue) {
+        const activeIngredients = detectActiveIngredientsInText(rawValue);
+        if (activeIngredients.length === 0) {
+          return {
+            label: rawValue.trim(),
+            key: normalizeText(rawValue),
+            kind: "Từ nhập thủ công",
+            activeIngredients: [rawValue.trim()]
+          };
+        }
+
+        return {
+          label: rawValue.trim(),
+          key: `typed:${normalizeText(rawValue)}`,
+          kind: activeIngredients.length > 1 ? "Thuốc nhiều thành phần" : "Hoạt chất nhận diện từ tên thuốc",
+          activeIngredients
+        };
+      }
+
+      function detectActiveIngredientsInText(rawValue) {
+        const text = ` ${normalizeText(rawValue)} `;
+        const candidates = [];
+        const seen = new Set();
+
+        searchIndex.forEach((entry) => {
+          const matchKeys = getEntryMatchKeys(entry).filter((key) => key.length >= 4);
+          if (!matchKeys.length || !matchKeys.some((key) => text.includes(` ${key} `))) return;
+          (entry.activeIngredients || []).forEach((ingredient) => {
+            if (!ingredient.key || seen.has(ingredient.key)) return;
+            seen.add(ingredient.key);
+            candidates.push({ label: ingredient.label, key: ingredient.key });
+          });
+        });
+
+        return candidates;
+      }
+
+      function formatSuggestionKind(entry) {
+        const activeText = formatActiveIngredients(entry);
+        if (isFoodKind(entry.kind)) return entry.kind;
+        if (!activeText || normalizeText(activeText) === normalizeText(entry.label)) return entry.kind;
+        return `${entry.kind}: ${activeText}`;
+      }
+
+      function formatActiveIngredients(entry) {
+        return (entry.activeIngredients || [])
+          .map((ingredient) => ingredient.label)
+          .join(" + ");
+      }
+
+      function getEntryComponents(entry) {
+        const ingredients = entry.activeIngredients && entry.activeIngredients.length
+          ? entry.activeIngredients
+          : [{ label: entry.label, key: entry.key }];
+
+        return ingredients.map((ingredient) => ({
+          label: formatComponentDisplayLabel(entry, ingredient),
+          activeLabel: ingredient.label,
+          key: ingredient.key,
+          parentLabel: entry.label,
+          parentKey: entry.key
+        }));
+      }
+
+      function formatComponentDisplayLabel(entry, ingredient) {
+        const entryKey = normalizeText(entry.label);
+        const ingredientKey = normalizeText(ingredient.label);
+        if (entryKey === ingredientKey || (entry.activeIngredients || []).length === 1 && normalizeText(entry.kind || "").includes("hoat chat")) {
+          return ingredient.label;
+        }
+        return `${entry.label} (${ingredient.label})`;
+      }
+
+      function removeDrug(key) {
+        selected.delete(key);
+        renderSelected();
+        crossCheck();
+      }
+
+      function clearAll() {
+        selected.clear();
+        renderSelected();
+        crossCheck();
+        input.focus();
+      }
+
+      function renderSelected() {
+        selectedList.innerHTML = "";
+        selectedCount.textContent = String(selected.size);
+        selectedArea.style.display = selected.size > 0 ? "block" : "none";
+
+        selected.forEach((drug) => {
+          const tag = document.createElement("div");
+          tag.className = "selected-tag";
+          const activeText = formatActiveIngredients(drug);
+          const showMeta = activeText && normalizeText(activeText) !== normalizeText(drug.label);
+          tag.innerHTML = `
+            <span class="selected-copy">
+              <span class="selected-name">${escapeHtml(drug.label)}</span>
+              ${showMeta ? `<span class="selected-meta">Hoạt chất: ${escapeHtml(activeText)}</span>` : ""}
+            </span>
+            <button class="remove-btn" type="button" aria-label="Xóa ${escapeHtml(drug.label)}">x</button>
+          `;
+          tag.querySelector(".remove-btn").addEventListener("click", () => removeDrug(drug.key));
+          selectedList.appendChild(tag);
+        });
+
+        if (selected.size > 0) {
+          const clearButton = document.createElement("button");
+          clearButton.className = "clear-all";
+          clearButton.type = "button";
+          clearButton.textContent = "Xóa toàn bộ toa";
+          clearButton.addEventListener("click", clearAll);
+          selectedList.appendChild(clearButton);
+        }
+      }
+
+      function crossCheck() {
+        const drugs = Array.from(selected.values());
+        const specialSections = buildSpecialPopulationSections(drugs);
+        const specialFragment = renderSpecialPopulationSections(specialSections);
+        const foodSections = buildFoodInteractionSections(drugs);
+        const foodFragment = renderFoodInteractionSections(foodSections);
+        resultsArea.innerHTML = "";
+
+        if (drugs.length < 2) {
+          summaryChip.textContent = drugs.length === 0 ? "Chưa có toa" : "Cần thêm 1 mục";
+          appendIngredientPanels(resultsArea, specialFragment, foodFragment);
+          resultsArea.insertAdjacentHTML("beforeend", `
+            <div class="empty-msg">
+              Thêm ít nhất 2 mục vào toa để bắt đầu tra cứu tương tác.
+              <span>Đã chọn ${drugs.length} mục.</span>
             </div>
-            <p><strong>Phân tích:</strong> ${interaction.phan_tich}</p>
-            <p><strong>Xử lý:</strong> ${interaction.xu_ly}</p>
+          `);
+          return;
+        }
+
+        const hits = [];
+        const seenHits = new Map();
+
+        for (let i = 0; i < drugs.length; i += 1) {
+          for (let j = i + 1; j < drugs.length; j += 1) {
+            const componentsA = getEntryComponents(drugs[i]);
+            const componentsB = getEntryComponents(drugs[j]);
+
+            componentsA.forEach((drugA) => {
+              componentsB.forEach((drugB) => {
+                if (drugA.key === drugB.key && drugA.parentKey === drugB.parentKey) return;
+                scanPair(drugA, drugB, hits, seenHits);
+              });
+            });
+          }
+        }
+
+        const displayHits = compactClinicalHits(dedupePairHits(hits));
+
+        if (displayHits.length === 0) {
+          summaryChip.textContent = "0 tương tác";
+          resultsArea.insertAdjacentHTML("beforeend", `
+            <div class="safe-msg">
+              Không phát hiện tương tác trong CSDL hiện tại.
+              <span>Kết quả này không thay thế đánh giá lâm sàng, liều dùng và chức năng gan thận.</span>
+            </div>
+          `);
+          appendIngredientPanels(resultsArea, specialFragment, foodFragment);
+          return;
+        }
+
+        displayHits.sort((a, b) => {
+          const levelDiff = (b.data.muc_do || 0) - (a.data.muc_do || 0);
+          if (levelDiff !== 0) return levelDiff;
+          return a.d1.label.localeCompare(b.d1.label, "vi");
+        });
+
+        summaryChip.textContent = `${displayHits.length} tương tác`;
+        const fragment = document.createDocumentFragment();
+        displayHits.forEach((hit) => fragment.appendChild(renderInteractionCard(hit)));
+        appendIngredientPanels(fragment, specialFragment, foodFragment);
+        resultsArea.appendChild(fragment);
+      }
+
+      function appendIngredientPanels(parent, specialFragment, foodFragment) {
+        if (specialFragment) parent.appendChild(specialFragment);
+        if (foodFragment) parent.appendChild(foodFragment);
+      }
+
+      function buildSpecialPopulationSections(drugs) {
+        const sections = [];
+        const seenSections = new Set();
+
+        drugs.forEach((entry) => {
+          getEntryComponents(entry).forEach((component) => {
+            const item = findRecordForComponent(component);
+            if (!item) return;
+
+            const interactions = getSpecialPopulationInteractions(item);
+            if (interactions.length === 0) return;
+
+            const sectionKey = [
+              component.parentKey || "",
+              component.key || normalizeText(component.activeLabel || component.label),
+              normalizeText(item.hoat_chat)
+            ].join("::");
+            if (seenSections.has(sectionKey)) return;
+            seenSections.add(sectionKey);
+
+            sections.push({ component, item, interactions });
+          });
+        });
+
+        return sections;
+      }
+
+      function findRecordForComponent(component) {
+        const key = component.key || normalizeText(component.activeLabel || component.label);
+        if (!key) return null;
+
+        return database.find((item) => hasTermMatch(key, buildMainAliases(item), "main")) || null;
+      }
+
+      function getSpecialPopulationInteractions(item) {
+        const seen = new Set();
+        const interactions = [];
+
+        (item.tuong_tac || []).forEach((interaction) => {
+          if (!isSpecialPopulationInteraction(interaction)) return;
+          const key = normalizeText([
+            interaction.loai_tuong_tac,
+            interaction.hau_qua,
+            ...(interaction.hoat_chat || []),
+            ...(interaction.thuoc || [])
+          ].filter(Boolean).join(" "));
+          if (seen.has(key)) return;
+          seen.add(key);
+          interactions.push(interaction);
+        });
+
+        return interactions.sort((a, b) => (Number(b.muc_do) || 0) - (Number(a.muc_do) || 0));
+      }
+
+      function renderSpecialPopulationSections(sections) {
+        if (!sections.length) return null;
+
+        const totalWarnings = sections.reduce((sum, section) => sum + section.interactions.length, 0);
+        const panel = document.createElement("section");
+        panel.className = "special-population-panel";
+        panel.innerHTML = `
+          <div class="special-population-header">
+            <div class="special-population-title">Đối tượng đặc biệt của hoạt chất đã chọn</div>
+            <div class="special-population-count">${sections.length} hoạt chất / ${totalWarnings} cảnh báo</div>
+          </div>
+          <div class="special-population-list"></div>
+        `;
+
+        const list = panel.querySelector(".special-population-list");
+        sections.forEach((section) => list.appendChild(renderSpecialPopulationSection(section)));
+        return panel;
+      }
+
+      function renderSpecialPopulationSection(section) {
+        const card = document.createElement("article");
+        card.className = "special-population-card";
+        card.innerHTML = `
+          <div class="special-population-drug">${escapeHtml(section.component.label || section.item.hoat_chat)}</div>
+          <p class="special-population-note">Cảnh báo riêng cho ${escapeHtml(section.item.hoat_chat)} khi bệnh nhân thuộc nhóm nguy cơ sau.</p>
+          <div class="special-population-warnings"></div>
+        `;
+
+        const warnings = card.querySelector(".special-population-warnings");
+        section.interactions.forEach((interaction) => warnings.appendChild(renderSpecialPopulationWarning(interaction)));
+        return card;
+      }
+
+      function renderSpecialPopulationWarning(interaction) {
+        const level = Number(interaction.muc_do) || 1;
+        const color = getLevelColor(level);
+        const mechanismLabel = getMechanismLabel(interaction);
+        const targetDisplay = formatSpecialPopulationTargets(interaction);
+        const warning = document.createElement("div");
+        warning.className = `special-population-item lvl-${level}`;
+        warning.innerHTML = `
+          <div class="special-population-item-head">
+            <div class="special-population-targets">${escapeHtml(targetDisplay || "Đối tượng đặc biệt")}</div>
+            <span class="badge bg-${level}">${escapeHtml(getLevelText(level))}</span>
+          </div>
+          <div class="level-guidance">${escapeHtml(getLevelGuidance(level))}</div>
+          <div class="special-population-hazard" style="color: ${color};">
+            Hậu quả: ${escapeHtml(interaction.hau_qua || "Chưa xác định")}
+          </div>
+          <div class="section-title">Cơ chế${mechanismLabel ? ` (${escapeHtml(mechanismLabel)})` : ""}</div>
+          <p>${escapeHtml(interaction.phan_tich || "Chưa có phân tích chi tiết.")}</p>
+          <div class="action-box" style="border-left-color: ${color};">
+            <strong>Xử trí:</strong> ${escapeHtml(interaction.xu_ly || "Theo dõi và đánh giá lâm sàng.")}
+          </div>
+        `;
+        return warning;
+      }
+
+      function formatSpecialPopulationTargets(interaction) {
+        return uniqueDisplayValues([
+          ...(interaction.hoat_chat || []),
+          ...(interaction.thuoc || [])
+        ]).join(", ");
+      }
+
+      function buildFoodInteractionSections(drugs) {
+        const sections = [];
+        const seenSections = new Set();
+
+        drugs.forEach((entry) => {
+          getEntryComponents(entry).forEach((component) => {
+            const item = findRecordForComponent(component);
+            if (!item) return;
+
+            const interactions = getFoodInteractions(item);
+            if (interactions.length === 0) return;
+
+            const sectionKey = [
+              component.parentKey || "",
+              component.key || normalizeText(component.activeLabel || component.label),
+              normalizeText(item.hoat_chat)
+            ].join("::");
+            if (seenSections.has(sectionKey)) return;
+            seenSections.add(sectionKey);
+
+            sections.push({ component, item, interactions });
+          });
+        });
+
+        return sections;
+      }
+
+      function getFoodInteractions(item) {
+        const seen = new Set();
+        const interactions = [];
+
+        (item.tuong_tac || []).forEach((interaction) => {
+          if (!isFoodInteraction(interaction)) return;
+          const key = normalizeText([
+            interaction.loai_tuong_tac,
+            interaction.hau_qua,
+            ...(interaction.hoat_chat || []),
+            ...(interaction.thuoc || [])
+          ].filter(Boolean).join(" "));
+          if (seen.has(key)) return;
+          seen.add(key);
+          interactions.push(interaction);
+        });
+
+        return interactions.sort((a, b) => (Number(b.muc_do) || 0) - (Number(a.muc_do) || 0));
+      }
+
+      function renderFoodInteractionSections(sections) {
+        if (!sections.length) return null;
+
+        const totalWarnings = sections.reduce((sum, section) => sum + section.interactions.length, 0);
+        const panel = document.createElement("section");
+        panel.className = "special-population-panel food-interaction-panel";
+        panel.innerHTML = `
+          <div class="special-population-header">
+            <div class="special-population-title">Tương tác với thực phẩm/đồ uống của hoạt chất đã chọn</div>
+            <div class="special-population-count">${sections.length} hoạt chất / ${totalWarnings} tương tác</div>
+          </div>
+          <div class="special-population-list"></div>
+        `;
+
+        const list = panel.querySelector(".special-population-list");
+        sections.forEach((section) => list.appendChild(renderFoodInteractionSection(section)));
+        return panel;
+      }
+
+      function renderFoodInteractionSection(section) {
+        const card = document.createElement("article");
+        card.className = "special-population-card";
+        card.innerHTML = `
+          <div class="special-population-drug">${escapeHtml(section.component.label || section.item.hoat_chat)}</div>
+          <p class="special-population-note">Các lưu ý khi dùng ${escapeHtml(section.item.hoat_chat)} cùng thức ăn, đồ uống hoặc chế độ dinh dưỡng.</p>
+          <div class="special-population-warnings"></div>
+        `;
+
+        const warnings = card.querySelector(".special-population-warnings");
+        section.interactions.forEach((interaction) => warnings.appendChild(renderFoodInteractionWarning(interaction)));
+        return card;
+      }
+
+      function renderFoodInteractionWarning(interaction) {
+        const level = Number(interaction.muc_do) || 1;
+        const color = getLevelColor(level);
+        const mechanismLabel = localizeFoodText(getMechanismLabel(interaction));
+        const targetDisplay = formatFoodTargets(interaction);
+        const warning = document.createElement("div");
+        warning.className = `special-population-item lvl-${level}`;
+        warning.innerHTML = `
+          <div class="special-population-item-head">
+            <div class="special-population-targets">${escapeHtml(targetDisplay || "Thực phẩm/đồ uống")}</div>
+            <span class="badge bg-${level}">${escapeHtml(getLevelText(level))}</span>
+          </div>
+          <div class="level-guidance">${escapeHtml(getLevelGuidance(level))}</div>
+          <div class="special-population-hazard" style="color: ${color};">
+            Hậu quả: ${escapeHtml(localizeFoodText(interaction.hau_qua || "Chưa xác định"))}
+          </div>
+          <div class="section-title">Cơ chế${mechanismLabel ? ` (${escapeHtml(mechanismLabel)})` : ""}</div>
+          <p>${escapeHtml(localizeFoodText(interaction.phan_tich || "Chưa có phân tích chi tiết."))}</p>
+          <div class="action-box" style="border-left-color: ${color};">
+            <strong>Xử trí:</strong> ${escapeHtml(localizeFoodText(interaction.xu_ly || "Theo dõi và đánh giá lâm sàng."))}
+          </div>
+        `;
+        return warning;
+      }
+
+      function formatFoodTargets(interaction) {
+        const rawTargets = [
+          ...(interaction.hoat_chat || []),
+          ...(interaction.thuoc || [])
+        ];
+        const foodTargets = rawTargets.filter((value) => isFoodLikeLabel(value));
+        const targetLabels = uniqueDisplayValues(foodTargets.map((value) => localizeFoodLabel(value)));
+        if (targetLabels.length) return targetLabels.join(", ");
+
+        return uniqueDisplayValues((interaction.nhom_thuoc || [])
+          .filter((value) => isFoodLikeLabel(value))
+          .map((value) => localizeFoodLabel(value)))
+          .join(", ");
+      }
+
+      function localizeFoodLabel(value) {
+        const label = String(value || "").trim();
+        const key = normalizeText(label);
+        const exactLabels = {
+          food: "Thức ăn",
+          foods: "Thức ăn",
+          meal: "Bữa ăn",
+          meals: "Bữa ăn",
+          "high fat meal": "Bữa ăn nhiều chất béo",
+          "high fat meals": "Bữa ăn nhiều chất béo",
+          "light meal": "Bữa ăn nhẹ",
+          "light meals": "Bữa ăn nhẹ",
+          "low fat meal": "Bữa ăn ít chất béo",
+          "grapefruit juice": "Nước ép bưởi",
+          grapefruit: "Nước ép bưởi",
+          "buoi chum": "Nước ép bưởi",
+          "acidic fruit juice": "Nước quả chua",
+          "acidic fruit juices": "Nước quả chua",
+          ethanol: "Rượu/đồ uống có cồn",
+          alcohol: "Rượu/đồ uống có cồn",
+          ruou: "Rượu/đồ uống có cồn",
+          bia: "Rượu/đồ uống có cồn",
+          "tobacco smoking": "Hút thuốc lá",
+          smoking: "Hút thuốc lá",
+          tobacco: "Thuốc lá",
+          "hut thuoc la": "Hút thuốc lá",
+          caffeine: "Caffeine (cà phê, trà, nước tăng lực)",
+          coffee: "Cà phê",
+          tea: "Trà",
+          "energy drink": "Nước tăng lực",
+          "energy drinks": "Nước tăng lực",
+          cola: "Nước ngọt cola",
+          "caffeinated soft drink": "Nước ngọt có caffeine",
+          "caffeinated soft drinks": "Nước ngọt có caffeine",
+          chocolate: "Sô cô la",
+          cocoa: "Ca cao",
+          guarana: "Guarana",
+          "yerba mate": "Yerba mate",
+          echinacea: "Cúc tím (echinacea)",
+          "cat s claw": "Cây vuốt mèo",
+          "cats claw": "Cây vuốt mèo",
+          "st john s wort": "Cỏ ban Âu (St. John's wort)",
+          "st johns wort": "Cỏ ban Âu (St. John's wort)",
+          "hypericum perforatum": "Cỏ ban Âu (St. John's wort)",
+          milk: "Sữa",
+          dairy: "Sữa và chế phẩm từ sữa",
+          "dairy products": "Sữa và chế phẩm từ sữa",
+          "enteral nutrition": "Dinh dưỡng qua đường tiêu hóa",
+          "tube feeding": "Dinh dưỡng qua sonde",
+          "orange juice": "Nước cam",
+          "apple juice": "Nước táo",
+          "cranberry juice": "Nước ép nam việt quất",
+          "pomegranate juice": "Nước ép lựu",
+          "tyramine rich foods": "Thực phẩm giàu tyramin",
+          tyramine: "Thực phẩm giàu tyramin",
+          wine: "Rượu vang",
+          yogurt: "Sữa chua",
+          "ripe cheese": "Phô mai ủ chín",
+          "aged cheese": "Phô mai ủ chín",
+          "cured meats": "Thịt ủ muối/xông khói",
+          "fermented soy products": "Sản phẩm đậu nành lên men",
+          "yeast extract": "Men chiết xuất",
+          bananas: "Chuối",
+          licorice: "Cam thảo",
+          "potassium rich foods": "Thực phẩm giàu kali",
+          "vitamin k rich foods": "Thực phẩm giàu vitamin K",
+          "green leafy vegetables": "Rau lá xanh",
+          "calcium rich foods": "Thực phẩm giàu calci",
+          "salt substitutes": "Muối thay thế chứa kali"
+        };
+
+        if (exactLabels[key]) return exactLabels[key];
+        if (key.includes("grapefruit") || key.includes("buoi chum")) return "Nước ép bưởi";
+        if (key.includes("high fat") || key.includes("nhieu chat beo")) return "Bữa ăn nhiều chất béo";
+        if (key.includes("light meal") || key.includes("bua an nhe")) return "Bữa ăn nhẹ";
+        if (key.includes("acidic fruit juice") || key.includes("nuoc qua chua")) return "Nước quả chua";
+        if (key.includes("milk") || key.includes("dairy") || key.includes("sua")) return "Sữa và chế phẩm từ sữa";
+        if (key.includes("tobacco smoking") || key.includes("hut thuoc la")) return "Hút thuốc lá";
+        if (key.includes("smoking") || key.includes("tobacco")) return "Thuốc lá";
+        if (key.includes("caffeine")) return "Caffeine (cà phê, trà, nước tăng lực)";
+        if (key.includes("coffee") || key.includes("ca phe")) return "Cà phê";
+        if (key.includes("energy drink") || key.includes("nuoc tang luc")) return "Nước tăng lực";
+        if (key.includes("cola")) return "Nước ngọt cola";
+        if (key.includes("chocolate") || key.includes("so co la")) return "Sô cô la";
+        if (key.includes("cocoa") || key.includes("ca cao")) return "Ca cao";
+        if (key.includes("guarana")) return "Guarana";
+        if (key.includes("yerba mate")) return "Yerba mate";
+        if (key.includes("echinacea")) return "Cúc tím (echinacea)";
+        if (key.includes("cat s claw") || key.includes("cats claw")) return "Cây vuốt mèo";
+        if (key.includes("st john s wort") || key.includes("st johns wort") || key.includes("hypericum")) return "Cỏ ban Âu (St. John's wort)";
+        if (key.includes("cranberry")) return "Nước ép nam việt quất";
+        if (key.includes("pomegranate")) return "Nước ép lựu";
+        if (key.includes("orange juice")) return "Nước cam";
+        if (key.includes("apple juice")) return "Nước táo";
+        if (key.includes("do uong co con") || key.includes("ethanol") || key.includes("alcohol") || key.includes("ruou") || key.includes("bia")) return "Rượu/đồ uống có cồn";
+        if (key.includes("tyramine")) return "Thực phẩm giàu tyramin";
+        if (key.includes("wine")) return "Rượu vang";
+        if (key.includes("yogurt")) return "Sữa chua";
+        if (key.includes("ripe cheese") || key.includes("aged cheese")) return "Phô mai ủ chín";
+        if (key.includes("cured meat")) return "Thịt ủ muối/xông khói";
+        if (key.includes("fermented soy")) return "Sản phẩm đậu nành lên men";
+        if (key.includes("yeast extract")) return "Men chiết xuất";
+        if (key.includes("banana")) return "Chuối";
+        if (key.includes("licorice")) return "Cam thảo";
+        if (key.includes("vitamin k rich")) return "Thực phẩm giàu vitamin K";
+        if (key.includes("green leafy")) return "Rau lá xanh";
+        if (key.includes("calcium rich")) return "Thực phẩm giàu calci";
+        if (key.includes("potassium rich")) return "Thực phẩm giàu kali";
+        if (key.includes("enteral nutrition") || key.includes("tube feeding")) return "Dinh dưỡng qua đường tiêu hóa";
+        if (key === "food" || key.includes("with food") || key.includes("without food") || key.includes("thuc an")) return "Thức ăn";
+        return label;
+      }
+
+      function localizeFoodText(value) {
+        return String(value || "")
+          .replace(/\bgrapefruit juice\b/gi, "nước ép bưởi")
+          .replace(/\bgrapefruit\b/gi, "bưởi")
+          .replace(/\bhigh-fat meal\b/gi, "bữa ăn nhiều chất béo")
+          .replace(/\bhigh fat meal\b/gi, "bữa ăn nhiều chất béo")
+          .replace(/\blight meal\b/gi, "bữa ăn nhẹ")
+          .replace(/\blow-fat meal\b/gi, "bữa ăn ít chất béo")
+          .replace(/\blow fat meal\b/gi, "bữa ăn ít chất béo")
+          .replace(/\bacidic fruit juice\b/gi, "nước quả chua")
+          .replace(/\bfood\b/gi, "thức ăn")
+          .replace(/\bfoods\b/gi, "thức ăn")
+          .replace(/\bethanol\b/gi, "rượu (ethanol)")
+          .replace(/\balcohol\b/gi, "rượu")
+          .replace(/\bdairy products\b/gi, "sữa và chế phẩm từ sữa")
+          .replace(/\bdairy\b/gi, "sữa và chế phẩm từ sữa")
+          .replace(/\bmilk\b/gi, "sữa")
+          .replace(/\bcoffee\b/gi, "cà phê")
+          .replace(/\btea\b/gi, "trà")
+          .replace(/\btobacco smoking\b/gi, "hút thuốc lá")
+          .replace(/\bsmoking\b/gi, "hút thuốc")
+          .replace(/\btobacco\b/gi, "thuốc lá")
+          .replace(/\benergy drinks\b/gi, "nước tăng lực")
+          .replace(/\benergy drink\b/gi, "nước tăng lực")
+          .replace(/\bcaffeinated soft drinks\b/gi, "nước ngọt có caffeine")
+          .replace(/\bcaffeinated soft drink\b/gi, "nước ngọt có caffeine")
+          .replace(/\bcola\b/gi, "nước ngọt cola")
+          .replace(/\bchocolate\b/gi, "sô cô la")
+          .replace(/\bcocoa\b/gi, "ca cao")
+          .replace(/\bechinacea\b/gi, "cúc tím (echinacea)")
+          .replace(/\bcat'?s claw\b/gi, "cây vuốt mèo")
+          .replace(/\bst\.?\s+john'?s\s+wort\b/gi, "cỏ ban Âu (St. John's wort)")
+          .replace(/\bhypericum perforatum\b/gi, "cỏ ban Âu (St. John's wort)")
+          .replace(/\bcranberry juice\b/gi, "nước ép nam việt quất")
+          .replace(/\bpomegranate juice\b/gi, "nước ép lựu")
+          .replace(/\borange juice\b/gi, "nước cam")
+          .replace(/\bapple juice\b/gi, "nước táo")
+          .replace(/\btyramine-rich foods\b/gi, "thực phẩm giàu tyramin")
+          .replace(/\btyramine rich foods\b/gi, "thực phẩm giàu tyramin")
+          .replace(/\bwine\b/gi, "rượu vang")
+          .replace(/\byogurt\b/gi, "sữa chua")
+          .replace(/\bripe cheese\b/gi, "phô mai ủ chín")
+          .replace(/\baged cheese\b/gi, "phô mai ủ chín")
+          .replace(/\bcured meats\b/gi, "thịt ủ muối/xông khói")
+          .replace(/\bfermented soy products\b/gi, "sản phẩm đậu nành lên men")
+          .replace(/\byeast extract\b/gi, "men chiết xuất")
+          .replace(/\bbananas\b/gi, "chuối")
+          .replace(/\blicorice\b/gi, "cam thảo");
+      }
+
+      function uniqueDisplayValues(values) {
+        const seen = new Set();
+        const result = [];
+
+        (values || []).forEach((value) => {
+          const label = String(value || "").trim();
+          const key = normalizeText(label);
+          if (!key || seen.has(key)) return;
+          seen.add(key);
+          result.push(label);
+        });
+
+        return result;
+      }
+
+      function dedupePairHits(hits) {
+        const bestByPair = new Map();
+
+        hits.forEach((hit) => {
+          const pairKey = buildPairKey(hit);
+          const existing = bestByPair.get(pairKey);
+
+          if (!existing || scoreHit(hit) > scoreHit(existing)) {
+            bestByPair.set(pairKey, hit);
+          }
+        });
+
+        return Array.from(bestByPair.values());
+      }
+
+      function compactClinicalHits(hits) {
+        const kept = [];
+        const ordered = [...hits].sort((a, b) => scoreHit(b) - scoreHit(a));
+
+        ordered.forEach((hit) => {
+          const clinicalKey = buildClinicalRiskKey(hit);
+          const edgeKeys = getHitEdgeKeys(hit);
+          const isCovered = kept.some((existing) => {
+            if (buildClinicalRiskKey(existing) !== clinicalKey) return false;
+            return isSubset(edgeKeys, getHitEdgeKeys(existing));
+          });
+
+          if (!isCovered) kept.push(hit);
+        });
+
+        return kept;
+      }
+
+      function buildClinicalRiskKey(hit) {
+        const data = hit.data || {};
+        const text = normalizeText([
+          data.loai_tuong_tac,
+          data.hau_qua,
+          data.phan_tich,
+          data.xu_ly,
+          hit.targetGroup,
+          hit.targetDrug
+        ].filter(Boolean).join(" "));
+
+        return `${Number(data.muc_do) || 0}::${getClinicalRiskCategory(text)}`;
+      }
+
+      function getClinicalRiskCategory(text) {
+        if (text.includes("doc than") || text.includes("ong than") || text.includes("creatinine") || text.includes("egfr")) return "renal-toxicity";
+        if (text.includes("doc tai") || text.includes("ototoxic")) return "ototoxicity";
+        if (text.includes("qt") || text.includes("xoan dinh") || text.includes("loan nhip")) return "qt-arrhythmia";
+        if (text.includes("chay mau") || text.includes("xuat huyet") || text.includes("inr")) return "bleeding";
+        if (text.includes("suy ho hap") || text.includes("an than") || text.includes("uc che than kinh trung uong")) return "cns-respiratory-depression";
+        if (text.includes("tang kali")) return "hyperkalemia";
+        if (text.includes("ha natri")) return "hyponatremia";
+        if (text.includes("doc gan") || text.includes("men gan")) return "hepatotoxicity";
+        if (text.includes("doc tuy") || text.includes("giam bach cau") || text.includes("giam tieu cau")) return "myelosuppression";
+        return text.split(" ").slice(0, 12).join(" ");
+      }
+
+      function buildPairKey(hit) {
+        return getHitSelectedKeys(hit).join("::");
+      }
+
+      function getHitSelectedKeys(hit) {
+        const keys = [
+          hit.d1.parentKey || hit.d1.key,
+          ...(hit.matchedTargets || [hit.d2]).map((drug) => drug.parentKey || drug.key)
+        ].filter(Boolean);
+
+        return Array.from(new Set(keys)).sort();
+      }
+
+      function isSubset(candidateKeys, existingKeys) {
+        if (candidateKeys.length > existingKeys.length) return false;
+        const existing = new Set(existingKeys);
+        return candidateKeys.every((key) => existing.has(key));
+      }
+
+      function getHitEdgeKeys(hit) {
+        const mainKey = hit.d1.parentKey || hit.d1.key;
+        return (hit.matchedTargets || [hit.d2])
+          .map((drug) => {
+            const targetKey = drug.parentKey || drug.key;
+            return [mainKey, targetKey].filter(Boolean).sort().join("::");
+          })
+          .filter(Boolean)
+          .sort();
+      }
+
+      function scoreHit(hit) {
+        const data = hit.data || {};
+        const detailText = [
+          data.hau_qua,
+          data.loai_tuong_tac,
+          data.phan_tich,
+          data.xu_ly
+        ].filter(Boolean).join(" ");
+        const isSpecificMainRecord = normalizeText(hit.mainDrug || "") === (hit.d1 && hit.d1.key);
+        const hasSpecificConsequence = !normalizeText(data.hau_qua || "").includes("can danh gia nguy co lam sang");
+        const hasClassifiedMechanism = !normalizeText(data.loai_tuong_tac || "").includes("chua phan loai");
+        const matchedCount = (hit.matchedTargets || []).length;
+
+        return ((Number(data.muc_do) || 0) * 1000000) +
+          (isSpecificMainRecord ? 1500000 : 0) +
+          (hasSpecificConsequence ? 100000 : 0) +
+          (hasClassifiedMechanism ? 50000 : 0) +
+          (matchedCount * 10000) +
+          detailText.length;
+      }
+
+      function scanPair(drugA, drugB, hits, seenHits) {
+        database.forEach((item, itemIndex) => {
+          const mainAliases = buildMainAliases(item);
+          const aIsMain = hasTermMatch(drugA.key, mainAliases, "main");
+          const bIsMain = hasTermMatch(drugB.key, mainAliases, "main");
+
+          (item.tuong_tac || []).forEach((interaction, interactionIndex) => {
+            const targetAliases = buildTargetAliases(interaction);
+            const matches = [];
+
+            if (aIsMain && hasTermMatch(drugB.key, targetAliases, "target")) {
+              matches.push({ main: drugA, target: drugB });
+            }
+
+            if (bIsMain && hasTermMatch(drugA.key, targetAliases, "target")) {
+              matches.push({ main: drugB, target: drugA });
+            }
+
+            matches.forEach(({ main, target }) => {
+              const hitKey = `${main.key}::${itemIndex}::${interactionIndex}`;
+              const existingHit = seenHits.get(hitKey);
+
+              if (existingHit) {
+                appendMatchedTarget(existingHit, target);
+                return;
+              }
+
+              const hit = {
+                d1: main,
+                d2: target,
+                matchedTargets: [target],
+                matchedTargetKeys: new Set([target.key]),
+                mainDrug: item.hoat_chat,
+                targetGroup: (interaction.nhom_thuoc || []).join(", "),
+                targetDrug: (interaction.hoat_chat || interaction.thuoc || []).join(", "),
+                data: interaction
+              };
+
+              seenHits.set(hitKey, hit);
+              hits.push(hit);
+            });
+          });
+        });
+      }
+
+      function appendMatchedTarget(hit, target) {
+        if (hit.matchedTargetKeys.has(target.key)) return;
+        hit.matchedTargetKeys.add(target.key);
+        hit.matchedTargets.push(target);
+      }
+
+      function buildMainAliases(item) {
+        return normalizeList(expandTermList([
+          item.hoat_chat,
+          ...(item.cac_thuoc_cung_nhom || [])
+        ]));
+      }
+
+      function buildTargetAliases(interaction) {
+        if (isExcludedInteraction(interaction)) return [];
+        const targets = [
+          ...(interaction.hoat_chat || []),
+          ...(interaction.thuoc || [])
+        ];
+        if (isFoodInteraction(interaction)) {
+          targets.push(...targets.map((value) => localizeFoodLabel(value)));
+        }
+        return normalizeList(expandTermList([
+          ...targets
+        ]));
+      }
+
+      function isSpecialPopulationInteraction(interaction) {
+        return (interaction.nhom_thuoc || [])
+          .map((group) => normalizeText(group))
+          .some((group) => group.includes("doi tuong dac biet"));
+      }
+
+      function isFoodInteraction(interaction) {
+        if (isSpecialPopulationInteraction(interaction) || isExcludedInteraction(interaction)) return false;
+        return isFoodContextLabel([
+          ...(interaction.nhom_thuoc || []),
+          interaction.loai_tuong_tac
+        ].filter(Boolean).join(" "));
+      }
+
+      function isFoodContextLabel(value) {
+        const text = normalizeText(value);
+        if (!text) return false;
+        const padded = ` ${text} `;
+        return [
+          " thuc pham ",
+          " do uong ",
+          " do an ",
+          " food ",
+          " foods ",
+          " thuc an ",
+          " bua an ",
+          " meal ",
+          " meals ",
+          " high fat ",
+          " low fat ",
+          " light meal ",
+          " fasting ",
+          " fasted ",
+          " grapefruit ",
+          " buoi chum ",
+          " acidic fruit juice ",
+          " ethanol ",
+          " alcohol ",
+          " ruou ",
+          " tobacco ",
+          " smoking ",
+          " hut thuoc ",
+          " coffee ",
+          " ca phe ",
+          " tea ",
+          " tra ",
+          " energy drink ",
+          " nuoc tang luc ",
+          " cola ",
+          " caffeinated soft drink ",
+          " chocolate ",
+          " so co la ",
+          " cocoa ",
+          " ca cao ",
+          " guarana ",
+          " yerba mate ",
+          " echinacea ",
+          " cat s claw ",
+          " cats claw ",
+          " st john s wort ",
+          " st johns wort ",
+          " hypericum ",
+          " thao duoc ",
+          " herbal ",
+          " milk ",
+          " dairy ",
+          " cranberry ",
+          " pomegranate ",
+          " orange juice ",
+          " apple juice ",
+          " tyramine ",
+          " wine ",
+          " yogurt ",
+          " ripe cheese ",
+          " aged cheese ",
+          " cured meat ",
+          " fermented soy ",
+          " yeast extract ",
+          " banana ",
+          " licorice ",
+          " cam thao ",
+          " vitamin k rich ",
+          " green leafy ",
+          " calcium rich ",
+          " potassium rich ",
+          " salt substitute ",
+          " enteral nutrition ",
+          " tube feeding ",
+          " dinh duong "
+        ].some((term) => padded.includes(term));
+      }
+
+      function isFoodLikeLabel(value) {
+        const text = normalizeText(value);
+        if (!text) return false;
+        const padded = ` ${text} `;
+        return [
+          " thuc pham ",
+          " do uong ",
+          " do an ",
+          " food ",
+          " foods ",
+          " thuc an ",
+          " bua an ",
+          " meal ",
+          " meals ",
+          " high fat ",
+          " low fat ",
+          " light meal ",
+          " fasting ",
+          " fasted ",
+          " grapefruit ",
+          " buoi chum ",
+          " acidic fruit juice ",
+          " ethanol ",
+          " alcohol ",
+          " ruou ",
+          " bia ",
+          " tobacco ",
+          " smoking ",
+          " hut thuoc ",
+          " caffeine ",
+          " coffee ",
+          " ca phe ",
+          " tea ",
+          " tra ",
+          " energy drink ",
+          " nuoc tang luc ",
+          " cola ",
+          " caffeinated soft drink ",
+          " chocolate ",
+          " so co la ",
+          " cocoa ",
+          " ca cao ",
+          " guarana ",
+          " yerba mate ",
+          " st john s wort ",
+          " st johns wort ",
+          " hypericum ",
+          " milk ",
+          " dairy ",
+          " sua ",
+          " cranberry ",
+          " pomegranate ",
+          " orange juice ",
+          " apple juice ",
+          " tyramine ",
+          " wine ",
+          " yogurt ",
+          " ripe cheese ",
+          " aged cheese ",
+          " cured meat ",
+          " fermented soy ",
+          " yeast extract ",
+          " banana ",
+          " licorice ",
+          " cam thao ",
+          " vitamin k rich ",
+          " green leafy ",
+          " calcium rich ",
+          " potassium rich ",
+          " salt substitute ",
+          " enteral nutrition ",
+          " tube feeding ",
+          " dinh duong "
+        ].some((term) => padded.includes(term));
+      }
+
+      function isFoodKind(kind) {
+        return normalizeText(kind).includes("thuc pham");
+      }
+
+      function isExcludedInteraction(interaction) {
+        const haystack = [
+          ...(interaction.nhom_thuoc || []),
+          ...(interaction.hoat_chat || []),
+          ...(interaction.thuoc || []),
+          interaction.loai_tuong_tac,
+          interaction.phan_tich
+        ].map((value) => normalizeText(value)).join(" ");
+
+        const paddedHaystack = ` ${haystack} `;
+        return (
+          paddedHaystack.includes(" qua man ") ||
+          paddedHaystack.includes(" di ung ") ||
+          paddedHaystack.includes(" scar ") ||
+          haystack.includes("stevens johnson") ||
+          paddedHaystack.includes(" ten ") ||
+          paddedHaystack.includes(" dress ")
+        );
+      }
+
+      function normalizeList(values) {
+        return values
+          .filter(Boolean)
+          .map((value) => normalizeText(value))
+          .filter(Boolean);
+      }
+
+      function expandTermList(values) {
+        const expanded = [];
+        (values || []).forEach((value) => {
+          if (!value) return;
+          expanded.push(value);
+          splitCompoundName(value).forEach((part) => expanded.push(part));
+        });
+        return expanded;
+      }
+
+      function hasTermMatch(selectedKey, aliases, mode) {
+        return aliases.some((alias) => isTermMatch(selectedKey, alias, mode));
+      }
+
+      function isTermMatch(a, b, mode) {
+        if (!a || !b) return false;
+        if (a === b) return true;
+        if (mode === "target") {
+          return (b.length >= 4 && (` ${a} `).includes(` ${b} `)) ||
+            (a.length >= 4 && (` ${b} `).includes(` ${a} `));
+        }
+        return false;
+      }
+
+      function renderInteractionCard(hit) {
+        const interaction = hit.data;
+        const level = Number(interaction.muc_do) || 1;
+        const color = getLevelColor(level);
+        const mechanismLabel = getMechanismLabel(interaction);
+        const card = document.createElement("article");
+        card.className = `interaction-card lvl-${level}`;
+
+        const selectedTargetDisplay = formatMatchedTargets(hit);
+        const targetDisplay = [hit.targetGroup, hit.targetDrug].filter(Boolean).join(" / ") || "Chưa phân loại";
+        card.innerHTML = `
+          <div class="card-header">
+            <div class="pair-title">${escapeHtml(hit.d1.label)} - ${escapeHtml(selectedTargetDisplay)}</div>
+            <span class="badge bg-${level}">${escapeHtml(getLevelText(level))}</span>
+          </div>
+          <details class="source-details">
+            <summary>Dữ liệu gốc</summary>
+            <div><strong>${escapeHtml(hit.mainDrug || "")}</strong> - <strong>${escapeHtml(targetDisplay)}</strong></div>
+          </details>
+          <div class="level-guidance">${escapeHtml(getLevelGuidance(level))}</div>
+          <div class="hazard-text" style="color: ${color};">
+            Hậu quả: ${escapeHtml(interaction.hau_qua || "Chưa xác định")}
+          </div>
+          <div class="section-title">Cơ chế${mechanismLabel ? ` (${escapeHtml(mechanismLabel)})` : ""}</div>
+          <p>${escapeHtml(interaction.phan_tich || "Chưa có phân tích chi tiết.")}</p>
+          <div class="action-box" style="border-left-color: ${color};">
+            <strong>Xử trí:</strong> ${escapeHtml(interaction.xu_ly || "Theo dõi và đánh giá lâm sàng.")}
+          </div>
         `;
         return card;
-    }
+      }
 
-    function getSeverityText(mucdo) {
-        const levels = {
-            1: 'Theo dõi',
-            2: 'Thận trọng',
-            3: 'Cân nhắc',
-            4: 'Nguy hiểm'
-        };
-        return levels[mucdo] || 'Không xác định';
-    }
+      function formatMatchedTargets(hit) {
+        return (hit.matchedTargets || [hit.d2])
+          .map((drug) => drug.label)
+          .join(", ");
+      }
 
-    // Hàm debounce
-    function debounce(func, timeout = 300) {
-        let timer;
+      function getMechanismLabel(interaction) {
+        const rawLabel = String(interaction.loai_tuong_tac || "").trim();
+        if (rawLabel && normalizeText(rawLabel) !== "chua phan loai") return rawLabel;
+
+        return inferMechanismLabel(interaction) || rawLabel;
+      }
+
+      function inferMechanismLabel(interaction) {
+        const text = [
+          ...(interaction.nhom_thuoc || []),
+          ...(interaction.hoat_chat || []),
+          ...(interaction.thuoc || []),
+          interaction.hau_qua,
+          interaction.phan_tich,
+          interaction.xu_ly
+        ].map((value) => normalizeText(value)).join(" ");
+
+        const hasPharmacokineticSignal = containsAny(text, [
+          "cyp",
+          "p gp",
+          "oatp",
+          "bcrp",
+          "uc che chuyen hoa",
+          "cam ung enzym",
+          "cam ung enzyme",
+          "chuyen hoa",
+          "nong do",
+          "hap thu",
+          "sinh kha dung",
+          "thanh thai",
+          "thai tru",
+          "bai tiet",
+          "gan protein",
+          "phoi nhiem"
+        ]);
+
+        const hasPharmacodynamicSignal = containsAny(text, [
+          "hiep dong",
+          "cong tac dung",
+          "cong doc tinh",
+          "doi khang",
+          "keo dai khoang qt",
+          "xoan dinh",
+          "cham nhip",
+          "bloc nhi that",
+          "ha kali mau",
+          "ha huyet ap",
+          "chay mau",
+          "uc che tuy",
+          "doc than",
+          "doc tai",
+          "doc co"
+        ]);
+
+        if (hasPharmacokineticSignal && hasPharmacodynamicSignal) {
+          return "Dược động học/dược lực học";
+        }
+        if (hasPharmacokineticSignal) return "Dược động học";
+        if (hasPharmacodynamicSignal) return "Dược lực học";
+        return "";
+      }
+
+      function containsAny(text, terms) {
+        return terms.some((term) => text.includes(term));
+      }
+
+      function getLevelText(level) {
+        if (level === 4) return "Mức 4: Phối hợp nguy hiểm";
+        if (level === 3) return "Mức 3: Cân nhắc nguy cơ/lợi ích";
+        if (level === 2) return "Mức 2: Tương tác cần thận trọng";
+        return "Mức 1: Tương tác cần theo dõi";
+      }
+
+      function getLevelGuidance(level) {
+        if (level === 4) return "Hành động chung: tuyệt đối không dùng đồng thời; cần chọn thuốc thay thế.";
+        if (level === 3) return "Hành động chung: chỉ phối hợp khi đã cân nhắc lợi ích vượt rủi ro và có giám sát chặt.";
+        if (level === 2) return "Hành động chung: có thể phối hợp nếu điều chỉnh liều, thời điểm dùng hoặc theo dõi phù hợp.";
+        return "Hành động chung: tiếp tục dùng theo chỉ định và theo dõi sức khỏe tổng quát.";
+      }
+
+      function getLevelColor(level) {
+        if (level === 4) return "var(--level-4)";
+        if (level === 3) return "var(--level-3)";
+        if (level === 2) return "var(--level-2)";
+        return "var(--level-1)";
+      }
+
+      function buildSearchMatchKeys(label) {
+        const key = normalizeText(label);
+        if (!key) return [];
+
+        const variants = new Set([key]);
+        const tokens = key.split(" ").filter(Boolean);
+        tokens.forEach((token, index) => {
+          getTokenSearchVariants(token).forEach((variant) => {
+            const nextTokens = tokens.slice();
+            nextTokens[index] = variant;
+            variants.add(nextTokens.join(" "));
+          });
+        });
+
+        return Array.from(variants).filter((value) => value.length >= 2).slice(0, 32);
+      }
+
+      function getTokenSearchVariants(token) {
+        if (!token || token.length < 4) return [];
+        const variants = new Set();
+        const rules = [
+          [/cillin$/, "cilin"],
+          [/cilin$/, "cillin"],
+          [/cycline$/, "cyclin"],
+          [/cyclin$/, "cycline"],
+          [/phylline$/, "phyllin"],
+          [/phyllin$/, "phylline"],
+          [/azole$/, "azol"],
+          [/azol$/, "azole"],
+          [/zole$/, "zol"],
+          [/zol$/, "zole"],
+          [/xetine$/, "xetin"],
+          [/xetin$/, "xetine"],
+          [/zepine$/, "zepin"],
+          [/zepin$/, "zepine"],
+          [/mycin$/, "micin"],
+          [/micin$/, "mycin"],
+          [/ate$/, "at"],
+          [/at$/, "ate"],
+          [/ide$/, "id"],
+          [/id$/, "ide"],
+          [/ane$/, "an"],
+          [/an$/, "ane"],
+          [/one$/, "on"],
+          [/on$/, "one"],
+          [/ine$/, "in"],
+          [/in$/, "ine"],
+          [/ium$/, "i"]
+        ];
+
+        rules.forEach(([pattern, replacement]) => {
+          if (!pattern.test(token)) return;
+          const variant = token.replace(pattern, replacement);
+          if (variant && variant !== token && variant.length >= 3) variants.add(variant);
+        });
+
+        return Array.from(variants);
+      }
+
+      function normalizeText(value) {
+        return String(value || "")
+          .trim()
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/đ/g, "d")
+          .replace(/[^a-z0-9]+/g, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+      }
+
+      function highlight(label, rawQuery) {
+        const safeLabel = escapeHtml(label);
+        const query = String(rawQuery || "").trim();
+        if (!query) return safeLabel;
+
+        const normalizedLabel = normalizeText(label);
+        const normalizedQuery = normalizeText(query);
+        const index = normalizedLabel.indexOf(normalizedQuery);
+        if (index < 0) return safeLabel;
+
+        const originalLabel = String(label);
+        const start = Math.min(index, originalLabel.length);
+        const end = Math.min(start + query.length, originalLabel.length);
+        return `${escapeHtml(originalLabel.slice(0, start))}<mark>${escapeHtml(originalLabel.slice(start, end))}</mark>${escapeHtml(originalLabel.slice(end))}`;
+      }
+
+      function escapeHtml(value) {
+        return String(value || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function hideSuggestions() {
+        suggestions.style.display = "none";
+        suggestions.innerHTML = "";
+      }
+
+      function debounce(callback, wait) {
+        let timeoutId;
         return (...args) => {
-            clearTimeout(timer);
-            timer = setTimeout(() => func.apply(this, args), timeout);
+          window.clearTimeout(timeoutId);
+          timeoutId = window.setTimeout(() => callback(...args), wait);
         };
-    }
-});
+      }
+
+      renderSelected();
+      crossCheck();
+    });
