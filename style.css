@@ -306,7 +306,7 @@ h1 {
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: 16px 24px;
+  padding: 1px 1px;
   font-weight: 500;
   transition: background 0.2s;
 }
