@@ -1,41 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tra cứu tương tác thuốc | Dược lý & An toàn kê đơn</title>
-    <meta name="description" content="Tra cứu nhanh tương tác thuốc, hoạt chất, cảnh báo nguy hiểm và hướng xử trí. Công cụ hỗ trợ dược sĩ, bác sĩ, sinh viên y dược.">
-    <meta name="keywords" content="tra cứu tương tác thuốc, tương tác thuốc, dược lý, an toàn kê đơn, dược sĩ, bác sĩ, thuốc, hoạt chất, xử trí tương tác thuốc">
-    <meta name="author" content="Bùi Đạt Hiếu">
-    <meta name="copyright" content="Bùi Đạt Hiếu">
-    <meta name="robots" content="index,follow">
-    <meta name="google-adsense-account" content="ca-pub-3489693183212518">
-    <link rel="canonical" href="https://tuongtacthuoc.vn/">
-<!-- Mở rộng: favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Mở rộng: Open Graph cho Facebook/Zalo -->
-    <meta property="og:title" content="Tra cứu tương tác thuốc | Dược lý & An toàn kê đơn">
-    <meta property="og:description" content="Tra cứu nhanh tương tác thuốc, hoạt chất, cảnh báo nguy hiểm và hướng xử trí. Công cụ hỗ trợ dược sĩ, bác sĩ, sinh viên y dược.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tuongtacthuoc.vn/">
-    <meta property="og:image" content="https://tuongtacthuoc.vn/og-image.png">
-    <!-- Mở rộng: Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tra cứu tương tác thuốc | Dược lý & An toàn kê đơn">
-    <meta name="twitter:description" content="Tra cứu nhanh tương tác thuốc, hoạt chất, cảnh báo nguy hiểm và hướng xử trí.">
-    <meta name="twitter:image" content="https://tuongtacthuoc.vn/og-image.png">
-    <meta name="p:domain_verify" content="9b8a47e98163169f4e7ab062f1b3b051"/>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MCCV5GNKXW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-MCCV5GNKXW');
-</script>
-<style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuongtacthuoc.vn - Tra cứu đa thuốc</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
     :root {
       --level-4: #b42318;
       --level-3: #c2410c;
@@ -52,6 +24,8 @@
       --success-bg: #e8f6ee;
       --success-text: #166534;
       --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --content-width: 1480px;
+      --page-gutter: clamp(16px, 2.7vw, 44px);
     }
 
     * {
@@ -60,27 +34,126 @@
 
     body {
       margin: 0;
-      padding: 28px 16px;
+      padding: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.55;
     }
 
+    body.dark {
+      --bg: #0f172a;
+      --panel: #172033;
+      --muted-panel: #111827;
+      --border: #334155;
+      --text: #e5edf7;
+      --muted: #a8b4c7;
+      --primary: #60a5fa;
+      --primary-soft: #1e3a5f;
+      --success-bg: #123322;
+      --success-text: #86efac;
+      --shadow: 0 12px 32px rgba(0, 0, 0, 0.32);
+      color-scheme: dark;
+    }
+
     .container {
-      width: min(1180px, 100%);
+      width: min(var(--content-width), calc(100% - (var(--page-gutter) * 2)));
+      margin: 24px auto 36px;
+      background: transparent;
+      overflow: visible;
+    }
+
+    .main-menu {
+      position: relative;
+      z-index: 50;
+      background: #1976d2;
+      color: white;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+    }
+
+    .main-menu-inner {
+      width: min(var(--content-width), calc(100% - (var(--page-gutter) * 2)));
+      min-height: 76px;
       margin: 0 auto;
-      background: var(--panel);
-      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      color: white;
+      font-size: 18px;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-logo svg {
+      flex: 0 0 auto;
+      width: 48px;
+      height: 48px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      padding: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.34);
       border-radius: 8px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
+      background: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      display: block;
+      height: 2px;
+      margin: 5px 0;
+      border-radius: 999px;
+      background: white;
+    }
+
+    #menu-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    #menu-list a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 8px 13px;
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+      font-weight: 750;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    #menu-list a:hover,
+    #menu-list a:focus {
+      background: rgba(255, 255, 255, 0.16);
+      outline: none;
     }
 
     .app-header {
-      padding: 26px 30px 22px;
-      border-bottom: 1px solid var(--border);
+      margin-bottom: 18px;
+      padding: 28px clamp(22px, 3vw, 38px) 24px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
       background: white;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
     }
 
     .header-title {
@@ -101,22 +174,29 @@
 
     .main-layout {
       display: grid;
-      grid-template-columns: minmax(320px, 390px) minmax(0, 1fr);
+      grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
+      gap: 20px;
       align-items: start;
     }
 
     .left-column {
       position: sticky;
       top: 18px;
-      min-height: calc(100vh - 56px);
-      padding: 24px;
-      border-right: 1px solid var(--border);
-      background: var(--muted-panel);
+      min-height: auto;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
     }
 
     .right-column {
       min-height: 520px;
-      padding: 24px 28px 30px;
+      padding: 28px clamp(28px, 3vw, 44px) 36px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
     }
 
     .right-header {
@@ -132,6 +212,14 @@
       font-weight: 700;
     }
 
+    .result-actions {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
     .summary-chip {
       display: inline-flex;
       align-items: center;
@@ -144,6 +232,35 @@
       font-size: 13px;
       font-weight: 650;
       white-space: nowrap;
+    }
+
+    .print-results-btn {
+      min-height: 32px;
+      padding: 6px 11px;
+      border: 1px solid #0f62fe;
+      border-radius: 7px;
+      background: #0f62fe;
+      color: white;
+      cursor: pointer;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      transition: background 0.2s, border-color 0.2s, color 0.2s, opacity 0.2s;
+    }
+
+    .print-results-btn:hover,
+    .print-results-btn:focus {
+      border-color: #0b4ec2;
+      background: #0b4ec2;
+      outline: none;
+    }
+
+    .print-results-btn:disabled {
+      border-color: #cbd5e1;
+      background: #e2e8f0;
+      color: #64748b;
+      cursor: not-allowed;
+      opacity: 0.72;
     }
 
     .search-container {
@@ -231,6 +348,36 @@
       margin: 8px 0 0;
       color: var(--muted);
       font-size: 13px;
+    }
+
+    .ingredient-display-options {
+      display: grid;
+      gap: 8px;
+      margin: -8px 0 18px;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+
+    .ingredient-display-option {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      min-height: 32px;
+      color: #243042;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .ingredient-display-option input {
+      flex: 0 0 auto;
+      width: 17px;
+      height: 17px;
+      accent-color: var(--primary);
+      cursor: pointer;
     }
 
     .selected-area {
@@ -324,13 +471,21 @@
     }
 
     .interaction-card {
-      margin-bottom: 16px;
-      padding: 18px;
-      border: 1px solid var(--border);
-      border-left: 6px solid #94a3b8;
-      border-radius: 8px;
-      background: white;
-      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+      margin: 0;
+      padding: 0 0 18px;
+      border: 0;
+      border-bottom: 1px solid var(--border);
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .interaction-card + .interaction-card {
+      padding-top: 18px;
+    }
+
+    .interaction-card:last-of-type {
+      border-bottom: 0;
     }
 
     .lvl-4 { border-left-color: var(--level-4); }
@@ -399,13 +554,6 @@
       overflow-wrap: anywhere;
     }
 
-    .level-guidance {
-      margin: -2px 0 12px;
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 650;
-    }
-
     .hazard-text {
       margin-bottom: 12px;
       font-size: 15px;
@@ -435,12 +583,22 @@
       font-size: 14px;
     }
 
+    .interaction-card .action-box {
+      margin-top: 8px;
+      padding: 0;
+      border: 0 !important;
+      border-radius: 0;
+      background: transparent;
+      line-height: 1.5;
+    }
+
     .special-population-panel {
       margin-bottom: 18px;
-      padding: 16px;
-      border: 1px solid #bfdbfe;
-      border-radius: 8px;
-      background: #f8fbff;
+      padding: 18px 0 0;
+      border: 0;
+      border-top: 1px solid var(--border);
+      border-radius: 0;
+      background: transparent;
     }
 
     .special-population-header {
@@ -467,22 +625,52 @@
     .special-population-list,
     .special-population-warnings {
       display: grid;
-      gap: 12px;
+      gap: 0;
     }
 
     .special-population-card {
-      padding: 14px;
-      border: 1px solid #dbe7f6;
-      border-radius: 8px;
-      background: white;
+      position: relative;
+      padding: 14px 0 18px 18px;
+      border: 0;
+      border-bottom: 1px solid var(--border);
+      border-left: 3px solid #c7d7ee;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .special-population-card + .special-population-card {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 2px solid #d7e3f4;
+    }
+
+    .special-population-card:last-child {
+      border-bottom: 0;
     }
 
     .special-population-drug {
-      margin-bottom: 4px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 6px;
       color: #111827;
       font-size: 16px;
       font-weight: 800;
       overflow-wrap: anywhere;
+    }
+
+    .special-population-drug::before {
+      content: "Hoạt chất";
+      flex: 0 0 auto;
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: #e8f1ff;
+      color: #1e3a8a;
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.2;
+      text-transform: uppercase;
     }
 
     .special-population-note {
@@ -492,11 +680,16 @@
     }
 
     .special-population-item {
-      padding: 12px;
-      border: 1px solid var(--border);
-      border-left: 5px solid #94a3b8;
-      border-radius: 8px;
-      background: white;
+      padding: 12px 0 0;
+      border: 0;
+      border-top: 1px dashed #d8e0eb;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .special-population-item:first-child {
+      padding-top: 0;
+      border-top: 0;
     }
 
     .special-population-item-head {
@@ -527,18 +720,35 @@
       font-size: 14px;
     }
 
+    .special-population-item .action-box {
+      margin-top: 8px;
+      padding: 0;
+      border: 0 !important;
+      border-radius: 0;
+      background: transparent;
+      line-height: 1.5;
+    }
+
     .food-interaction-panel {
-      border-color: #bbf7d0;
-      background: #f5fff8;
+      background: transparent;
+    }
+
+    .food-interaction-panel .special-population-card {
+      border-left-color: #86efac;
+    }
+
+    .food-interaction-panel .special-population-card + .special-population-card {
+      border-top-color: #bbf7d0;
+    }
+
+    .food-interaction-panel .special-population-drug::before {
+      background: #dcfce7;
+      color: #166534;
     }
 
     .food-interaction-panel .special-population-title,
     .food-interaction-panel .special-population-count {
       color: #166534;
-    }
-
-    .food-interaction-panel .special-population-card {
-      border-color: #dcfce7;
     }
 
     .empty-msg,
@@ -635,26 +845,494 @@
     .level-item.lvl-2 { border-left-color: var(--level-2); }
     .level-item.lvl-1 { border-left-color: var(--level-1); }
 
+    .footer {
+      position: relative;
+      margin-top: 76px;
+      background: #1976d2;
+      color: white;
+    }
+
+    .footer-wave {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .footer-wave svg {
+      display: block;
+      width: 100%;
+      height: 60px;
+    }
+
+    .footer-inner {
+      position: relative;
+      z-index: 2;
+      width: min(1000px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 52px 20px 22px;
+      text-align: center;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .footer-title {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 32px;
+      margin: 18px 0;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    .footer-meta {
+      font-size: 13px;
+      opacity: 0.94;
+    }
+
+    .dark-mode-toggle {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 80;
+      display: inline-grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border: 1px solid #0b4ec2;
+      border-radius: 999px;
+      background: var(--primary);
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.22);
+      transition: transform 0.2s, background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .dark-mode-toggle:hover,
+    .dark-mode-toggle:focus {
+      transform: translateY(-1px);
+      border-color: #0b4ec2;
+      background: #0b4ec2;
+      outline: none;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.28);
+    }
+
+    .dark-mode-toggle svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .dark-mode-toggle .icon-sun {
+      display: none;
+    }
+
+    body.dark .dark-mode-toggle {
+      border-color: #facc15;
+      background: #facc15;
+      color: #111827;
+    }
+
+    body.dark .dark-mode-toggle:hover,
+    body.dark .dark-mode-toggle:focus {
+      border-color: #fde047;
+      background: #fde047;
+    }
+
+    body.dark .dark-mode-toggle .icon-moon {
+      display: none;
+    }
+
+    body.dark .dark-mode-toggle .icon-sun {
+      display: block;
+    }
+
+    body.dark .left-column,
+    body.dark .right-column,
+    body.dark .app-header,
+    body.dark .summary-chip,
+    body.dark .suggestions,
+    body.dark .suggestion-item,
+    body.dark input[type="text"],
+    body.dark .selected-tag,
+    body.dark .clear-all,
+    body.dark .level-legend-panel,
+    body.dark .level-item {
+      background: var(--panel);
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    body.dark input[type="text"] {
+      color: var(--text);
+    }
+
+    body.dark input[type="text"]::placeholder {
+      color: #7f8da4;
+    }
+
+    body.dark .ingredient-display-options,
+    body.dark .empty-msg {
+      background: var(--muted-panel);
+      border-color: var(--border);
+    }
+
+    body.dark .suggestion-item {
+      border-bottom-color: var(--border);
+    }
+
+    body.dark .suggestion-item:hover,
+    body.dark .suggestion-item:focus {
+      background: var(--primary-soft);
+    }
+
+    body.dark .right-header,
+    body.dark .search-label,
+    body.dark .selected-title,
+    body.dark .ingredient-display-option,
+    body.dark .pair-title,
+    body.dark .section-title,
+    body.dark .selected-name,
+    body.dark .special-population-drug,
+    body.dark .special-population-targets,
+    body.dark .level-item strong {
+      color: var(--text);
+    }
+
+    body.dark .header-desc,
+    body.dark .helper-text,
+    body.dark .suggestion-kind,
+    body.dark .selected-meta,
+    body.dark .source-details,
+    body.dark .special-population-note,
+    body.dark .level-item span,
+    body.dark .summary-chip {
+      color: var(--muted);
+    }
+
+    body.dark .interaction-card p,
+    body.dark .special-population-item p,
+    body.dark .action-box {
+      color: #d7e1ef;
+    }
+
+    body.dark .special-population-drug::before {
+      background: #1e3a5f;
+      color: #bfdbfe;
+    }
+
+    body.dark .food-interaction-panel .special-population-drug::before {
+      background: #123322;
+      color: #86efac;
+    }
+
+    body.dark .safe-msg {
+      background: var(--success-bg);
+      color: var(--success-text);
+      border-color: #166534;
+    }
+
+    body.dark .error-msg {
+      background: #3b1116;
+      color: #fecaca;
+      border-color: #7f1d1d;
+    }
+
+    body.dark .remove-btn {
+      background: #3b1116;
+      color: #fecaca;
+      border-color: #7f1d1d;
+    }
+
+    body.dark .remove-btn:hover,
+    body.dark .remove-btn:focus {
+      background: #be123c;
+      color: white;
+      border-color: #be123c;
+    }
+
     mark {
       padding: 0;
       background: #fde68a;
       color: inherit;
     }
 
-    @media (max-width: 860px) {
+    @media (min-width: 861px) {
       body {
-        padding: 12px;
+        font-size: 17px;
+        line-height: 1.62;
+      }
+
+      .main-menu-inner {
+        min-height: 84px;
+      }
+
+      .brand-logo {
+        font-size: 20px;
+      }
+
+      .brand-logo svg {
+        width: 54px;
+        height: 54px;
+      }
+
+      #menu-list a {
+        min-height: 44px;
+        padding: 9px 15px;
+        font-size: 15px;
+      }
+
+      .container {
+        margin-top: 28px;
+        margin-bottom: 48px;
+      }
+
+      .main-layout {
+        grid-template-columns: minmax(320px, 380px) minmax(0, 1fr);
+        gap: 24px;
+      }
+
+      .left-column {
+        padding: 24px;
+      }
+
+      .right-column {
+        padding: 34px clamp(36px, 3.2vw, 52px) 42px;
+      }
+
+      .right-header {
+        margin-bottom: 22px;
+        font-size: 26px;
+      }
+
+      .summary-chip,
+      .print-results-btn {
+        min-height: 36px;
+        font-size: 15px;
+      }
+
+      .search-label,
+      .selected-title {
+        font-size: 16px;
+      }
+
+      input[type="text"] {
+        min-height: 54px;
+        padding: 14px 16px;
+        font-size: 17px;
+      }
+
+      .helper-text,
+      .suggestion-kind,
+      .selected-meta,
+      .source-details {
+        font-size: 14px;
+      }
+
+      .ingredient-display-options {
+        gap: 10px;
+        padding: 12px 14px;
+      }
+
+      .ingredient-display-option {
+        min-height: 38px;
+        font-size: 15px;
+      }
+
+      .suggestion-item {
+        padding: 13px 16px;
+      }
+
+      .suggestion-name,
+      .selected-name {
+        font-size: 16px;
+      }
+
+      .selected-tag {
+        min-height: 50px;
+      }
+
+      .interaction-card {
+        padding-bottom: 22px;
+      }
+
+      .interaction-card + .interaction-card {
+        padding-top: 22px;
+      }
+
+      .pair-title {
+        font-size: 22px;
+      }
+
+      .badge {
+        min-height: 34px;
+        padding: 6px 12px;
+        font-size: 13px;
+      }
+
+      .hazard-text {
+        font-size: 17px;
+      }
+
+      .section-title,
+      .interaction-card p,
+      .action-box,
+      .special-population-targets,
+      .special-population-hazard,
+      .special-population-item p,
+      .special-population-item .action-box {
+        font-size: 16px;
+      }
+
+      .special-population-panel {
+        margin-bottom: 24px;
+        padding-top: 22px;
+      }
+
+      .special-population-title {
+        font-size: 20px;
+      }
+
+      .special-population-count {
+        font-size: 14px;
+      }
+
+      .special-population-card {
+        padding: 18px 0 22px 22px;
+        border-left-width: 4px;
+      }
+
+      .special-population-card + .special-population-card {
+        margin-top: 22px;
+        padding-top: 22px;
+      }
+
+      .special-population-drug {
+        font-size: 20px;
+      }
+
+      .special-population-drug::before {
+        padding: 4px 8px;
+        font-size: 12px;
+      }
+
+      .special-population-note {
+        margin-bottom: 14px;
+        font-size: 15px;
+      }
+
+      .special-population-item {
+        padding-top: 15px;
+      }
+
+      .level-legend-panel summary {
+        font-size: 15px;
+      }
+
+      .level-item strong,
+      .level-item span {
+        font-size: 13px;
+      }
+
+      .empty-msg,
+      .safe-msg,
+      .error-msg {
+        font-size: 17px;
+      }
+
+      .footer-title {
+        font-size: 23px;
+      }
+
+      .footer-links {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .container {
+        width: calc(100% - 24px);
+        margin: 12px auto 22px;
+      }
+
+      .main-menu-inner {
+        width: calc(100% - 24px);
+        min-height: 68px;
+        position: relative;
+      }
+
+      .brand-logo {
+        font-size: 16px;
+      }
+
+      .brand-logo svg {
+        width: 42px;
+        height: 42px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      #menu-list {
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        display: none;
+        width: min(280px, calc(100vw - 24px));
+        padding: 8px;
+        border-radius: 8px;
+        background: #1976d2;
+        box-shadow: 0 16px 32px rgba(15, 23, 42, 0.22);
+        z-index: 60;
+      }
+
+      #menu-list.active {
+        display: grid;
+      }
+
+      #menu-list a {
+        justify-content: flex-start;
+        width: 100%;
       }
 
       .main-layout {
         grid-template-columns: 1fr;
+        gap: 12px;
       }
 
       .left-column {
         position: static;
         min-height: auto;
-        border-right: 0;
-        border-bottom: 1px solid var(--border);
       }
 
       .right-column,
@@ -680,1052 +1358,108 @@
       }
     }
 
-    /* Giao diện web lấy từ file sau: menu, FAQ, footer, dark mode */
-    body {
-      padding: 0;
-      background: var(--bg);
-      scroll-behavior: smooth;
-    }
-
-    .main-menu {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      min-height: 74px;
-      padding: 8px clamp(14px, 4vw, 48px);
-      background: linear-gradient(90deg, #0f62fe, #1976d2);
-      color: #fff;
-      box-shadow: 0 4px 16px rgba(15, 98, 254, 0.22);
-    }
-
-    .brand-logo {
-      margin: 0 !important;
-      color: #fff !important;
-      white-space: nowrap;
-    }
-
-    .brand-logo svg {
-      width: 52px;
-      height: 52px;
-      flex: 0 0 auto;
-    }
-
-    .main-menu ul {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .main-menu a {
-      display: inline-flex;
-      align-items: center;
-      min-height: 40px;
-      padding: 8px 13px;
-      border-radius: 999px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      transition: background 0.2s, transform 0.2s;
-    }
-
-    .main-menu a:hover,
-    .main-menu a:focus {
-      background: rgba(255, 255, 255, 0.16);
-      outline: none;
-      transform: translateY(-1px);
-    }
-
-    .menu-toggle {
-      display: none;
-      width: 42px;
-      height: 42px;
-      padding: 8px;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-
-    .menu-toggle span {
-      display: block;
-      height: 3px;
-      margin: 5px 0;
-      border-radius: 999px;
-      background: white;
-    }
-
-    .page-heading {
-      margin: 28px auto 18px;
-      padding: 0 16px;
-      max-width: 1180px;
-      color: #0f3f8c;
-      font-size: clamp(25px, 4vw, 40px);
-      line-height: 1.2;
-      text-align: center;
-    }
-
-    .container {
-      margin: 0 auto 50px;
-    }
-
-    #faq-section {
-      width: min(980px, calc(100% - 28px));
-      margin: 42px auto 80px;
-      padding: 24px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: var(--panel);
-      box-shadow: var(--shadow);
-    }
-
-    .faq-title {
-      margin: 0 0 18px;
-      color: var(--primary);
-      font-size: clamp(22px, 3vw, 30px);
-      text-align: center;
-    }
-
-    .faq-list {
-      display: grid;
-      gap: 10px;
-    }
-
-    .faq-item {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-      background: #fff;
-    }
-
-    .faq-question {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      width: 100%;
-      padding: 14px 16px;
-      border: 0;
-      background: #f8fafc;
-      color: #243042;
-      cursor: pointer;
-      font: inherit;
-      font-weight: 800;
-      text-align: left;
-    }
-
-    .faq-question:hover,
-    .faq-question:focus {
-      background: var(--primary-soft);
-      outline: none;
-    }
-
-    .faq-question .icon {
-      display: inline-grid;
-      place-items: center;
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      background: var(--primary);
-      color: #fff;
-      flex: 0 0 auto;
-      font-weight: 900;
-    }
-
-    .faq-answer {
-      padding: 14px 16px 16px;
-      color: #344054;
-      background: #fff;
-    }
-
-    .result-card {
-      margin: 12px 0;
-      padding: 14px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      border-left: 5px solid #94a3b8;
-      background: #fff;
-    }
-
-    .result-card h3 {
-      margin: 0 0 8px;
-      color: #172033;
-    }
-
-    .mucdo-4 { border-left-color: var(--level-4); }
-    .mucdo-3 { border-left-color: var(--level-3); }
-    .mucdo-2 { border-left-color: var(--level-2); }
-    .mucdo-1 { border-left-color: var(--level-1); }
-
-    .footer a:hover,
-    .footer a:focus {
-      text-decoration: underline !important;
-      outline: none;
-    }
-
-    #toggle-dark {
-      position: fixed;
-      right: 24px;
-      bottom: 24px;
-      z-index: 999;
-      display: grid;
-      place-items: center;
-      width: 46px;
-      height: 46px;
-      border: 0;
-      border-radius: 50%;
-      background: var(--primary);
-      color: #fff;
-      cursor: pointer;
-      font-size: 1.25em;
-      box-shadow: 0 4px 14px rgba(25,118,210,0.25);
-    }
-
-    body.dark {
-      --bg: #0b1220;
-      --panel: #111827;
-      --muted-panel: #0f172a;
-      --border: #263244;
-      --text: #e5e7eb;
-      --muted: #a9b4c4;
-      --primary-soft: #1d2f55;
-      --success-bg: #102a1c;
-      --success-text: #86efac;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    body.dark .app-header,
-    body.dark .container,
-    body.dark .right-column,
-    body.dark .suggestions,
-    body.dark .suggestion-item,
-    body.dark .selected-tag,
-    body.dark .interaction-card,
-    body.dark .special-population-card,
-    body.dark .special-population-item,
-    body.dark #faq-section,
-    body.dark .faq-item,
-    body.dark .faq-answer,
-    body.dark .result-card {
-      background: var(--panel);
-      color: var(--text);
-    }
-
-    body.dark input[type="text"],
-    body.dark .summary-chip,
-    body.dark .level-legend-panel,
-    body.dark .level-item,
-    body.dark .action-box,
-    body.dark .empty-msg,
-    body.dark .faq-question {
-      background: var(--muted-panel);
-      color: var(--text);
-      border-color: var(--border);
-    }
-
-    body.dark .pair-title,
-    body.dark .result-card h3,
-    body.dark .selected-title,
-    body.dark .search-label,
-    body.dark .section-title {
-      color: var(--text);
-    }
-
-    @media (max-width: 860px) {
-      body { padding: 0; }
-
-      .main-menu {
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 8px 12px;
+    @media print {
+      @page {
+        margin: 14mm;
       }
 
-      .menu-toggle { display: block; }
-
-      .main-menu ul {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 4px;
-        padding: 6px 0 2px;
-      }
-
-      .main-menu ul.active { display: flex; }
-
-      .main-menu a {
-        justify-content: center;
-        border-radius: 10px;
-      }
-
-      .brand-logo span { font-size: 0.95em; }
-      .brand-logo svg { width: 44px; height: 44px; }
-      .container { margin: 0 12px 42px; }
-      #faq-section { width: calc(100% - 24px); padding: 16px; }
-    }
-
-  
-
-    /* PDF preview - giữ lại chức năng in/xuất PDF từ file giao diện */
-    .result-actions {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .pdf-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 32px;
-      padding: 6px 12px;
-      border: 1px solid var(--primary, #1976d2);
-      border-radius: 999px;
-      background: var(--primary, #1976d2);
-      color: #fff;
-      cursor: pointer;
-      font: inherit;
-      font-size: 13px;
-      font-weight: 800;
-      white-space: nowrap;
-      box-shadow: 0 2px 8px rgba(25,118,210,0.14);
-    }
-
-    .pdf-button:hover,
-    .pdf-button:focus {
-      filter: brightness(0.95);
-      outline: none;
-    }
-
-    .pdf-preview-modal {
-      position: fixed;
-      inset: 0;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 18px;
-      background: rgba(15, 23, 42, 0.68);
-      z-index: 9999;
-    }
-
-    .pdf-preview-box {
-      width: min(960px, 100%);
-      height: min(90vh, 760px);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      border-radius: 12px;
-      background: #fff;
-      box-shadow: 0 18px 50px rgba(0,0,0,0.28);
-    }
-
-    .pdf-preview-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 10px 14px;
-      border-bottom: 1px solid var(--border, #d9e0e8);
-      font-weight: 800;
-    }
-
-    .pdf-close {
-      border: 0;
-      border-radius: 8px;
-      background: #fee2e2;
-      color: #991b1b;
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: 900;
-      width: 36px;
-      height: 34px;
-    }
-
-    .pdf-preview-frame {
-      flex: 1;
-      width: 100%;
-      border: 0;
-      background: #f8fafc;
-    }
-
-    body.dark .pdf-preview-box {
-      background: #182235;
-      color: #e5e7eb;
-    }
-
-
-
-    /* =========================================================
-       GIAO DIỆN ĐỀ XUẤT: Dashboard rộng rãi, cân đối, dễ nhìn
-       - Giữ logic tra cứu và chức năng In PDF
-       - Không phụ thuộc style.css ngoài
-       ========================================================= */
-    :root {
-      --app-max-width: 1420px;
-      --radius-lg: 22px;
-      --radius-md: 16px;
-      --app-blue: #0f62fe;
-      --app-blue-dark: #0649c9;
-      --app-bg-soft: #eef5ff;
-      --app-line: #dbe7f3;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      padding: 0 !important;
-      background:
-        radial-gradient(circle at 8% 0%, rgba(15, 98, 254, 0.14), transparent 28%),
-        radial-gradient(circle at 95% 12%, rgba(34, 197, 94, 0.10), transparent 24%),
-        linear-gradient(180deg, #eef5ff 0%, #f8fbff 42%, #ffffff 100%) !important;
-      color: #172033;
-      font-size: 15.5px;
-    }
-
-    .main-menu {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      min-height: 72px;
-      padding: 8px 28px !important;
-      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.13);
-      backdrop-filter: blur(10px);
-    }
-
-    .brand-logo {
-      margin: 0 24px 0 0 !important;
-      min-width: fit-content;
-    }
-
-    .brand-logo svg {
-      width: 48px !important;
-      height: 48px !important;
-    }
-
-    .brand-logo span {
-      font-size: 1.08rem;
-      letter-spacing: 0.2px;
-    }
-
-    .main-menu ul {
-      margin-left: auto;
-      gap: 10px;
-    }
-
-    .main-menu a {
-      min-height: 40px;
-      padding: 9px 15px;
-      border-radius: 999px;
-      font-weight: 750;
-    }
-
-    .page-heading {
-      display: none !important;
-    }
-
-    .container {
-      width: min(var(--app-max-width), calc(100% - 44px)) !important;
-      margin: 34px auto 46px !important;
-      border: 1px solid var(--app-line) !important;
-      border-radius: var(--radius-lg) !important;
-      overflow: hidden;
-      background: rgba(255, 255, 255, 0.96) !important;
-      box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12) !important;
-    }
-
-    .app-header {
-      position: relative;
-      padding: 38px 44px 32px !important;
-      border-bottom: 1px solid var(--app-line) !important;
-      background:
-        linear-gradient(135deg, rgba(255,255,255,0.98) 0%, rgba(242,248,255,0.98) 100%),
-        radial-gradient(circle at top left, rgba(15, 98, 254, 0.18), transparent 36%) !important;
-      text-align: center;
-    }
-
-    .app-header::after {
-      content: "";
-      position: absolute;
-      left: 44px;
-      right: 44px;
-      bottom: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(15, 98, 254, 0.26), transparent);
-    }
-
-    .header-title {
-      margin: 0 0 10px !important;
-      font-size: clamp(32px, 4.4vw, 50px) !important;
-      line-height: 1.08;
-      color: var(--app-blue) !important;
-      letter-spacing: -0.7px;
-    }
-
-    .header-desc {
-      max-width: 800px;
-      margin: 0 auto !important;
-      color: #526173 !important;
-      font-size: 16.5px !important;
-      line-height: 1.65;
-    }
-
-    .hero-features {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 18px;
-    }
-
-    .hero-features span {
-      display: inline-flex;
-      align-items: center;
-      min-height: 34px;
-      padding: 7px 13px;
-      border: 1px solid #cfe0ff;
-      border-radius: 999px;
-      background: #ffffff;
-      color: #1e3a8a;
-      font-size: 13.5px;
-      font-weight: 800;
-      box-shadow: 0 6px 16px rgba(15, 98, 254, 0.08);
-    }
-
-    .main-layout {
-      display: grid !important;
-      grid-template-columns: minmax(360px, 430px) minmax(0, 1fr) !important;
-      align-items: stretch !important;
-      min-height: 620px;
-    }
-
-    .left-column {
-      position: sticky;
-      top: 92px;
-      align-self: start;
-      min-height: calc(100vh - 110px) !important;
-      padding: 32px !important;
-      border-right: 1px solid var(--app-line) !important;
-      background: linear-gradient(180deg, #f8fbff 0%, #f3f7fd 100%) !important;
-    }
-
-    .right-column {
-      min-width: 0;
-      min-height: 620px !important;
-      padding: 32px 38px 40px !important;
-      background: #ffffff !important;
-    }
-
-    .search-container {
-      margin-bottom: 22px !important;
-    }
-
-    .search-label,
-    .selected-title {
-      margin-bottom: 10px !important;
-      color: #26364b !important;
-      font-size: 15px !important;
-      font-weight: 850 !important;
-    }
-
-    input[type="text"] {
-      min-height: 58px !important;
-      padding: 15px 17px !important;
-      border: 2px solid #cbd9ea !important;
-      border-radius: var(--radius-md) !important;
-      background: #ffffff !important;
-      color: #172033 !important;
-      font-size: 16px !important;
-      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
-    }
-
-    input[type="text"]:focus {
-      border-color: var(--app-blue) !important;
-      box-shadow: 0 0 0 4px rgba(15, 98, 254, 0.14), 0 10px 22px rgba(15, 23, 42, 0.08) !important;
-    }
-
-    .helper-text {
-      margin-top: 10px !important;
-      color: #64748b !important;
-      font-size: 13.5px !important;
-      line-height: 1.55;
-    }
-
-    .suggestions {
-      top: calc(100% + 8px) !important;
-      max-height: 360px !important;
-      border-radius: 16px !important;
-      border: 1px solid #d5e1ef !important;
-      box-shadow: 0 18px 34px rgba(15, 23, 42, 0.18) !important;
-    }
-
-    .suggestion-item {
-      padding: 13px 16px !important;
-    }
-
-    .suggestion-name {
-      font-size: 14.5px !important;
-    }
-
-    .selected-list {
-      gap: 11px !important;
-    }
-
-    .selected-tag {
-      min-height: 52px !important;
-      padding: 11px 12px 11px 15px !important;
-      border: 1px solid #d5e1ef !important;
-      border-radius: 15px !important;
-      background: #ffffff !important;
-      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.055) !important;
-    }
-
-    .selected-name {
-      color: var(--app-blue) !important;
-      font-size: 14.5px !important;
-    }
-
-    .remove-btn {
-      width: 32px !important;
-      height: 32px !important;
-      border-radius: 10px !important;
-    }
-
-    .clear-all {
-      min-height: 46px !important;
-      margin-top: 10px !important;
-      border-radius: 14px !important;
-    }
-
-    .right-header {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      gap: 16px !important;
-      margin: 0 0 22px !important;
-      padding-bottom: 18px !important;
-      border-bottom: 1px solid var(--app-line) !important;
-      color: #1f2a3d !important;
-      font-size: clamp(22px, 2.4vw, 29px) !important;
-      line-height: 1.25;
-      font-weight: 900 !important;
-    }
-
-    .result-actions {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: flex-end !important;
-      gap: 10px !important;
-      flex-wrap: wrap;
-    }
-
-    .summary-chip {
-      min-height: 38px !important;
-      padding: 8px 14px !important;
-      border-radius: 999px !important;
-      background: #f8fafc !important;
-      color: #475569 !important;
-      font-size: 13.5px !important;
-      font-weight: 850 !important;
-    }
-
-    .pdf-button {
-      min-height: 40px !important;
-      padding: 9px 16px !important;
-      border: 0 !important;
-      border-radius: 999px !important;
-      background: var(--app-blue) !important;
-      color: #ffffff !important;
-      font-size: 13.5px !important;
-      font-weight: 850 !important;
-      box-shadow: 0 10px 22px rgba(15, 98, 254, 0.24) !important;
-      transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
-    }
-
-    .pdf-button:hover,
-    .pdf-button:focus {
-      background: var(--app-blue-dark) !important;
-      transform: translateY(-1px);
-      box-shadow: 0 14px 26px rgba(15, 98, 254, 0.28) !important;
-    }
-
-    .level-legend-panel {
-      margin: 0 0 22px !important;
-      border-radius: 16px !important;
-      border: 1px solid var(--app-line) !important;
-      background: #f8fbff !important;
-      overflow: hidden;
-    }
-
-    .level-legend-panel summary {
-      padding: 13px 16px !important;
-      color: #334155 !important;
-      font-size: 14px !important;
-      font-weight: 850 !important;
-    }
-
-    .level-legend {
-      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-      gap: 12px !important;
-      padding: 0 14px 14px !important;
-    }
-
-    .level-item {
-      min-height: 82px !important;
-      padding: 13px 14px !important;
-      border-radius: 14px !important;
-      background: #ffffff !important;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
-    }
-
-    .level-item strong {
-      font-size: 12.5px !important;
-    }
-
-    .level-item span {
-      font-size: 12.5px !important;
-      line-height: 1.42;
-    }
-
-    .interaction-card,
-    .special-population-panel {
-      padding: 24px 26px !important;
-      border-radius: 18px !important;
-      margin-bottom: 20px !important;
-      border-color: #dce7f4 !important;
-      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.065) !important;
-    }
-
-    .interaction-card {
-      border-left-width: 8px !important;
-    }
-
-    .card-header {
-      gap: 14px !important;
-      margin-bottom: 10px !important;
-    }
-
-    .pair-title {
-      font-size: clamp(19px, 2vw, 23px) !important;
-      line-height: 1.35;
-      color: #111827 !important;
-    }
-
-    .badge {
-      min-height: 36px !important;
-      padding: 8px 13px !important;
-      border-radius: 999px !important;
-      font-size: 12.5px !important;
-      box-shadow: 0 6px 14px rgba(15, 23, 42, 0.10);
-    }
-
-    .meta-text,
-    .source-details,
-    .level-guidance {
-      font-size: 13.5px !important;
-      line-height: 1.55;
-    }
-
-    .hazard-text {
-      font-size: 15.5px !important;
-      line-height: 1.55;
-    }
-
-    .section-title {
-      margin-top: 16px !important;
-      font-size: 14.5px !important;
-    }
-
-    .interaction-card p,
-    .special-population-item p,
-    .action-box {
-      font-size: 15px !important;
-      line-height: 1.68 !important;
-    }
-
-    .action-box {
-      margin-top: 16px !important;
-      padding: 15px 17px !important;
-      border-radius: 14px !important;
-      background: #f8fbff !important;
-      border-left-width: 5px !important;
-    }
-
-    .special-population-header {
-      margin-bottom: 15px !important;
-    }
-
-    .special-population-title {
-      font-size: 18px !important;
-    }
-
-    .special-population-card,
-    .special-population-item {
-      border-radius: 16px !important;
-      padding: 16px !important;
-    }
-
-    .empty-msg,
-    .safe-msg,
-    .error-msg {
-      min-height: 260px !important;
-      padding: 34px 24px !important;
-      border-radius: 18px !important;
-      font-size: 16.5px !important;
-      line-height: 1.6;
-    }
-
-    #faq-section {
-      width: min(980px, calc(100% - 44px)) !important;
-      margin: 48px auto !important;
-      padding: 30px !important;
-      border: 1px solid var(--app-line);
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.96);
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.09);
-    }
-
-    .faq-title {
-      margin-top: 0 !important;
-      text-align: center;
-      font-size: clamp(25px, 3vw, 36px) !important;
-      color: #0f62fe;
-    }
-
-    .faq-list {
-      display: grid;
-      gap: 12px !important;
-    }
-
-    .faq-item {
-      border-radius: 16px !important;
-      overflow: hidden;
-      border: 1px solid #dbe7f3 !important;
-      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.04);
-    }
-
-    .faq-question {
-      min-height: 54px;
-      padding: 15px 18px !important;
-      font-size: 15.5px !important;
-    }
-
-    .faq-answer {
-      padding: 16px 18px !important;
-      font-size: 15px !important;
-      line-height: 1.68 !important;
-    }
-
-    .footer {
-      margin-top: 58px !important;
-      border-radius: 22px 22px 0 0;
-      overflow: hidden;
-    }
-
-    .pdf-preview-box {
-      width: min(1100px, 100%) !important;
-      height: min(92vh, 820px) !important;
-      border-radius: 18px !important;
-    }
-
-    .pdf-preview-head {
-      padding: 13px 16px !important;
-    }
-
-    .pdf-close {
-      border-radius: 12px !important;
-    }
-
-    body.dark {
-      background:
-        radial-gradient(circle at 8% 0%, rgba(96, 165, 250, 0.18), transparent 28%),
-        linear-gradient(180deg, #0b1220 0%, #111827 100%) !important;
-    }
-
-    body.dark .container,
-    body.dark #faq-section {
-      border-color: #263244 !important;
-      background: rgba(17, 24, 39, 0.98) !important;
-      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28) !important;
-    }
-
-    body.dark .app-header,
-    body.dark .right-column,
-    body.dark .left-column,
-    body.dark .interaction-card,
-    body.dark .special-population-panel,
-    body.dark .level-item,
-    body.dark .selected-tag,
-    body.dark .suggestions,
-    body.dark input[type="text"] {
-      border-color: #263244 !important;
-      background: #111827 !important;
-      color: #e5e7eb !important;
-    }
-
-    body.dark .header-desc,
-    body.dark .helper-text,
-    body.dark .meta-text,
-    body.dark .source-details,
-    body.dark .level-guidance,
-    body.dark .summary-chip {
-      color: #aab6c6 !important;
-    }
-
-    body.dark .summary-chip {
-      background: #182235 !important;
-      border-color: #263244 !important;
-    }
-
-    body.dark .hero-features span,
-    body.dark .level-legend-panel,
-    body.dark .action-box {
-      background: #182235 !important;
-      border-color: #263244 !important;
-      color: #dbeafe !important;
-    }
-
-    @media (max-width: 1180px) {
-      .main-layout {
-        grid-template-columns: minmax(330px, 390px) minmax(0, 1fr) !important;
-      }
-
-      .level-legend {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-      }
-    }
-
-    @media (max-width: 900px) {
-      .main-menu {
-        padding: 8px 14px !important;
-      }
-
-      .brand-logo svg {
-        width: 42px !important;
-        height: 42px !important;
+      body {
+        padding: 0;
+        background: white;
+        color: #111827;
       }
 
       .container {
-        width: min(100% - 24px, var(--app-max-width)) !important;
-        margin: 18px auto 34px !important;
-        border-radius: 18px !important;
+        width: 100%;
+        margin: 0;
+        max-width: none;
+        box-shadow: none;
+        border: 0;
+        border-radius: 0;
+        background: white;
       }
 
       .app-header,
-      .left-column,
-      .right-column {
-        padding: 24px !important;
-      }
-
-      .main-layout {
-        grid-template-columns: 1fr !important;
-        min-height: auto;
-      }
-
-      .left-column {
-        position: static !important;
-        min-height: auto !important;
-        border-right: 0 !important;
-        border-bottom: 1px solid var(--app-line) !important;
-      }
-
-      .right-column {
-        min-height: 480px !important;
-      }
-
-      .right-header {
-        align-items: flex-start !important;
-        flex-direction: column !important;
-      }
-
-      .result-actions {
-        justify-content: flex-start !important;
-      }
-
-      .level-legend {
-        grid-template-columns: 1fr !important;
-      }
-
-      .card-header,
-      .special-population-item-head {
-        align-items: flex-start !important;
-        flex-direction: column !important;
-      }
-
-      #faq-section {
-        width: calc(100% - 24px) !important;
-        padding: 22px !important;
-        margin: 34px auto !important;
-      }
-    }
-
-    @media print {
       .main-menu,
-      #faq-section,
       .footer,
-      .pdf-button,
-      .pdf-preview-modal {
+      .left-column,
+      .level-legend-panel,
+      .dark-mode-toggle,
+      .print-results-btn,
+      .source-details {
         display: none !important;
       }
 
-      body,
-      .container,
-      .right-column {
-        background: #ffffff !important;
-        box-shadow: none !important;
+      .main-layout {
+        display: block;
       }
 
-      .container {
-        width: 100% !important;
-        margin: 0 !important;
-        border: 0 !important;
+      .right-column {
+        min-height: auto;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .right-header {
+        margin-bottom: 14px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #cbd5e1;
+      }
+
+      .result-actions {
+        justify-content: flex-start;
+      }
+
+      .summary-chip {
+        border-color: #cbd5e1;
+        background: white;
+        color: #334155;
+      }
+
+      .interaction-card,
+      .special-population-card,
+      .special-population-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .badge {
+        border: 1px solid currentColor;
+        background: white !important;
+        color: #111827 !important;
       }
     }
-
-</style>
+  </style>
 </head>
 <body>
-    <!-- Menu Hamburger -->
- <nav class="main-menu">
-   <div class="menu-toggle" id="menu-toggle">
-     <span></span>
-     <span></span>
-     <span></span>
-   </div>
-   <!-- Logo thuốc -->
-    <div class="brand-logo" style="display:flex;align-items:center;gap:12px;color:#FFFFFF;font-weight:bold;font-size:1.1em;MARGIN: 0 0 0 10%;">
-    <!-- SVG logo 2 viên thuốc chéo -->
-    <svg height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-66.56 -66.56 645.12 645.12" xml:space="preserve" fill="#000000" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-66.56" y="-66.56" width="645.12" height="645.12" rx="322.56" fill="#1976d2" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="7.168000000000001"> <path style="fill:#FEE187;" d="M418.127,230.339c-44.688-44.688-109.768-56.492-165.277-35.501v187.631 c0,32.93-15.784,62.337-40.145,81.08c61.083,47.412,149.319,43.112,205.421-12.992C478.938,389.746,478.938,291.15,418.127,230.339z "></path> <g> <path style="fill:#FFC61B;" d="M308.089,512c-0.006,0-0.006,0-0.013,0c-37.928-0.003-75.251-12.76-105.094-35.924 c-3.879-3.011-6.145-7.649-6.133-12.56s2.296-9.54,6.187-12.533c21.58-16.602,33.958-41.574,33.958-68.512V194.838 c0-6.593,4.08-12.5,10.248-14.833c19.476-7.366,39.944-11.1,60.837-11.1c45.811,0,88.875,17.834,121.262,50.219 c32.407,32.407,50.252,75.494,50.252,121.323s-17.847,88.916-50.252,121.322C396.951,494.161,353.885,512,308.089,512z M238.17,461.581c21.112,12.148,45.351,18.702,69.907,18.703c0.003,0,0.008,0,0.009,0c37.331,0,72.427-14.538,98.827-40.94 c26.416-26.416,40.965-61.539,40.965-98.897c0-37.359-14.549-72.481-40.965-98.897c-26.396-26.396-61.495-40.932-98.835-40.932 c-13.418,0-26.616,1.885-39.371,5.617v176.231C268.708,412.125,257.776,440.016,238.17,461.581z"></path> <path style="fill:#FFC61B;" d="M257.495,406.827c-4.059,0-8.116-1.548-11.212-4.645c-6.192-6.192-6.192-16.233,0-22.427 l101.042-101.042c6.194-6.192,16.231-6.192,22.427,0c6.192,6.192,6.192,16.233,0,22.427L268.709,402.182 C265.611,405.278,261.555,406.827,257.495,406.827z"></path> <path style="fill:#FFC61B;" d="M150.557,500.62c-65.148,0-118.15-53.002-118.15-118.15V118.15C32.407,53.002,85.409,0,150.557,0 s118.15,53.002,118.15,118.15c0,8.758-7.101,15.857-15.857,15.857s-15.857-7.099-15.857-15.857 c0-47.661-38.775-86.436-86.436-86.436S64.121,70.489,64.121,118.15v264.319c0,47.661,38.775,86.436,86.436,86.436 s86.436-38.775,86.436-86.436c0-8.758,7.101-15.857,15.857-15.857s15.857,7.099,15.857,15.857 C268.708,447.617,215.706,500.62,150.557,500.62z"></path> <path style="fill:#FFC61B;" d="M184.514,266.166h-67.912c-8.756,0-15.857-7.099-15.857-15.857s7.101-15.857,15.857-15.857h67.912 c8.756,0,15.857,7.099,15.857,15.857S193.27,266.166,184.514,266.166z"></path> </g> </g><g id="SVGRepo_iconCarrier"> <path style="fill:#FEE187;" d="M418.127,230.339c-44.688-44.688-109.768-56.492-165.277-35.501v187.631 c0,32.93-15.784,62.337-40.145,81.08c61.083,47.412,149.319,43.112,205.421-12.992C478.938,389.746,478.938,291.15,418.127,230.339z "></path> <g> <path style="fill:#FFC61B;" d="M308.089,512c-0.006,0-0.006,0-0.013,0c-37.928-0.003-75.251-12.76-105.094-35.924 c-3.879-3.011-6.145-7.649-6.133-12.56s2.296-9.54,6.187-12.533c21.58-16.602,33.958-41.574,33.958-68.512V194.838 c0-6.593,4.08-12.5,10.248-14.833c19.476-7.366,39.944-11.1,60.837-11.1c45.811,0,88.875,17.834,121.262,50.219 c32.407,32.407,50.252,75.494,50.252,121.323s-17.847,88.916-50.252,121.322C396.951,494.161,353.885,512,308.089,512z M238.17,461.581c21.112,12.148,45.351,18.702,69.907,18.703c0.003,0,0.008,0,0.009,0c37.331,0,72.427-14.538,98.827-40.94 c26.416-26.416,40.965-61.539,40.965-98.897c0-37.359-14.549-72.481-40.965-98.897c-26.396-26.396-61.495-40.932-98.835-40.932 c-13.418,0-26.616,1.885-39.371,5.617v176.231C268.708,412.125,257.776,440.016,238.17,461.581z"></path> <path style="fill:#FFC61B;" d="M257.495,406.827c-4.059,0-8.116-1.548-11.212-4.645c-6.192-6.192-6.192-16.233,0-22.427 l101.042-101.042c6.194-6.192,16.231-6.192,22.427,0c6.192,6.192,6.192,16.233,0,22.427L268.709,402.182 C265.611,405.278,261.555,406.827,257.495,406.827z"></path> <path style="fill:#FFC61B;" d="M150.557,500.62c-65.148,0-118.15-53.002-118.15-118.15V118.15C32.407,53.002,85.409,0,150.557,0 s118.15,53.002,118.15,118.15c0,8.758-7.101,15.857-15.857,15.857s-15.857-7.099-15.857-15.857 c0-47.661-38.775-86.436-86.436-86.436S64.121,70.489,64.121,118.15v264.319c0,47.661,38.775,86.436,86.436,86.436 s86.436-38.775,86.436-86.436c0-8.758,7.101-15.857,15.857-15.857s15.857,7.099,15.857,15.857 C268.708,447.617,215.706,500.62,150.557,500.62z"></path> <path style="fill:#FFC61B;" d="M184.514,266.166h-67.912c-8.756,0-15.857-7.099-15.857-15.857s7.101-15.857,15.857-15.857h67.912 c8.756,0,15.857,7.099,15.857,15.857S193.27,266.166,184.514,266.166z"></path> </g> </g></svg>
-    <span>Tuongtacthuoc.vn</span>
-   </div>
-   <ul id="menu-list">
-    <li><a href="./">Trang chủ</a></li>
-    <li><a href="#search">Tra cứu</a></li>
-    <li><a href="#faq-section">FAQ</a></li>
-    <li><a href="#lienhe">Liên hệ</a></li>
-    </ul>
-</nav>
+  <nav class="main-menu" id="top" aria-label="Dieu huong chinh">
+    <div class="main-menu-inner">
+      <a class="brand-logo" href="#top" aria-label="Tuongtacthuoc.vn">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <circle cx="32" cy="32" r="32" fill="#ffffff" opacity="0.18"></circle>
+          <path d="M20 44c-5.5-5.5-5.5-14.4 0-19.9l6.1-6.1c5.5-5.5 14.4-5.5 19.9 0s5.5 14.4 0 19.9L39.9 44c-5.5 5.5-14.4 5.5-19.9 0z" fill="#fee187"></path>
+          <path d="M25.5 38.5 38.5 25.5" stroke="#1976d2" stroke-width="5" stroke-linecap="round"></path>
+          <path d="M16 28h16v8H16z" fill="#42a5f5" rx="4" transform="rotate(-45 24 32)"></path>
+        </svg>
+        <span>Tuongtacthuoc.vn</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Mo menu" aria-expanded="false" aria-controls="menu-list">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="menu-list">
+        <li><a href="#top">Trang chủ</a></li>
+        <li><a href="#search">Tra cứu</a></li>
+        <li><a href="#levelLegend">Mức độ</a></li>
+        <li><a href="#lienhe">Liên hệ</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <h1 id="search" class="page-heading">Tra cứu tương tác thuốc</h1>
-    <div class="container">
-    <header class="app-header">
-      <h1 class="header-title">Tuongtacthuoc.vn</h1>
-      <p class="header-desc">Tra cứu tương tác đa thuốc và cảnh báo kê đơn từ cơ sở dữ liệu cục bộ</p>
-      <div class="hero-features" aria-label="Tính năng chính">
-        <span>Tra cứu đa thuốc</span>
-        <span>Phân loại 4 mức độ</span>
-        <span>Xuất/In PDF</span>
-      </div>
-    </header>
-
+  <div class="container" id="search">
     <main class="main-layout">
       <aside class="left-column">
         <div class="search-container">
@@ -1733,6 +1467,17 @@
           <input type="text" id="searchInput" placeholder="Ví dụ: Panadol, Acetaminophen, Augmentin, Warfarin..." autocomplete="off">
           <div class="suggestions" id="suggestions" role="listbox"></div>
           <p class="helper-text">Hoạt chất dùng một tên chuẩn duy nhất. Có thể nhập không dấu, ví dụ: acyclovir, warfarin, suy than.</p>
+        </div>
+
+        <div class="ingredient-display-options" aria-label="Tuy chon hien thi theo hoat chat">
+          <label class="ingredient-display-option" for="showSpecialPopulations">
+            <input type="checkbox" id="showSpecialPopulations">
+            <span>Hiện tương tác với đối tượng đặc biệt</span>
+          </label>
+          <label class="ingredient-display-option" for="showFoodInteractions">
+            <input type="checkbox" id="showFoodInteractions">
+            <span>Hiện tương tác với thực phẩm/đồ uống</span>
+          </label>
         </div>
 
         <div class="selected-area" id="selectedArea">
@@ -1744,9 +1489,12 @@
       <section class="right-column">
         <h2 class="right-header">
           <span>Kết quả phân tích</span>
-          <span class="result-actions"><button id="icon-preview-pdf" class="pdf-button" type="button" title="Xem trước và in PDF">📄 In PDF</button><span class="summary-chip" id="summaryChip">Chưa có toa</span></span>
+          <span class="result-actions">
+            <span class="summary-chip" id="summaryChip">Chưa có toa</span>
+            <button class="print-results-btn" id="printResultsButton" type="button" disabled>In PDF</button>
+          </span>
         </h2>
-        <details class="level-legend-panel">
+        <details class="level-legend-panel" id="levelLegend">
           <summary>Phân loại mức độ</summary>
           <div class="level-legend" aria-label="Phân loại mức độ tương tác">
           <div class="level-item lvl-4"><strong>Mức 4: Phối hợp nguy hiểm</strong><span>Chống chỉ định, cần thay thế.</span></div>
@@ -1764,168 +1512,47 @@
       </section>
     </main>
   </div>
-    
-    <!-- FAQ Section: Đặt ngay trên footer hoặc cuối trang -->
-    <div id="faq-section">
-  <h2 class="faq-title">Câu hỏi thường gặp</h2>
-  <div class="faq-list">
-    <div class="faq-item">
-      <button class="faq-question">
-        Thông tin tương tác thuốc trên trang có đáng tin cậy không?
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer" style="display:none;">
-        Thông tin được tổng hợp từ các nguồn y khoa uy tín, cập nhật thường xuyên. Tuy nhiên, bạn nên tham khảo ý kiến bác sĩ/dược sĩ trước khi quyết định sử dụng thuốc.
+
+  <footer class="footer" id="lienhe">
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,48 C300,120 900,0 1200,56 L1200,120 L0,120 Z" fill="#1976d2"></path>
+        <path d="M0,30 C350,110 850,0 1200,46 L1200,120 L0,120 Z" fill="#42a5f5" opacity="0.6"></path>
+      </svg>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-title">Tra cứu tương tác thuốc</span>
+      </div>
+      <div class="footer-links">
+        <a href="#search">Hướng dẫn</a>
+        <a href="#lienhe">Liên hệ</a>
+        <a href="mailto:tuongtacthuoc.vn@gmail.com" title="Gửi email">Email</a>
+      </div>
+      <div class="footer-meta">
+        <span>© 2025 Tuongtacthuoc.vn. All rights reserved.</span>
       </div>
     </div>
-      <div class="faq-item">
-      <button class="faq-question">
-        Phân loại các mức độ tương tác thuốc như thế nào?
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer" style="display:none;">
-        <div id="results">
+  </footer>
 
-    <div class="result-card mucdo-4">
-        <h3>Mức độ 4: Phối hợp nguy hiểm</h3>
-        <p class="severity"><strong>Ý nghĩa:</strong> Mức độ rủi ro cao nhất, tuyệt đối không được dùng chung. Trong y khoa, đây được gọi là Chống chỉ định.</p>
-        <p><strong>Giải thích:</strong> Sự phối hợp này đã được chứng minh là gây ra những hậu quả nghiêm trọng, có thể đe dọa tính mạng hoặc làm thất bại hoàn toàn việc điều trị. Không có một lợi ích nào có thể biện minh cho mức độ nguy hiểm này.</p>
-        <p><strong>Hành động:</strong> TUYỆT ĐỐI KHÔNG DÙNG ĐỒNG THỜI. Bác sĩ phải tìm một loại thuốc khác để thay thế. Nếu phát hiện được kê đơn phối hợp này, bệnh nhân phải báo ngay cho bác sĩ hoặc dược sĩ trước khi sử dụng.</p>
-    </div>
-
-    <div class="result-card mucdo-3">
-        <h3>Mức độ 3: Cân nhắc nguy cơ / lợi ích</h3>
-        <p class="severity"><strong>Ý nghĩa:</strong> Rủi ro đáng kể, cần phải dừng lại và đánh giá kỹ lưỡng.</p>
-        <p><strong>Giải thích:</strong> Sự phối hợp này có khả năng cao gây ra các vấn đề nghiêm trọng. Bác sĩ phải đặt lên bàn cân để so sánh giữa rủi ro mà tương tác gây ra và lợi ích mà sự phối hợp này mang lại cho việc điều trị. Phối hợp này chỉ được chỉ định trong những trường hợp đặc biệt, khi không còn lựa chọn nào khác an toàn hơn và lợi ích được xem là vượt trội hơn hẳn rủi ro.</p>
-        <p><strong>Hành động:</strong> Việc phối hợp đòi hỏi phải có sự giám sát y tế rất chặt chẽ. Bệnh nhân nên chủ động hỏi bác sĩ về các rủi ro và các lựa chọn thay thế.</p>
-    </div>
-
-    <div class="result-card mucdo-2">
-        <h3>Mức độ 2: Tương tác cần thận trọng</h3>
-        <p class="severity"><strong>Ý nghĩa:</strong> Rủi ro có thật và cần có biện pháp phòng ngừa để phối hợp thuốc an toàn.</p>
-        <p><strong>Giải thích:</strong> Tương tác này có thể ảnh hưởng đến hiệu quả điều trị hoặc làm tăng tác dụng phụ. Tuy nhiên, nguy cơ này có thể được quản lý bằng các biện pháp như điều chỉnh liều, thay đổi thời điểm uống thuốc (ví dụ: uống cách nhau 2 giờ), hoặc theo dõi các dấu hiệu cụ thể.</p>
-        <p><strong>Hành động:</strong> Tuân thủ chặt chẽ hướng dẫn của bác sĩ về liều lượng và thời gian dùng thuốc.</p>
-    </div>
-
-    <div class="result-card mucdo-1">
-        <h3>Mức độ 1: Tương tác cần theo dõi</h3>
-        <p class="severity"><strong>Ý nghĩa:</strong> Đây là mức độ rủi ro thấp nhất.</p>
-        <p><strong>Giải thích:</strong> Tương tác có thể xảy ra nhưng thường ít nghiêm trọng, không gây ra hậu quả đáng kể, hoặc chỉ xuất hiện trên một số ít bệnh nhân. Bác sĩ và dược sĩ nhận biết về khả năng này nhưng thường không cần can thiệp đặc biệt.</p>
-        <p><strong>Hành động:</strong> Tiếp tục dùng thuốc theo chỉ định và theo dõi sức khỏe tổng quát.</p>
-    </div>
-
-</div>
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">
-        Tôi có thể tra cứu bằng tên biệt dược hay hoạt chất?
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer" style="display:none;">
-        Bạn có thể nhập tên biệt dược hoặc hoạt chất vào ô tìm kiếm (tìm kiếm bằng hoạt chất sẽ đầy đủ hơn). Hệ thống sẽ tự động gợi ý và hỗ trợ bạn tra cứu nhanh chóng.
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">
-        Nếu phát hiện lỗi hoặc muốn đóng góp thông tin thì làm thế nào?
-        <span class="icon">+</span>
-      </button>
-      <div class="faq-answer" style="display:none;">
-        Bạn vui lòng gửi email về <b>tuongtacthuoc.vn@gmail.com</b> hoặc sử dụng mục Liên hệ trên website. Chúng tôi rất trân trọng mọi ý kiến đóng góp!
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-    <!-- Nếu muốn có footer, thêm ở đây -->
-   <footer class="footer" style="background:#1976d2; color:#fff; position:relative; margin-top:40px;">
-  <!-- Sóng SVG -->
-  <div style="position:absolute;top:-50px;left:0;width:100%;overflow:hidden;line-height:0;">
-    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
-      <path d="M0,48 C300,120 900,0 1200,56 L1200,120 L0,120 Z" fill="#1976d2"/>
-      <path d="M0,30 C350,110 850,0 1200,46 L1200,120 L0,120 Z" fill="#42a5f5" opacity="0.6"/>
+  <button class="dark-mode-toggle" id="darkModeToggle" type="button" aria-label="Bật chế độ tối" title="Chế độ tối">
+    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.6 6.6 0 0 0 21 12.8z"></path>
     </svg>
-  </div>
-  <div class="footer-inner" style="position:relative;z-index:2;padding:52px 20px 20px 20px;max-width:1000px;margin:0 auto;">
-    <div class="footer-brand" style="display:flex;align-items:center;gap:16px;">
-      <span class="footer-title" style="font-size:1.3em;font-weight:bold;letter-spacing:0.5px;">Tra cứu tương tác thuốc</span>
-    </div>
-    <div class="footer-links" style="
-  margin:18px 0; 
-  font-size:1.08em;
-  display: flex;
-  justify-content: center;
-  gap: 32px;">
-  <a href="#huongdan" style="color:#fff; text-decoration:none;">Hướng dẫn</a>
-  <a href="#lienhe" style="color:#fff; text-decoration:none;">Liên hệ</a>
-  <a href="mailto:tuongtacthuoc.vn@gmail.com" title="Gửi email" style="color:#fff; text-decoration:none;">Email</a>
-</div>
+    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"></circle>
+      <path d="M12 2v2"></path>
+      <path d="M12 20v2"></path>
+      <path d="m4.93 4.93 1.41 1.41"></path>
+      <path d="m17.66 17.66 1.41 1.41"></path>
+      <path d="M2 12h2"></path>
+      <path d="M20 12h2"></path>
+      <path d="m6.34 17.66-1.41 1.41"></path>
+      <path d="m19.07 4.93-1.41 1.41"></path>
+    </svg>
+  </button>
 
-    <div class="footer-meta" style="font-size:0.83em;opacity:0.94;">
-      <span>© 2025 Tuongtacthuoc.vn. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
-
-
-<div id="pdf-preview-modal" class="pdf-preview-modal" aria-hidden="true">
-  <div class="pdf-preview-box" role="dialog" aria-modal="true" aria-label="Xem trước PDF">
-    <div class="pdf-preview-head">
-      <span>Xem trước PDF kết quả phân tích</span>
-      <button id="close-preview" class="pdf-close" type="button" aria-label="Đóng">×</button>
-    </div>
-    <iframe id="pdf-iframe" class="pdf-preview-frame" title="PDF preview"></iframe>
-  </div>
-</div>
-
-<button id="toggle-dark" style="position:fixed;bottom:24px;right:24px;z-index:999;background:var(--primary);color:#fff;border:none;border-radius:50%;width:44px;height:44px;cursor:pointer;font-size:1.3em;box-shadow:0 2px 8px rgba(25,118,210,0.14);">🌙</button>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const menuToggle = document.getElementById("menu-toggle");
-      const menuList = document.getElementById("menu-list");
-      if (menuToggle && menuList) {
-        menuToggle.addEventListener("click", () => menuList.classList.toggle("active"));
-      }
-
-      const darkButton = document.getElementById("toggle-dark");
-      const savedDarkMode = localStorage.getItem("darkMode") === "true";
-      document.body.classList.toggle("dark", savedDarkMode);
-      if (darkButton) {
-        darkButton.textContent = savedDarkMode ? "☀️" : "🌙";
-        darkButton.addEventListener("click", () => {
-          document.body.classList.toggle("dark");
-          const enabled = document.body.classList.contains("dark");
-          localStorage.setItem("darkMode", enabled ? "true" : "false");
-          darkButton.textContent = enabled ? "☀️" : "🌙";
-        });
-      }
-
-      document.querySelectorAll(".faq-question").forEach((button) => {
-        button.addEventListener("click", () => {
-          const answer = button.nextElementSibling;
-          const icon = button.querySelector(".icon");
-          if (!answer) return;
-
-          document.querySelectorAll(".faq-question").forEach((other) => {
-            if (other === button) return;
-            const otherAnswer = other.nextElementSibling;
-            const otherIcon = other.querySelector(".icon");
-            if (otherAnswer) otherAnswer.style.display = "none";
-            if (otherIcon) otherIcon.textContent = "+";
-          });
-
-          const isOpen = answer.style.display === "block";
-          answer.style.display = isOpen ? "none" : "block";
-          if (icon) icon.textContent = isOpen ? "+" : "-";
-        });
-      });
-    });
-  </script>
-
-<script src="./buidathieu.normalized.data.js"></script>
+  <script src="buidathieu.normalized.data.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const database = Array.isArray(window.tuongTacData) ? window.tuongTacData : [];
@@ -1936,12 +1563,40 @@
       const selectedCount = document.getElementById("selectedCount");
       const resultsArea = document.getElementById("resultsArea");
       const summaryChip = document.getElementById("summaryChip");
+      const printResultsButton = document.getElementById("printResultsButton");
+      const showSpecialPopulations = document.getElementById("showSpecialPopulations");
+      const showFoodInteractions = document.getElementById("showFoodInteractions");
+      const menuToggle = document.getElementById("menu-toggle");
+      const menuList = document.getElementById("menu-list");
+      const darkModeToggle = document.getElementById("darkModeToggle");
 
       const selected = new Map();
       const activeCatalog = buildActiveCatalog(database);
       const activeAliasMap = buildActiveAliasMap(activeCatalog);
       const medicineAliases = buildMedicineAliases();
       const searchIndex = buildSearchIndex(database);
+
+      if (menuToggle && menuList) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = menuList.classList.toggle("active");
+          menuToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        menuList.addEventListener("click", (event) => {
+          if (!event.target.closest("a")) return;
+          menuList.classList.remove("active");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      }
+
+      const savedDarkMode = localStorage.getItem("darkMode") === "true";
+      setDarkMode(savedDarkMode);
+
+      if (darkModeToggle) {
+        darkModeToggle.addEventListener("click", () => {
+          setDarkMode(!document.body.classList.contains("dark"));
+        });
+      }
 
       if (database.length === 0) {
         resultsArea.innerHTML = '<div class="error-msg">Không tìm thấy dữ liệu trong window.tuongTacData. Kiểm tra lại file buidathieu.normalized.data.js.</div>';
@@ -1951,10 +1606,21 @@
 
       input.addEventListener("input", debounce(renderSuggestions, 140));
       input.addEventListener("keydown", handleInputKeydown);
+      showSpecialPopulations.addEventListener("change", crossCheck);
+      showFoodInteractions.addEventListener("change", crossCheck);
+      printResultsButton.addEventListener("click", () => window.print());
 
       document.addEventListener("click", (event) => {
         if (!event.target.closest(".search-container")) hideSuggestions();
       });
+
+      function setDarkMode(isEnabled) {
+        document.body.classList.toggle("dark", isEnabled);
+        localStorage.setItem("darkMode", String(isEnabled));
+        if (!darkModeToggle) return;
+        darkModeToggle.setAttribute("aria-label", isEnabled ? "Tắt chế độ tối" : "Bật chế độ tối");
+        darkModeToggle.setAttribute("title", isEnabled ? "Chế độ sáng" : "Chế độ tối");
+      }
 
       function buildActiveCatalog(items) {
         const catalog = new Map();
@@ -3047,15 +2713,18 @@
 
       function crossCheck() {
         const drugs = Array.from(selected.values());
-        const specialSections = buildSpecialPopulationSections(drugs);
-        const specialFragment = renderSpecialPopulationSections(specialSections);
-        const foodSections = buildFoodInteractionSections(drugs);
-        const foodFragment = renderFoodInteractionSections(foodSections);
+        const specialFragment = showSpecialPopulations.checked
+          ? renderSpecialPopulationSections(buildSpecialPopulationSections(drugs))
+          : null;
+        const foodFragment = showFoodInteractions.checked
+          ? renderFoodInteractionSections(buildFoodInteractionSections(drugs))
+          : null;
         resultsArea.innerHTML = "";
 
         if (drugs.length < 2) {
           summaryChip.textContent = drugs.length === 0 ? "Chưa có toa" : "Cần thêm 1 mục";
           appendIngredientPanels(resultsArea, specialFragment, foodFragment);
+          printResultsButton.disabled = !(specialFragment || foodFragment);
           resultsArea.insertAdjacentHTML("beforeend", `
             <div class="empty-msg">
               Thêm ít nhất 2 mục vào toa để bắt đầu tra cứu tương tác.
@@ -3086,6 +2755,7 @@
 
         if (displayHits.length === 0) {
           summaryChip.textContent = "0 tương tác";
+          printResultsButton.disabled = false;
           resultsArea.insertAdjacentHTML("beforeend", `
             <div class="safe-msg">
               Không phát hiện tương tác trong CSDL hiện tại.
@@ -3103,6 +2773,7 @@
         });
 
         summaryChip.textContent = `${displayHits.length} tương tác`;
+        printResultsButton.disabled = false;
         const fragment = document.createDocumentFragment();
         displayHits.forEach((hit) => fragment.appendChild(renderInteractionCard(hit)));
         appendIngredientPanels(fragment, specialFragment, foodFragment);
@@ -3213,7 +2884,6 @@
             <div class="special-population-targets">${escapeHtml(targetDisplay || "Đối tượng đặc biệt")}</div>
             <span class="badge bg-${level}">${escapeHtml(getLevelText(level))}</span>
           </div>
-          <div class="level-guidance">${escapeHtml(getLevelGuidance(level))}</div>
           <div class="special-population-hazard" style="color: ${color};">
             Hậu quả: ${escapeHtml(interaction.hau_qua || "Chưa xác định")}
           </div>
@@ -3325,7 +2995,6 @@
             <div class="special-population-targets">${escapeHtml(targetDisplay || "Thực phẩm/đồ uống")}</div>
             <span class="badge bg-${level}">${escapeHtml(getLevelText(level))}</span>
           </div>
-          <div class="level-guidance">${escapeHtml(getLevelGuidance(level))}</div>
           <div class="special-population-hazard" style="color: ${color};">
             Hậu quả: ${escapeHtml(localizeFoodText(interaction.hau_qua || "Chưa xác định"))}
           </div>
@@ -3382,6 +3051,7 @@
           caffeine: "Caffeine (cà phê, trà, nước tăng lực)",
           coffee: "Cà phê",
           tea: "Trà",
+          "green tea": "Trà xanh",
           "energy drink": "Nước tăng lực",
           "energy drinks": "Nước tăng lực",
           cola: "Nước ngọt cola",
@@ -3434,6 +3104,7 @@
         if (key.includes("smoking") || key.includes("tobacco")) return "Thuốc lá";
         if (key.includes("caffeine")) return "Caffeine (cà phê, trà, nước tăng lực)";
         if (key.includes("coffee") || key.includes("ca phe")) return "Cà phê";
+        if (key.includes("green tea")) return "Trà xanh";
         if (key.includes("energy drink") || key.includes("nuoc tang luc")) return "Nước tăng lực";
         if (key.includes("cola")) return "Nước ngọt cola";
         if (key.includes("chocolate") || key.includes("so co la")) return "Sô cô la";
@@ -3484,6 +3155,7 @@
           .replace(/\bdairy\b/gi, "sữa và chế phẩm từ sữa")
           .replace(/\bmilk\b/gi, "sữa")
           .replace(/\bcoffee\b/gi, "cà phê")
+          .replace(/\bgreen tea\b/gi, "trà xanh")
           .replace(/\btea\b/gi, "trà")
           .replace(/\btobacco smoking\b/gi, "hút thuốc lá")
           .replace(/\bsmoking\b/gi, "hút thuốc")
@@ -3956,7 +3628,6 @@
             <summary>Dữ liệu gốc</summary>
             <div><strong>${escapeHtml(hit.mainDrug || "")}</strong> - <strong>${escapeHtml(targetDisplay)}</strong></div>
           </details>
-          <div class="level-guidance">${escapeHtml(getLevelGuidance(level))}</div>
           <div class="hazard-text" style="color: ${color};">
             Hậu quả: ${escapeHtml(interaction.hau_qua || "Chưa xác định")}
           </div>
@@ -4046,13 +3717,6 @@
         if (level === 3) return "Mức 3: Cân nhắc nguy cơ/lợi ích";
         if (level === 2) return "Mức 2: Tương tác cần thận trọng";
         return "Mức 1: Tương tác cần theo dõi";
-      }
-
-      function getLevelGuidance(level) {
-        if (level === 4) return "Hành động chung: tuyệt đối không dùng đồng thời; cần chọn thuốc thay thế.";
-        if (level === 3) return "Hành động chung: chỉ phối hợp khi đã cân nhắc lợi ích vượt rủi ro và có giám sát chặt.";
-        if (level === 2) return "Hành động chung: có thể phối hợp nếu điều chỉnh liều, thời điểm dùng hoặc theo dõi phù hợp.";
-        return "Hành động chung: tiếp tục dùng theo chỉ định và theo dõi sức khỏe tổng quát.";
       }
 
       function getLevelColor(level) {
@@ -4175,94 +3839,5 @@
       crossCheck();
     });
   </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-
-<script>
-  // In/Xem trước PDF: lấy đúng vùng kết quả tra cứu, không lấy phần FAQ.
-  document.addEventListener("DOMContentLoaded", () => {
-    const pdfButton = document.getElementById("icon-preview-pdf");
-    const modal = document.getElementById("pdf-preview-modal");
-    const iframe = document.getElementById("pdf-iframe");
-    const closeButton = document.getElementById("close-preview");
-
-    if (!pdfButton || !modal || !iframe || !closeButton) return;
-
-    pdfButton.addEventListener("click", async () => {
-      const target = document.getElementById("resultsArea") || document.querySelector(".right-column");
-      if (!target || !window.jspdf || !window.html2canvas) {
-        alert("Chưa tải được thư viện PDF hoặc chưa có vùng kết quả để in.");
-        return;
-      }
-
-      const oldText = pdfButton.textContent;
-      pdfButton.disabled = true;
-      pdfButton.textContent = "Đang tạo PDF...";
-
-      try {
-        const { jsPDF } = window.jspdf;
-        const canvas = await html2canvas(target, {
-          scale: 2,
-          useCORS: true,
-          backgroundColor: "#ffffff",
-          windowWidth: document.documentElement.scrollWidth
-        });
-
-        const imgData = canvas.toDataURL("image/png");
-        const pdf = new jsPDF("p", "mm", "a4");
-        const pageWidth = pdf.internal.pageSize.getWidth();
-        const pageHeight = pdf.internal.pageSize.getHeight();
-        const margin = 10;
-        const imgWidth = pageWidth - margin * 2;
-        const imgHeight = (canvas.height * imgWidth) / canvas.width;
-
-        let heightLeft = imgHeight;
-        let position = margin;
-
-        pdf.setFontSize(14);
-        pdf.text("Tuongtacthuoc.vn - Ket qua phan tich", margin, 8);
-        pdf.addImage(imgData, "PNG", margin, position + 4, imgWidth, imgHeight);
-        heightLeft -= pageHeight - margin * 2;
-
-        while (heightLeft > 0) {
-          position = heightLeft - imgHeight + margin;
-          pdf.addPage();
-          pdf.addImage(imgData, "PNG", margin, position, imgWidth, imgHeight);
-          heightLeft -= pageHeight - margin * 2;
-        }
-
-        const blob = pdf.output("blob");
-        const url = URL.createObjectURL(blob);
-        iframe.src = url;
-        modal.style.display = "flex";
-        modal.setAttribute("aria-hidden", "false");
-      } catch (error) {
-        console.error(error);
-        alert("Không tạo được PDF. Anh kiểm tra kết nối mạng để tải jsPDF/html2canvas hoặc thử lại.");
-      } finally {
-        pdfButton.disabled = false;
-        pdfButton.textContent = oldText;
-      }
-    });
-
-    function closePreview() {
-      modal.style.display = "none";
-      modal.setAttribute("aria-hidden", "true");
-      if (iframe.src) {
-        URL.revokeObjectURL(iframe.src);
-        iframe.src = "";
-      }
-    }
-
-    closeButton.addEventListener("click", closePreview);
-    modal.addEventListener("click", (event) => {
-      if (event.target === modal) closePreview();
-    });
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && modal.style.display === "flex") closePreview();
-    });
-  });
-</script>
 </body>
 </html>
