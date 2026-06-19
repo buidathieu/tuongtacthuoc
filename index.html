@@ -104,6 +104,12 @@
     .main-menu {
       position: relative;
       z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 76px;
+      padding-inline: max(var(--page-gutter), calc((100vw - var(--content-width)) / 2));
       background: #1976d2;
       color: white;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
@@ -124,14 +130,17 @@
       align-items: center;
       gap: 12px;
       min-width: 0;
+      margin: 0 !important;
       color: white;
       font-size: 18px;
       font-weight: 800;
+      line-height: 1;
       text-decoration: none;
       white-space: nowrap;
     }
 
     .brand-logo svg {
+      display: block;
       flex: 0 0 auto;
       width: 48px;
       height: 48px;
@@ -161,7 +170,8 @@
       align-items: center;
       justify-content: flex-end;
       gap: 6px;
-      margin: 0;
+      align-self: center;
+      margin: 0 0 0 auto;
       padding: 0;
       list-style: none;
     }
@@ -175,6 +185,7 @@
       color: white;
       font-size: 14px;
       font-weight: 750;
+      line-height: 1.15;
       text-decoration: none;
       transition: background 0.2s;
     }
@@ -739,11 +750,16 @@
     }
 
     .special-population-targets {
+      order: 1;
       min-width: 0;
       color: #243042;
       font-size: 14px;
       font-weight: 800;
       overflow-wrap: anywhere;
+    }
+
+    .special-population-item-head .badge {
+      order: 2;
     }
 
     .special-population-hazard {
@@ -826,6 +842,62 @@
       background: #fff1f2;
       color: #991b1b;
       font-weight: 700;
+    }
+
+    .loading-data-indicator {
+      position: fixed;
+      top: 98px;
+      right: 24px;
+      z-index: 120;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 34px;
+      padding: 6px 11px 6px 7px;
+      border: 1px solid rgba(25, 118, 210, 0.24);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.96);
+      color: #1d4f91;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: 1;
+      pointer-events: none;
+      transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s ease;
+    }
+
+    .loading-data-indicator.is-hidden {
+      opacity: 0;
+      transform: translateY(-8px);
+      visibility: hidden;
+    }
+
+    .loading-data-spinner {
+      width: 18px;
+      height: 18px;
+      border: 3px solid #dbeafe;
+      border-top-color: #1976d2;
+      border-radius: 50%;
+      animation: loadingDataSpin 0.78s linear infinite;
+    }
+
+    @keyframes loadingDataSpin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    body.dark .loading-data-indicator {
+      border-color: rgba(96, 165, 250, 0.34);
+      background: rgba(15, 23, 42, 0.94);
+      color: #bfdbfe;
+      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.34);
+    }
+
+    body.dark .loading-data-spinner {
+      border-color: rgba(96, 165, 250, 0.22);
+      border-top-color: #60a5fa;
     }
 
     .level-legend {
@@ -951,6 +1023,215 @@
     .footer-meta {
       font-size: 13px;
       opacity: 0.94;
+    }
+
+    body.contact-modal-open {
+      overflow: hidden;
+    }
+
+    .contact-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 130;
+      display: grid;
+      place-items: center;
+      padding: 22px;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.22s ease, visibility 0.22s ease;
+    }
+
+    .contact-modal.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .contact-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.52);
+      backdrop-filter: blur(4px);
+    }
+
+    .contact-dialog {
+      position: relative;
+      z-index: 1;
+      width: min(560px, 100%);
+      max-height: min(86vh, 720px);
+      overflow: auto;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+      transform: translateY(10px);
+      transition: transform 0.22s ease;
+    }
+
+    .contact-modal.is-open .contact-dialog {
+      transform: translateY(0);
+    }
+
+    .contact-close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #f8fafc;
+      color: #334155;
+      cursor: pointer;
+      font: inherit;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .contact-close-btn:hover,
+    .contact-close-btn:focus {
+      border-color: #1976d2;
+      color: #1976d2;
+      outline: none;
+    }
+
+    .contact-title {
+      margin: 0 42px 6px 0;
+      color: #0f3d75;
+      font-size: 22px;
+      line-height: 1.25;
+    }
+
+    .contact-note {
+      margin: 0 42px 18px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 14px;
+    }
+
+    .contact-field {
+      display: grid;
+      gap: 6px;
+      color: #243042;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .contact-field input,
+    .contact-field textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: white;
+      color: var(--text);
+      font: inherit;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .contact-field input {
+      min-height: 42px;
+      padding: 9px 11px;
+    }
+
+    .contact-field textarea {
+      min-height: 132px;
+      padding: 10px 11px;
+      resize: vertical;
+    }
+
+    .contact-field input:focus,
+    .contact-field textarea:focus {
+      border-color: #1976d2;
+      box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.14);
+      outline: none;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 2px;
+    }
+
+    .contact-button {
+      min-height: 40px;
+      padding: 9px 14px;
+      border: 1px solid #1976d2;
+      border-radius: 8px;
+      background: #1976d2;
+      color: white;
+      cursor: pointer;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .contact-button:hover,
+    .contact-button:focus {
+      border-color: #0b4ec2;
+      background: #0b4ec2;
+      outline: none;
+    }
+
+    .contact-button.secondary {
+      border-color: var(--border);
+      background: #f8fafc;
+      color: #334155;
+    }
+
+    .contact-button.secondary:hover,
+    .contact-button.secondary:focus {
+      border-color: #94a3b8;
+      background: #eef2f7;
+      color: #111827;
+    }
+
+    .contact-form-status {
+      min-height: 18px;
+      margin: 0;
+      color: #166534;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    body.dark .contact-modal-backdrop {
+      background: rgba(2, 6, 23, 0.72);
+    }
+
+    body.dark .contact-dialog {
+      background: var(--panel);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.52);
+    }
+
+    body.dark .contact-close-btn,
+    body.dark .contact-button.secondary,
+    body.dark .contact-field input,
+    body.dark .contact-field textarea {
+      background: #111827;
+      color: var(--text);
+    }
+
+    body.dark .contact-title {
+      color: #bfdbfe;
+    }
+
+    body.dark .contact-field {
+      color: #e5edf7;
+    }
+
+    body.dark .contact-form-status {
+      color: #86efac;
     }
 
     .dark-mode-toggle {
@@ -1130,8 +1411,23 @@
         line-height: 1.62;
       }
 
+      .main-menu {
+        position: sticky;
+        top: 0;
+        z-index: 95;
+        min-height: 84px;
+        gap: 40px;
+      }
+
+      #search,
+      #faq-section,
+      #lienhe {
+        scroll-margin-top: 104px;
+      }
+
       .main-menu-inner {
         min-height: 84px;
+        gap: 40px;
       }
 
       .brand-logo {
@@ -1143,9 +1439,13 @@
         height: 64px;
       }
 
+      #menu-list {
+        gap: clamp(16px, 1.6vw, 28px);
+      }
+
       #menu-list a {
         min-height: 44px;
-        padding: 9px 15px;
+        padding: 10px 18px;
         font-size: 15px;
       }
 
@@ -1317,9 +1617,53 @@
     }
 
     @media (max-width: 860px) {
+      .loading-data-indicator {
+        top: 80px;
+        right: 12px;
+        min-height: 30px;
+        padding: 5px 9px 5px 6px;
+        font-size: 11px;
+      }
+
+      .loading-data-spinner {
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+      }
+
+      .contact-modal {
+        align-items: end;
+        padding: 12px;
+      }
+
+      .contact-dialog {
+        width: 100%;
+        max-height: min(88vh, 680px);
+        padding: 20px;
+      }
+
+      .contact-title {
+        font-size: 20px;
+      }
+
+      .contact-actions {
+        flex-direction: column-reverse;
+      }
+
+      .contact-button {
+        width: 100%;
+      }
+
       .container {
         width: calc(100% - 24px);
         margin: 12px auto 22px;
+      }
+
+      .main-menu {
+        min-height: 68px;
+        gap: 12px;
+        padding-inline: 12px;
+        justify-content: center;
       }
 
       .main-menu-inner {
@@ -1329,16 +1673,33 @@
       }
 
       .brand-logo {
-        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: calc(100% - 112px);
+        gap: 8px;
+        font-size: 15px;
+        justify-content: center;
+        transform: translate(-50%, -50%);
+      }
+
+      .brand-logo span {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .brand-logo svg {
-        width: 42px;
-        height: 42px;
+        width: 38px;
+        height: 38px;
       }
 
       .menu-toggle {
+        position: absolute;
+        top: 50%;
+        left: 12px;
         display: block;
+        transform: translateY(-50%);
       }
 
       #menu-list {
@@ -1347,6 +1708,7 @@
         right: 0;
         display: none;
         width: min(280px, calc(100vw - 24px));
+        margin: 0;
         padding: 8px;
         border-radius: 8px;
         background: #1976d2;
@@ -1385,6 +1747,35 @@
         flex-direction: column;
       }
 
+      .special-population-panel:not(.food-interaction-panel) .special-population-item-head {
+        display: block;
+        min-height: 34px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+      }
+
+      .special-population-targets {
+        display: block;
+        width: auto;
+        padding: 0;
+        border: 0;
+      }
+
+      .special-population-item-head .badge {
+        float: right;
+        width: auto;
+        max-width: min(150px, 44vw);
+        margin: 0 0 6px 10px;
+        white-space: normal;
+      }
+
+      .special-population-item-head::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
       .level-legend {
         grid-template-columns: 1fr;
       }
@@ -1393,6 +1784,16 @@
       .summary-chip {
         width: fit-content;
         max-width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .loading-data-indicator {
+        transition: none;
+      }
+
+      .loading-data-spinner {
+        animation-duration: 1.6s;
       }
     }
 
@@ -1423,6 +1824,8 @@
       .left-column,
       .level-legend-panel,
       .dark-mode-toggle,
+      .loading-data-indicator,
+      .contact-modal,
       .print-results-btn,
       .source-details {
         display: none !important;
@@ -1472,6 +1875,11 @@
   </style>
 </head>
 <body>
+  <div class="loading-data-indicator" id="loadingDataIndicator" role="status" aria-live="polite">
+    <span class="loading-data-spinner" aria-hidden="true"></span>
+    <span>LOADING DATA</span>
+  </div>
+
  <nav class="main-menu">
    <div class="menu-toggle" id="menu-toggle">
      <span></span>
@@ -1488,7 +1896,7 @@
     <li><a href="/">Trang chủ</a></li>
     <li><a href="#search">Tra cứu</a></li>
     <li><a href="#faq-section">FAQ</a></li>
-    <li><a href="#lienhe">Liên hệ</a></li>
+    <li><a href="mailto:tuongtacthuoc.vn@gmail.com" data-contact-open aria-haspopup="dialog" aria-controls="contactModal">Liên hệ</a></li>
     </ul>
 </nav>
 
@@ -1560,7 +1968,7 @@
       </div>
       <div class="footer-links">
         <a href="#search">Hướng dẫn</a>
-        <a href="#lienhe">Liên hệ</a>
+        <a href="mailto:tuongtacthuoc.vn@gmail.com" data-contact-open aria-haspopup="dialog" aria-controls="contactModal">Liên hệ</a>
         <a href="mailto:tuongtacthuoc.vn@gmail.com" title="Gửi email">Email</a>
       </div>
       <div class="footer-meta">
@@ -1586,6 +1994,38 @@
     </svg>
   </button>
 
+  <div class="contact-modal" id="contactModal" aria-hidden="true">
+    <div class="contact-modal-backdrop" data-contact-close></div>
+    <section class="contact-dialog" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+      <button class="contact-close-btn" type="button" data-contact-close aria-label="Đóng form liên hệ">×</button>
+      <h2 class="contact-title" id="contactModalTitle">Liên hệ</h2>
+      <p class="contact-note">Gửi nội dung về tuongtacthuoc.vn@gmail.com</p>
+      <form class="contact-form" id="contactForm">
+        <label class="contact-field" for="contactName">
+          Họ tên
+          <input id="contactName" name="name" type="text" autocomplete="name" required>
+        </label>
+        <label class="contact-field" for="contactReply">
+          Email hoặc số điện thoại
+          <input id="contactReply" name="reply" type="text" autocomplete="email" required>
+        </label>
+        <label class="contact-field" for="contactSubject">
+          Tiêu đề
+          <input id="contactSubject" name="subject" type="text" value="Liên hệ từ Tuongtacthuoc.vn">
+        </label>
+        <label class="contact-field" for="contactMessage">
+          Nội dung
+          <textarea id="contactMessage" name="message" required></textarea>
+        </label>
+        <div class="contact-actions">
+          <button class="contact-button secondary" type="button" data-contact-close>Hủy</button>
+          <button class="contact-button" type="submit">Gửi email</button>
+        </div>
+        <p class="contact-form-status" id="contactFormStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+
   <script src="buidathieu.normalized.data.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -1603,8 +2043,86 @@
       const menuToggle = document.getElementById("menu-toggle");
       const menuList = document.getElementById("menu-list");
       const darkModeToggle = document.getElementById("darkModeToggle");
+      const loadingDataIndicator = document.getElementById("loadingDataIndicator");
+      const contactModal = document.getElementById("contactModal");
+      const contactForm = document.getElementById("contactForm");
+      const contactFormStatus = document.getElementById("contactFormStatus");
+      const contactOpenButtons = document.querySelectorAll("[data-contact-open]");
+      const contactCloseButtons = document.querySelectorAll("[data-contact-close]");
 
       const selected = new Map();
+      let contactLastFocusedElement = null;
+
+      function hideLoadingDataIndicator() {
+        if (!loadingDataIndicator) return;
+        window.requestAnimationFrame(() => {
+          loadingDataIndicator.classList.add("is-hidden");
+        });
+      }
+
+      function openContactModal(event) {
+        if (event) event.preventDefault();
+        if (!contactModal) return;
+        contactLastFocusedElement = document.activeElement;
+        contactModal.classList.add("is-open");
+        contactModal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("contact-modal-open");
+        contactOpenButtons.forEach((button) => button.setAttribute("aria-expanded", "true"));
+        if (contactFormStatus) contactFormStatus.textContent = "";
+        if (menuList && menuToggle) {
+          menuList.classList.remove("active");
+          menuToggle.setAttribute("aria-expanded", "false");
+        }
+        const firstField = contactModal.querySelector("#contactName") || contactModal.querySelector("input, textarea, button");
+        if (firstField) {
+          const focusFirstField = () => {
+            try {
+              firstField.focus({ preventScroll: true });
+            } catch (error) {
+              firstField.focus();
+            }
+          };
+          window.requestAnimationFrame(focusFirstField);
+          window.setTimeout(focusFirstField, 80);
+        }
+      }
+
+      function closeContactModal() {
+        if (!contactModal) return;
+        contactModal.classList.remove("is-open");
+        contactModal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("contact-modal-open");
+        contactOpenButtons.forEach((button) => button.setAttribute("aria-expanded", "false"));
+        if (contactFormStatus) contactFormStatus.textContent = "";
+        if (contactLastFocusedElement && typeof contactLastFocusedElement.focus === "function") {
+          contactLastFocusedElement.focus();
+        }
+      }
+
+      function handleContactSubmit(event) {
+        event.preventDefault();
+        if (!contactForm) return;
+
+        const formData = new FormData(contactForm);
+        const name = String(formData.get("name") || "").trim();
+        const reply = String(formData.get("reply") || "").trim();
+        const subjectInput = String(formData.get("subject") || "").trim();
+        const message = String(formData.get("message") || "").trim();
+        const subject = subjectInput || `Liên hệ từ ${name || "Tuongtacthuoc.vn"}`;
+        const body = [
+          `Họ tên: ${name}`,
+          `Email/SĐT: ${reply}`,
+          `Trang: ${window.location.href}`,
+          "",
+          message
+        ].join("\n");
+        const mailtoUrl = `mailto:tuongtacthuoc.vn@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        if (contactFormStatus) {
+          contactFormStatus.textContent = "Đã mở ứng dụng email. Vui lòng kiểm tra nội dung rồi bấm gửi.";
+        }
+        window.location.href = mailtoUrl;
+      }
       const activeCatalog = buildActiveCatalog(database);
       const activeAliasMap = buildActiveAliasMap(activeCatalog);
       const medicineAliases = buildMedicineAliases();
@@ -1632,9 +2150,29 @@
         });
       }
 
+      contactOpenButtons.forEach((button) => {
+        button.setAttribute("aria-expanded", "false");
+        button.addEventListener("click", openContactModal);
+      });
+
+      contactCloseButtons.forEach((button) => {
+        button.addEventListener("click", closeContactModal);
+      });
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", handleContactSubmit);
+      }
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && contactModal && contactModal.classList.contains("is-open")) {
+          closeContactModal();
+        }
+      });
+
       if (database.length === 0) {
         resultsArea.innerHTML = '<div class="error-msg">Không tìm thấy dữ liệu trong window.tuongTacData. Kiểm tra lại file buidathieu.normalized.data.js.</div>';
         summaryChip.textContent = "Lỗi dữ liệu";
+        hideLoadingDataIndicator();
         return;
       }
 
@@ -2915,8 +3453,8 @@
         warning.className = `special-population-item lvl-${level}`;
         warning.innerHTML = `
           <div class="special-population-item-head">
-            <div class="special-population-targets">${escapeHtml(targetDisplay || "Đối tượng đặc biệt")}</div>
             <span class="badge bg-${level}">${escapeHtml(getLevelText(level))}</span>
+            <div class="special-population-targets">${escapeHtml(targetDisplay || "Đối tượng đặc biệt")}</div>
           </div>
           <div class="special-population-hazard" style="color: ${color};">
             Hậu quả: ${escapeHtml(interaction.hau_qua || "Chưa xác định")}
@@ -3026,8 +3564,8 @@
         warning.className = `special-population-item lvl-${level}`;
         warning.innerHTML = `
           <div class="special-population-item-head">
-            <div class="special-population-targets">${escapeHtml(targetDisplay || "Thực phẩm/đồ uống")}</div>
             <span class="badge bg-${level}">${escapeHtml(getLevelText(level))}</span>
+            <div class="special-population-targets">${escapeHtml(targetDisplay || "Thực phẩm/đồ uống")}</div>
           </div>
           <div class="special-population-hazard" style="color: ${color};">
             Hậu quả: ${escapeHtml(localizeFoodText(interaction.hau_qua || "Chưa xác định"))}
@@ -3869,8 +4407,12 @@
         };
       }
 
-      renderSelected();
-      crossCheck();
+      try {
+        renderSelected();
+        crossCheck();
+      } finally {
+        hideLoadingDataIndicator();
+      }
     });
   </script>
 </body>
