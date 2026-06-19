@@ -19,6 +19,7 @@
     <meta name="robots" content="index,follow">
     <meta name="google-adsense-account" content="ca-pub-3489693183212518">
     <link rel="canonical" href="https://tuongtacthuoc.vn/">
+    <link rel="stylesheet" href="style.css">
     <!-- Mở rộng: favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Mở rộng: Open Graph cho Facebook/Zalo -->
@@ -845,8 +846,8 @@
 
     .loading-data-indicator {
       position: fixed;
-      top: 98px;
-      right: 24px;
+      top: 50%;
+      left: 50%;
       z-index: 120;
       display: inline-flex;
       align-items: center;
@@ -862,13 +863,16 @@
       font-weight: 900;
       letter-spacing: 0;
       line-height: 1;
+      opacity: 1;
       pointer-events: none;
-      transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s ease;
+      transform: translate(-50%, -50%);
+      visibility: visible;
+      transition: opacity 0.28s ease, transform 0.28s ease;
     }
 
     .loading-data-indicator.is-hidden {
       opacity: 0;
-      transform: translateY(-8px);
+      transform: translate(-50%, calc(-50% - 8px));
       visibility: hidden;
     }
 
@@ -1617,8 +1621,6 @@
 
     @media (max-width: 860px) {
       .loading-data-indicator {
-        top: 80px;
-        right: 12px;
         min-height: 30px;
         padding: 5px 9px 5px 6px;
         font-size: 11px;
@@ -1929,7 +1931,7 @@
 
       <section class="right-column">
         <h2 class="right-header">
-          <span>Kết quả tương tác thuốc - thuốc</span>
+          <span>Kết quả phân tích</span>
           <span class="result-actions">
             <span class="summary-chip" id="summaryChip">Chưa có toa</span>
             <button class="print-results-btn" id="printResultsButton" type="button" disabled>In PDF</button>
@@ -2051,12 +2053,40 @@
 
       const selected = new Map();
       let contactLastFocusedElement = null;
+      let loadingDataHideTimer = 0;
+      let loadingDataRunId = 0;
 
-      function hideLoadingDataIndicator() {
+      function showLoadingDataIndicator() {
         if (!loadingDataIndicator) return;
-        window.requestAnimationFrame(() => {
+        window.clearTimeout(loadingDataHideTimer);
+        loadingDataIndicator.classList.remove("is-hidden");
+      }
+
+      function hideLoadingDataIndicator(delay = 0) {
+        if (!loadingDataIndicator) return;
+        window.clearTimeout(loadingDataHideTimer);
+        const hideIndicator = () => {
           loadingDataIndicator.classList.add("is-hidden");
+        };
+        if (delay > 0) {
+          loadingDataHideTimer = window.setTimeout(hideIndicator, delay);
+          return;
+        }
+        window.requestAnimationFrame(() => {
+          hideIndicator();
         });
+      }
+
+      function runWithLoading(callback) {
+        const runId = ++loadingDataRunId;
+        showLoadingDataIndicator();
+        window.setTimeout(() => {
+          try {
+            callback();
+          } finally {
+            if (runId === loadingDataRunId) hideLoadingDataIndicator(260);
+          }
+        }, 40);
       }
 
       function openContactModal(event) {
@@ -2177,8 +2207,8 @@
 
       input.addEventListener("input", debounce(renderSuggestions, 140));
       input.addEventListener("keydown", handleInputKeydown);
-      showSpecialPopulations.addEventListener("change", crossCheck);
-      showFoodInteractions.addEventListener("change", crossCheck);
+      showSpecialPopulations.addEventListener("change", () => runWithLoading(crossCheck));
+      showFoodInteractions.addEventListener("change", () => runWithLoading(crossCheck));
       printResultsButton.addEventListener("click", () => window.print());
 
       document.addEventListener("click", (event) => {
